@@ -6,9 +6,9 @@ on:
       - main
   workflow_dispatch:
 
-# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
+# Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages and pushing to gh-pages branch
 permissions:
-  contents: read
+  contents: write
   pages: write
   id-token: write
 
@@ -35,6 +35,19 @@ jobs:
 
       - name: Build production bundle
         run: npm run build
+
+      - name: Ensure .nojekyll and CNAME exist in dist
+        run: |
+          touch ./dist/.nojekyll
+          echo "elitefabrics.online" > ./dist/CNAME
+
+      - name: Deploy to gh-pages branch (branch deployment fallback)
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./dist
+          keep_files: false
+          cname: elitefabrics.online
 
       - name: Upload GitHub Pages artifact
         uses: actions/upload-pages-artifact@v3
