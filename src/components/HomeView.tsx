@@ -9,7 +9,9 @@ interface HomeViewProps {
 }
 
 export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenSearch }) => {
-  const latestArticles = ARTICLES.slice(0, 4);
+  const latestArticles = [...ARTICLES]
+    .sort((a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime())
+    .slice(0, 4);
   const featuredFabrics = FABRICS.slice(0, 6);
   const featuredComparisons = FABRIC_COMPARISONS.slice(0, 4);
   const pakistaniFabrics = FABRICS.filter(f => f.category === 'traditional');

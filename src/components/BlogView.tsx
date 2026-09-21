@@ -31,10 +31,17 @@ export const BlogView: React.FC<BlogViewProps> = ({ onNavigate }) => {
     'Trending Fabrics',
     'Pakistani Fabrics',
     'Sustainable Fabrics',
+    'How-To Guides',
     'Fabric Care'
   ];
 
-  const filteredArticles = ARTICLES.filter((art) => {
+  const sortedArticles = [...ARTICLES].sort(
+    (a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime()
+  );
+
+  const featuredArticle = sortedArticles[0];
+
+  const filteredArticles = sortedArticles.filter((art) => {
     const matchesCategory = selectedCategory === 'All' || art.category === selectedCategory;
     const matchesSearch = 
       art.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
@@ -43,7 +50,10 @@ export const BlogView: React.FC<BlogViewProps> = ({ onNavigate }) => {
     return matchesCategory && matchesSearch;
   });
 
-  const featuredArticle = ARTICLES[0];
+  // Prevent duplicating the featured article in the grid when on the default 'All' view without search
+  const gridArticles = (selectedCategory === 'All' && !searchQuery)
+    ? filteredArticles.filter(art => art.id !== featuredArticle?.id)
+    : filteredArticles;
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-12">
@@ -156,7 +166,7 @@ export const BlogView: React.FC<BlogViewProps> = ({ onNavigate }) => {
 
       {/* Articles Grid */}
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 sm:gap-8">
-        {filteredArticles.map((art) => (
+        {gridArticles.map((art) => (
           <article
             key={art.id}
             className="bg-white border border-[#E6E0D7] rounded-xl overflow-hidden flex flex-col justify-between hover:border-[#9E472A]/50 hover:shadow-xs transition-all group"

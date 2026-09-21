@@ -73,17 +73,48 @@ export default function App() {
     const view = parts[0];
     const slug = parts[1] || '';
 
+    // Handle aliases like #articles, #articles/slug, #guide/slug
+    if (view === 'articles') {
+      if (slug) {
+        setCurrentView('article');
+        setCurrentSlug(slug);
+      } else {
+        setCurrentView('blog');
+        setCurrentSlug('');
+      }
+      return;
+    }
+
+    if (view === 'guide' || view === 'guides') {
+      if (slug) {
+        const isArticle = ARTICLES.some(a => a.slug === slug);
+        if (isArticle) {
+          setCurrentView('article');
+          setCurrentSlug(slug);
+        } else {
+          setCurrentView('beginner');
+          setCurrentSlug(slug);
+        }
+      } else {
+        setCurrentView('blog');
+        setCurrentSlug('');
+      }
+      return;
+    }
+
     const validViews = [
       'home',
       'about',
       'contact',
       'blog',
+      'articles',
       'fabrics',
       'fabric',
       'article',
       'comparisons',
       'comparison',
       'beginner',
+      'guides',
       'timeline',
       'pakistani',
       'industry',
