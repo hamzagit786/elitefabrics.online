@@ -296,6 +296,39 @@ export const BeginnerGuideView: React.FC<BeginnerGuideViewProps> = ({ onNavigate
             </p>
           </div>
         </div>
+
+        {/* Explore More Textile Guides */}
+        <div className="pt-6 border-t border-[#E6E0D7] text-center space-y-3">
+          <h3 className="font-serif-heading font-bold text-base text-[#1C1C1C]">
+            Ready for More In-Depth Textile Knowledge?
+          </h3>
+          <div className="flex flex-wrap justify-center gap-2.5">
+            <button
+              onClick={() => onNavigate('care')}
+              className="px-3.5 py-2 bg-white hover:bg-[#F2EDE4] border border-[#DDD5C7] rounded text-xs font-semibold text-[#1C1C1C] transition-colors"
+            >
+              Fabric Care &amp; Laundry Guide →
+            </button>
+            <button
+              onClick={() => onNavigate('comparisons')}
+              className="px-3.5 py-2 bg-white hover:bg-[#F2EDE4] border border-[#DDD5C7] rounded text-xs font-semibold text-[#1C1C1C] transition-colors"
+            >
+              Side-by-Side Fabric Comparisons →
+            </button>
+            <button
+              onClick={() => onNavigate('glossary')}
+              className="px-3.5 py-2 bg-white hover:bg-[#F2EDE4] border border-[#DDD5C7] rounded text-xs font-semibold text-[#1C1C1C] transition-colors"
+            >
+              Textile Terms Glossary →
+            </button>
+            <button
+              onClick={() => onNavigate('timeline')}
+              className="px-3.5 py-2 bg-white hover:bg-[#F2EDE4] border border-[#DDD5C7] rounded text-xs font-semibold text-[#1C1C1C] transition-colors"
+            >
+              Textile History Timeline →
+            </button>
+          </div>
+        </div>
       </section>
     </div>
   );

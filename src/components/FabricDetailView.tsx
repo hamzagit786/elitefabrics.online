@@ -15,10 +15,13 @@ import {
   Calendar,
   Waves,
   Sun,
-  ShieldAlert
+  ShieldAlert,
+  Scale,
+  BookOpen
 } from 'lucide-react';
 import { FabricType } from '../types';
 import { FABRICS } from '../data/fabrics';
+import { FABRIC_COMPARISONS } from '../data/comparisons';
 
 interface FabricDetailViewProps {
   fabric: FabricType;
@@ -379,6 +382,90 @@ export const FabricDetailView: React.FC<FabricDetailViewProps> = ({
             </div>
           </section>
         )}
+
+        {/* Related Head-to-Head Comparisons */}
+        {(() => {
+          const relatedComparisons = FABRIC_COMPARISONS.filter(
+            c => c.fabricA.slug === fabric.slug || 
+                 c.fabricB.slug === fabric.slug ||
+                 c.title.toLowerCase().includes(fabric.name.toLowerCase()) ||
+                 c.slug.includes(fabric.slug)
+          );
+
+          if (relatedComparisons.length === 0) return null;
+
+          return (
+            <section className="pt-6 border-t border-[#E8E2D8] space-y-4">
+              <div className="flex items-center justify-between">
+                <h2 className="text-xl font-serif-heading font-bold text-[#1C1C1C] flex items-center gap-2">
+                  <Scale className="w-5 h-5 text-[#9E472A]" /> Head-to-Head Comparisons
+                </h2>
+                <button
+                  onClick={() => onNavigate('comparisons')}
+                  className="text-xs font-medium text-[#9E472A] hover:underline"
+                >
+                  All Comparisons →
+                </button>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                {relatedComparisons.map(comp => (
+                  <div
+                    key={comp.id}
+                    onClick={() => onNavigate('comparison', comp.slug)}
+                    className="p-4 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-lg cursor-pointer transition-all hover:shadow-xs group"
+                  >
+                    <span className="text-[11px] font-mono uppercase text-[#9E472A] font-semibold block mb-1">
+                      Side-by-Side Analysis
+                    </span>
+                    <h3 className="text-sm font-serif-heading font-bold text-[#1C1C1C] group-hover:text-[#9E472A] transition-colors">
+                      {comp.title}
+                    </h3>
+                    <p className="text-xs text-[#6B655C] mt-1.5 line-clamp-2">
+                      {comp.overview}
+                    </p>
+                  </div>
+                ))}
+              </div>
+            </section>
+          );
+        })()}
+
+        {/* Quick Cross-Links to Guides */}
+        <section className="p-5 bg-[#F4EFE6] border border-[#E5DDD0] rounded-xl space-y-3 text-xs">
+          <h3 className="font-serif-heading font-bold text-[#1C1C1C] flex items-center gap-2 text-sm">
+            <BookOpen className="w-4 h-4 text-[#9E472A]" /> Continue Exploring Textile Knowledge
+          </h3>
+          <p className="text-[#5C5549] leading-relaxed">
+            Deepen your textile expertise with our non-commercial research guides and historical archives:
+          </p>
+          <div className="flex flex-wrap gap-2 pt-1">
+            <button
+              onClick={() => onNavigate('care')}
+              className="px-3 py-1.5 bg-white border border-[#D9D1C5] rounded text-xs font-medium text-[#1C1C1C] hover:text-[#9E472A] hover:border-[#9E472A] transition-colors"
+            >
+              Fabric Care &amp; Washing Directory →
+            </button>
+            <button
+              onClick={() => onNavigate('glossary')}
+              className="px-3 py-1.5 bg-white border border-[#D9D1C5] rounded text-xs font-medium text-[#1C1C1C] hover:text-[#9E472A] hover:border-[#9E472A] transition-colors"
+            >
+              A-Z Textile Terminology Glossary →
+            </button>
+            <button
+              onClick={() => onNavigate('timeline')}
+              className="px-3 py-1.5 bg-white border border-[#D9D1C5] rounded text-xs font-medium text-[#1C1C1C] hover:text-[#9E472A] hover:border-[#9E472A] transition-colors"
+            >
+              30,000 BCE to Present Timeline →
+            </button>
+            <button
+              onClick={() => onNavigate('industry')}
+              className="px-3 py-1.5 bg-white border border-[#D9D1C5] rounded text-xs font-medium text-[#1C1C1C] hover:text-[#9E472A] hover:border-[#9E472A] transition-colors"
+            >
+              Global Textile Industry Hubs →
+            </button>
+          </div>
+        </section>
 
       </div>
     </article>

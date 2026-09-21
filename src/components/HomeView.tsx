@@ -290,15 +290,20 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenSearch }) 
           </div>
         </section>
 
-        {/* SECTION 5: FABRIC HISTORY TIMELINE TEASER */}
-        <section className="bg-white border border-[#E6E0D7] rounded-xl p-6 sm:p-8">
-          <div className="max-w-2xl space-y-3">
-            <h2 className="text-2xl sm:text-3xl font-serif-heading font-bold text-[#1C1C1C]">
-              Fabric History &amp; Timeline
-            </h2>
-            <p className="text-sm text-[#5E574D] leading-relaxed">
-              From early Egyptian linen and Indus Valley cotton weaving to modern textile developments, discover how fabrics evolved over centuries.
-            </p>
+        {/* SECTION 5: FABRIC HISTORY & GLOBAL INDUSTRY TEASERS */}
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <section className="bg-white border border-[#E6E0D7] rounded-xl p-6 sm:p-8 flex flex-col justify-between space-y-4">
+            <div className="space-y-3">
+              <span className="text-[11px] font-mono uppercase tracking-wider text-[#9E472A] font-semibold">
+                Historical Archive
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-serif-heading font-bold text-[#1C1C1C]">
+                Fabric History &amp; Timeline
+              </h2>
+              <p className="text-sm text-[#5E574D] leading-relaxed">
+                From early Egyptian linen and Indus Valley cotton weaving to modern textile developments, discover how fabrics evolved over centuries.
+              </p>
+            </div>
             <div className="pt-2">
               <button
                 onClick={() => onNavigate('timeline')}
@@ -307,8 +312,30 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenSearch }) 
                 View History Timeline &rarr;
               </button>
             </div>
-          </div>
-        </section>
+          </section>
+
+          <section className="bg-white border border-[#E6E0D7] rounded-xl p-6 sm:p-8 flex flex-col justify-between space-y-4">
+            <div className="space-y-3">
+              <span className="text-[11px] font-mono uppercase tracking-wider text-[#9E472A] font-semibold">
+                International Manufacturing
+              </span>
+              <h2 className="text-2xl sm:text-3xl font-serif-heading font-bold text-[#1C1C1C]">
+                Global Textile Industry
+              </h2>
+              <p className="text-sm text-[#5E574D] leading-relaxed">
+                Educational profiles of major manufacturing centers across Pakistan, India, China, Bangladesh, Turkey, USA, UK, and Europe.
+              </p>
+            </div>
+            <div className="pt-2">
+              <button
+                onClick={() => onNavigate('industry')}
+                className="px-5 py-2.5 bg-[#1C1C1C] hover:bg-[#333333] text-white rounded text-xs uppercase tracking-wider font-semibold transition-colors"
+              >
+                Explore Global Industry &rarr;
+              </button>
+            </div>
+          </section>
+        </div>
 
       </div>
     </div>

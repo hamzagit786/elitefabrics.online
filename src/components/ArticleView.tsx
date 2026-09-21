@@ -168,6 +168,13 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
                   <a
                     key={item.id}
                     href={`#${item.id}`}
+                    onClick={(e) => {
+                      e.preventDefault();
+                      const element = document.getElementById(item.id);
+                      if (element) {
+                        element.scrollIntoView({ behavior: 'smooth' });
+                      }
+                    }}
                     className="block text-[#595248] hover:text-[#9E472A] transition-colors py-1 leading-snug"
                   >
                     {item.title}
@@ -268,7 +275,7 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
               Related Textile Inquiries
             </h3>
             <button
-              onClick={() => onNavigate('home')}
+              onClick={() => onNavigate('blog')}
               className="text-xs font-semibold text-[#9E472A] hover:underline"
             >
               Explore All Articles →

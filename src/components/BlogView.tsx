@@ -26,11 +26,12 @@ export const BlogView: React.FC<BlogViewProps> = ({ onNavigate }) => {
 
   const categories = [
     'All',
-    'Trending Fabrics',
     'Fabric Guides',
+    'Beginner Guides',
+    'Trending Fabrics',
     'Pakistani Fabrics',
     'Sustainable Fabrics',
-    'How-To Guides'
+    'Fabric Care'
   ];
 
   const filteredArticles = ARTICLES.filter((art) => {

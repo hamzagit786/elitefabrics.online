@@ -200,3 +200,27 @@ export interface LearningPathwayStage {
   targetKnowledge: string;
   topics: LearningTopic[];
 }
+
+export interface GlobalIndustryProfile {
+  id: string;
+  slug: string;
+  country: string;
+  region: string;
+  headline: string;
+  overview: string;
+  majorSectors: string[];
+  manufacturingHubs: {
+    cityOrRegion: string;
+    specialization: string;
+  }[];
+  commonMaterials: string[];
+  historicalRoots: string;
+  modernDevelopments: string;
+  sustainabilityChallenges: string[];
+  globalSignificance: string;
+  keyStats: {
+    label: string;
+    value: string;
+  }[];
+}
+

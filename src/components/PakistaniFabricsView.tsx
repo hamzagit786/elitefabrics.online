@@ -68,6 +68,12 @@ export const PakistaniFabricsView: React.FC<PakistaniFabricsViewProps> = ({ onNa
           >
             Read: Sindhi Ajrak 14 Stages <ArrowRight className="w-3.5 h-3.5" />
           </button>
+          <button
+            onClick={() => onNavigate('industry', 'pakistan')}
+            className="px-4 py-2 bg-[#F2EDE4] hover:bg-[#E8E1D5] text-[#1C1C1C] border border-[#D9D1C5] rounded text-xs uppercase tracking-wider font-semibold transition-colors flex items-center gap-2"
+          >
+            Pakistan Textile Industry Profile <ArrowRight className="w-3.5 h-3.5" />
+          </button>
         </div>
       </div>
 

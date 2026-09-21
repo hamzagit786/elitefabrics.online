@@ -9,6 +9,7 @@ import {
   ArrowRight
 } from 'lucide-react';
 import { TIMELINE_EVENTS } from '../data/timeline';
+import { FABRICS } from '../data/fabrics';
 
 interface TimelineViewProps {
   onNavigate: (view: string, idOrSlug?: string) => void;
@@ -125,6 +126,33 @@ export const TimelineView: React.FC<TimelineViewProps> = ({ onNavigate }) => {
                   <strong>Historical Reference Archive:</strong> {evt.historicalSource}
                 </div>
               )}
+
+              {/* Contextual Fabric Links */}
+              {(() => {
+                const matched = FABRICS.filter(f => 
+                  evt.title.toLowerCase().includes(f.name.toLowerCase()) || 
+                  evt.description.toLowerCase().includes(f.name.toLowerCase())
+                ).slice(0, 3);
+
+                if (matched.length === 0) return null;
+
+                return (
+                  <div className="pt-3 border-t border-[#F0EAE0] flex flex-wrap items-center gap-2">
+                    <span className="text-[11px] font-mono uppercase text-[#7A7266] font-semibold">
+                      Related Fabric Guides:
+                    </span>
+                    {matched.map(f => (
+                      <button
+                        key={f.id}
+                        onClick={() => onNavigate('fabric', f.slug)}
+                        className="px-2.5 py-1 text-xs bg-[#FAF8F5] hover:bg-[#F0EAE0] border border-[#DDD5C7] rounded text-[#1C1C1C] hover:text-[#9E472A] font-medium transition-colors"
+                      >
+                        {f.name} Profile →
+                      </button>
+                    ))}
+                  </div>
+                );
+              })()}
             </div>
           </div>
         ))}

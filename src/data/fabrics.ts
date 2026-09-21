@@ -2308,5 +2308,582 @@ export const FABRICS: FabricType[] = [
         "value": "Wrap in breathable cotton muslin"
       }
     ]
+  },
+  {
+    "id": "fleece",
+    "slug": "fleece",
+    "name": "Fleece (Polar Fleece)",
+    "category": "synthetic",
+    "fiberComposition": "Knitted from polyester microfibers with brushed pile, or cotton-polyester blends for casual sweatshirts.",
+    "whatIsIt": "Fleece is a soft, insulating synthetic fabric made by knitting polyester yarns and mechanically brushing the surface to create millions of tiny air-trapping fibers.",
+    "whyPopular": "Fleece provides substantial warmth without heavy weight, dries rapidly, stays warm even when exposed to damp air, and feels soft against sensitive skin.",
+    "whatDoesItFeelLike": "Fluffy, plush, and deeply cozy with zero scratchiness or prickly feel.",
+    "whereIsItUsed": "Outdoor zip-up jackets, hiking mid-layers, hooded sweatshirts, sweatpants, winter beanies, mittens, and throw blankets.",
+    "whenIsItSuitable": "Chilly autumn evenings and freezing winter days, mountain activities, winter workouts, and home lounging.",
+    "origin": "Invented in 1979 by Malden Mills (now Polartec) in Massachusetts, USA, as an ultra-lightweight synthetic alternative to wet wool.",
+    "howMade": "Polyester filament is circular knitted, passed across wire-bristle cylinders that pull fiber loops into a fuzzy pile, and clipped evenly to prevent tangling.",
+    "texture": "Deep, brushed, velvety pile with a springy tactile feel.",
+    "weightGsm": "Medium to Heavyweight (200 – 380 GSM)",
+    "drape": "Soft, structured, and bulky",
+    "stretch": "Moderate (Natural mechanical knit stretch)",
+    "breathability": "High air permeability, though synthetic polymer body",
+    "durability": "High resistance to tears; prone to surface pilling over time in budget grades",
+    "commonUses": [
+      "Zip-up winter jackets",
+      "Casual pullovers and hoodies",
+      "Thermal blankets",
+      "Joggers and sweatpants",
+      "Winter beanies and glove linings"
+    ],
+    "advantages": [
+      "High warmth-to-weight ratio compared to heavy natural fibers",
+      "Absorbs less than 1% moisture, drying remarkably fast",
+      "Retains insulation even in damp mountain conditions",
+      "Easy machine washability with minimal wrinkle formation",
+      "Hypoallergenic and completely prickle-free"
+    ],
+    "disadvantages": [
+      "Generates static electricity in dry indoor heating",
+      "Sheds microfibers during washing unless laundered in a wash bag",
+      "Vulnerable to heat damage in hot dryers or near direct flames",
+      "Attracts pet hair and airborne lint"
+    ],
+    "bestSeasons": [
+      "Autumn",
+      "Winter"
+    ],
+    "careInstructions": "Wash in cold or warm water (30°C–40°C) inside-out. Avoid fabric softeners, which coat the insulating fibers. Air dry or tumble dry on lowest heat.",
+    "identificationMethod": "Burn Test: Melts rapidly into a hard, dark plastic bead with a sweetish chemical smell and zero crushable ash.",
+    "similarFabrics": [
+      "Wool",
+      "Flannel",
+      "Velour",
+      "French Terry"
+    ],
+    "faqs": [
+      {
+        "question": "Is fleece warmer than natural wool?",
+        "answer": "Fleece provides comparable warmth to wool at roughly half the weight and dries much faster. However, wool is naturally odor-resistant and flame-resistant, whereas fleece can trap body odors and melts near heat."
+      },
+      {
+        "question": "How do you stop fleece from pilling?",
+        "answer": "Wash fleece garments inside out on a gentle cycle with cold water, skip liquid fabric softeners, and hang dry instead of tumbling in high heat."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Cozy soft textured polar fleece fabric folded neatly",
+    "imageCaption": "Soft brushed polar fleece fabric engineered for lightweight thermal insulation.",
+    "technicalSpecs": [
+      {
+        "label": "Thermal Insulation",
+        "value": "Very High warmth-to-weight ratio"
+      },
+      {
+        "label": "Moisture Behavior",
+        "value": "Hydrophobic; quick drying"
+      },
+      {
+        "label": "Fabric Construction",
+        "value": "Brushed circular knit pile"
+      },
+      {
+        "label": "Heat Sensitivity",
+        "value": "High; keep away from hot irons"
+      }
+    ]
+  },
+  {
+    "id": "twill",
+    "slug": "twill",
+    "name": "Twill",
+    "category": "weave",
+    "fiberComposition": "A diagonal weave pattern that can be woven from cotton, wool, silk, linen, or synthetic yarns.",
+    "whatIsIt": "Twill is one of the three primary textile weaves (alongside plain and satin). It is easily recognized by its distinctive diagonal parallel ridges or ribs running across the cloth.",
+    "whyPopular": "Twill creates fabrics that are denser, stronger, and more tear-resistant than plain weave of identical weight. It also resists wrinkles better and drapes cleanly.",
+    "whatDoesItFeelLike": "Substantial, textured with subtle diagonal ridges, and smooth to the touch.",
+    "whereIsItUsed": "Denim jeans, chino trousers, military khaki uniforms, trench coats, heavy jackets, and workwear.",
+    "whenIsItSuitable": "All-season wear, especially autumn, winter, and spring when durable structure is needed.",
+    "origin": "Ancient weaving technique developed across Europe, the Middle East, and Asia, with surviving ancient examples from Celtic and Chinese archaeological sites.",
+    "howMade": "Each weft thread passes over one or more warp threads and then under two or more warp threads with a step or offset between rows, creating the diagonal pattern.",
+    "texture": "Diagonal ribbed hand with substantial body and smooth drape.",
+    "weightGsm": "Medium to Heavyweight (180 – 420 GSM)",
+    "drape": "Fluid yet structured",
+    "stretch": "Slight natural diagonal give",
+    "breathability": "Moderate (tight diagonal weave reduces airflow slightly compared to open plain weave)",
+    "durability": "Very High",
+    "commonUses": [
+      "Chinos and tailored trousers",
+      "Denim jackets and jeans",
+      "Heritage trench coats",
+      "Durable work aprons and uniforms",
+      "Upholstery and heavy slipcovers"
+    ],
+    "advantages": [
+      "Extraordinary tear resistance and mechanical strength",
+      "Hides stains, soil, and wrinkles much better than flat plain weaves",
+      "Drapes with cleaner lines around the body",
+      "Resists abrasion at high-friction points like knees and elbows"
+    ],
+    "disadvantages": [
+      "Heavier and less airy than open plain weaves in intense summer heat",
+      "Front and back sides look noticeably different in standard twills",
+      "Can shrink along the diagonal if laundered aggressively in hot water"
+    ],
+    "bestSeasons": [
+      "Spring",
+      "Autumn",
+      "Winter",
+      "All-Season"
+    ],
+    "careInstructions": "Follow the fiber content. Cotton twill chinos can be machine washed warm and ironed on medium-high heat with steam. Wool twills should be dry cleaned or hand washed gently.",
+    "identificationMethod": "Visual Test: Inspect the surface closely to observe clear, uniform diagonal ridges (wales) running at roughly 45-degree angles.",
+    "similarFabrics": [
+      "Denim",
+      "Gabardine",
+      "Canvas",
+      "Poplin"
+    ],
+    "faqs": [
+      {
+        "question": "Is denim the same thing as twill?",
+        "answer": "Denim is a specific type of twill. Classic denim is a warp-faced cotton twill where the vertical warp threads are dyed blue and the horizontal weft threads remain white."
+      },
+      {
+        "question": "Why does twill wrinkle less than plain weave?",
+        "answer": "Because yarns in twill weave have longer floats and fewer crossing points per inch, the yarns have more freedom of movement, allowing the cloth to resist creasing."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Detailed view of diagonal twill weave ridges on sturdy textile",
+    "imageCaption": "Characteristic diagonal ridges of a sturdy twill weave offering exceptional durability.",
+    "technicalSpecs": [
+      {
+        "label": "Weave Architecture",
+        "value": "2/1 or 2/2 diagonal offset twill"
+      },
+      {
+        "label": "Durability",
+        "value": "Exceptional abrasion resistance"
+      },
+      {
+        "label": "Wrinkle Tendency",
+        "value": "Low; sheds creases well"
+      },
+      {
+        "label": "Common Fiber",
+        "value": "Cotton, wool, or polyester blends"
+      }
+    ]
+  },
+  {
+    "id": "canvas",
+    "slug": "canvas",
+    "name": "Canvas (Duck Cloth)",
+    "category": "natural",
+    "fiberComposition": "Heavyweight plain weave typically made from 100% sturdy cotton, flax linen, or hemp.",
+    "whatIsIt": "Canvas is an extremely heavy, tightly woven, plain-weave cloth built for maximum strength, durability, and tear resistance.",
+    "whyPopular": "Canvas is the world's standard utility fabric. It withstands harsh weather, dragging, friction, and heavy tension without tearing or losing structural integrity.",
+    "whatDoesItFeelLike": "Firm, thick, rough, and substantial when new, softening with years of hard use and washing.",
+    "whereIsItUsed": "Tote bags, backpacks, artist painting stretched canvases, boat sails, heavy work jackets, sneakers (like Converse), tents, and upholstery.",
+    "whenIsItSuitable": "Rugged workwear in autumn and winter, heavy-duty gear, outdoor equipment, and long-lasting accessories.",
+    "origin": "Derived historically from the Greek and Latin words for cannabis (hemp), as early sails and canvases were woven from coarse hemp fiber.",
+    "howMade": "Woven using thick yarns in a tight, balanced plain weave or 2x1 basket weave, frequently referred to as cotton duck.",
+    "texture": "Coarse, robust, and stiff with a firm hand.",
+    "weightGsm": "Heavyweight (280 – 600 GSM)",
+    "drape": "Stiff and highly structured",
+    "stretch": "Virtually none",
+    "breathability": "Low to Moderate (dense yarn packing restricts breeze)",
+    "durability": "Extremely High (one of the strongest woven fabrics made)",
+    "commonUses": [
+      "Sturdy tote bags and tool rolls",
+      "Work jackets and carpenter pants",
+      "Outdoor tents and boat sails",
+      "Artist stretched canvases",
+      "Casual canvas sneakers and espadrilles"
+    ],
+    "advantages": [
+      "Virtually impossible to tear under normal manual stress",
+      "Can be treated with wax or polyurethane for complete water resistance",
+      "Takes heavy dyes, prints, and oil paints beautifully",
+      "Gains attractive weathered patina with age and heavy wear"
+    ],
+    "disadvantages": [
+      "Very heavy and stiff when unwashed",
+      "Slow to dry if saturated with water",
+      "Can be uncomfortable for close-fitting shirts or next-to-skin garments"
+    ],
+    "bestSeasons": [
+      "Autumn",
+      "Winter",
+      "All-Season Utility"
+    ],
+    "careInstructions": "Spot clean canvas bags and gear with cold water and mild soap. For canvas clothes, machine wash cold and air dry flat to prevent severe shrinkage.",
+    "identificationMethod": "Tactile Test: Rigid, heavy plain grid weave with thick, round yarns that resist bending or twisting by hand.",
+    "similarFabrics": [
+      "Twill",
+      "Denim",
+      "Khaddar",
+      "Burlap / Jute"
+    ],
+    "faqs": [
+      {
+        "question": "What is the difference between canvas and duck cloth?",
+        "answer": "Cotton duck (from the Dutch doek, meaning linen canvas) is simply a specific grade of canvas woven more tightly and smoothly with plied yarns, making it less coarse than raw utility canvas."
+      },
+      {
+        "question": "Can cotton canvas be waterproofed?",
+        "answer": "Yes. Traditional wax canvas is treated with paraffin or beeswax, which seals yarn pores and repels heavy rain while developing a gorgeous marbled patina over time."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Heavy duty cotton canvas fabric texture and seams",
+    "imageCaption": "Tough plain-weave cotton canvas built for long-lasting utility gear and workwear.",
+    "technicalSpecs": [
+      {
+        "label": "Weave Type",
+        "value": "Tight plain or double-warp duck weave"
+      },
+      {
+        "label": "Strength",
+        "value": "Exceptional tensile and tear strength"
+      },
+      {
+        "label": "Rigidity",
+        "value": "High; softens gradually with washing"
+      },
+      {
+        "label": "Traditional Fiber",
+        "value": "Cotton, hemp, or flax linen"
+      }
+    ]
+  },
+  {
+    "id": "muslin",
+    "slug": "muslin",
+    "name": "Muslin",
+    "category": "natural",
+    "fiberComposition": "100% plain-woven unbleached or bleached natural cotton.",
+    "whatIsIt": "Muslin is a lightweight to medium-weight, loosely woven plain cotton fabric known for its pure, breathable simplicity and natural hand feel.",
+    "whyPopular": "Muslin is prized worldwide for breathability, softness, and affordability. It is beloved by fashion designers for draping mockups, parents for baby swaddles, and cooks for culinary straining.",
+    "whatDoesItFeelLike": "Soft, airy, crinkled after washing, and gentle on sensitive skin with zero harsh finishes.",
+    "whereIsItUsed": "Baby swaddling blankets, fashion design test fittings (toiles), breathable curtains, cheese and broth straining, and lightweight summer garments.",
+    "whenIsItSuitable": "Hot summer months, nursery and baby use, home drafting, and light summer loungewear.",
+    "origin": "Originated in Bengal (historic Dhaka, Bangladesh) and named in the West after the ancient Mesopotamian trading city of Mosul (Iraq). Historically, ultra-fine Dhaka muslin was famous for fitting an entire sari through a small finger ring.",
+    "howMade": "Carded or combed cotton yarns are woven into an open, balanced plain weave without heavy chemical sizings or synthetic softeners.",
+    "texture": "Fine, sheer to semi-sheer open weave that softens and crinkles delicately after washing.",
+    "weightGsm": "Lightweight (70 – 130 GSM)",
+    "drape": "Soft and relaxed",
+    "stretch": "Slight mechanical give due to open weave",
+    "breathability": "Extremely High",
+    "durability": "Moderate (fine open yarns require gentle washing)",
+    "commonUses": [
+      "Newborn swaddling and burp cloths",
+      "Fashion patternmaking prototypes (toiles)",
+      "Culinary jelly bags and cheesecloth straining",
+      "Airy summer tunics and dresses",
+      "Museum textile conservation wrapping"
+    ],
+    "advantages": [
+      "Supreme breathability allows air to circulate freely",
+      "Completely non-irritating for newborn and delicate skin",
+      "Highly absorbent and quick to dry in open air",
+      "Inexpensive and easy to sew for beginners"
+    ],
+    "disadvantages": [
+      "Semi-sheer in lighter grades, often requiring a lining for daywear",
+      "Shrinks significantly (up to 10%) on initial hot washing",
+      "Wrinkles easily and softens into a permanent casual crinkle"
+    ],
+    "bestSeasons": [
+      "Summer",
+      "All-Season Baby & Kitchen Care"
+    ],
+    "careInstructions": "Machine wash in cool or warm water on gentle cycle. Tumble dry low or air dry in the breeze. Embrace its relaxed crinkled texture or steam iron on medium heat.",
+    "identificationMethod": "Burn Test: Burns cleanly with a paper aroma, glowing orange ember, and leaving light gray ash.",
+    "similarFabrics": [
+      "Lawn",
+      "Voile",
+      "Cambric",
+      "Gauze"
+    ],
+    "faqs": [
+      {
+        "question": "Why do fashion designers use muslin to test garment patterns?",
+        "answer": "Muslin is inexpensive, easy to mark with pencil or chalk, pins cleanly, and mimics the natural drape of woven fashion fabrics without risking expensive garment yardage."
+      },
+      {
+        "question": "What was legendary Dhaka muslin?",
+        "answer": "Historic Dhaka muslin, woven in Mughal-era Bengal from a now-extinct riverside cotton variety (Phuti karpas), was so impossibly sheer that European travelers dubbed it 'woven air' and 'morning dew'."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Soft airy natural unbleached cotton muslin fabric rolls",
+    "imageCaption": "Pure unbleached cotton muslin woven with a breathable open plain weave.",
+    "technicalSpecs": [
+      {
+        "label": "Weave Style",
+        "value": "Open, balanced plain weave"
+      },
+      {
+        "label": "Transparency",
+        "value": "Semi-sheer to opaque depending on yarn count"
+      },
+      {
+        "label": "Air Permeability",
+        "value": "Extremely high; natural ventilation"
+      },
+      {
+        "label": "Skin Safety",
+        "value": "Hypoallergenic; free from chemical finishes"
+      }
+    ]
+  },
+  {
+    "id": "organza",
+    "slug": "organza",
+    "name": "Organza",
+    "category": "weave",
+    "fiberComposition": "Originally woven exclusively from raw mulberry silk; modern commercial organza is also woven from polyester or nylon filaments.",
+    "whatIsIt": "Organza is a thin, sheer, plain-weave fabric with a distinctive crisp, wiry stiffness that holds dramatic sculptural shapes and volume.",
+    "whyPopular": "Organza is unique because it combines sheer transparency with firm structural body, enabling couturiers to craft billowing bridal sleeves, voluminous ballgown overlays, and architectural fashion silhouettes.",
+    "whatDoesItFeelLike": "Crisp, papery, smooth, and slightly dry or stiff to the touch.",
+    "whereIsItUsed": "Bridal gowns, evening wear overlays, voluminous ruffles, theatrical costumes, gift packaging ribbons, and translucent window drapery.",
+    "whenIsItSuitable": "Formal evening occasions, wedding ceremonies, summer garden parties, and festive celebrations.",
+    "origin": "Historically traded through Central Asian Silk Road networks and named after the ancient city of Urgench in modern-day Uzbekistan.",
+    "howMade": "Woven in a balanced plain weave from tightly twisted continuous filament yarns. Silk organza retains natural sericin protein gum to provide its crisp stiffness.",
+    "texture": "Translucent, smooth, papery, and crisp with a dry tactile hand.",
+    "weightGsm": "Ultra-lightweight (25 – 60 GSM)",
+    "drape": "Crisp and structural; holds flare rather than falling limply",
+    "stretch": "None",
+    "breathability": "High air passage through fine sheer pores",
+    "durability": "Moderate; delicate against sharp jewelry snags",
+    "commonUses": [
+      "Bridal gowns and wedding veils",
+      "Sheer puffy sleeves and ruffles",
+      "Evening dress overlays",
+      "Formal fascinators and millinery",
+      "Translucent window panels"
+    ],
+    "advantages": [
+      "Holds dramatic volume and sculptural silhouettes without collapsing",
+      "Sparkles delicately under stage, ballroom, and evening lighting",
+      "Ultra-lightweight yet rigid enough to support embroidery",
+      "Breathes well because of open sheer mesh structure"
+    ],
+    "disadvantages": [
+      "Scratchy if placed directly against sensitive bare skin at seams",
+      "Prone to fraying rapidly along raw cut edges",
+      "Wrinkles sharply and requires delicate low-heat pressing"
+    ],
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Formal All-Season"
+    ],
+    "careInstructions": "Silk organza is best dry cleaned. Synthetic polyester organza can be gently hand washed in cold water. Press with a dry iron on low setting using a pressing cloth.",
+    "identificationMethod": "Physical Test: Hold to the light; completely sheer like fine mesh, yet crinkles with a distinct papery rustle when squeezed.",
+    "similarFabrics": [
+      "Chiffon",
+      "Tulle",
+      "Georgette",
+      "Voile"
+    ],
+    "faqs": [
+      {
+        "question": "What is the difference between organza and chiffon?",
+        "answer": "While both are sheer and lightweight, organza is crisp, stiff, and holds sculptural volume, whereas chiffon is soft, fluid, and drapes limply against the body."
+      },
+      {
+        "question": "Is organza scratchy to wear?",
+        "answer": "Because of its wiry twist, raw organza can feel slightly stiff against bare skin. Designers usually line organza garments with silk habotai or soft viscose for comfort."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Translucent crisp white organza fabric forming delicate sculptural folds",
+    "imageCaption": "Sheer and crisp organza textile holding architectural structure for formal dressmaking.",
+    "technicalSpecs": [
+      {
+        "label": "Sheerness",
+        "value": "Completely transparent open weave"
+      },
+      {
+        "label": "Drape Behavior",
+        "value": "Crisp and buoyant; creates dramatic volume"
+      },
+      {
+        "label": "Filament Type",
+        "value": "High-twist continuous silk or polyester"
+      },
+      {
+        "label": "Ironing Caution",
+        "value": "Low heat; synthetic fibers melt easily"
+      }
+    ]
+  },
+  {
+    "id": "crepe",
+    "slug": "crepe",
+    "name": "Crepe",
+    "category": "weave",
+    "fiberComposition": "Can be crafted from silk, wool, viscose, polyester, or cotton, distinguished by tightly twisted yarns.",
+    "whatIsIt": "Crepe (from the French crêpe, meaning curled or crimped) is a textile recognized by its uniquely pebbled, crinkled, or granular surface texture and liquid drape.",
+    "whyPopular": "Crepe is a staple of elegant tailoring and formal dresses. It resists creasing remarkably well, hangs with a fluid and flattering drape, and hides minor body bumps.",
+    "whatDoesItFeelLike": "Textured with a granular pebble touch, cool on the skin, and richly weighted.",
+    "whereIsItUsed": "Tailored trousers, evening gowns, blouses, chic jumpsuits, mourning attire, and South Asian formal shalwar suits.",
+    "whenIsItSuitable": "All-season versatility, particularly spring, summer dinners, and formal evening gatherings.",
+    "origin": "Centuries-old weaving practice across Europe and Asia, famously used in Victorian mourning gowns and modern French haute couture.",
+    "howMade": "Yarns are spun with an extremely high twist (called crepe twist, up to 2,000 turns per meter). When woven and washed, the internal yarn tension partially untwists, puckering the surface into fine pebbles.",
+    "texture": "Distinct granular pebble crinkle with a fluid, bouncy hand.",
+    "weightGsm": "Light to Medium-Heavy (110 – 260 GSM depending on Crepe de Chine vs. Heavy Scuba Crepe)",
+    "drape": "Exceptionally fluid, heavy, and flattering",
+    "stretch": "Slight natural mechanical give due to yarn crinkle",
+    "breathability": "Moderate to High (depending on whether silk/viscose or synthetic)",
+    "durability": "High; strong twisted yarns resist abrasion",
+    "commonUses": [
+      "Flowing evening gowns and cocktail dresses",
+      "Fluid wide-leg trousers",
+      "Tailored women's blazers and suits",
+      "Elegant button-up office blouses",
+      "Formal shawls and headscarves"
+    ],
+    "advantages": [
+      "Remarkable wrinkle resistance makes it the supreme travel fabric",
+      "Graceful, liquid drape creates elegant silhouettes",
+      "Matte pebble surface absorbs light, creating rich, deep colors",
+      "Bouncy flexibility moves naturally with the wearer"
+    ],
+    "disadvantages": [
+      "Can shrink significantly during laundering if exposed to high water heat",
+      "Slippery to pin and cut for novice sewists",
+      "Silk and wool variants require delicate hand washing or dry cleaning"
+    ],
+    "bestSeasons": [
+      "Spring",
+      "Autumn",
+      "All-Season Evening"
+    ],
+    "careInstructions": "Check fiber content. Silk and wool crepe should be dry cleaned or hand washed gently in cold water and laid flat. Polyester crepe can be machine washed on gentle cycle and hung to dry without ironing.",
+    "identificationMethod": "Tactile Test: Rub the fabric between thumb and finger. A genuine crepe will reveal a distinctive granular pebble texture rather than flat slickness.",
+    "similarFabrics": [
+      "Georgette",
+      "Chiffon",
+      "Satin",
+      "Rayon"
+    ],
+    "faqs": [
+      {
+        "question": "What is the difference between Crepe de Chine and Georgette?",
+        "answer": "Crepe de Chine is a heavier, opaque silk fabric with a subtle lustrous sheen and pebble weft, whereas Georgette is sheer, matte, and lighter in weight."
+      },
+      {
+        "question": "Does crepe fabric require ironing?",
+        "answer": "Crepe is naturally wrinkle-resistant because of its high-twist yarns. If creasing occurs after packing, hanging the garment in a steamy bathroom usually releases wrinkles effortlessly."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Flowing pebble-textured crepe fabric draped in graceful ripples",
+    "imageCaption": "Granular textured crepe fabric displaying fluid drape and wrinkle-resistant bounce.",
+    "technicalSpecs": [
+      {
+        "label": "Yarn Twist",
+        "value": "High S-twist and Z-twist crepe yarns"
+      },
+      {
+        "label": "Surface Hand",
+        "value": "Granular pebble crinkle"
+      },
+      {
+        "label": "Wrinkle Recovery",
+        "value": "Excellent; naturally crease resistant"
+      },
+      {
+        "label": "Drape Index",
+        "value": "Very fluid and supple"
+      }
+    ]
+  },
+  {
+    "id": "poplin",
+    "slug": "poplin",
+    "name": "Poplin",
+    "category": "natural",
+    "fiberComposition": "Classic cotton, cotton-polyester blends, or fine wool and silk yarns.",
+    "whatIsIt": "Poplin (historically called tabinet) is a crisp, tightly woven plain-weave fabric featuring fine warp threads and slightly thicker weft threads that produce very faint horizontal ribs.",
+    "whyPopular": "Poplin is the premier shirting fabric of global menswear and tailoring. It is smooth, crisp, lustrous, easy to iron, and cool against the skin.",
+    "whatDoesItFeelLike": "Crisp, silky-smooth, cool to the touch, and clean against the skin.",
+    "whereIsItUsed": "Crisp dress shirts, office button-downs, summer trench coats, casual shirt-dresses, pajamas, and lightweight skirts.",
+    "whenIsItSuitable": "Spring, summer, and year-round professional work environments.",
+    "origin": "Originated in Avignon, France, during the 14th-century papal residency and was called 'papeline' in honor of the Pope.",
+    "howMade": "Woven in a plain weave with roughly twice as many fine warp yarns as thicker weft yarns, creating a dense, smooth surface with microscopic horizontal cord effect.",
+    "texture": "Smooth, flat, crisp, and tightly packed.",
+    "weightGsm": "Light to Medium (100 – 160 GSM)",
+    "drape": "Crisp and structured rather than droopy",
+    "stretch": "None (unless blended with 2-3% elastane)",
+    "breathability": "High; breathable natural cotton structure",
+    "durability": "High; dense yarn pack resists snagging and wear",
+    "commonUses": [
+      "Men's and women's dress shirts",
+      "Casual summer button-downs",
+      "Crisp shirt-dresses and A-line skirts",
+      "Lightweight summer pajamas",
+      "Light trench coats and jacket linings"
+    ],
+    "advantages": [
+      "Crisp, professional appearance holds collar and cuff structure",
+      "Extremely smooth surface resists dirt and feels cool on hot days",
+      "Easy to launder and irons into sharp, razor-clean creases",
+      "Durable and does not easily pill over years of wear"
+    ],
+    "disadvantages": [
+      "Wrinkles during long sitting or travel",
+      "Can feel slightly stiff until washed several times",
+      "Does not stretch on its own without elastane fibers"
+    ],
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "All-Season Office Wear"
+    ],
+    "careInstructions": "Machine wash with warm water (40°C). Tumble dry on medium heat or hang dry. Iron with steam while slightly damp on cotton setting for a crisp, professional finish.",
+    "identificationMethod": "Visual and Tactile Test: Smooth, flat face with very subtle microscopic horizontal ribs visible under magnification, crisp paper-like snap when shaken.",
+    "similarFabrics": [
+      "Cotton",
+      "Lawn",
+      "Cambric",
+      "Broadcloth",
+      "Twill"
+    ],
+    "faqs": [
+      {
+        "question": "What is the difference between poplin and broadcloth?",
+        "answer": "Historically, poplin has slightly thicker weft yarns creating faint ribs, whereas broadcloth is woven with balanced yarns. Today, the two terms are often used interchangeably for crisp cotton shirting."
+      },
+      {
+        "question": "Why is poplin the preferred fabric for men's dress shirts?",
+        "answer": "Poplin holds crisp starch and pressed creases, prevents undershirt show-through while remaining lightweight, and lets body heat ventilate smoothly throughout long office workdays."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Crisp woven white cotton poplin dress shirt fabric",
+    "imageCaption": "Crisp and smooth plain-weave cotton poplin engineered for classic dress shirts.",
+    "technicalSpecs": [
+      {
+        "label": "Weave Architecture",
+        "value": "Warp-dense plain weave with subtle cross-rib"
+      },
+      {
+        "label": "Surface Finish",
+        "value": "Smooth, flat, and semi-lustrous"
+      },
+      {
+        "label": "Air Flow",
+        "value": "Breathable and cool"
+      },
+      {
+        "label": "Pressing Behavior",
+        "value": "Holds razor-sharp pressed creases"
+      }
+    ]
   }
 ];
+

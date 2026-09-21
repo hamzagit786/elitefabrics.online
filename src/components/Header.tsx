@@ -25,6 +25,7 @@ export const Header: React.FC<HeaderProps> = ({
     { label: 'Comparisons', view: 'comparisons' },
     { label: 'History', view: 'timeline' },
     { label: 'Pakistani Fabrics', view: 'pakistani' },
+    { label: 'Global Industry', view: 'industry' },
     { label: 'Sustainable', view: 'sustainable' },
     { label: 'Blog', view: 'blog' },
   ];
@@ -45,9 +46,9 @@ export const Header: React.FC<HeaderProps> = ({
             onClick={() => handleNavClick('home')}
             className="cursor-pointer group"
           >
-            <h1 className="text-2xl sm:text-3xl font-serif-heading font-bold tracking-tight text-[#1A1A1A] group-hover:text-[#9E472A] transition-colors">
+            <span className="block text-2xl sm:text-3xl font-serif-heading font-bold tracking-tight text-[#1A1A1A] group-hover:text-[#9E472A] transition-colors">
               ELITE FABRICS
-            </h1>
+            </span>
             <p className="text-[11px] tracking-wider text-[#6B655C] uppercase mt-0.5 font-medium">
               Fabric &amp; Textile Information
             </p>

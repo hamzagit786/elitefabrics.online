@@ -68,6 +68,11 @@ export const SitemapView: React.FC<SitemapViewProps> = ({ onNavigate }) => {
               </button>
             </li>
             <li>
+              <button onClick={() => onNavigate('industry')} className="hover:text-[#9E472A] transition-colors">
+                • Global Textile Industry
+              </button>
+            </li>
+            <li>
               <button onClick={() => onNavigate('sustainable')} className="hover:text-[#9E472A] transition-colors">
                 • Sustainable Fabrics
               </button>
@@ -157,7 +162,7 @@ export const SitemapView: React.FC<SitemapViewProps> = ({ onNavigate }) => {
         {/* Comparisons */}
         <div className="bg-white border border-[#E6E0D7] rounded-lg p-5 space-y-3">
           <h2 className="font-serif-heading font-bold text-base text-[#1C1C1C] pb-2 border-b border-[#F0EAE0]">
-            Fabric Comparisons
+            Fabric Comparisons ({FABRIC_COMPARISONS.length})
           </h2>
           <ul className="space-y-2 text-xs text-[#4A453E]">
             {FABRIC_COMPARISONS.map((comp) => (
@@ -171,6 +176,25 @@ export const SitemapView: React.FC<SitemapViewProps> = ({ onNavigate }) => {
               </li>
             ))}
           </ul>
+        </div>
+
+        {/* Textile Articles & Guides */}
+        <div className="bg-white border border-[#E6E0D7] rounded-lg p-5 space-y-3 md:col-span-2 lg:col-span-3">
+          <h2 className="font-serif-heading font-bold text-base text-[#1C1C1C] pb-2 border-b border-[#F0EAE0]">
+            Textile Articles &amp; Editorial Guides ({ARTICLES.length})
+          </h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-xs text-[#4A453E]">
+            {ARTICLES.map((article) => (
+              <button
+                key={article.id}
+                onClick={() => onNavigate('article', article.slug)}
+                className="hover:text-[#9E472A] transition-colors text-left p-2 rounded hover:bg-[#FAF8F5] border border-transparent hover:border-[#E8E2D9]"
+              >
+                <span className="font-medium text-[#1C1C1C] block line-clamp-1">• {article.title}</span>
+                <span className="text-[10px] text-[#8C8478]">{article.category} · {article.readTime}</span>
+              </button>
+            ))}
+          </div>
         </div>
 
         {/* Fabric Profiles */}
