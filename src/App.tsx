@@ -155,41 +155,47 @@ export default function App() {
 
     if (currentView === 'home') {
       updateDocumentSEO({
-        title: 'Elite Fabrics | Independent Fabric & Textile Information, Guides & History',
-        description: 'Independent fabric and textile information resource. Explore fabric types, side-by-side material comparisons, Pakistani textile traditions, and garment care guides.',
+        title: 'Fabric & Textile Guide – Types, Comparisons & Care | Elite Fabrics',
+        description: 'Learn about fabric and textiles in simple English. Explore fabric types, comparisons, care guides, Pakistani fabrics, textile history and beginner-friendly resources.',
         canonicalUrl: `${baseUrl}/`,
         schema: [
           {
             '@type': 'WebSite',
+            '@id': `${baseUrl}/#website`,
             'name': 'Elite Fabrics',
-            'url': baseUrl,
-            'description': 'An independent fabric and textile information resource for curious minds, sewers, and fashion designers.'
+            'url': `${baseUrl}/`,
+            'description': 'Learn about fabric and textiles in simple English. Explore fabric types, comparisons, care guides, Pakistani fabrics, textile history and beginner-friendly resources.',
+            'publisher': { '@id': `${baseUrl}/#organization` },
+            'inLanguage': 'en-US'
           },
           {
             '@type': 'Organization',
+            '@id': `${baseUrl}/#organization`,
             'name': 'Elite Fabrics',
-            'url': baseUrl
+            'url': `${baseUrl}/`,
+            'logo': `${baseUrl}/favicon.svg`,
+            'description': 'An independent, non-commercial fabric and textile information website providing practical guides on fibers, weaves, and garment care.'
           }
         ]
       });
     } else if (currentView === 'fabric' && currentSlug) {
       const f = FABRICS.find(item => item.slug === currentSlug);
       if (f) {
-        const pageUrl = `${baseUrl}/#fabric/${f.slug}`;
+        const pageUrl = `${baseUrl}/fabric/${f.slug}`;
         const schemas: any[] = [
           {
             '@type': 'TechArticle',
             'headline': `${f.name} Fabric Guide: Characteristics, Uses & Care`,
             'description': f.whatIsIt || f.description || `Comprehensive guide to ${f.name} fabric.`,
             'author': { '@type': 'Organization', 'name': 'Elite Fabrics Team' },
-            'publisher': { '@type': 'Organization', 'name': 'Elite Fabrics', 'url': baseUrl },
+            'publisher': { '@type': 'Organization', 'name': 'Elite Fabrics', 'url': `${baseUrl}/` },
             'mainEntityOfPage': pageUrl
           },
           {
             '@type': 'BreadcrumbList',
             'itemListElement': [
-              { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': baseUrl },
-              { '@type': 'ListItem', 'position': 2, 'name': 'Fabric Library', 'item': `${baseUrl}/#fabrics` },
+              { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `${baseUrl}/` },
+              { '@type': 'ListItem', 'position': 2, 'name': 'Fabric Library', 'item': `${baseUrl}/fabrics` },
               { '@type': 'ListItem', 'position': 3, 'name': f.name, 'item': pageUrl }
             ]
           }
@@ -223,24 +229,24 @@ export default function App() {
     } else if (currentView === 'article' && currentSlug) {
       const a = ARTICLES.find(item => item.slug === currentSlug);
       if (a) {
-        const pageUrl = `${baseUrl}/#article/${a.slug}`;
+        const pageUrl = `${baseUrl}/articles/${a.slug}`;
         const schemas: any[] = [
           {
             '@type': 'Article',
             'headline': a.title,
-            'description': a.excerpt,
+            'description': a.metaDescription || a.excerpt,
             'author': { '@type': 'Person', 'name': a.author.name },
             'datePublished': a.publishDate,
             'dateModified': a.updatedDate,
             'image': a.featuredImage,
-            'publisher': { '@type': 'Organization', 'name': 'Elite Fabrics', 'url': baseUrl },
+            'publisher': { '@type': 'Organization', 'name': 'Elite Fabrics', 'url': `${baseUrl}/` },
             'mainEntityOfPage': pageUrl
           },
           {
             '@type': 'BreadcrumbList',
             'itemListElement': [
-              { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': baseUrl },
-              { '@type': 'ListItem', 'position': 2, 'name': 'Articles', 'item': `${baseUrl}/#blog` },
+              { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `${baseUrl}/` },
+              { '@type': 'ListItem', 'position': 2, 'name': 'Articles', 'item': `${baseUrl}/articles` },
               { '@type': 'ListItem', 'position': 3, 'name': a.title, 'item': pageUrl }
             ]
           }
@@ -262,8 +268,8 @@ export default function App() {
         }
 
         updateDocumentSEO({
-          title: `${a.title} | Elite Fabrics`,
-          description: a.excerpt,
+          title: a.seoTitle || `${a.title} | Elite Fabrics`,
+          description: a.metaDescription || a.excerpt,
           canonicalUrl: pageUrl,
           ogType: 'article',
           ogImage: a.featuredImage,
@@ -276,7 +282,7 @@ export default function App() {
     } else if (currentView === 'comparison' || currentView === 'comparisons') {
       const c = currentSlug ? FABRIC_COMPARISONS.find(item => item.slug === currentSlug) : null;
       if (c) {
-        const pageUrl = `${baseUrl}/#comparison/${c.slug}`;
+        const pageUrl = `${baseUrl}/comparison/${c.slug}`;
         const schemas: any[] = [
           {
             '@type': 'Article',
@@ -285,14 +291,14 @@ export default function App() {
             'author': { '@type': 'Organization', 'name': c.author || 'Elite Fabrics Team' },
             'datePublished': c.publishDate || '2026-01-01',
             'dateModified': c.updatedDate || '2026-09-01',
-            'publisher': { '@type': 'Organization', 'name': 'Elite Fabrics', 'url': baseUrl },
+            'publisher': { '@type': 'Organization', 'name': 'Elite Fabrics', 'url': `${baseUrl}/` },
             'mainEntityOfPage': pageUrl
           },
           {
             '@type': 'BreadcrumbList',
             'itemListElement': [
-              { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': baseUrl },
-              { '@type': 'ListItem', 'position': 2, 'name': 'Comparisons', 'item': `${baseUrl}/#comparisons` },
+              { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `${baseUrl}/` },
+              { '@type': 'ListItem', 'position': 2, 'name': 'Comparisons', 'item': `${baseUrl}/comparisons` },
               { '@type': 'ListItem', 'position': 3, 'name': c.title, 'item': pageUrl }
             ]
           }
@@ -323,26 +329,26 @@ export default function App() {
         updateDocumentSEO({
           title: 'Fabric Comparisons: Side-by-Side Material Analysis | Elite Fabrics',
           description: 'Factual, balanced fabric comparisons: Cotton vs Linen, Silk vs Satin, Rayon vs Viscose, Wool vs Fleece, and more.',
-          canonicalUrl: `${baseUrl}/#comparisons`
+          canonicalUrl: `${baseUrl}/comparisons`
         });
       }
     } else if (currentView === 'industry' || currentView === 'textile-industry') {
       updateDocumentSEO({
         title: 'Global Textile Industry Guide: Manufacturing Hubs & Trade | Elite Fabrics',
         description: 'Educational overview of major textile manufacturing nations: Pakistan, India, China, Bangladesh, Turkey, United States, United Kingdom, and Europe.',
-        canonicalUrl: `${baseUrl}/#industry`,
+        canonicalUrl: `${baseUrl}/industry`,
         schema: [
           {
             '@type': 'CollectionPage',
             'name': 'Global Textile Industry Guide',
             'description': 'Educational profiles of international textile manufacturing nations and regional clusters.',
-            'url': `${baseUrl}/#industry`
+            'url': `${baseUrl}/industry`
           },
           {
             '@type': 'BreadcrumbList',
             'itemListElement': [
-              { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': baseUrl },
-              { '@type': 'ListItem', 'position': 2, 'name': 'Global Industry', 'item': `${baseUrl}/#industry` }
+              { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `${baseUrl}/` },
+              { '@type': 'ListItem', 'position': 2, 'name': 'Global Industry', 'item': `${baseUrl}/industry` }
             ]
           }
         ]
@@ -351,127 +357,127 @@ export default function App() {
       updateDocumentSEO({
         title: 'Pakistani Fabrics & South Asian Textile Heritage | Elite Fabrics',
         description: 'Explore 4,500 years of Indus Valley textile history, from high-count summer lawn and pit-loom khaddar to Sindhi Ajrak block prints.',
-        canonicalUrl: `${baseUrl}/#pakistani`
+        canonicalUrl: `${baseUrl}/pakistani`
       });
     } else if (currentView === 'sustainable') {
       updateDocumentSEO({
         title: 'Sustainable Fabrics & Environmental Lifecycle Guide | Elite Fabrics',
         description: 'Independent evaluation of sustainable textiles: organic cotton, linen, hemp, closed-loop lyocell, and microplastic impacts.',
-        canonicalUrl: `${baseUrl}/#sustainable`
+        canonicalUrl: `${baseUrl}/sustainable`
       });
     } else if (currentView === 'timeline') {
       updateDocumentSEO({
         title: 'Global Textile History Timeline: 30,000 BCE to 2026 | Elite Fabrics',
         description: 'An interactive historical journey across human textile civilization: ancient flax, the Silk Road, the Industrial Revolution, and synthetic polymers.',
-        canonicalUrl: `${baseUrl}/#timeline`
+        canonicalUrl: `${baseUrl}/timeline`
       });
     } else if (currentView === 'care') {
       updateDocumentSEO({
         title: 'Practical Fabric Care, Washing & Stain Removal Guide | Elite Fabrics',
         description: 'Care instructions for every textile: temperature guidelines, machine cycles, drying methods, and safe iron settings.',
-        canonicalUrl: `${baseUrl}/#care`
+        canonicalUrl: `${baseUrl}/care`
       });
     } else if (currentView === 'glossary') {
       updateDocumentSEO({
         title: 'A-Z Fabric & Textile Glossary: Terms & Definitions | Elite Fabrics',
         description: 'Clear, plain-English definitions for textile terms, weaving structures, yarn counts, and fabric finishing processes.',
-        canonicalUrl: `${baseUrl}/#glossary`
+        canonicalUrl: `${baseUrl}/glossary`
       });
     } else if (currentView === 'fabrics') {
       updateDocumentSEO({
         title: 'Fabric Library: Complete Textile Directory & Specs | Elite Fabrics',
         description: 'Browse our complete catalog of natural, synthetic, traditional, and regenerated fabrics with full physical and care specs.',
-        canonicalUrl: `${baseUrl}/#fabrics`
+        canonicalUrl: `${baseUrl}/fabrics`
       });
     } else if (currentView === 'beginner') {
       updateDocumentSEO({
         title: 'Fabric Fundamentals: Beginner Guide to Textile Science | Elite Fabrics',
         description: 'Learn fibers vs weaves vs knits, how to read fabric labels, and how to identify fabrics using simple burn tests.',
-        canonicalUrl: `${baseUrl}/#beginner`
+        canonicalUrl: `${baseUrl}/beginner`
       });
     } else if (currentView === 'blog') {
       updateDocumentSEO({
         title: 'The Elite Fabrics Blog: In-Depth Textile Articles & Guides',
         description: 'Authoritative articles on textile history, sustainable innovations, fabric selection, and fiber science.',
-        canonicalUrl: `${baseUrl}/#blog`
+        canonicalUrl: `${baseUrl}/articles`
       });
     } else if (currentView === 'about') {
       updateDocumentSEO({
         title: 'About Us | Elite Fabrics – Independent Fabric & Textile Resource',
         description: 'Learn about Elite Fabrics, our non-commercial educational mission, and our commitment to factual textile information.',
-        canonicalUrl: `${baseUrl}/#about`
+        canonicalUrl: `${baseUrl}/about`
       });
     } else if (currentView === 'contact') {
       updateDocumentSEO({
         title: 'Contact Us | Elite Fabrics – Questions & Inquiries',
         description: 'Get in touch with the Elite Fabrics team for inquiries, corrections, or feedback.',
-        canonicalUrl: `${baseUrl}/#contact`
+        canonicalUrl: `${baseUrl}/contact`
       });
     } else if (currentView === 'sitemap') {
       updateDocumentSEO({
         title: 'HTML Sitemap | Complete Directory of Elite Fabrics',
         description: 'Complete navigational index of all fabric entries, comparisons, guides, and policies on Elite Fabrics.',
-        canonicalUrl: `${baseUrl}/#sitemap`
+        canonicalUrl: `${baseUrl}/sitemap`
       });
     } else if (currentView === 'trending') {
       updateDocumentSEO({
         title: 'Trending Fabrics 2026: Modern Clothing & Textile Movements | Elite Fabrics',
         description: 'Discover popular fabrics for 2026: sustainable plant fibers, heritage weaves, natural cottons, and high-performance textiles.',
-        canonicalUrl: `${baseUrl}/#trending`
+        canonicalUrl: `${baseUrl}/trending`
       });
     } else if (currentView === 'resources') {
       updateDocumentSEO({
         title: 'Textile Industry Directory & Educational Resources | Elite Fabrics',
         description: 'Curated directory of textile research institutions, fabric standards organizations, and educational archives.',
-        canonicalUrl: `${baseUrl}/#resources`
+        canonicalUrl: `${baseUrl}/resources`
       });
     } else if (currentView === 'privacy-policy') {
       updateDocumentSEO({
         title: 'Privacy Policy | Elite Fabrics',
         description: 'Elite Fabrics privacy policy detailing our data protection standards, cookie usage, and commitment to visitor privacy.',
-        canonicalUrl: `${baseUrl}/#privacy-policy`
+        canonicalUrl: `${baseUrl}/privacy-policy`
       });
     } else if (currentView === 'terms') {
       updateDocumentSEO({
         title: 'Terms and Conditions | Elite Fabrics',
         description: 'Terms and conditions governing use of the Elite Fabrics independent fabric educational platform and resources.',
-        canonicalUrl: `${baseUrl}/#terms`
+        canonicalUrl: `${baseUrl}/terms`
       });
     } else if (currentView === 'disclaimer') {
       updateDocumentSEO({
         title: 'Website Disclaimer | Elite Fabrics',
         description: 'Educational disclaimer regarding fabric specifications, care instructions, and material evaluations on Elite Fabrics.',
-        canonicalUrl: `${baseUrl}/#disclaimer`
+        canonicalUrl: `${baseUrl}/disclaimer`
       });
     } else if (currentView === 'cookie-policy') {
       updateDocumentSEO({
         title: 'Cookie Policy | Elite Fabrics',
         description: 'Information about cookie technologies used on Elite Fabrics for site analytics and user preference persistence.',
-        canonicalUrl: `${baseUrl}/#cookie-policy`
+        canonicalUrl: `${baseUrl}/cookie-policy`
       });
     } else if (currentView === 'editorial-policy') {
       updateDocumentSEO({
         title: 'Editorial Policy & Standards | Elite Fabrics',
         description: 'Our commitment to independent, non-commercial, fact-checked textile journalism and educational accuracy.',
-        canonicalUrl: `${baseUrl}/#editorial-policy`
+        canonicalUrl: `${baseUrl}/editorial-policy`
       });
     } else if (currentView === 'corrections-policy') {
       updateDocumentSEO({
         title: 'Corrections & Fact-Checking Policy | Elite Fabrics',
         description: 'How Elite Fabrics handles factual corrections, updates to textile data, and reader verification inquiries.',
-        canonicalUrl: `${baseUrl}/#corrections-policy`
+        canonicalUrl: `${baseUrl}/corrections-policy`
       });
     } else if (currentView === 'advertising-policy') {
       updateDocumentSEO({
         title: 'Advertising & Sponsorship Policy | Elite Fabrics',
         description: 'Clear guidelines regarding advertising standards, sponsor independence, and our non-commercial educational integrity.',
-        canonicalUrl: `${baseUrl}/#advertising-policy`
+        canonicalUrl: `${baseUrl}/advertising-policy`
       });
     } else {
       updateDocumentSEO({
-        title: 'Elite Fabrics – Independent Fabric & Textile Guide',
-        description: 'A practical online resource for learning about fabrics and textiles: types, comparisons, care guides, and heritage traditions.',
-        canonicalUrl: baseUrl
+        title: 'Fabric & Textile Guide – Types, Comparisons & Care | Elite Fabrics',
+        description: 'Learn about fabric and textiles in simple English. Explore fabric types, comparisons, care guides, Pakistani fabrics, textile history and beginner-friendly resources.',
+        canonicalUrl: `${baseUrl}/`
       });
     }
   }, [currentView, currentSlug]);

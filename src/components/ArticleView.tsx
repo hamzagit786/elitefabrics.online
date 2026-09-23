@@ -51,12 +51,25 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
     <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
       {/* Top Breadcrumb & Utilities */}
       <div className="flex flex-wrap items-center justify-between gap-4 text-xs">
-        <button
-          onClick={() => onNavigate('home')}
-          className="inline-flex items-center gap-1.5 text-[#6B655C] hover:text-[#1C1C1C] font-medium transition-colors"
-        >
-          <ArrowLeft className="w-4 h-4" /> Back to Home
-        </button>
+        <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-[#6B655C]">
+          <button
+            onClick={() => onNavigate('home')}
+            className="hover:text-[#1C1C1C] font-medium transition-colors"
+          >
+            Home
+          </button>
+          <span>/</span>
+          <button
+            onClick={() => onNavigate('blog')}
+            className="hover:text-[#1C1C1C] font-medium transition-colors"
+          >
+            Articles
+          </button>
+          <span>/</span>
+          <span className="text-[#1C1C1C] font-medium truncate max-w-[180px] sm:max-w-xs">
+            {article.title}
+          </span>
+        </nav>
 
         <div className="flex items-center gap-2">
           <button
@@ -113,6 +126,10 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
             <img
               src={article.author.avatar}
               alt={article.author.name}
+              loading="lazy"
+              decoding="async"
+              width="40"
+              height="40"
               className="w-10 h-10 rounded-full object-cover border border-[#D5CDBC]"
             />
             <div>
@@ -144,6 +161,8 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
           <img
             src={article.featuredImage}
             alt={article.imageAlt}
+            loading="eager"
+            decoding="async"
             className="w-full h-full object-cover"
           />
         </div>

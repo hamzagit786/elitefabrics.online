@@ -27,6 +27,27 @@ export const ComparisonView: React.FC<ComparisonViewProps> = ({
 
   return (
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
+      {/* Breadcrumbs */}
+      <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-[#6B655C]">
+        <button
+          onClick={() => onNavigate('home')}
+          className="hover:text-[#1C1C1C] font-medium transition-colors"
+        >
+          Home
+        </button>
+        <span>/</span>
+        <button
+          onClick={() => onNavigate('comparisons')}
+          className="hover:text-[#1C1C1C] font-medium transition-colors"
+        >
+          Comparisons
+        </button>
+        <span>/</span>
+        <span className="text-[#1C1C1C] font-medium truncate max-w-[200px] sm:max-w-xs">
+          {currentComparison.fabricA.name} vs. {currentComparison.fabricB.name}
+        </span>
+      </nav>
+
       {/* Top Header */}
       <div className="text-center max-w-3xl mx-auto space-y-3">
         <span className="text-xs font-mono uppercase tracking-widest text-[#9E472A] font-semibold flex items-center justify-center gap-1.5">

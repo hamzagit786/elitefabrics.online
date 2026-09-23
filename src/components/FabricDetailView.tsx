@@ -55,12 +55,25 @@ export const FabricDetailView: React.FC<FabricDetailViewProps> = ({
     <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
       {/* Navigation & Actions */}
       <div className="flex flex-wrap items-center justify-between gap-4 text-xs">
-        <button
-          onClick={() => onNavigate('fabrics')}
-          className="inline-flex items-center gap-1.5 text-[#6B655C] hover:text-[#1C1C1C] font-medium transition-colors"
-        >
-          <ArrowLeft className="w-4 h-4" /> Back to Fabric Library
-        </button>
+        <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-[#6B655C]">
+          <button
+            onClick={() => onNavigate('home')}
+            className="hover:text-[#1C1C1C] font-medium transition-colors"
+          >
+            Home
+          </button>
+          <span>/</span>
+          <button
+            onClick={() => onNavigate('fabrics')}
+            className="hover:text-[#1C1C1C] font-medium transition-colors"
+          >
+            Fabrics
+          </button>
+          <span>/</span>
+          <span className="text-[#1C1C1C] font-medium truncate max-w-[180px] sm:max-w-xs">
+            {fabric.name}
+          </span>
+        </nav>
 
         <div className="flex items-center gap-2">
           <button
@@ -116,6 +129,8 @@ export const FabricDetailView: React.FC<FabricDetailViewProps> = ({
           <img
             src={fabric.image}
             alt={fabric.imageAlt}
+            loading="eager"
+            decoding="async"
             className="w-full h-full object-cover"
           />
         </div>

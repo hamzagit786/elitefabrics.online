@@ -52,6 +52,8 @@ export interface Article {
   updatedDate: string;
   readTime: string;
   excerpt: string;
+  seoTitle?: string;
+  metaDescription?: string;
   featuredImage: string;
   imageAlt: string;
   imageCaption: string;

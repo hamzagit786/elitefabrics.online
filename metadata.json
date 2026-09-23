@@ -1,6 +1,6 @@
 {
   "name": "Elite Fabrics",
-  "description": "An independent fabric and textile information website and practical guide for learning about fabric types, comparisons, Pakistani heritage weaves, and garment care.",
+  "description": "Learn about fabric and textiles in simple English. Explore fabric types, comparisons, care guides, Pakistani fabrics, textile history and beginner-friendly resources.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }
