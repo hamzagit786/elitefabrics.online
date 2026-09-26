@@ -39,6 +39,11 @@ import { FabricYardageCalculatorView } from './components/tools/FabricYardageCal
 import { FabricShrinkageCalculatorView } from './components/tools/FabricShrinkageCalculatorView';
 import { GsmToOzConverterView } from './components/tools/GsmToOzConverterView';
 import { FabricMeasurementConverterView } from './components/tools/FabricMeasurementConverterView';
+import { CurtainFabricCalculatorView } from './components/tools/CurtainFabricCalculatorView';
+import { UpholsteryFabricCalculatorView } from './components/tools/UpholsteryFabricCalculatorView';
+import { QuiltFabricCalculatorView } from './components/tools/QuiltFabricCalculatorView';
+import { FabricCostCalculatorView } from './components/tools/FabricCostCalculatorView';
+import { YarnCountConverterView } from './components/tools/YarnCountConverterView';
 import { FABRIC_TOOLS } from './data/tools';
 
 import { FABRICS } from './data/fabrics';
@@ -825,6 +830,16 @@ export default function App() {
               <GsmToOzConverterView onNavigate={navigateTo} />
             ) : currentSlug === 'fabric-measurement-converter' ? (
               <FabricMeasurementConverterView onNavigate={navigateTo} />
+            ) : currentSlug === 'curtain-fabric-calculator' ? (
+              <CurtainFabricCalculatorView onNavigate={navigateTo} />
+            ) : currentSlug === 'upholstery-fabric-calculator' ? (
+              <UpholsteryFabricCalculatorView onNavigate={navigateTo} />
+            ) : currentSlug === 'quilt-fabric-calculator' ? (
+              <QuiltFabricCalculatorView onNavigate={navigateTo} />
+            ) : currentSlug === 'fabric-cost-calculator' ? (
+              <FabricCostCalculatorView onNavigate={navigateTo} />
+            ) : currentSlug === 'yarn-count-converter' ? (
+              <YarnCountConverterView onNavigate={navigateTo} />
             ) : (
               <ToolsLandingView onNavigate={navigateTo} />
             )}

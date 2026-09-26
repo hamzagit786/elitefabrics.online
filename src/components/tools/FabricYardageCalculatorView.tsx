@@ -4,7 +4,27 @@ import { ToolActionButtons } from './ToolActionButtons';
 import { ToolFAQSection } from './ToolFAQSection';
 import { ToolRelatedResources } from './ToolRelatedResources';
 import { ToolTrustSignals } from './ToolTrustSignals';
+import { ToolCommonMistakes, MistakeItem } from './ToolCommonMistakes';
 import { FABRIC_TOOLS } from '../../data/tools';
+
+const YARDAGE_MISTAKES: MistakeItem[] = [
+  {
+    mistake: 'Assuming all fabric bolts are 44 inches wide',
+    solution: 'Wools, silks, and knits are usually 58 to 60 inches wide. Buying 60" fabric allows you to cut patterns side-by-side and buy up to 30% less yardage.'
+  },
+  {
+    mistake: 'Not accounting for pre-wash shrinkage before cutting',
+    solution: 'Natural fibers like cotton, linen, and rayon contract 3% to 8% on their first wash. Always purchase a 5% to 10% safety buffer.'
+  },
+  {
+    mistake: 'Forgetting directional nap on velvet, corduroy, and faux fur',
+    solution: 'Napped textiles reflect light differently upside down. All pattern pieces must point in the same direction, requiring 15% to 25% extra yardage.'
+  },
+  {
+    mistake: 'Counting seam allowances only once on multi-panel designs',
+    solution: 'Every interior seam adds 1 inch (two 1/2" seam allowances). Complex tiered skirts need significant linear length additions.'
+  }
+];
 
 interface FabricYardageCalculatorViewProps {
   onNavigate: (view: string, idOrSlug?: string) => void;
@@ -592,6 +612,9 @@ export const FabricYardageCalculatorView: React.FC<FabricYardageCalculatorViewPr
           </ul>
         </div>
       </section>
+
+      {/* Common Mistakes */}
+      <ToolCommonMistakes mistakes={YARDAGE_MISTAKES} toolName="the Fabric Yardage Calculator" />
 
       {/* FAQs */}
       <ToolFAQSection faqs={toolData.faqs} />

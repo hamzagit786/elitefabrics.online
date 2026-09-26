@@ -4,7 +4,27 @@ import { ToolActionButtons } from './ToolActionButtons';
 import { ToolFAQSection } from './ToolFAQSection';
 import { ToolRelatedResources } from './ToolRelatedResources';
 import { ToolTrustSignals } from './ToolTrustSignals';
+import { ToolCommonMistakes, MistakeItem } from './ToolCommonMistakes';
 import { FABRIC_TOOLS } from '../../data/tools';
+
+const SHRINKAGE_MISTAKES: MistakeItem[] = [
+  {
+    mistake: 'Testing shrinkage with a tiny 2-inch swatch',
+    solution: 'Tiny scraps distort too easily in washing machines. Cut at least a 10" × 10" (or 25 × 25 cm) square with pinking shears for reliable measurements.'
+  },
+  {
+    mistake: 'Pre-washing in cold water when you intend to wash the finished clothes in warm',
+    solution: 'Always pre-wash test swatches and fabric bolts under the warmest cycle you or anyone in your household might ever use on the finished garment.'
+  },
+  {
+    mistake: 'Assuming shrinkage is identical in both directions',
+    solution: 'Fabrics almost always shrink more in length (warp direction) than in width (weft) because warp yarns endure higher tension during loom weaving.'
+  },
+  {
+    mistake: 'Tumble drying delicate wool or silk swatches',
+    solution: 'Heat and mechanical tumbling will felt animal wools irreversibly. Never machine dry wool unless explicitly designated "superwash".'
+  }
+];
 
 interface FabricShrinkageCalculatorViewProps {
   onNavigate: (view: string, idOrSlug?: string) => void;
@@ -416,6 +436,9 @@ export const FabricShrinkageCalculatorView: React.FC<FabricShrinkageCalculatorVi
           </p>
         </div>
       </section>
+
+      {/* Common Mistakes */}
+      <ToolCommonMistakes mistakes={SHRINKAGE_MISTAKES} toolName="the Fabric Shrinkage Calculator" />
 
       {/* FAQs */}
       <ToolFAQSection faqs={toolData.faqs} />

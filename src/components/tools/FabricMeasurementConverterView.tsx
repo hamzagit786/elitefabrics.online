@@ -4,7 +4,23 @@ import { ToolActionButtons } from './ToolActionButtons';
 import { ToolFAQSection } from './ToolFAQSection';
 import { ToolRelatedResources } from './ToolRelatedResources';
 import { ToolTrustSignals } from './ToolTrustSignals';
+import { ToolCommonMistakes, MistakeItem } from './ToolCommonMistakes';
 import { FABRIC_TOOLS } from '../../data/tools';
+
+const MEASUREMENT_MISTAKES: MistakeItem[] = [
+  {
+    mistake: 'Assuming 1 meter and 1 yard are interchangeable',
+    solution: '1 meter is 39.37 inches, while 1 yard is 36 inches (a 3.37-inch difference). Buying 3 yards instead of 3 meters leaves you more than 10 inches short.'
+  },
+  {
+    mistake: 'Measuring curved pattern edges with a stiff metal tape',
+    solution: 'Metal tapes bend awkwardly across necklines and armholes. Always use a flexible fiberglass or vinyl tailor’s tape.'
+  },
+  {
+    mistake: 'Rounding fractional yards down instead of up at the cutting counter',
+    solution: 'Always round to the next ⅛ yard up. Natural variations in store cuts and squaring up uneven ends quickly consume fractional inches.'
+  }
+];
 
 interface FabricMeasurementConverterViewProps {
   onNavigate: (view: string, idOrSlug?: string) => void;
@@ -307,6 +323,9 @@ export const FabricMeasurementConverterView: React.FC<FabricMeasurementConverter
           </p>
         </div>
       </section>
+
+      {/* Common Mistakes */}
+      <ToolCommonMistakes mistakes={MEASUREMENT_MISTAKES} toolName="the Fabric Measurement Converter" />
 
       {/* FAQs */}
       <ToolFAQSection faqs={toolData.faqs} />

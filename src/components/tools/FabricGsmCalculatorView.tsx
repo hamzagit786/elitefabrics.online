@@ -4,7 +4,27 @@ import { ToolActionButtons } from './ToolActionButtons';
 import { ToolFAQSection } from './ToolFAQSection';
 import { ToolRelatedResources } from './ToolRelatedResources';
 import { ToolTrustSignals } from './ToolTrustSignals';
+import { ToolCommonMistakes, MistakeItem } from './ToolCommonMistakes';
 import { FABRIC_TOOLS } from '../../data/tools';
+
+const GSM_MISTAKES: MistakeItem[] = [
+  {
+    mistake: 'Weighing swatches with fraying edges or loose threads',
+    solution: 'Use rotary cutters or sharp shears to ensure exact right-angle cuts. Loose threads bias swatch mass by several milligrams.'
+  },
+  {
+    mistake: 'Using low-precision kitchen scales for small swatches',
+    solution: 'A 10×10 cm swatch usually weighs between 1 and 4 grams. Scales with only 1-gram increments introduce large rounding errors; use 0.01g precision scales.'
+  },
+  {
+    mistake: 'Equating high GSM with high fabric quality',
+    solution: 'GSM measures thickness and mass, not fiber grade. Luxury lawns are 80 GSM and cheap burlap is 350 GSM.'
+  },
+  {
+    mistake: 'Measuring swatches cut near the selvage edge',
+    solution: 'Selvages contain denser weaving threads and sizing chemicals. Always cut test swatches at least 4 inches inward from the selvage.'
+  }
+];
 
 interface FabricGsmCalculatorViewProps {
   onNavigate: (view: string, idOrSlug?: string) => void;
@@ -390,6 +410,9 @@ export const FabricGsmCalculatorView: React.FC<FabricGsmCalculatorViewProps> = (
           </p>
         </div>
       </section>
+
+      {/* Common Mistakes */}
+      <ToolCommonMistakes mistakes={GSM_MISTAKES} toolName="the Fabric GSM Calculator" />
 
       {/* FAQs */}
       <ToolFAQSection faqs={toolData.faqs} />

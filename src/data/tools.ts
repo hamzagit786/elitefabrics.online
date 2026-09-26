@@ -11,7 +11,7 @@ export interface FabricTool {
   h1: string;
   seoTitle: string;
   metaDescription: string;
-  category: 'Weight & Density' | 'Yardage & Projects' | 'Shrinkage & Care' | 'Unit Converters';
+  category: 'Weight & Density' | 'Yardage & Projects' | 'Shrinkage & Care' | 'Unit Converters' | 'Cost & Estimations';
   shortDescription: string;
   longDescription: string;
   iconName: string;
@@ -231,6 +231,207 @@ export const FABRIC_TOOLS: FabricTool[] = [
       'the-science-of-fabric-shrinkage'
     ],
     relatedFabricSlugs: ['cotton', 'lawn', 'linen', 'silk', 'khaddar']
+  },
+  {
+    id: 'curtain-fabric-calculator',
+    slug: 'curtain-fabric-calculator',
+    title: 'Curtain Fabric Calculator',
+    shortTitle: 'Curtain Calculator',
+    h1: 'Curtain Fabric Calculator',
+    seoTitle: 'Curtain Fabric Calculator – Calculate Drapery Yardage | Elite Fabrics',
+    metaDescription: 'Calculate how much fabric you need for window curtains and drapes. Accounts for window width, drop length, fullness ratio, hems, and pattern repeats.',
+    category: 'Yardage & Projects',
+    shortDescription: 'Calculate exact yardage, number of widths, and cut lengths for window drapes with custom fullness and hem allowances.',
+    longDescription: 'Plan your custom drapery projects with precision. Enter window width and drop length, select your preferred fullness ratio (1.5x, 2.0x, 2.5x), bolt width (54", 60", 118"), and pattern repeat to calculate total yardage and panel cuts without expensive mistakes.',
+    iconName: 'Maximize2',
+    badge: 'Window Decor',
+    features: [
+      'Accounts for standard fullness ratios (1.5x, 2.0x, 2.5x, 3.0x)',
+      'Calculates total widths/panels needed across bolt width',
+      'Accommodates vertical pattern repeat matching',
+      'Includes header (4") and double bottom hem (8") allowances',
+      'Outputs both US linear yards and metric meters'
+    ],
+    faqs: [
+      {
+        question: 'What fullness ratio should I use for curtains?',
+        answer: '2.0x fullness is the standard for most pleated or rod-pocket draperies. Sheer voile curtains look best at 2.5x to 3.0x fullness for privacy and rich gathers. Heavier fabrics like velvet look luxurious at 2.0x to 2.2x.'
+      },
+      {
+        question: 'How much extra length do I need for curtain hems?',
+        answer: 'Standard drapery construction requires 8 inches for a 4-inch double bottom hem and 4 inches for the top heading (12 inches total added to the finished drop).'
+      },
+      {
+        question: 'What is wide-width curtain fabric?',
+        answer: 'Wide-width drapery fabric (108" to 118" wide) is designed to be turned sideways (railroaded) so you can make seamless curtains for wide windows without vertical joins.'
+      }
+    ],
+    relatedArticleSlugs: [
+      'curtain-fabric-guide',
+      'how-much-fabric-do-i-need',
+      'fabric-yardage-explained'
+    ],
+    relatedFabricSlugs: ['linen', 'chiffon', 'velvet', 'cotton', 'silk']
+  },
+  {
+    id: 'upholstery-fabric-calculator',
+    slug: 'upholstery-fabric-calculator',
+    title: 'Upholstery Fabric Calculator',
+    shortTitle: 'Upholstery Calculator',
+    h1: 'Upholstery Fabric Calculator',
+    seoTitle: 'Upholstery Fabric Calculator – Estimate Furniture Yardage | Elite Fabrics',
+    metaDescription: 'Estimate fabric yardage for reupholstering sofas, armchairs, dining seats, and cushions. Includes welting, pattern repeat, and cushion allowances.',
+    category: 'Yardage & Projects',
+    shortDescription: 'Estimate exact yardage for reupholstering sofas, armchairs, ottomans, and dining chairs with welt cord and pattern repeat factors.',
+    longDescription: 'Planning a furniture reupholstery project? Calculate reliable fabric yardage benchmarks for armchairs, 2-seat loveseats, 3-seat sofas, sectionals, dining chair seats, and boxed cushions. Includes options for welt cord piping and patterned repeat matching.',
+    iconName: 'Armchair',
+    badge: 'Furniture Guide',
+    features: [
+      'Furniture presets (Armchair, Sofa, Loveseat, Dining Seats, Ottoman)',
+      'Welt cord (piping) yardage calculation',
+      'Pattern repeat match multipliers (up to 25% extra)',
+      'Loose cushion options and deep-tufting adjustments',
+      'Standard 54-inch commercial upholstery bolt width support'
+    ],
+    faqs: [
+      {
+        question: 'How much fabric do I need for a 3-cushion sofa?',
+        answer: 'A standard 3-cushion 84-inch sofa typically requires 14 to 18 yards of 54-inch plain fabric. If using a large printed or plaided pattern, add 2 to 4 yards for repeat alignment.'
+      },
+      {
+        question: 'Why is upholstery fabric always 54 inches wide?',
+        answer: '54 inches (137 cm) is the worldwide standard for residential and commercial upholstery looms, allowing full coverage of furniture frames with minimal unsightly seams.'
+      },
+      {
+        question: 'How much fabric is needed for a dining chair seat?',
+        answer: 'A standard slip seat dining chair requires roughly 0.75 yards for two chairs (or about 0.5 yards per single chair seat including wrap-around stapling margin).'
+      }
+    ],
+    relatedArticleSlugs: [
+      'upholstery-fabric-guide',
+      'canvas-fabric-guide',
+      'how-much-fabric-do-i-need'
+    ],
+    relatedFabricSlugs: ['canvas', 'velvet', 'twill', 'linen', 'corduroy']
+  },
+  {
+    id: 'quilt-fabric-calculator',
+    slug: 'quilt-fabric-calculator',
+    title: 'Quilt Fabric Calculator',
+    shortTitle: 'Quilt Calculator',
+    h1: 'Quilt Fabric Calculator',
+    seoTitle: 'Quilt Fabric Calculator – Backing, Binding & Batting Yardage | Elite Fabrics',
+    metaDescription: 'Calculate quilt backing yardage, binding strips, and batting dimensions for baby, crib, twin, full, queen, and king quilts with longarm overage margins.',
+    category: 'Yardage & Projects',
+    shortDescription: 'Calculate backing yardage, binding strips, and batting sizes for baby, twin, queen, and king quilts with standard seam options.',
+    longDescription: 'Designed for quilters: determine the exact backing yardage needed for any quilt size using standard 44/45" quilting cotton or 108" wide-backs. Computes binding strip requirements (2.25" or 2.5" cuts), longarm 4-inch overage buffers, and vertical vs horizontal seams.',
+    iconName: 'Grid',
+    badge: 'Quilting Pro',
+    features: [
+      'Standard quilt size presets (Baby, Throw, Twin, Full, Queen, King)',
+      'Calculates both 44" standard bolts and 108" wide-backs',
+      'Binding strip calculator with mitered joining allowance',
+      'Longarm quilting 4-inch perimeter buffer included',
+      'Compares horizontal vs vertical backing seams to minimize waste'
+    ],
+    faqs: [
+      {
+        question: 'Why do quilt backings need 4 inches of extra fabric on all sides?',
+        answer: 'Longarm quilting machines use rolling clamps that require at least 4 inches of backing and batting overage on each of the four sides (8 inches total extra width and length) to secure the quilt sandwich.'
+      },
+      {
+        question: 'How much binding fabric do I need for a queen size quilt?',
+        answer: 'A queen quilt (approx. 90" × 108") has a 396" perimeter and requires ⅔ to ¾ yard of 44" fabric cut into 2.5-inch strips.'
+      },
+      {
+        question: 'What are 108-inch wide-backs?',
+        answer: 'Wide-backs are specialty 108" (or 118") wide cotton fabrics manufactured specifically for quilt backs, allowing you to back full, queen, and king quilts seamlessly.'
+      }
+    ],
+    relatedArticleSlugs: [
+      'fabric-yardage-explained',
+      'how-much-fabric-do-i-need',
+      'cotton-gsm-guide'
+    ],
+    relatedFabricSlugs: ['cotton', 'muslin', 'poplin', 'linen', 'flannel']
+  },
+  {
+    id: 'fabric-cost-calculator',
+    slug: 'fabric-cost-calculator',
+    title: 'Fabric Cost Calculator',
+    shortTitle: 'Cost Calculator',
+    h1: 'Fabric Cost Calculator',
+    seoTitle: 'Fabric Cost Calculator – Total Project Cost Estimator | Elite Fabrics',
+    metaDescription: 'Calculate the total cost of fabric, notions, lining, taxes, and labor per garment or home decor project. Free sewing project budget tool.',
+    category: 'Cost & Estimations',
+    shortDescription: 'Calculate total project cost including fabric yardage, tax, notions, lining, and labor with unit cost breakdowns.',
+    longDescription: 'Keep your sewing, crafting, or commercial production budgets on track. Enter fabric price per yard or meter, total yardage, notions/interfacing, shipping and sales tax, plus optional sewing labor to determine cost per piece and cost per square yard.',
+    iconName: 'DollarSign',
+    badge: 'Budget Tool',
+    features: [
+      'Calculates fabric total with local sales tax and shipping',
+      'Incorporates notions (zippers, buttons, thread, interfacing)',
+      'Optional labor hour and hourly rate calculation',
+      'Calculates cost per square yard and cost per finished piece',
+      'Retail pricing markup estimator for handmade sellers'
+    ],
+    faqs: [
+      {
+        question: 'How do I calculate cost per yard of fabric including waste?',
+        answer: 'Divide the total purchase cost of the fabric by the usable yardage after shrinkage and trimming. For example, if 3 yards cost $36 and shrinks by 10% (leaving 2.7 usable yards), your effective cost is $36 ÷ 2.7 = $13.33 per usable yard.'
+      },
+      {
+        question: 'What pricing markup should handmade makers use?',
+        answer: 'Standard craft and bespoke sewing formulas typically use: Wholesale = (Materials + Labor) × 2, and Retail = Wholesale × 2 (or 3x total production cost).'
+      }
+    ],
+    relatedArticleSlugs: [
+      'how-much-fabric-do-i-need',
+      'fabric-yardage-explained',
+      'fabric-weight-demystified-gsm-ounces-guide'
+    ],
+    relatedFabricSlugs: ['cotton', 'linen', 'silk', 'wool', 'denim']
+  },
+  {
+    id: 'yarn-count-converter',
+    slug: 'yarn-count-converter',
+    title: 'Yarn Count Converter',
+    shortTitle: 'Yarn Count Converter',
+    h1: 'Yarn Count Converter (Ne, Nm, Tex, Denier)',
+    seoTitle: 'Yarn Count Converter – Ne, Nm, Tex, Denier, Worsted & Lea | Elite Fabrics',
+    metaDescription: 'Convert yarn count between English Cotton Count (Ne), Metric Count (Nm), Tex, Denier, Worsted Count (NeW), and Linen Lea. Live bidirectional textile converter.',
+    category: 'Weight & Density',
+    shortDescription: 'Bidirectional converter between English Cotton Count (Ne), Metric (Nm), Tex, Denier, Worsted (NeW), and Linen Lea.',
+    longDescription: 'A precision textile engineering tool for spinners, knitters, weavers, and fabric researchers. Convert any yarn thickness across direct systems (Tex, Denier) and indirect count systems (Cotton Ne, Metric Nm, Worsted NeW, Linen Lea) with instant live formulas.',
+    iconName: 'Activity',
+    badge: 'Textile Science',
+    features: [
+      'Direct systems: Tex (g/1000m) & Denier (g/9000m)',
+      'Indirect systems: Cotton Count (Ne), Metric (Nm), Worsted (NeW), Linen (Lea)',
+      'Real-time multi-system synchronization',
+      'Shows standard trade yarn examples (30s cotton, 150D polyester, 60s lawn)',
+      'Explains direct vs indirect count mathematical inversion'
+    ],
+    faqs: [
+      {
+        question: 'What is the difference between direct and indirect yarn counts?',
+        answer: 'In direct systems (Tex, Denier), the number measures weight per fixed length—higher numbers mean thicker yarns. In indirect systems (Cotton Ne, Metric Nm, Lea), the number measures length per fixed weight—higher numbers mean finer, thinner yarns.'
+      },
+      {
+        question: 'What does "40s cotton" mean?',
+        answer: '"40s cotton" refers to a 40 Ne (English Cotton Count) yarn. It means 40 hanks of 840 yards each weigh 1 pound. It is a fine, lightweight yarn used for quality shirting and premium bedsheets.'
+      },
+      {
+        question: 'How do you convert Denier to Tex?',
+        answer: 'Tex equals Denier divided by 9 (Tex = Denier ÷ 9). For example, a 150 Denier polyester thread equals 16.7 Tex.'
+      }
+    ],
+    relatedArticleSlugs: [
+      'thread-count-explained',
+      'warp-vs-weft',
+      'what-is-gsm-in-fabric'
+    ],
+    relatedFabricSlugs: ['cotton', 'silk', 'linen', 'wool', 'lawn']
   }
 ];
 
@@ -239,5 +440,7 @@ export const TOOL_CATEGORIES = [
   'Weight & Density',
   'Yardage & Projects',
   'Shrinkage & Care',
-  'Unit Converters'
+  'Unit Converters',
+  'Cost & Estimations'
 ] as const;
+

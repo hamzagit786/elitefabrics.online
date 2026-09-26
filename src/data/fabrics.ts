@@ -2884,6 +2884,97 @@ export const FABRICS: FabricType[] = [
         "value": "Holds razor-sharp pressed creases"
       }
     ]
+  },
+  {
+    "id": "jersey",
+    "slug": "jersey",
+    "name": "Jersey",
+    "category": "natural",
+    "fiberComposition": "Single-knit textile traditionally made from cotton, cotton-poly, or wool blends.",
+    "whatIsIt": "Jersey is a stretchy, flexible knitted fabric recognizable as the standard material used for everyday t-shirts, loungewear, and polo shirts.",
+    "whyPopular": "Jersey stretches with your body movements, recovers smoothly without binding, and feels exceptionally soft against skin without requiring synthetic elastane.",
+    "whatDoesItFeelLike": "Soft, pliable, slightly brushed hand feel that hugs natural contours comfortably without stiffness.",
+    "whereIsItUsed": "Everyday crewneck t-shirts, casual dresses, polo shirts, workout tops, pajamas, baby onesies, and soft jersey bedsheets.",
+    "whenIsItSuitable": "Year-round comfort wear; lightweight cotton jersey excels in hot summers while heavier weights work in spring and autumn.",
+    "origin": "Originally hand-knitted on the Channel Island of Jersey for fishermen's warm pullovers before being popularized for modern fashion.",
+    "howMade": "Knitted using single sets of needles in a continuous weft loop structure, creating distinctive vertical V-ribs on the face and horizontal purl arches on the reverse.",
+    "texture": "Smooth face with subtle vertical rib grain and soft looped underside.",
+    "weightGsm": "Light to Medium (140 – 220 GSM)",
+    "drape": "Fluid and clinging",
+    "stretch": "High (20% to 40% mechanical stretch)",
+    "breathability": "High",
+    "durability": "Moderate to High",
+    "commonUses": [
+      "T-shirts",
+      "Loungewear",
+      "Summer wrap dresses",
+      "Pajamas",
+      "Jersey knit bedsheets",
+      "Polo shirts"
+    ],
+    "advantages": [
+      "Natural 4-way flexibility moves comfortably with physical motion",
+      "Breathable looped structure allows air to ventilate skin heat",
+      "Gentle and non-chafing on sensitive skin and infants",
+      "Wrinkle resistant; springs back from gentle folding"
+    ],
+    "disadvantages": [
+      "Unfinished cut edges curl toward the face along the crosswise grain",
+      "Requires ballpoint needles during sewing to prevent punctured fabric runs",
+      "Can shrink 4% to 7% in hot dryer cycles if not pre-washed"
+    ],
+    "bestSeasons": [
+      "Spring",
+      "Summer",
+      "Fall"
+    ],
+    "careInstructions": {
+      "washing": "Machine wash cold or 30°C on normal cycle with mild detergent",
+      "drying": "Tumble dry low or reshape and dry flat to prevent hem torque",
+      "ironing": "Warm iron on reverse side if needed; avoid stretching while warm",
+      "dryCleaning": "Not necessary; standard domestic laundering preferred"
+    },
+    "identificationMethod": {
+      "visualAndTactile": "Look closely for tiny vertical V-shaped wales on face; stretch crosswise to observe edge curl and rapid elastic recovery.",
+      "burnTest": "100% cotton jersey burns with paper scent and grey ash; cotton-poly blends melt with dark chemical bead."
+    },
+    "similarFabrics": [
+      "Interlock",
+      "Rib Knit",
+      "French Terry",
+      "Modal Knit"
+    ],
+    "faqs": [
+      {
+        "question": "What is the difference between single jersey and interlock knit?",
+        "answer": "Single jersey has distinct front (V-stitches) and back (purl loops) sides and curls along raw edges. Interlock is a double-knit that looks identical on both faces, is heavier, and lies completely flat without curling."
+      },
+      {
+        "question": "Why does jersey curl when cut?",
+        "answer": "The mechanical loop tension produced by single-needle knitting creates unbalanced internal stress, causing raw horizontal edges to roll toward the face and vertical edges toward the back."
+      }
+    ],
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1200&q=80",
+    "imageAlt": "Heather gray combed cotton jersey knit fabric fold",
+    "imageCaption": "Single-knit cotton jersey showing soft drape, stretch recovery, and t-shirt construction texture.",
+    "technicalSpecs": [
+      {
+        "label": "Knit Architecture",
+        "value": "Single-jersey plain weft knit"
+      },
+      {
+        "label": "Stretch Allowance",
+        "value": "25% to 45% mechanical crosswise stretch"
+      },
+      {
+        "label": "Recommended Needle",
+        "value": "Ballpoint / Jersey needle (70/10 to 80/12)"
+      },
+      {
+        "label": "Standard GSM",
+        "value": "150–190 GSM (Apparel Weight)"
+      }
+    ]
   }
 ];
 

@@ -4,7 +4,23 @@ import { ToolActionButtons } from './ToolActionButtons';
 import { ToolFAQSection } from './ToolFAQSection';
 import { ToolRelatedResources } from './ToolRelatedResources';
 import { ToolTrustSignals } from './ToolTrustSignals';
+import { ToolCommonMistakes, MistakeItem } from './ToolCommonMistakes';
 import { FABRIC_TOOLS } from '../../data/tools';
+
+const CONVERTER_MISTAKES: MistakeItem[] = [
+  {
+    mistake: 'Confusing ounces per square yard (OSY) with linear yard weight',
+    solution: 'OSY measures a 36" × 36" square. A linear yard of 60" fabric contains 1.67 square yards, so a 10 oz/yd² fabric weighs 16.7 oz per running linear yard.'
+  },
+  {
+    mistake: 'Using rounded conversion factors like 28 instead of 33.9057',
+    solution: 'One ounce equals 28.35 grams, but one square yard equals 0.836 square meters. Dividing 28.35 by 0.836 gives precisely 33.9057.'
+  },
+  {
+    mistake: 'Comparing knitted GSM directly to woven GSM',
+    solution: 'A 200 GSM jersey knit drapes fluidly and stretches, whereas a 200 GSM woven poplin holds sharp structural pleats.'
+  }
+];
 
 interface GsmToOzConverterViewProps {
   onNavigate: (view: string, idOrSlug?: string) => void;
@@ -258,6 +274,9 @@ export const GsmToOzConverterView: React.FC<GsmToOzConverterViewProps> = ({ onNa
           </p>
         </div>
       </section>
+
+      {/* Common Mistakes */}
+      <ToolCommonMistakes mistakes={CONVERTER_MISTAKES} toolName="the GSM to Oz Converter" />
 
       {/* FAQs */}
       <ToolFAQSection faqs={toolData.faqs} />

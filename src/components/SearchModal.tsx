@@ -1,10 +1,9 @@
 import React, { useState, useEffect, useRef } from 'react';
-import { Search, X, Layers, BookOpen, Scale, BookA, Clock, ArrowRight } from 'lucide-react';
+import { Search, X, Layers, BookOpen, Scale, BookA, ArrowRight } from 'lucide-react';
 import { FABRICS } from '../data/fabrics';
 import { ARTICLES } from '../data/articles';
 import { FABRIC_COMPARISONS } from '../data/comparisons';
 import { GLOSSARY_TERMS } from '../data/glossary';
-import { TIMELINE_EVENTS } from '../data/timeline';
 import { FABRIC_TOOLS } from '../data/tools';
 
 interface SearchModalProps {
@@ -13,12 +12,15 @@ interface SearchModalProps {
   onNavigate: (view: string, idOrSlug?: string) => void;
 }
 
+type SearchFilterCategory = 'All' | 'Tools' | 'Articles' | 'Fabrics' | 'Comparisons' | 'Glossary';
+
 export const SearchModal: React.FC<SearchModalProps> = ({
   isOpen,
   onClose,
   onNavigate,
 }) => {
   const [query, setQuery] = useState('');
+  const [activeCategory, setActiveCategory] = useState<SearchFilterCategory>('All');
   const inputRef = useRef<HTMLInputElement>(null);
 
   useEffect(() => {
@@ -40,31 +42,38 @@ export const SearchModal: React.FC<SearchModalProps> = ({
     f.name.toLowerCase().includes(q) || 
     f.fiberComposition.toLowerCase().includes(q) || 
     f.commonUses.some(u => u.toLowerCase().includes(q))
-  ).slice(0, 4) : [];
+  ).slice(0, 6) : [];
 
   const matchedArticles = q ? ARTICLES.filter(a => 
     a.title.toLowerCase().includes(q) || 
     a.tags.some(t => t.toLowerCase().includes(q)) ||
-    a.category.toLowerCase().includes(q)
-  ).slice(0, 4) : [];
+    a.category.toLowerCase().includes(q) ||
+    a.excerpt.toLowerCase().includes(q)
+  ).slice(0, 6) : [];
 
   const matchedComparisons = q ? FABRIC_COMPARISONS.filter(c => 
     c.title.toLowerCase().includes(q) || 
     c.fabricA.name.toLowerCase().includes(q) || 
     c.fabricB.name.toLowerCase().includes(q)
-  ).slice(0, 3) : [];
+  ).slice(0, 4) : [];
 
   const matchedGlossary = q ? GLOSSARY_TERMS.filter(g => 
     g.term.toLowerCase().includes(q) || 
     g.definition.toLowerCase().includes(q)
-  ).slice(0, 4) : [];
+  ).slice(0, 5) : [];
 
   const matchedTools = q ? FABRIC_TOOLS.filter(t =>
     t.title.toLowerCase().includes(q) ||
     t.shortDescription.toLowerCase().includes(q) ||
     t.category.toLowerCase().includes(q) ||
     t.features.some(f => f.toLowerCase().includes(q))
-  ).slice(0, 3) : [];
+  ).slice(0, 5) : [];
+
+  const showTools = (activeCategory === 'All' || activeCategory === 'Tools') && matchedTools.length > 0;
+  const showArticles = (activeCategory === 'All' || activeCategory === 'Articles') && matchedArticles.length > 0;
+  const showFabrics = (activeCategory === 'All' || activeCategory === 'Fabrics') && matchedFabrics.length > 0;
+  const showComparisons = (activeCategory === 'All' || activeCategory === 'Comparisons') && matchedComparisons.length > 0;
+  const showGlossary = (activeCategory === 'All' || activeCategory === 'Glossary') && matchedGlossary.length > 0;
 
   const totalMatches = matchedFabrics.length + matchedArticles.length + matchedComparisons.length + matchedGlossary.length + matchedTools.length;
 
@@ -73,10 +82,15 @@ export const SearchModal: React.FC<SearchModalProps> = ({
     onClose();
   };
 
+  const handleQuickSearch = (term: string, cat: SearchFilterCategory = 'All') => {
+    setQuery(term);
+    setActiveCategory(cat);
+  };
+
   return (
     <div className="fixed inset-0 z-50 flex items-start justify-center pt-16 sm:pt-24 px-4 bg-black/60 backdrop-blur-xs animate-in fade-in duration-150">
       <div 
-        className="w-full max-w-2xl bg-[#FAF8F5] border border-[#E6E0D7] rounded-2xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-150 flex flex-col max-h-[80vh]"
+        className="w-full max-w-2xl bg-[#FAF8F5] border border-[#E6E0D7] rounded-2xl shadow-2xl overflow-hidden animate-in zoom-in-95 duration-150 flex flex-col max-h-[82vh]"
         onClick={(e) => e.stopPropagation()}
       >
         {/* Search Input Bar */}
@@ -85,7 +99,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
           <input
             ref={inputRef}
             type="text"
-            placeholder="Search fabrics, articles, comparisons, glossary (e.g. Lawn, GSM, Linen vs Cotton)..."
+            placeholder="Search all 10 tools, 29 articles, fabrics, comparisons (e.g. GSM, Denim, Yardage)..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             className="w-full text-sm sm:text-base bg-transparent focus:outline-hidden text-[#1C1C1C] placeholder-[#8C8478]"
@@ -107,34 +121,60 @@ export const SearchModal: React.FC<SearchModalProps> = ({
           </button>
         </div>
 
+        {/* Category Filter Pills (Part 10 requirement) */}
+        <div className="px-4 py-2 bg-[#F5EFE6] border-b border-[#E8E2D8] flex items-center gap-1.5 overflow-x-auto text-xs">
+          {(['All', 'Tools', 'Articles', 'Fabrics', 'Comparisons', 'Glossary'] as SearchFilterCategory[]).map((cat) => (
+            <button
+              key={cat}
+              type="button"
+              onClick={() => setActiveCategory(cat)}
+              className={`px-3 py-1 rounded-md text-xs font-semibold whitespace-nowrap transition-colors ${
+                activeCategory === cat
+                  ? 'bg-[#1C1C1C] text-white'
+                  : 'bg-white text-[#4A453E] border border-[#DDD5C7] hover:bg-[#FAF8F5]'
+              }`}
+            >
+              {cat}
+            </button>
+          ))}
+        </div>
+
         {/* Search Results Area */}
         <div className="p-4 sm:p-6 overflow-y-auto space-y-6 flex-1 text-xs">
           {!query ? (
-            <div className="text-center py-8 text-[#7A7265] space-y-2">
-              <p className="font-serif-heading text-lg font-bold text-[#1C1C1C]">Global Fabric & Textile Search Index</p>
-              <p className="text-xs">Type a fabric name (e.g. "Lawn", "Silk"), technical property ("GSM", "Sanforization"), or compare ("Cotton vs Linen").</p>
+            <div className="text-center py-6 text-[#7A7265] space-y-3">
+              <p className="font-serif-heading text-lg font-bold text-[#1C1C1C]">Instant Textile Search</p>
+              <p className="text-xs max-w-md mx-auto">
+                Search our 10 calculators, 29 comprehensive guides, and 30+ fabric profiles with instant live results.
+              </p>
               
-              <div className="pt-4 flex flex-wrap justify-center gap-2">
-                <button onClick={() => setQuery('Lawn')} className="px-2.5 py-1 bg-white border border-[#DDD5C7] rounded text-xs hover:text-[#9E472A]">Pakistani Lawn</button>
-                <button onClick={() => setQuery('GSM')} className="px-2.5 py-1 bg-white border border-[#DDD5C7] rounded text-xs hover:text-[#9E472A]">GSM Weight</button>
-                <button onClick={() => setQuery('Calculator')} className="px-2.5 py-1 bg-[#FAF4EB] text-[#9E472A] border border-[#EADBCA] rounded text-xs font-semibold hover:bg-[#F5ECE0]">Fabric Calculators</button>
-                <button onClick={() => setQuery('Silk')} className="px-2.5 py-1 bg-white border border-[#DDD5C7] rounded text-xs hover:text-[#9E472A]">Silk</button>
-                <button onClick={() => setQuery('Denim')} className="px-2.5 py-1 bg-white border border-[#DDD5C7] rounded text-xs hover:text-[#9E472A]">Denim</button>
-                <button onClick={() => setQuery('Sustainable')} className="px-2.5 py-1 bg-white border border-[#DDD5C7] rounded text-xs hover:text-[#9E472A]">Lyocell & Circular</button>
+              <div className="pt-2">
+                <span className="text-[11px] font-mono uppercase tracking-wider text-[#9E472A] font-bold block mb-2">
+                  Popular Searches
+                </span>
+                <div className="flex flex-wrap justify-center gap-1.5 text-xs">
+                  <button onClick={() => handleQuickSearch('GSM Calculator', 'Tools')} className="px-2.5 py-1 bg-white border border-[#DDD5C7] rounded hover:border-[#1C1C1C]">GSM Calculator</button>
+                  <button onClick={() => handleQuickSearch('Curtain', 'Tools')} className="px-2.5 py-1 bg-white border border-[#DDD5C7] rounded hover:border-[#1C1C1C]">Curtain Calculator</button>
+                  <button onClick={() => handleQuickSearch('Cotton GSM', 'Articles')} className="px-2.5 py-1 bg-white border border-[#DDD5C7] rounded hover:border-[#1C1C1C]">Cotton GSM</button>
+                  <button onClick={() => handleQuickSearch('Denim', 'Articles')} className="px-2.5 py-1 bg-white border border-[#DDD5C7] rounded hover:border-[#1C1C1C]">Denim Chart</button>
+                  <button onClick={() => handleQuickSearch('Warp vs Weft', 'Articles')} className="px-2.5 py-1 bg-white border border-[#DDD5C7] rounded hover:border-[#1C1C1C]">Warp vs Weft</button>
+                  <button onClick={() => handleQuickSearch('Shrinkage', 'Tools')} className="px-2.5 py-1 bg-white border border-[#DDD5C7] rounded hover:border-[#1C1C1C]">Shrinkage Calculator</button>
+                  <button onClick={() => handleQuickSearch('Lawn', 'Fabrics')} className="px-2.5 py-1 bg-white border border-[#DDD5C7] rounded hover:border-[#1C1C1C]">Pakistani Lawn</button>
+                </div>
               </div>
             </div>
           ) : totalMatches === 0 ? (
             <div className="text-center py-8 text-[#7A7265]">
               <p className="font-serif-heading text-base font-bold text-[#1C1C1C]">No index results found for "{query}"</p>
-              <p className="text-xs mt-1">Try another textile term or browse the Fabric Library or Glossary.</p>
+              <p className="text-xs mt-1">Try another keyword or switch category filters.</p>
             </div>
           ) : (
             <div className="space-y-6">
               {/* Tools & Calculators */}
-              {matchedTools.length > 0 && (
+              {showTools && (
                 <div>
                   <span className="text-[11px] font-mono uppercase tracking-wider text-[#9E472A] font-bold flex items-center gap-1 mb-2">
-                    <Scale className="w-3.5 h-3.5" /> Fabric Tools ({matchedTools.length})
+                    <Scale className="w-3.5 h-3.5" /> Interactive Tools ({matchedTools.length})
                   </span>
                   <div className="space-y-2">
                     {matchedTools.map(t => (
@@ -159,8 +199,32 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                 </div>
               )}
 
+              {/* Articles & Guides */}
+              {showArticles && (
+                <div>
+                  <span className="text-[11px] font-mono uppercase tracking-wider text-[#9E472A] font-bold flex items-center gap-1 mb-2">
+                    <BookOpen className="w-3.5 h-3.5" /> Educational Guides ({matchedArticles.length})
+                  </span>
+                  <div className="space-y-2">
+                    {matchedArticles.map(a => (
+                      <div
+                        key={a.id}
+                        onClick={() => handleSelect('article', a.slug)}
+                        className="p-3 bg-white hover:bg-[#F5F0E8] border border-[#E6E0D7] rounded-lg cursor-pointer flex items-center justify-between transition-colors"
+                      >
+                        <div>
+                          <div className="font-serif-heading font-bold text-sm text-[#1C1C1C]">{a.title}</div>
+                          <div className="text-[11px] text-[#7A7265]">{a.category} • {a.readTime}</div>
+                        </div>
+                        <ArrowRight className="w-4 h-4 text-[#8C8478]" />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {/* Fabrics */}
-              {matchedFabrics.length > 0 && (
+              {showFabrics && (
                 <div>
                   <span className="text-[11px] font-mono uppercase tracking-wider text-[#9E472A] font-bold flex items-center gap-1 mb-2">
                     <Layers className="w-3.5 h-3.5" /> Fabric Types ({matchedFabrics.length})
@@ -183,32 +247,8 @@ export const SearchModal: React.FC<SearchModalProps> = ({
                 </div>
               )}
 
-              {/* Articles */}
-              {matchedArticles.length > 0 && (
-                <div>
-                  <span className="text-[11px] font-mono uppercase tracking-wider text-[#9E472A] font-bold flex items-center gap-1 mb-2">
-                    <BookOpen className="w-3.5 h-3.5" /> Editorial Articles ({matchedArticles.length})
-                  </span>
-                  <div className="space-y-2">
-                    {matchedArticles.map(a => (
-                      <div
-                        key={a.id}
-                        onClick={() => handleSelect('article', a.slug)}
-                        className="p-3 bg-white hover:bg-[#F5F0E8] border border-[#E6E0D7] rounded-lg cursor-pointer flex items-center justify-between transition-colors"
-                      >
-                        <div>
-                          <div className="font-serif-heading font-bold text-sm text-[#1C1C1C]">{a.title}</div>
-                          <div className="text-[11px] text-[#7A7265]">{a.category} • {a.readTime}</div>
-                        </div>
-                        <ArrowRight className="w-4 h-4 text-[#8C8478]" />
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              )}
-
               {/* Comparisons */}
-              {matchedComparisons.length > 0 && (
+              {showComparisons && (
                 <div>
                   <span className="text-[11px] font-mono uppercase tracking-wider text-[#9E472A] font-bold flex items-center gap-1 mb-2">
                     <Scale className="w-3.5 h-3.5" /> Comparisons ({matchedComparisons.length})
@@ -232,7 +272,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
               )}
 
               {/* Glossary */}
-              {matchedGlossary.length > 0 && (
+              {showGlossary && (
                 <div>
                   <span className="text-[11px] font-mono uppercase tracking-wider text-[#9E472A] font-bold flex items-center gap-1 mb-2">
                     <BookA className="w-3.5 h-3.5" /> Glossary Terms ({matchedGlossary.length})

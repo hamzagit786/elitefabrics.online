@@ -1,6 +1,10 @@
 import { Article } from '../types';
+import { FABRIC_WEIGHT_ARTICLES } from './articles/fabricWeightArticles';
+import { SEWING_CARE_ARTICLES } from './articles/sewingCareArticles';
+import { FABRIC_TYPE_ARTICLES } from './articles/fabricTypeArticles';
+import { HOME_TEXTILE_ARTICLES } from './articles/homeTextileArticles';
 
-export const ARTICLES: Article[] = [
+const BASE_ARTICLES: Article[] = [
   {
     id: 'fabric-weight-demystified-gsm-ounces-guide',
     slug: 'fabric-weight-demystified-gsm-ounces-guide',
@@ -2092,4 +2096,12 @@ export const ARTICLES: Article[] = [
       }
     ]
   }
+];
+
+export const ARTICLES: Article[] = [
+  ...BASE_ARTICLES,
+  ...FABRIC_WEIGHT_ARTICLES,
+  ...SEWING_CARE_ARTICLES,
+  ...FABRIC_TYPE_ARTICLES,
+  ...HOME_TEXTILE_ARTICLES
 ];
