@@ -2,6 +2,7 @@ import React from 'react';
 import { FABRICS } from '../data/fabrics';
 import { ARTICLES } from '../data/articles';
 import { FABRIC_COMPARISONS } from '../data/comparisons';
+import { FABRIC_TOOLS } from '../data/tools';
 
 interface SitemapViewProps {
   onNavigate: (view: string, idOrSlug?: string) => void;
@@ -92,6 +93,35 @@ export const SitemapView: React.FC<SitemapViewProps> = ({ onNavigate }) => {
                 • Fabric Glossary (A–Z)
               </button>
             </li>
+            <li>
+              <button onClick={() => onNavigate('tools')} className="hover:text-[#9E472A] transition-colors font-semibold text-[#9E472A]">
+                • Fabric Tools &amp; Calculators
+              </button>
+            </li>
+          </ul>
+        </div>
+
+        {/* Fabric Tools & Calculators */}
+        <div className="bg-white border border-[#E6E0D7] rounded-lg p-5 space-y-3">
+          <h2 className="font-serif-heading font-bold text-base text-[#1C1C1C] pb-2 border-b border-[#F0EAE0]">
+            Fabric Tools &amp; Calculators
+          </h2>
+          <ul className="space-y-2 text-xs text-[#4A453E]">
+            <li>
+              <button onClick={() => onNavigate('tools')} className="hover:text-[#9E472A] transition-colors font-medium">
+                • All Calculators Landing (/tools)
+              </button>
+            </li>
+            {FABRIC_TOOLS.map((tool) => (
+              <li key={tool.id}>
+                <button
+                  onClick={() => onNavigate('tools', tool.slug)}
+                  className="hover:text-[#9E472A] transition-colors text-left"
+                >
+                  • {tool.title}
+                </button>
+              </li>
+            ))}
           </ul>
         </div>
 

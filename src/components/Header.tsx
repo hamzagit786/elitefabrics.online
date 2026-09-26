@@ -27,6 +27,7 @@ export const Header: React.FC<HeaderProps> = ({
     { label: 'Pakistani Fabrics', view: 'pakistani' },
     { label: 'Global Industry', view: 'industry' },
     { label: 'Sustainable', view: 'sustainable' },
+    { label: 'Tools', view: 'tools' },
     { label: 'Blog', view: 'blog' },
   ];
 

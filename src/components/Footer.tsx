@@ -57,6 +57,15 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <li className="text-[#555048]" aria-hidden="true">|</li>
             <li>
               <button 
+                onClick={() => onNavigate('tools')} 
+                className="hover:text-white transition-colors"
+              >
+                Tools
+              </button>
+            </li>
+            <li className="text-[#555048]" aria-hidden="true">|</li>
+            <li>
+              <button 
                 onClick={() => onNavigate('sitemap')} 
                 className="hover:text-white transition-colors"
               >

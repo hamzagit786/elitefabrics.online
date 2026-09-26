@@ -5,6 +5,7 @@ import { ARTICLES } from '../data/articles';
 import { FABRIC_COMPARISONS } from '../data/comparisons';
 import { GLOSSARY_TERMS } from '../data/glossary';
 import { TIMELINE_EVENTS } from '../data/timeline';
+import { FABRIC_TOOLS } from '../data/tools';
 
 interface SearchModalProps {
   isOpen: boolean;
@@ -58,7 +59,14 @@ export const SearchModal: React.FC<SearchModalProps> = ({
     g.definition.toLowerCase().includes(q)
   ).slice(0, 4) : [];
 
-  const totalMatches = matchedFabrics.length + matchedArticles.length + matchedComparisons.length + matchedGlossary.length;
+  const matchedTools = q ? FABRIC_TOOLS.filter(t =>
+    t.title.toLowerCase().includes(q) ||
+    t.shortDescription.toLowerCase().includes(q) ||
+    t.category.toLowerCase().includes(q) ||
+    t.features.some(f => f.toLowerCase().includes(q))
+  ).slice(0, 3) : [];
+
+  const totalMatches = matchedFabrics.length + matchedArticles.length + matchedComparisons.length + matchedGlossary.length + matchedTools.length;
 
   const handleSelect = (view: string, idOrSlug?: string) => {
     onNavigate(view, idOrSlug);
@@ -109,6 +117,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
               <div className="pt-4 flex flex-wrap justify-center gap-2">
                 <button onClick={() => setQuery('Lawn')} className="px-2.5 py-1 bg-white border border-[#DDD5C7] rounded text-xs hover:text-[#9E472A]">Pakistani Lawn</button>
                 <button onClick={() => setQuery('GSM')} className="px-2.5 py-1 bg-white border border-[#DDD5C7] rounded text-xs hover:text-[#9E472A]">GSM Weight</button>
+                <button onClick={() => setQuery('Calculator')} className="px-2.5 py-1 bg-[#FAF4EB] text-[#9E472A] border border-[#EADBCA] rounded text-xs font-semibold hover:bg-[#F5ECE0]">Fabric Calculators</button>
                 <button onClick={() => setQuery('Silk')} className="px-2.5 py-1 bg-white border border-[#DDD5C7] rounded text-xs hover:text-[#9E472A]">Silk</button>
                 <button onClick={() => setQuery('Denim')} className="px-2.5 py-1 bg-white border border-[#DDD5C7] rounded text-xs hover:text-[#9E472A]">Denim</button>
                 <button onClick={() => setQuery('Sustainable')} className="px-2.5 py-1 bg-white border border-[#DDD5C7] rounded text-xs hover:text-[#9E472A]">Lyocell & Circular</button>
@@ -121,6 +130,35 @@ export const SearchModal: React.FC<SearchModalProps> = ({
             </div>
           ) : (
             <div className="space-y-6">
+              {/* Tools & Calculators */}
+              {matchedTools.length > 0 && (
+                <div>
+                  <span className="text-[11px] font-mono uppercase tracking-wider text-[#9E472A] font-bold flex items-center gap-1 mb-2">
+                    <Scale className="w-3.5 h-3.5" /> Fabric Tools ({matchedTools.length})
+                  </span>
+                  <div className="space-y-2">
+                    {matchedTools.map(t => (
+                      <div
+                        key={t.id}
+                        onClick={() => handleSelect('tools', t.slug)}
+                        className="p-3 bg-white hover:bg-[#F5F0E8] border border-[#E6E0D7] rounded-lg cursor-pointer flex items-center justify-between transition-colors"
+                      >
+                        <div>
+                          <div className="font-serif-heading font-bold text-sm text-[#1C1C1C] flex items-center gap-2">
+                            <span>{t.title}</span>
+                            <span className="text-[10px] font-mono uppercase tracking-wider bg-[#FAF4EB] text-[#9E472A] px-2 py-0.5 rounded border border-[#EADBCA]">
+                              Free Tool
+                            </span>
+                          </div>
+                          <div className="text-[11px] text-[#7A7265] mt-0.5 line-clamp-1">{t.shortDescription}</div>
+                        </div>
+                        <ArrowRight className="w-4 h-4 text-[#8C8478]" />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {/* Fabrics */}
               {matchedFabrics.length > 0 && (
                 <div>

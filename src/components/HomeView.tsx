@@ -1,7 +1,10 @@
 import React from 'react';
+import { Search } from 'lucide-react';
 import { FABRICS } from '../data/fabrics';
 import { ARTICLES } from '../data/articles';
 import { FABRIC_COMPARISONS } from '../data/comparisons';
+import { FABRIC_TOOLS } from '../data/tools';
+import { ToolCard } from './tools/ToolCard';
 
 interface HomeViewProps {
   onNavigate: (view: string, idOrSlug?: string) => void;
@@ -46,6 +49,12 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenSearch }) 
               className="px-5 py-2.5 bg-white hover:bg-[#FAF8F5] text-[#1C1C1C] border border-[#D0C7B8] rounded-md uppercase tracking-wider font-semibold transition-colors"
             >
               Fabric Comparisons
+            </button>
+            <button
+              onClick={() => onNavigate('tools')}
+              className="px-5 py-2.5 bg-white hover:bg-[#FAF8F5] text-[#1C1C1C] border border-[#D0C7B8] rounded-md uppercase tracking-wider font-semibold transition-colors"
+            >
+              Fabric Tools
             </button>
             <button
               onClick={() => onNavigate('beginner')}
@@ -119,6 +128,36 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenSearch }) 
                   </div>
                 </div>
               </article>
+            ))}
+          </div>
+        </section>
+
+        {/* SECTION: FABRIC TOOLS & CALCULATORS */}
+        <section className="space-y-6">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-2 pb-3 border-b border-[#E6E0D7]">
+            <div>
+              <h2 className="text-2xl sm:text-3xl font-serif-heading font-bold text-[#1C1C1C]">
+                Fabric Tools &amp; Calculators
+              </h2>
+              <p className="text-sm text-[#5C554B] mt-1">
+                Free utility calculators for fabric weight, yardage estimates, shrinkage analysis, and unit conversions.
+              </p>
+            </div>
+            <button
+              onClick={() => onNavigate('tools')}
+              className="text-xs font-semibold uppercase tracking-wider text-[#9E472A] hover:underline shrink-0"
+            >
+              All Tools &rarr;
+            </button>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {FABRIC_TOOLS.map((tool) => (
+              <ToolCard
+                key={tool.id}
+                tool={tool}
+                onNavigate={onNavigate}
+              />
             ))}
           </div>
         </section>

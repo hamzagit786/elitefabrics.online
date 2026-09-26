@@ -19,6 +19,42 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://elitefabrics.online/tools</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/tools/fabric-gsm-calculator</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/tools/fabric-yardage-calculator</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/tools/fabric-shrinkage-calculator</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/tools/gsm-to-oz-converter</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/tools/fabric-measurement-converter</loc>
+    <lastmod>2026-09-26</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
     <loc>https://elitefabrics.online/industry</loc>
     <lastmod>2026-09-19</lastmod>
     <changefreq>weekly</changefreq>

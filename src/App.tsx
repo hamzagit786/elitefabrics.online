@@ -32,6 +32,15 @@ import { AdvertisingPolicyView } from './components/AdvertisingPolicyView';
 import { SitemapView } from './components/SitemapView';
 import { CookieConsentBanner } from './components/CookieConsentBanner';
 
+// Tools Components
+import { ToolsLandingView } from './components/tools/ToolsLandingView';
+import { FabricGsmCalculatorView } from './components/tools/FabricGsmCalculatorView';
+import { FabricYardageCalculatorView } from './components/tools/FabricYardageCalculatorView';
+import { FabricShrinkageCalculatorView } from './components/tools/FabricShrinkageCalculatorView';
+import { GsmToOzConverterView } from './components/tools/GsmToOzConverterView';
+import { FabricMeasurementConverterView } from './components/tools/FabricMeasurementConverterView';
+import { FABRIC_TOOLS } from './data/tools';
+
 import { FABRICS } from './data/fabrics';
 import { ARTICLES } from './data/articles';
 import { FABRIC_COMPARISONS } from './data/comparisons';
@@ -102,6 +111,14 @@ export default function App() {
       return;
     }
 
+    // Direct tool routing aliases like #fabric-gsm-calculator or #tools/fabric-gsm-calculator
+    const directToolMatch = FABRIC_TOOLS.find(t => t.slug === view);
+    if (directToolMatch) {
+      setCurrentView('tools');
+      setCurrentSlug(directToolMatch.slug);
+      return;
+    }
+
     const validViews = [
       'home',
       'about',
@@ -124,6 +141,7 @@ export default function App() {
       'resources',
       'trending',
       'care',
+      'tools',
       'privacy-policy',
       'terms',
       'disclaimer',
@@ -473,6 +491,107 @@ export default function App() {
         description: 'Clear guidelines regarding advertising standards, sponsor independence, and our non-commercial educational integrity.',
         canonicalUrl: `${baseUrl}/advertising-policy`
       });
+    } else if (currentView === 'tools') {
+      if (currentSlug) {
+        const tool = FABRIC_TOOLS.find(t => t.slug === currentSlug);
+        if (tool) {
+          const pageUrl = `${baseUrl}/tools/${tool.slug}`;
+          const schemas: any[] = [
+            {
+              '@type': 'WebApplication',
+              '@id': `${pageUrl}#webapp`,
+              'name': tool.title,
+              'headline': tool.h1,
+              'applicationCategory': 'UtilitiesApplication',
+              'operatingSystem': 'All',
+              'description': tool.metaDescription,
+              'url': pageUrl,
+              'offers': {
+                '@type': 'Offer',
+                'price': '0',
+                'priceCurrency': 'USD'
+              },
+              'publisher': {
+                '@type': 'Organization',
+                'name': 'Elite Fabrics',
+                'url': `${baseUrl}/`
+              }
+            },
+            {
+              '@type': 'WebPage',
+              '@id': `${pageUrl}#webpage`,
+              'name': tool.title,
+              'description': tool.metaDescription,
+              'url': pageUrl,
+              'publisher': {
+                '@type': 'Organization',
+                'name': 'Elite Fabrics',
+                'url': `${baseUrl}/`
+              }
+            },
+            {
+              '@type': 'BreadcrumbList',
+              '@id': `${pageUrl}#breadcrumbs`,
+              'itemListElement': [
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `${baseUrl}/` },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Fabric Tools', 'item': `${baseUrl}/tools` },
+                { '@type': 'ListItem', 'position': 3, 'name': tool.title, 'item': pageUrl }
+              ]
+            }
+          ];
+
+          if (tool.faqs && tool.faqs.length > 0) {
+            schemas.push({
+              '@type': 'FAQPage',
+              '@id': `${pageUrl}#faq`,
+              'mainEntity': tool.faqs.map(faq => ({
+                '@type': 'Question',
+                'name': faq.question,
+                'acceptedAnswer': {
+                  '@type': 'Answer',
+                  'text': faq.answer
+                }
+              }))
+            });
+          }
+
+          updateDocumentSEO({
+            title: tool.seoTitle,
+            description: tool.metaDescription,
+            canonicalUrl: pageUrl,
+            schema: schemas
+          });
+        }
+      } else {
+        const pageUrl = `${baseUrl}/tools`;
+        updateDocumentSEO({
+          title: 'Free Fabric & Textile Calculators | Elite Fabrics',
+          description: 'Free online fabric tools and calculators for sewists, quilters, designers, and textile students. Calculate fabric GSM, yardage, shrinkage rates, and conversions.',
+          canonicalUrl: pageUrl,
+          schema: [
+            {
+              '@type': 'WebPage',
+              '@id': `${pageUrl}#webpage`,
+              'name': 'Interactive Fabric Tools & Calculators',
+              'description': 'Free online fabric calculators and textile converters.',
+              'url': pageUrl,
+              'publisher': {
+                '@type': 'Organization',
+                'name': 'Elite Fabrics',
+                'url': `${baseUrl}/`
+              }
+            },
+            {
+              '@type': 'BreadcrumbList',
+              '@id': `${pageUrl}#breadcrumbs`,
+              'itemListElement': [
+                { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `${baseUrl}/` },
+                { '@type': 'ListItem', 'position': 2, 'name': 'Fabric Tools', 'item': pageUrl }
+              ]
+            }
+          ]
+        });
+      }
     } else {
       updateDocumentSEO({
         title: 'Fabric & Textile Guide – Types, Comparisons & Care | Elite Fabrics',
@@ -692,6 +811,24 @@ export default function App() {
           <AdvertisingPolicyView 
             onNavigate={navigateTo} 
           />
+        )}
+
+        {currentView === 'tools' && (
+          <>
+            {currentSlug === 'fabric-gsm-calculator' ? (
+              <FabricGsmCalculatorView onNavigate={navigateTo} />
+            ) : currentSlug === 'fabric-yardage-calculator' ? (
+              <FabricYardageCalculatorView onNavigate={navigateTo} />
+            ) : currentSlug === 'fabric-shrinkage-calculator' ? (
+              <FabricShrinkageCalculatorView onNavigate={navigateTo} />
+            ) : currentSlug === 'gsm-to-oz-converter' ? (
+              <GsmToOzConverterView onNavigate={navigateTo} />
+            ) : currentSlug === 'fabric-measurement-converter' ? (
+              <FabricMeasurementConverterView onNavigate={navigateTo} />
+            ) : (
+              <ToolsLandingView onNavigate={navigateTo} />
+            )}
+          </>
         )}
 
         {currentView === 'sitemap' && (
