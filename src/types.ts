@@ -13,6 +13,7 @@ export type ContentCategory =
   | 'Textile Industry'
   | 'Fashion Fabrics'
   | 'Home Textile Fabrics'
+  | 'Textile Science'
   | 'Fabric Glossary'
   | 'Textile News & Trends'
   | 'Beginner Guides'
@@ -64,6 +65,19 @@ export interface Article {
   relatedSlugs: string[];
   faqs?: FAQItem[];
   researchDate?: string;
+  keyTakeaways?: string[];
+  relatedTool?: {
+    name: string;
+    path: string;
+    description: string;
+  };
+  relatedFabrics?: string[];
+  imagePrompt?: string;
+  pinterest?: {
+    title: string;
+    description: string;
+    imagePrompt: string;
+  };
 }
 
 export type FabricClassification = 'natural' | 'synthetic' | 'regenerated' | 'weave' | 'traditional';

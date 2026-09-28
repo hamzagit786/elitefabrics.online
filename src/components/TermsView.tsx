@@ -18,7 +18,7 @@ export const TermsView: React.FC<TermsViewProps> = ({ onNavigate }) => {
         </h1>
         <div className="flex flex-wrap items-center gap-4 text-xs text-[#7A7266] pt-1">
           <span className="flex items-center gap-1 font-mono">
-            <Calendar className="w-3.5 h-3.5" /> Last Updated: September 17, 2026
+            <Calendar className="w-3.5 h-3.5" /> Last Updated: September 28, 2026
           </span>
           <span>•</span>
           <span>Domain: <strong className="text-[#1C1C1C]">elitefabrics.online</strong></span>
@@ -145,7 +145,7 @@ export const TermsView: React.FC<TermsViewProps> = ({ onNavigate }) => {
             >
               Contact Page
             </button>{' '}
-            or WhatsApp us at <a href="https://wa.me/923192229067" target="_blank" rel="noopener noreferrer" className="font-mono text-[#1C1C1C] underline">03192229067</a>.
+            or email us directly at <a href="mailto:contact@elitefabrics.online" className="font-mono text-[#9E472A] underline">contact@elitefabrics.online</a>.
           </p>
         </section>
       </div>

@@ -57,10 +57,46 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <li className="text-[#555048]" aria-hidden="true">|</li>
             <li>
               <button 
+                onClick={() => onNavigate('tools', 'fabric-finder-quiz')} 
+                className="hover:text-white transition-colors"
+              >
+                Fabric Finder
+              </button>
+            </li>
+            <li className="text-[#555048]" aria-hidden="true">|</li>
+            <li>
+              <button 
+                onClick={() => onNavigate('tools', 'fabric-care-symbol-guide')} 
+                className="hover:text-white transition-colors"
+              >
+                Care Symbols
+              </button>
+            </li>
+            <li className="text-[#555048]" aria-hidden="true">|</li>
+            <li>
+              <button 
                 onClick={() => onNavigate('tools')} 
                 className="hover:text-white transition-colors"
               >
                 Tools
+              </button>
+            </li>
+            <li className="text-[#555048]" aria-hidden="true">|</li>
+            <li>
+              <button 
+                onClick={() => onNavigate('editorial-policy')} 
+                className="hover:text-white transition-colors"
+              >
+                Editorial Policy
+              </button>
+            </li>
+            <li className="text-[#555048]" aria-hidden="true">|</li>
+            <li>
+              <button 
+                onClick={() => onNavigate('disclaimer')} 
+                className="hover:text-white transition-colors"
+              >
+                Disclaimer
               </button>
             </li>
             <li className="text-[#555048]" aria-hidden="true">|</li>

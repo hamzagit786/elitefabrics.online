@@ -69,6 +69,18 @@ export const SearchModal: React.FC<SearchModalProps> = ({
     t.features.some(f => f.toLowerCase().includes(q))
   ).slice(0, 5) : [];
 
+  // Autocomplete suggestions based on partial user input
+  const allKeywords = [
+    'Fabric Finder Quiz', 'Care Symbol Decoder', 'GSM Calculator', 'Shrinkage Calculator',
+    'Cotton GSM', 'Denim Weight', 'Percale vs Sateen', 'Fabric Width 44 vs 60',
+    'Seam Allowance', 'Prevent Shrinkage', 'Weaving vs Knitting', 'Yarn Count Ne',
+    'Cushion Fabric', 'Curtain Fullness', 'Linen Care', 'Mercerization'
+  ];
+
+  const suggestedKeywords = q.length >= 1 
+    ? allKeywords.filter(k => k.toLowerCase().includes(q) && k.toLowerCase() !== q).slice(0, 4)
+    : [];
+
   const showTools = (activeCategory === 'All' || activeCategory === 'Tools') && matchedTools.length > 0;
   const showArticles = (activeCategory === 'All' || activeCategory === 'Articles') && matchedArticles.length > 0;
   const showFabrics = (activeCategory === 'All' || activeCategory === 'Fabrics') && matchedFabrics.length > 0;
@@ -99,7 +111,7 @@ export const SearchModal: React.FC<SearchModalProps> = ({
           <input
             ref={inputRef}
             type="text"
-            placeholder="Search all 10 tools, 29 articles, fabrics, comparisons (e.g. GSM, Denim, Yardage)..."
+            placeholder="Search all 12 tools, 39 guides, 38 fabric profiles (e.g. GSM, Linen, Care Symbols)..."
             value={query}
             onChange={(e) => setQuery(e.target.value)}
             className="w-full text-sm sm:text-base bg-transparent focus:outline-hidden text-[#1C1C1C] placeholder-[#8C8478]"
@@ -120,6 +132,26 @@ export const SearchModal: React.FC<SearchModalProps> = ({
             <X className="w-5 h-5" />
           </button>
         </div>
+
+        {/* Live Autocomplete Suggestions Strip when typing */}
+        {suggestedKeywords.length > 0 && (
+          <div className="px-4 py-2 bg-[#F9F6F0] border-b border-[#EAE3D6] flex items-center gap-2 text-xs">
+            <span className="text-[10px] font-mono uppercase text-[#9E472A] font-bold shrink-0">
+              Suggestions:
+            </span>
+            <div className="flex items-center gap-1.5 overflow-x-auto">
+              {suggestedKeywords.map(k => (
+                <button
+                  key={k}
+                  onClick={() => setQuery(k)}
+                  className="px-2.5 py-0.5 bg-white border border-[#DDD5C7] rounded text-[11px] text-[#4A453E] hover:border-[#9E472A] hover:text-[#9E472A] whitespace-nowrap"
+                >
+                  {k}
+                </button>
+              ))}
+            </div>
+          </div>
+        )}
 
         {/* Category Filter Pills (Part 10 requirement) */}
         <div className="px-4 py-2 bg-[#F5EFE6] border-b border-[#E8E2D8] flex items-center gap-1.5 overflow-x-auto text-xs">

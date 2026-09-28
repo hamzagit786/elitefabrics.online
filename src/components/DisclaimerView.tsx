@@ -18,8 +18,10 @@ export const DisclaimerView: React.FC<DisclaimerViewProps> = ({ onNavigate }) =>
         </h1>
         <div className="flex flex-wrap items-center gap-4 text-xs text-[#7A7266] pt-1">
           <span className="flex items-center gap-1 font-mono">
-            <Calendar className="w-3.5 h-3.5" /> Last Updated: September 17, 2026
+            <Calendar className="w-3.5 h-3.5" /> Last Updated: September 28, 2026
           </span>
+          <span>•</span>
+          <span>Maintained by: <strong className="text-[#1C1C1C]">Elite Fabrics Editorial Board</strong></span>
           <span>•</span>
           <span>Domain: <strong className="text-[#1C1C1C]">elitefabrics.online</strong></span>
         </div>

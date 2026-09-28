@@ -18,8 +18,10 @@ export const PrivacyPolicyView: React.FC<PolicyViewProps> = ({ onNavigate }) => 
         </h1>
         <div className="flex flex-wrap items-center gap-4 text-xs text-[#7A7266] pt-1">
           <span className="flex items-center gap-1 font-mono">
-            <Calendar className="w-3.5 h-3.5" /> Last Updated: September 17, 2026
+            <Calendar className="w-3.5 h-3.5" /> Last Updated: September 28, 2026
           </span>
+          <span>•</span>
+          <span>Reviewed by: <strong className="text-[#1C1C1C]">Elite Fabrics Editorial &amp; Compliance Team</strong></span>
           <span>•</span>
           <span>Domain: <strong className="text-[#1C1C1C]">elitefabrics.online</strong></span>
         </div>
@@ -197,8 +199,9 @@ export const PrivacyPolicyView: React.FC<PolicyViewProps> = ({ onNavigate }) => 
           </p>
           <div className="text-xs font-mono space-y-1 text-[#6B6355]">
             <p>Website: <a href="https://elitefabrics.online" className="text-[#9E472A]">https://elitefabrics.online/</a></p>
-            <p>WhatsApp: <span className="text-[#1C1C1C]">03192229067</span></p>
-            <p>Direct Message: <a href="https://wa.me/923192229067" target="_blank" rel="noopener noreferrer" className="text-[#9E472A] underline">wa.me/923192229067</a></p>
+            <p>Privacy Email: <a href="mailto:contact@elitefabrics.online" className="text-[#9E472A] underline">contact@elitefabrics.online</a></p>
+            <p>Editorial Desk: <a href="mailto:editorial@elitefabrics.online" className="text-[#9E472A] underline">editorial@elitefabrics.online</a></p>
+            <p>Direct Inquiries: <a href="https://wa.me/923192229067" target="_blank" rel="noopener noreferrer" className="text-[#9E472A] underline">WhatsApp Support Desk</a></p>
           </div>
         </section>
       </div>

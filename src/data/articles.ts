@@ -3,6 +3,7 @@ import { FABRIC_WEIGHT_ARTICLES } from './articles/fabricWeightArticles';
 import { SEWING_CARE_ARTICLES } from './articles/sewingCareArticles';
 import { FABRIC_TYPE_ARTICLES } from './articles/fabricTypeArticles';
 import { HOME_TEXTILE_ARTICLES } from './articles/homeTextileArticles';
+import { TEXTILE_EDUCATION_ARTICLES } from './articles/textileEducationArticles';
 
 const BASE_ARTICLES: Article[] = [
   {
@@ -2103,5 +2104,6 @@ export const ARTICLES: Article[] = [
   ...FABRIC_WEIGHT_ARTICLES,
   ...SEWING_CARE_ARTICLES,
   ...FABRIC_TYPE_ARTICLES,
-  ...HOME_TEXTILE_ARTICLES
+  ...HOME_TEXTILE_ARTICLES,
+  ...TEXTILE_EDUCATION_ARTICLES
 ];

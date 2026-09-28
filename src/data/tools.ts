@@ -432,6 +432,80 @@ export const FABRIC_TOOLS: FabricTool[] = [
       'what-is-gsm-in-fabric'
     ],
     relatedFabricSlugs: ['cotton', 'silk', 'linen', 'wool', 'lawn']
+  },
+  {
+    id: 'fabric-finder-quiz',
+    slug: 'fabric-finder-quiz',
+    title: 'Fabric Finder Quiz: What Fabric Should I Use?',
+    shortTitle: 'Fabric Finder Quiz',
+    h1: 'Fabric Finder Quiz: Match Fabrics to Your Sewing Project',
+    seoTitle: 'Fabric Finder Quiz – What Fabric Should I Use? | Elite Fabrics',
+    metaDescription: 'Take our free Fabric Finder Quiz to find the best fabric for shirts, pants, dresses, coats, cushions, or curtains based on drape, breathability, and care.',
+    category: 'Yardage & Projects',
+    shortDescription: 'Interactive 4-step matcher that evaluates breathability, drape, weight, and care needs to find your ideal fabric.',
+    longDescription: 'Not sure which fabric to buy? Our Fabric Finder Quiz matches your project requirements (apparel tops, trousers, dresses, outerwear, curtains, upholstery, bedding, or activewear) with physical fabric traits across 38 natural and synthetic textiles.',
+    iconName: 'Sparkles',
+    badge: 'New Interactive Tool',
+    features: [
+      'Instant project-matching scoring algorithm',
+      'Matches across 38+ natural, synthetic, and luxury textiles',
+      'Filters by thermal comfort, drape behavior, and care level',
+      'Provides actionable explanations for every recommended match',
+      'Direct cross-links to fabric guides and calculation tools'
+    ],
+    faqs: [
+      {
+        question: 'How does the Fabric Finder Quiz match fabrics?',
+        answer: 'The quiz evaluates your garment type, target climate, tactile drape preference, and laundry tolerance against real physical textile specifications (areal weight in GSM, yarn structure, air permeability, tensile durability, and fiber composition).'
+      },
+      {
+        question: 'What is the best all-around fabric for sewing beginners?',
+        answer: 'Medium-weight 100% cotton (such as cotton poplin, quilting cotton, or linen-cotton blends) is easiest for beginners because it does not slip under the sewing presser foot, presses crisply with steam, and handles machine washing reliably.'
+      }
+    ],
+    relatedArticleSlugs: [
+      'how-much-fabric-do-i-need',
+      'what-is-gsm-in-fabric',
+      'how-to-start-learning-fabrics-beginner'
+    ],
+    relatedFabricSlugs: ['cotton', 'linen', 'poplin', 'denim', 'twill']
+  },
+  {
+    id: 'fabric-care-symbol-guide',
+    slug: 'fabric-care-symbol-guide',
+    title: 'Fabric Care Symbol Decoder & Guide',
+    shortTitle: 'Care Symbol Decoder',
+    h1: 'Fabric Care Symbol Decoder: What Do Laundry Icons Mean?',
+    seoTitle: 'Fabric Care Symbol Decoder & Guide (ISO & ASTM) | Elite Fabrics',
+    metaDescription: 'Decode laundry care tag symbols instantly. Plain-English guide for washing tubs, bleach triangles, drying squares, irons, and dry cleaning circles.',
+    category: 'Shrinkage & Care',
+    shortDescription: 'Visual decoder for laundry symbols across washing, bleaching, tumble drying, ironing, and professional dry cleaning.',
+    longDescription: 'Never shrink or melt another garment. Our interactive care symbol decoder translates ISO 3758 and ASTM D5489 laundry icons into clear, plain-English rules with fiber-specific advice and warnings on what happens if ignored.',
+    iconName: 'HelpCircle',
+    badge: 'Laundry Essential',
+    features: [
+      'Full coverage of all 5 international symbol categories (Tub, Triangle, Square, Iron, Circle)',
+      'Searchable by keyword or filterable by category',
+      'Detailed fiber breakdowns (which fabrics require dry flat, cold wash, etc.)',
+      'Clear explanations of risks if symbols are disregarded',
+      'Temperature references for both Fahrenheit and Celsius'
+    ],
+    faqs: [
+      {
+        question: 'What do the dots inside the wash tub symbol mean?',
+        answer: 'Dots inside the wash tub represent maximum water temperature: 1 dot = 30°C (85°F Cold), 2 dots = 40°C (105°F Warm), 3 dots = 50°C (120°F Hot), 4 dots = 60°C (140°F Very Hot), 5 dots = 70°C (160°F), and 6 dots = 95°C (200°F Boil wash).'
+      },
+      {
+        question: 'What do the bars under laundry symbols mean?',
+        answer: 'Bars under any care symbol indicate reduced mechanical agitation and gentler handling: No bar = Normal cycle; 1 bar = Permanent Press / Mild mechanical action; 2 bars = Gentle / Delicate cycle with minimal agitation and slow spin.'
+      }
+    ],
+    relatedArticleSlugs: [
+      'the-ultimate-fabric-care-manual',
+      'why-cotton-shrinks',
+      'fabric-shrinkage-guide'
+    ],
+    relatedFabricSlugs: ['wool', 'silk', 'cotton', 'polyester', 'rayon']
   }
 ];
 

@@ -138,25 +138,27 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenSearch }) 
 
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-16 sm:space-y-20">
 
-        {/* SECTION: MOST POPULAR TOOLS (Requested in Part 2) */}
-        <section className="space-y-6">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-2 pb-3 border-b border-[#E6E0D7]">
+        {/* SECTION: MOST POPULAR TOOLS (Highlighted Flagship Calculators) */}
+        <section className="space-y-6 bg-white p-6 sm:p-8 rounded-2xl border border-[#E6E0D7] shadow-2xs">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-3 pb-4 border-b border-[#E6E0D7]">
             <div>
-              <div className="text-[11px] font-mono uppercase tracking-wider text-[#9E472A] font-semibold mb-1">
-                Fast Live Utilities
+              <div className="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full text-[11px] font-mono uppercase tracking-wider bg-[#FAF4EB] border border-[#EADBCA] text-[#9E472A] font-bold mb-1.5">
+                <Calculator className="w-3 h-3" />
+                <span>Essential Textile Calculators</span>
               </div>
               <h2 className="text-2xl sm:text-3xl font-serif-heading font-bold text-[#1C1C1C]">
-                Most Popular Tools
+                Popular Tools &amp; Calculators
               </h2>
               <p className="text-xs sm:text-sm text-[#5C554B] mt-1">
-                Free high-utility calculators for sewing, measuring, and textile science.
+                Free, instant utilities for fabric weight (GSM), sewing yardage, pre-wash shrinkage, and drapery sizing.
               </p>
             </div>
             <button
               onClick={() => onNavigate('tools')}
-              className="text-xs font-semibold uppercase tracking-wider text-[#9E472A] hover:underline shrink-0"
+              className="inline-flex items-center gap-1 px-3.5 py-2 bg-[#FAF8F5] hover:bg-[#F2EDE4] text-[#1C1C1C] border border-[#D5CDC0] rounded-md text-xs font-semibold uppercase tracking-wider transition-colors shrink-0"
             >
-              Explore All 10 Tools &rarr;
+              <span>All {FABRIC_TOOLS.length} Tools</span>
+              <ArrowRight className="w-3.5 h-3.5 text-[#9E472A]" />
             </button>
           </div>
 
@@ -171,9 +173,68 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenSearch }) 
           </div>
         </section>
 
+        {/* SECTION: LATEST GUIDES & ARTICLES */}
+        <section className="space-y-6">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-3 pb-3 border-b border-[#E6E0D7]">
+            <div>
+              <div className="inline-flex items-center gap-1.5 text-[11px] font-mono uppercase tracking-wider text-[#9E472A] font-bold mb-1">
+                <BookOpen className="w-3.5 h-3.5" />
+                <span>Recently Published Research</span>
+              </div>
+              <h2 className="text-2xl sm:text-3xl font-serif-heading font-bold text-[#1C1C1C]">
+                Latest Guides &amp; Educational Articles
+              </h2>
+              <p className="text-xs sm:text-sm text-[#5C554B] mt-1">
+                Authoritative, plain-English guides to fabric weights, weave structures, sewing grainlines, and care.
+              </p>
+            </div>
+            <button
+              onClick={() => onNavigate('blog')}
+              className="inline-flex items-center gap-1 px-3.5 py-2 bg-[#FAF8F5] hover:bg-[#F2EDE4] text-[#1C1C1C] border border-[#D5CDC0] rounded-md text-xs font-semibold uppercase tracking-wider transition-colors shrink-0"
+            >
+              <span>Explore All Guides</span>
+              <ArrowRight className="w-3.5 h-3.5 text-[#9E472A]" />
+            </button>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            {latestArticles.map((article) => (
+              <div
+                key={article.id}
+                onClick={() => onNavigate('article', article.slug)}
+                className="cursor-pointer bg-white border border-[#E8E2D9] hover:border-[#9E472A] rounded-xl p-5 transition-all flex flex-col justify-between shadow-2xs group"
+              >
+                <div className="space-y-2">
+                  <div className="flex items-center justify-between text-[11px] text-[#787167] font-mono">
+                    <span className="px-2 py-0.5 bg-[#FAF8F5] border border-[#EBE4D8] rounded text-[#635C52]">
+                      {article.category}
+                    </span>
+                    <span className="flex items-center gap-1">
+                      <Clock className="w-3 h-3" />
+                      {article.readTime}
+                    </span>
+                  </div>
+                  <h3 className="text-base font-serif-heading font-bold text-[#1C1C1C] group-hover:text-[#9E472A] transition-colors leading-snug line-clamp-2">
+                    {article.title}
+                  </h3>
+                  <p className="text-xs text-[#5E584E] line-clamp-3 leading-relaxed">
+                    {article.excerpt}
+                  </p>
+                </div>
+                <div className="pt-3 mt-4 border-t border-[#F2ECE3] flex items-center justify-between text-xs">
+                  <span className="text-[#6A6359] truncate max-w-[120px]">{article.author.name}</span>
+                  <span className="text-[#9E472A] font-semibold flex items-center gap-1 group-hover:translate-x-0.5 transition-transform">
+                    Read <ArrowRight className="w-3 h-3" />
+                  </span>
+                </div>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* SECTION: TRENDING FABRIC GUIDES (Requested in Part 2) */}
         <section className="space-y-6">
-          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-2 pb-3 border-b border-[#E6E0D7]">
+          <div className="flex flex-col sm:flex-row justify-between items-start sm:items-end gap-3 pb-3 border-b border-[#E6E0D7]">
             <div>
               <div className="text-[11px] font-mono uppercase tracking-wider text-[#9E472A] font-semibold mb-1">
                 Reader Favorites
@@ -198,7 +259,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenSearch }) 
               <div
                 key={guide.id}
                 onClick={() => onNavigate('article', guide.slug)}
-                className="cursor-pointer bg-white border border-[#E8E2D9] rounded-lg p-5 hover:border-[#9E472A] transition-colors flex flex-col justify-between"
+                className="cursor-pointer bg-white border border-[#E8E2D9] rounded-xl p-5 hover:border-[#9E472A] transition-colors flex flex-col justify-between shadow-2xs"
               >
                 <div className="space-y-2">
                   <div className="flex items-center justify-between text-[11px] text-[#787167] font-mono">

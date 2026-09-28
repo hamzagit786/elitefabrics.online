@@ -17,7 +17,8 @@ import {
   Sun,
   ShieldAlert,
   Scale,
-  BookOpen
+  BookOpen,
+  Calculator
 } from 'lucide-react';
 import { FabricType } from '../types';
 import { FABRICS } from '../data/fabrics';
@@ -397,6 +398,68 @@ export const FabricDetailView: React.FC<FabricDetailViewProps> = ({
             </div>
           </section>
         )}
+
+        {/* Related Calculators & Textile Tools */}
+        <section className="pt-6 border-t border-[#E8E2D8] space-y-4">
+          <div className="flex items-center justify-between">
+            <h2 className="text-xl font-serif-heading font-bold text-[#1C1C1C] flex items-center gap-2">
+              <Calculator className="w-5 h-5 text-[#9E472A]" /> Related Educational Tools &amp; Calculators
+            </h2>
+            <button
+              onClick={() => onNavigate('tools')}
+              className="text-xs font-medium text-[#9E472A] hover:underline"
+            >
+              All Tools →
+            </button>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3">
+            <div
+              onClick={() => onNavigate('tools', 'gsm-to-oz-converter')}
+              className="p-4 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-lg cursor-pointer transition-all hover:shadow-xs group"
+            >
+              <span className="text-[10px] font-mono uppercase text-[#9E472A] font-semibold block mb-1">
+                Weight Conversion
+              </span>
+              <h3 className="text-sm font-serif-heading font-bold text-[#1C1C1C] group-hover:text-[#9E472A] transition-colors">
+                GSM to Oz Converter
+              </h3>
+              <p className="text-xs text-[#6B655C] mt-1 line-clamp-2">
+                Convert {fabric.name}'s {fabric.weightGsm.split('(')[0]} between metric GSM and US oz/yd².
+              </p>
+            </div>
+
+            <div
+              onClick={() => onNavigate('tools', 'fabric-shrinkage-calculator')}
+              className="p-4 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-lg cursor-pointer transition-all hover:shadow-xs group"
+            >
+              <span className="text-[10px] font-mono uppercase text-[#9E472A] font-semibold block mb-1">
+                Laundering Physics
+              </span>
+              <h3 className="text-sm font-serif-heading font-bold text-[#1C1C1C] group-hover:text-[#9E472A] transition-colors">
+                Shrinkage Calculator
+              </h3>
+              <p className="text-xs text-[#6B655C] mt-1 line-clamp-2">
+                Calculate warp and weft shrinkage before cutting your {fabric.name} garment.
+              </p>
+            </div>
+
+            <div
+              onClick={() => onNavigate('tools', 'fabric-yardage-calculator')}
+              className="p-4 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-lg cursor-pointer transition-all hover:shadow-xs group"
+            >
+              <span className="text-[10px] font-mono uppercase text-[#9E472A] font-semibold block mb-1">
+                Project Planning
+              </span>
+              <h3 className="text-sm font-serif-heading font-bold text-[#1C1C1C] group-hover:text-[#9E472A] transition-colors">
+                Yardage Calculator
+              </h3>
+              <p className="text-xs text-[#6B655C] mt-1 line-clamp-2">
+                Estimate yardage required for 45" vs 60" bolt widths with pattern buffers.
+              </p>
+            </div>
+          </div>
+        </section>
 
         {/* Related Head-to-Head Comparisons */}
         {(() => {

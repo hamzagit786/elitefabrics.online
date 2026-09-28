@@ -10,9 +10,14 @@ export const AboutView: React.FC<AboutViewProps> = ({ onNavigate }) => {
     <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 sm:py-16 space-y-12">
       {/* Page Header */}
       <div className="space-y-3 text-center sm:text-left">
-        <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#FAF4EB] border border-[#EADBCA] text-[#9E472A] rounded-full text-xs font-semibold uppercase tracking-wider">
-          <ShieldCheck className="w-3.5 h-3.5" />
-          <span>Non-Commercial Educational Resource</span>
+        <div className="flex flex-wrap items-center gap-2">
+          <div className="inline-flex items-center gap-2 px-3 py-1 bg-[#FAF4EB] border border-[#EADBCA] text-[#9E472A] rounded-full text-xs font-semibold uppercase tracking-wider">
+            <ShieldCheck className="w-3.5 h-3.5" />
+            <span>Non-Commercial Educational Resource</span>
+          </div>
+          <span className="text-xs text-[#7A7266] font-mono">
+            Last Updated: September 28, 2026 • By Elite Fabrics Editorial Team
+          </span>
         </div>
         <h1 className="text-3xl sm:text-5xl font-serif-heading font-bold text-[#1C1C1C] tracking-tight">
           About Elite Fabrics

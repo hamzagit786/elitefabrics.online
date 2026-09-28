@@ -44,6 +44,8 @@ import { UpholsteryFabricCalculatorView } from './components/tools/UpholsteryFab
 import { QuiltFabricCalculatorView } from './components/tools/QuiltFabricCalculatorView';
 import { FabricCostCalculatorView } from './components/tools/FabricCostCalculatorView';
 import { YarnCountConverterView } from './components/tools/YarnCountConverterView';
+import { FabricFinderQuizView } from './components/tools/FabricFinderQuizView';
+import { FabricCareSymbolGuideView } from './components/tools/FabricCareSymbolGuideView';
 import { FABRIC_TOOLS } from './data/tools';
 
 import { FABRICS } from './data/fabrics';
@@ -503,7 +505,7 @@ export default function App() {
           const pageUrl = `${baseUrl}/tools/${tool.slug}`;
           const schemas: any[] = [
             {
-              '@type': 'WebApplication',
+              '@type': ['WebApplication', 'SoftwareApplication'],
               '@id': `${pageUrl}#webapp`,
               'name': tool.title,
               'headline': tool.h1,
@@ -840,10 +842,22 @@ export default function App() {
               <FabricCostCalculatorView onNavigate={navigateTo} />
             ) : currentSlug === 'yarn-count-converter' ? (
               <YarnCountConverterView onNavigate={navigateTo} />
+            ) : currentSlug === 'fabric-finder-quiz' ? (
+              <FabricFinderQuizView onNavigate={navigateTo} />
+            ) : currentSlug === 'fabric-care-symbol-guide' ? (
+              <FabricCareSymbolGuideView onNavigate={navigateTo} />
             ) : (
               <ToolsLandingView onNavigate={navigateTo} />
             )}
           </>
+        )}
+
+        {(currentView === 'fabric-finder' || currentView === 'quiz') && (
+          <FabricFinderQuizView onNavigate={navigateTo} />
+        )}
+
+        {(currentView === 'care-symbols' || currentView === 'care-symbol-guide') && (
+          <FabricCareSymbolGuideView onNavigate={navigateTo} />
         )}
 
         {currentView === 'sitemap' && (

@@ -1,3 +1,1 @@
-# ads.txt for https://elitefabrics.online/
-# When your Google AdSense publisher ID is approved, insert your publisher line below:
-# Example: google.com, pub-XXXXXXXXXXXXXXXX, DIRECT, f08c47fec0942fa0
+google.com, pub-1899967479755073, DIRECT, f08c47fec0942fa0

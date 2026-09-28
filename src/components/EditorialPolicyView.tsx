@@ -18,7 +18,7 @@ export const EditorialPolicyView: React.FC<EditorialPolicyViewProps> = ({ onNavi
         </h1>
         <div className="flex flex-wrap items-center gap-4 text-xs text-[#7A7266] pt-1">
           <span className="flex items-center gap-1 font-mono">
-            <Calendar className="w-3.5 h-3.5" /> Last Updated: September 17, 2026
+            <Calendar className="w-3.5 h-3.5" /> Last Updated: September 28, 2026
           </span>
           <span>•</span>
           <span>Domain: <strong className="text-[#1C1C1C]">elitefabrics.online</strong></span>
@@ -123,14 +123,17 @@ export const EditorialPolicyView: React.FC<EditorialPolicyViewProps> = ({ onNavi
             6. Editorial Feedback
           </h2>
           <p className="text-xs sm:text-sm text-[#4A453E]">
-            Have thoughts on an article or an idea for a topic we haven't covered yet? Reach out through our{' '}
+            Have thoughts on an article or an idea for a topic we haven't covered yet? Email our editorial team at{' '}
+            <a href="mailto:editorial@elitefabrics.online" className="font-mono text-[#9E472A] underline font-semibold">
+              editorial@elitefabrics.online
+            </a>{' '}
+            or reach out through our{' '}
             <button 
               onClick={() => onNavigate('contact')} 
               className="text-[#9E472A] underline font-semibold"
             >
               Contact Page
-            </button>{' '}
-            or WhatsApp us at <a href="https://wa.me/923192229067" target="_blank" rel="noopener noreferrer" className="font-mono text-[#1C1C1C] underline">03192229067</a>.
+            </button>.
           </p>
         </section>
       </div>
