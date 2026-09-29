@@ -255,6 +255,157 @@ export const BeginnerGuideView: React.FC<BeginnerGuideViewProps> = ({ onNavigate
         </div>
       </section>
 
+      {/* Cluster: Beginner Guides Pillar Resources */}
+      <section className="space-y-6">
+        <div className="border-b border-[#E6E0D7] pb-4 flex flex-col sm:flex-row sm:items-end justify-between gap-2">
+          <div>
+            <span className="text-[11px] font-mono uppercase text-[#9E472A] font-bold block">
+              Core Educational Pillars
+            </span>
+            <h2 className="text-2xl sm:text-3xl font-serif-heading font-bold text-[#1C1C1C]">
+              Essential Beginner Knowledge Guides
+            </h2>
+          </div>
+          <span className="text-xs text-[#7A7266] font-mono">
+            6 Foundational Learning Tracks
+          </span>
+        </div>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+          {/* 1. Fabric Types Guide */}
+          <div
+            onClick={() => onNavigate('fabrics')}
+            className="p-5 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl cursor-pointer transition-all hover:shadow-xs group space-y-2 flex flex-col justify-between"
+          >
+            <div>
+              <span className="text-[10px] font-mono uppercase tracking-wider text-[#9E472A] font-semibold block mb-1">
+                Pillar Guide 01
+              </span>
+              <h3 className="font-serif-heading font-bold text-base text-[#1C1C1C] group-hover:text-[#9E472A] transition-colors">
+                Fabric Types Guide &amp; Library
+              </h3>
+              <p className="text-xs text-[#5C5549] leading-relaxed mt-1.5">
+                The master index of 38 natural, synthetic, semi-synthetic, and heritage textiles with complete physical characteristics.
+              </p>
+            </div>
+            <div className="pt-3 border-t border-[#F2EDE4] text-xs font-semibold text-[#9E472A] flex items-center justify-between">
+              <span>Explore Master Library</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </div>
+          </div>
+
+          {/* 2. Fabric Weight Guide */}
+          <div
+            onClick={() => onNavigate('articles', 'fabric-weight-demystified-gsm-ounces-guide')}
+            className="p-5 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl cursor-pointer transition-all hover:shadow-xs group space-y-2 flex flex-col justify-between"
+          >
+            <div>
+              <span className="text-[10px] font-mono uppercase tracking-wider text-[#9E472A] font-semibold block mb-1">
+                Pillar Guide 02
+              </span>
+              <h3 className="font-serif-heading font-bold text-base text-[#1C1C1C] group-hover:text-[#9E472A] transition-colors">
+                Fabric Weight Guide: GSM vs Oz
+              </h3>
+              <p className="text-xs text-[#5C5549] leading-relaxed mt-1.5">
+                Understand area density formulas, converting GSM to ounces per square yard, and matching weights to clothing silhouettes.
+              </p>
+            </div>
+            <div className="pt-3 border-t border-[#F2EDE4] text-xs font-semibold text-[#9E472A] flex items-center justify-between">
+              <span>Read Weight Guide</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </div>
+          </div>
+
+          {/* 3. GSM Explained */}
+          <div
+            onClick={() => onNavigate('articles', 'what-is-gsm-in-fabric')}
+            className="p-5 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl cursor-pointer transition-all hover:shadow-xs group space-y-2 flex flex-col justify-between"
+          >
+            <div>
+              <span className="text-[10px] font-mono uppercase tracking-wider text-[#9E472A] font-semibold block mb-1">
+                Pillar Guide 03
+              </span>
+              <h3 className="font-serif-heading font-bold text-base text-[#1C1C1C] group-hover:text-[#9E472A] transition-colors">
+                GSM Explained in Plain English
+              </h3>
+              <p className="text-xs text-[#5C5549] leading-relaxed mt-1.5">
+                What grams per square meter actually measures on clothing tags, sheets, and denim, with full real-world benchmarks.
+              </p>
+            </div>
+            <div className="pt-3 border-t border-[#F2EDE4] text-xs font-semibold text-[#9E472A] flex items-center justify-between">
+              <span>Read GSM Explainer</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </div>
+          </div>
+
+          {/* 4. Weave vs Knit */}
+          <div
+            onClick={() => onNavigate('articles', 'weaving-vs-knitting')}
+            className="p-5 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl cursor-pointer transition-all hover:shadow-xs group space-y-2 flex flex-col justify-between"
+          >
+            <div>
+              <span className="text-[10px] font-mono uppercase tracking-wider text-[#9E472A] font-semibold block mb-1">
+                Pillar Guide 04
+              </span>
+              <h3 className="font-serif-heading font-bold text-base text-[#1C1C1C] group-hover:text-[#9E472A] transition-colors">
+                Weave vs. Knit Construction
+              </h3>
+              <p className="text-xs text-[#5C5549] leading-relaxed mt-1.5">
+                Interlocking loops vs interlacing perpendicular threads: why knits stretch for t-shirts while wovens hold tailored crispness.
+              </p>
+            </div>
+            <div className="pt-3 border-t border-[#F2EDE4] text-xs font-semibold text-[#9E472A] flex items-center justify-between">
+              <span>Read Structural Guide</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </div>
+          </div>
+
+          {/* 5. Fabric Labels Explained */}
+          <div
+            onClick={() => onNavigate('tools', 'fabric-care-symbol-guide')}
+            className="p-5 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl cursor-pointer transition-all hover:shadow-xs group space-y-2 flex flex-col justify-between"
+          >
+            <div>
+              <span className="text-[10px] font-mono uppercase tracking-wider text-[#9E472A] font-semibold block mb-1">
+                Pillar Guide 05
+              </span>
+              <h3 className="font-serif-heading font-bold text-base text-[#1C1C1C] group-hover:text-[#9E472A] transition-colors">
+                Fabric Labels &amp; Symbols Explained
+              </h3>
+              <p className="text-xs text-[#5C5549] leading-relaxed mt-1.5">
+                Decode international laundry care symbols, wash tubs, drying squares, iron dots, and dry clean circles with interactive utility.
+              </p>
+            </div>
+            <div className="pt-3 border-t border-[#F2EDE4] text-xs font-semibold text-[#9E472A] flex items-center justify-between">
+              <span>Launch Label Decoder</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </div>
+          </div>
+
+          {/* 6. Burn Test Guide */}
+          <div
+            onClick={() => onNavigate('beginner')}
+            className="p-5 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl cursor-pointer transition-all hover:shadow-xs group space-y-2 flex flex-col justify-between"
+          >
+            <div>
+              <span className="text-[10px] font-mono uppercase tracking-wider text-[#9E472A] font-semibold block mb-1">
+                Pillar Guide 06
+              </span>
+              <h3 className="font-serif-heading font-bold text-base text-[#1C1C1C] group-hover:text-[#9E472A] transition-colors">
+                Fabric Burn Test Identification
+              </h3>
+              <p className="text-xs text-[#5C5549] leading-relaxed mt-1.5">
+                Identify unknown fabric scraps safely at home by observing flame speed, smell (burning paper vs plastic bead), and ash residue.
+              </p>
+            </div>
+            <div className="pt-3 border-t border-[#F2EDE4] text-xs font-semibold text-[#9E472A] flex items-center justify-between">
+              <span>Explore Burn Signatures</span>
+              <ArrowRight className="w-3.5 h-3.5" />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Helpful FAQ Section */}
       <section className="bg-[#FAF8F5] border border-[#E6E0D7] rounded-2xl p-6 sm:p-10 space-y-6">
         <div className="text-center max-w-2xl mx-auto space-y-2">

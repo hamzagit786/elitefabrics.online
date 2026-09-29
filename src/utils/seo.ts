@@ -7,6 +7,7 @@ interface SEOConfig {
   publishedTime?: string;
   modifiedTime?: string;
   authorName?: string;
+  noindex?: boolean;
   schema?: Record<string, any> | Record<string, any>[];
 }
 
@@ -27,10 +28,25 @@ export function updateDocumentSEO(config: SEOConfig) {
     element.setAttribute('content', content);
   };
 
+  // Robots Meta Tag (prevents indexing for 404 or soft-404 routes)
+  if (config.noindex) {
+    setMetaTag('name', 'robots', 'noindex, follow');
+    setMetaTag('name', 'googlebot', 'noindex, follow');
+  } else {
+    setMetaTag('name', 'robots', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+    setMetaTag('name', 'googlebot', 'index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1');
+  }
+
   // 2. Standard Meta Description
   setMetaTag('name', 'description', config.description);
 
-  // 3. Canonical Link
+  // 3. Self-referencing Canonical Link & Removal of duplicate canonicals
+  const allCanonicals = document.querySelectorAll('link[rel="canonical"]');
+  if (allCanonicals.length > 1) {
+    for (let i = 1; i < allCanonicals.length; i++) {
+      allCanonicals[i].remove();
+    }
+  }
   let canonicalLink = document.querySelector('link[rel="canonical"]');
   if (!canonicalLink) {
     canonicalLink = document.createElement('link');
@@ -38,6 +54,7 @@ export function updateDocumentSEO(config: SEOConfig) {
     document.head.appendChild(canonicalLink);
   }
   canonicalLink.setAttribute('href', config.canonicalUrl);
+
 
   // 4. Open Graph Meta Tags
   setMetaTag('property', 'og:title', config.title);

@@ -18,11 +18,13 @@ import {
   ShieldAlert,
   Scale,
   BookOpen,
-  Calculator
+  Calculator,
+  Layers
 } from 'lucide-react';
 import { FabricType } from '../types';
 import { FABRICS } from '../data/fabrics';
 import { FABRIC_COMPARISONS } from '../data/comparisons';
+import { ARTICLES } from '../data/articles';
 
 interface FabricDetailViewProps {
   fabric: FabricType;
@@ -40,9 +42,34 @@ export const FabricDetailView: React.FC<FabricDetailViewProps> = ({
   const [copied, setCopied] = useState(false);
   const [openFaqIndex, setOpenFaqIndex] = useState<number | null>(0); // First FAQ open by default for helpfulness
 
+  const clusterFabrics = [
+    { name: 'Cotton', slug: 'cotton' },
+    { name: 'Linen', slug: 'linen' },
+    { name: 'Wool', slug: 'wool' },
+    { name: 'Silk', slug: 'silk' },
+    { name: 'Satin', slug: 'satin' },
+    { name: 'Polyester', slug: 'polyester' },
+    { name: 'Rayon', slug: 'rayon' },
+    { name: 'Viscose', slug: 'viscose' },
+    { name: 'Denim', slug: 'denim' },
+    { name: 'Velvet', slug: 'velvet' },
+    { name: 'Chiffon', slug: 'chiffon' },
+    { name: 'Organza', slug: 'organza' },
+    { name: 'Khaddar', slug: 'khaddar' },
+    { name: 'Lawn', slug: 'lawn' },
+    { name: 'Cambric', slug: 'cambric' },
+    { name: 'Karandi', slug: 'karandi' },
+    { name: 'Khadi', slug: 'khadi' },
+    { name: 'Banarasi', slug: 'banarsi' }
+  ];
+
+  const currentIdx = FABRICS.findIndex(f => f.slug === fabric.slug);
+  const prevFabric = currentIdx > 0 ? FABRICS[currentIdx - 1] : FABRICS[FABRICS.length - 1];
+  const nextFabric = currentIdx < FABRICS.length - 1 ? FABRICS[currentIdx + 1] : FABRICS[0];
+
   const handleShare = () => {
     if (navigator.clipboard) {
-      navigator.clipboard.writeText(window.location.href);
+      navigator.clipboard.writeText(`https://elitefabrics.online/fabric/${fabric.slug}`);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     }
@@ -53,8 +80,8 @@ export const FabricDetailView: React.FC<FabricDetailViewProps> = ({
   };
 
   return (
-    <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
-      {/* Navigation & Actions */}
+    <article className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-10">
+      {/* Top Breadcrumb & Actions */}
       <div className="flex flex-wrap items-center justify-between gap-4 text-xs">
         <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-[#6B655C]">
           <button
@@ -72,7 +99,7 @@ export const FabricDetailView: React.FC<FabricDetailViewProps> = ({
           </button>
           <span>/</span>
           <span className="text-[#1C1C1C] font-medium truncate max-w-[180px] sm:max-w-xs">
-            {fabric.name}
+            {fabric.name} Fabric
           </span>
         </nav>
 
@@ -80,7 +107,7 @@ export const FabricDetailView: React.FC<FabricDetailViewProps> = ({
           <button
             onClick={() => onSaveBookmark({
               id: fabric.id,
-              title: fabric.name,
+              title: `${fabric.name} Fabric`,
               type: 'fabric',
               slug: fabric.slug
             })}
@@ -104,7 +131,37 @@ export const FabricDetailView: React.FC<FabricDetailViewProps> = ({
         </div>
       </div>
 
-      {/* Article Header */}
+      {/* Fabric Types Topical Cluster Navigation Ribbon */}
+      <div className="bg-white border border-[#E6E0D7] rounded-xl p-3.5 shadow-2xs space-y-2">
+        <div className="flex items-center justify-between text-xs">
+          <span className="font-mono text-[11px] uppercase tracking-wider text-[#9E472A] font-bold flex items-center gap-1.5">
+            <Layers className="w-3.5 h-3.5" /> Fabric Types Topical Cluster
+          </span>
+          <span className="text-[11px] text-[#7A7266] font-mono">
+            18 Key Textiles Directory
+          </span>
+        </div>
+        <div className="flex items-center gap-1.5 overflow-x-auto pb-1 text-xs">
+          {clusterFabrics.map((cf) => {
+            const isCurrent = cf.slug === fabric.slug || (cf.slug === 'banarsi' && fabric.slug === 'banarsi');
+            return (
+              <button
+                key={cf.slug}
+                onClick={() => onNavigate('fabric', cf.slug)}
+                className={`px-3 py-1 rounded-md text-xs font-medium whitespace-nowrap transition-colors ${
+                  isCurrent
+                    ? 'bg-[#9E472A] text-white font-semibold shadow-xs'
+                    : 'bg-[#FAF8F5] hover:bg-[#EFE9DF] text-[#4A453E] border border-[#E2DBD0]'
+                }`}
+              >
+                {cf.name} Fabric
+              </button>
+            );
+          })}
+        </div>
+      </div>
+
+      {/* Article Header (Phase 3 Keyword Mapping: Primary Keyword is [Fabric Name] Fabric) */}
       <header className="space-y-4">
         <div className="flex flex-wrap items-center gap-2 text-xs">
           <span className="px-2.5 py-1 font-bold uppercase tracking-wider bg-[#F2EDE4] text-[#70685D] rounded">
@@ -113,25 +170,42 @@ export const FabricDetailView: React.FC<FabricDetailViewProps> = ({
           <span className="text-[#8C8478]">
             Origin: {fabric.origin.split(';')[0].split('(')[0]}
           </span>
+          <span className="text-[#8C8478] font-mono text-[11px]">
+            • Weight: {fabric.weightGsm.split('(')[0]}
+          </span>
         </div>
 
         <h1 className="text-3xl sm:text-5xl font-serif-heading font-bold text-[#1C1C1C] tracking-tight">
-          Everything You Need to Know About {fabric.name}
+          {fabric.name} Fabric
         </h1>
 
         <p className="text-base sm:text-lg text-[#554E44] leading-relaxed">
-          {fabric.whatIsIt || fabric.fiberComposition}
+          Comprehensive textile guide covering {fabric.name.toLowerCase()} fabric characteristics, weaving construction, breathability, durability, sewing uses, and practical garment care.
         </p>
       </header>
 
-      {/* Featured Photo with ALT & Friendly Caption */}
+      {/* Featured Snippet Definition Box (40–60 words direct answer) */}
+      <section className="p-5 sm:p-6 bg-white border-l-4 border-[#9E472A] border-y border-r border-[#E6E0D7] rounded-r-xl shadow-2xs space-y-2">
+        <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-[#9E472A]">
+          <Sparkles className="w-4 h-4" />
+          <span>Quick Definition: What is {fabric.name} Fabric?</span>
+        </div>
+        <p className="text-sm sm:text-base text-[#1C1C1C] font-medium leading-relaxed">
+          {fabric.whatIsIt}
+        </p>
+      </section>
+
+      {/* Featured Photo with ALT, Width/Height & FetchPriority */}
       <figure className="bg-white border border-[#E6E0D7] rounded-xl overflow-hidden p-2 shadow-xs">
         <div className="aspect-16/9 overflow-hidden rounded-lg bg-[#FAF8F5]">
           <img
             src={fabric.image}
             alt={fabric.imageAlt}
             loading="eager"
+            fetchPriority="high"
             decoding="async"
+            width="1200"
+            height="675"
             className="w-full h-full object-cover"
           />
         </div>
@@ -509,6 +583,62 @@ export const FabricDetailView: React.FC<FabricDetailViewProps> = ({
           );
         })()}
 
+        {/* Related In-Depth Articles & Guides */}
+        {(() => {
+          const relatedArticles = ARTICLES.filter(a => 
+            a.title.toLowerCase().includes(fabric.name.toLowerCase()) ||
+            a.tags?.some(t => t.toLowerCase() === fabric.name.toLowerCase() || t.toLowerCase() === fabric.slug) ||
+            a.relatedFabrics?.includes(fabric.slug) ||
+            (fabric.slug === 'cotton' && (a.slug.includes('cotton') || a.slug.includes('gsm') || a.slug.includes('shrinkage'))) ||
+            (fabric.slug === 'denim' && a.slug.includes('denim')) ||
+            (fabric.slug === 'canvas' && a.slug.includes('canvas')) ||
+            (fabric.slug === 'lawn' && a.slug.includes('lawn'))
+          ).slice(0, 3);
+
+          if (relatedArticles.length === 0) return null;
+
+          return (
+            <section className="pt-6 border-t border-[#E8E2D8] space-y-4">
+              <div className="flex items-center justify-between">
+                <h2 className="text-xl font-serif-heading font-bold text-[#1C1C1C] flex items-center gap-2">
+                  <BookOpen className="w-5 h-5 text-[#9E472A]" /> In-Depth {fabric.name} Guides &amp; Tutorials
+                </h2>
+                <button
+                  onClick={() => onNavigate('blog')}
+                  className="text-xs font-medium text-[#9E472A] hover:underline"
+                >
+                  All Articles →
+                </button>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {relatedArticles.map(art => (
+                  <div
+                    key={art.id}
+                    onClick={() => onNavigate('articles', art.slug)}
+                    className="p-4 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-lg cursor-pointer transition-all hover:shadow-xs group flex flex-col justify-between"
+                  >
+                    <div>
+                      <span className="text-[10px] font-mono uppercase text-[#9E472A] font-semibold block mb-1">
+                        {art.category} • {art.readTime}
+                      </span>
+                      <h3 className="text-sm font-serif-heading font-bold text-[#1C1C1C] group-hover:text-[#9E472A] transition-colors leading-snug">
+                        {art.title}
+                      </h3>
+                      <p className="text-xs text-[#6B655C] mt-1.5 line-clamp-2">
+                        {art.excerpt}
+                      </p>
+                    </div>
+                    <div className="pt-2 mt-3 border-t border-[#F2ECE3] text-right">
+                      <span className="text-xs text-[#9E472A] font-semibold">Read Guide →</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          );
+        })()}
+
         {/* Quick Cross-Links to Guides */}
         <section className="p-5 bg-[#F4EFE6] border border-[#E5DDD0] rounded-xl space-y-3 text-xs">
           <h3 className="font-serif-heading font-bold text-[#1C1C1C] flex items-center gap-2 text-sm">
@@ -543,6 +673,36 @@ export const FabricDetailView: React.FC<FabricDetailViewProps> = ({
               Global Textile Industry Hubs →
             </button>
           </div>
+        </section>
+
+        {/* Fabric Type Cluster Next / Previous Pagination */}
+        <section className="pt-6 border-t border-[#E8E2D8] flex flex-col sm:flex-row items-center justify-between gap-4">
+          <button
+            onClick={() => onNavigate('fabric', prevFabric.slug)}
+            className="w-full sm:w-auto p-4 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl text-left transition-all hover:shadow-xs group"
+          >
+            <span className="text-[10px] font-mono uppercase text-[#8C8478] block">← Previous Fabric Type</span>
+            <span className="text-sm font-serif-heading font-bold text-[#1C1C1C] group-hover:text-[#9E472A] transition-colors">
+              {prevFabric.name} Fabric
+            </span>
+          </button>
+
+          <button
+            onClick={() => onNavigate('fabrics')}
+            className="text-xs font-semibold uppercase tracking-wider text-[#9E472A] hover:underline"
+          >
+            Browse All 38 Fabrics
+          </button>
+
+          <button
+            onClick={() => onNavigate('fabric', nextFabric.slug)}
+            className="w-full sm:w-auto p-4 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl text-right transition-all hover:shadow-xs group"
+          >
+            <span className="text-[10px] font-mono uppercase text-[#8C8478] block">Next Fabric Type →</span>
+            <span className="text-sm font-serif-heading font-bold text-[#1C1C1C] group-hover:text-[#9E472A] transition-colors">
+              {nextFabric.name} Fabric
+            </span>
+          </button>
         </section>
 
       </div>

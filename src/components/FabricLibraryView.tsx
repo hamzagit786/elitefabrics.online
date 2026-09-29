@@ -215,6 +215,9 @@ export const FabricLibraryView: React.FC<FabricLibraryViewProps> = ({
                     src={fabric.image}
                     alt={fabric.imageAlt}
                     loading="lazy"
+                    decoding="async"
+                    width="400"
+                    height="250"
                     className="w-full h-full object-cover group-hover:scale-104 transition-transform duration-500"
                   />
                   <span className="absolute top-3 left-3 px-2.5 py-1 text-[10px] font-bold uppercase tracking-wider bg-black/75 backdrop-blur-xs text-white rounded">

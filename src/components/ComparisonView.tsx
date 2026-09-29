@@ -13,6 +13,8 @@ import {
 import { FabricComparison } from '../types';
 import { FABRIC_COMPARISONS } from '../data/comparisons';
 import { FABRICS } from '../data/fabrics';
+import { ARTICLES } from '../data/articles';
+import { BookOpen } from 'lucide-react';
 
 interface ComparisonViewProps {
   initialSlug?: string;
@@ -166,6 +168,49 @@ export const ComparisonView: React.FC<ComparisonViewProps> = ({
           </div>
         </div>
 
+        {/* Comparison Summary Table (Featured Snippet Optimized) */}
+        <section className="space-y-4">
+          <div className="flex items-center justify-between">
+            <h3 className="text-xl sm:text-2xl font-serif-heading font-bold text-[#1C1C1C]">
+              {currentComparison.fabricA.name} vs. {currentComparison.fabricB.name} Comparison Matrix
+            </h3>
+            <span className="text-[11px] font-mono text-[#8C8478] uppercase hidden sm:inline-block">
+              Factual Laboratory &amp; Trade Specs
+            </span>
+          </div>
+
+          <div className="overflow-x-auto rounded-xl border border-[#E6E0D7] shadow-2xs">
+            <table className="w-full text-left text-xs sm:text-sm border-collapse bg-white">
+              <thead>
+                <tr className="bg-[#FAF8F5] border-b border-[#E6E0D7] text-[#1C1C1C]">
+                  <th scope="col" className="p-3.5 sm:p-4 font-bold font-serif-heading w-1/4">Evaluation Metric</th>
+                  <th scope="col" className="p-3.5 sm:p-4 font-bold font-serif-heading text-[#9E472A] w-1/3">
+                    {currentComparison.fabricA.name}
+                  </th>
+                  <th scope="col" className="p-3.5 sm:p-4 font-bold font-serif-heading text-[#3B4D3C] w-1/3">
+                    {currentComparison.fabricB.name}
+                  </th>
+                </tr>
+              </thead>
+              <tbody className="divide-y divide-[#F2ECE3]">
+                {currentComparison.criteria.map((crit, idx) => (
+                  <tr key={idx} className="hover:bg-[#FAF8F5]/60 transition-colors">
+                    <td className="p-3.5 sm:p-4 font-semibold text-[#1C1C1C] align-top bg-[#FAF8F5]/30">
+                      {crit.name}
+                    </td>
+                    <td className="p-3.5 sm:p-4 text-[#4A453E] leading-relaxed align-top">
+                      {crit.fabricAValue}
+                    </td>
+                    <td className="p-3.5 sm:p-4 text-[#4A453E] leading-relaxed align-top">
+                      {crit.fabricBValue}
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </section>
+
         {/* Detailed Technical Criteria Breakdown */}
         <section className="space-y-6">
           <h3 className="text-2xl font-serif-heading font-bold text-[#1C1C1C] pb-2 border-b border-[#E6E0D7]">
@@ -225,6 +270,59 @@ export const ComparisonView: React.FC<ComparisonViewProps> = ({
             {currentComparison.verdictGuidance || currentComparison.verdict}
           </p>
         </section>
+
+        {/* Related In-Depth Articles & Technical Guides */}
+        {(() => {
+          const compArticles = ARTICLES.filter(a =>
+            a.title.toLowerCase().includes(currentComparison.fabricA.name.toLowerCase()) ||
+            a.title.toLowerCase().includes(currentComparison.fabricB.name.toLowerCase()) ||
+            a.relatedFabrics?.includes(currentComparison.fabricA.slug) ||
+            a.relatedFabrics?.includes(currentComparison.fabricB.slug)
+          ).slice(0, 3);
+
+          if (compArticles.length === 0) return null;
+
+          return (
+            <section className="pt-6 border-t border-[#E6E0D7] space-y-4">
+              <div className="flex items-center justify-between">
+                <h3 className="font-serif-heading font-bold text-xl text-[#1C1C1C] flex items-center gap-2">
+                  <BookOpen className="w-5 h-5 text-[#9E472A]" /> In-Depth Material Guides &amp; Science
+                </h3>
+                <button
+                  onClick={() => onNavigate('blog')}
+                  className="text-xs font-medium text-[#9E472A] hover:underline"
+                >
+                  All Articles →
+                </button>
+              </div>
+
+              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                {compArticles.map(art => (
+                  <div
+                    key={art.id}
+                    onClick={() => onNavigate('articles', art.slug)}
+                    className="p-4 bg-[#FAF8F5] border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl cursor-pointer transition-all hover:shadow-xs group flex flex-col justify-between"
+                  >
+                    <div>
+                      <span className="text-[10px] font-mono uppercase text-[#9E472A] font-semibold block mb-1">
+                        {art.category} • {art.readTime}
+                      </span>
+                      <h4 className="font-serif-heading font-bold text-sm text-[#1C1C1C] group-hover:text-[#9E472A] transition-colors leading-snug">
+                        {art.title}
+                      </h4>
+                      <p className="text-xs text-[#5C5549] mt-1.5 line-clamp-2">
+                        {art.excerpt}
+                      </p>
+                    </div>
+                    <div className="pt-2 mt-3 border-t border-[#EAE3D6] text-right">
+                      <span className="text-xs text-[#9E472A] font-semibold">Read Guide →</span>
+                    </div>
+                  </div>
+                ))}
+              </div>
+            </section>
+          );
+        })()}
       </div>
     </div>
   );

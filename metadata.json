@@ -1,6 +1,6 @@
 {
   "name": "Elite Fabrics",
-  "description": "Learn about fabric and textiles in simple English. Explore fabric types, comparisons, care guides, Pakistani fabrics, textile history and beginner-friendly resources.",
+  "description": "Explore our fabric types guide, textile guide, and fabric information library. Master material comparisons, weave structures, and garment care instructions.",
   "requestFramePermissions": [],
   "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
 }

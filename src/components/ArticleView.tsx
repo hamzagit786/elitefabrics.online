@@ -24,6 +24,7 @@ import {
 import { Article } from '../types';
 import { ARTICLES } from '../data/articles';
 import { FABRICS } from '../data/fabrics';
+import { FABRIC_COMPARISONS } from '../data/comparisons';
 
 interface ArticleViewProps {
   article: Article;
@@ -45,7 +46,7 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
 
   const handleShare = () => {
     if (navigator.clipboard) {
-      navigator.clipboard.writeText(window.location.href);
+      navigator.clipboard.writeText(`https://elitefabrics.online/articles/${article.slug}`);
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     }
@@ -185,6 +186,11 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
             {article.updatedDate && (
               <div className="text-[#9E472A]">Revised: {article.updatedDate}</div>
             )}
+            <div className="text-[10px] text-[#8C8478] pt-0.5">
+              <button onClick={() => onNavigate('editorial-policy')} className="hover:underline text-[#70685D]">Editorial Policy</button>
+              {' • '}
+              <button onClick={() => onNavigate('corrections-policy')} className="hover:underline text-[#70685D]">Fact-Checking Standards</button>
+            </div>
           </div>
         </div>
 
@@ -196,6 +202,22 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
           </div>
         )}
       </header>
+
+      {/* Featured Snippet Direct Answer Box (40–60 words) */}
+      <section className="p-5 sm:p-6 bg-white border border-[#E6E0D7] rounded-xl shadow-2xs space-y-2.5">
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-2 text-xs font-mono font-bold uppercase tracking-wider text-[#9E472A]">
+            <CheckCircle2 className="w-4 h-4 text-[#9E472A]" />
+            <span>Direct Answer &amp; Core Summary</span>
+          </div>
+          <span className="text-[10px] font-mono text-[#8C8478] uppercase hidden sm:inline">
+            Textile Standards Verified
+          </span>
+        </div>
+        <p className="text-base sm:text-[17px] text-[#1C1C1C] font-medium leading-relaxed">
+          {article.excerpt}
+        </p>
+      </section>
 
       {/* Key Takeaways Box */}
       <section className="bg-[#FAF8F5] border-l-4 border-[#9E472A] border-y border-r border-[#E8E2D8] rounded-r-xl p-5 sm:p-6 space-y-3 shadow-2xs">
@@ -221,6 +243,8 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
             alt={article.imageAlt}
             loading="eager"
             decoding="async"
+            width="1200"
+            height="630"
             className="w-full h-full object-cover"
           />
         </div>
@@ -371,6 +395,52 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
             </div>
           </section>
 
+          {/* Related Fabric Comparisons */}
+          {(() => {
+            const relComparisons = FABRIC_COMPARISONS.filter(c =>
+              matchedFabrics.some(f => f.slug === c.fabricA.slug || f.slug === c.fabricB.slug) ||
+              article.title.toLowerCase().includes(c.fabricA.name.toLowerCase()) ||
+              article.title.toLowerCase().includes(c.fabricB.name.toLowerCase())
+            ).slice(0, 2);
+
+            if (relComparisons.length === 0) return null;
+
+            return (
+              <section className="mt-8 pt-6 border-t border-[#E6E0D7] space-y-3">
+                <div className="flex items-center justify-between">
+                  <h4 className="font-serif-heading font-bold text-lg text-[#1C1C1C] flex items-center gap-2">
+                    <span>Side-by-Side Material Comparisons</span>
+                  </h4>
+                  <button
+                    onClick={() => onNavigate('comparisons')}
+                    className="text-xs font-medium text-[#9E472A] hover:underline"
+                  >
+                    All Comparisons →
+                  </button>
+                </div>
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                  {relComparisons.map(comp => (
+                    <div
+                      key={comp.id}
+                      onClick={() => onNavigate('comparison', comp.slug)}
+                      className="p-3.5 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-lg cursor-pointer transition-all hover:shadow-xs group"
+                    >
+                      <span className="text-[10px] font-mono uppercase text-[#9E472A] font-semibold block mb-0.5">
+                        Technical Comparison
+                      </span>
+                      <h5 className="text-sm font-serif-heading font-bold text-[#1C1C1C] group-hover:text-[#9E472A] transition-colors leading-snug">
+                        {comp.title}
+                      </h5>
+                      <p className="text-xs text-[#6B655C] mt-1 line-clamp-1">
+                        {comp.overview}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+              </section>
+            );
+          })()}
+
           {/* References & Recommended Sources */}
           {article.sources && article.sources.length > 0 && (
             <section className="mt-10 pt-6 border-t border-[#E6E0D7]">
@@ -491,7 +561,7 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
             {relatedArticles.map((rel) => (
               <div
                 key={rel.id}
-                onClick={() => onNavigate('article', rel.slug)}
+                onClick={() => onNavigate('articles', rel.slug)}
                 className="group cursor-pointer bg-white border border-[#E8E2D9] rounded-lg overflow-hidden hover:border-[#9E472A] hover:shadow-xs transition-all flex flex-col justify-between"
               >
                 <div>
@@ -499,6 +569,10 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
                     <img 
                       src={rel.featuredImage} 
                       alt={rel.imageAlt}
+                      loading="lazy"
+                      decoding="async"
+                      width="400"
+                      height="250"
                       className="w-full h-full object-cover group-hover:scale-104 transition-transform duration-500"
                     />
                   </div>

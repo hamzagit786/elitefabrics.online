@@ -16,3 +16,4 @@ User-agent: Slurp
 Allow: /
 
 Sitemap: https://elitefabrics.online/sitemap.xml
+Sitemap: https://elitefabrics.online/image-sitemap.xml

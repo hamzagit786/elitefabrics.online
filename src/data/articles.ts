@@ -1,4 +1,10 @@
 import { Article } from '../types';
+import { NEW_FABRIC_TYPES_PART1 } from './articles/fabricTypesNewArticles';
+import { NEW_FABRIC_TYPES_PART2 } from './articles/fabricTypesNewArticles2';
+import { NEW_COMPARISONS_PART1 } from './articles/comparisonsNewArticles';
+import { NEW_COMPARISONS_PART2 } from './articles/comparisonsNewArticles2';
+import { NEW_FABRIC_CARE_ARTICLES } from './articles/fabricCareNewArticles';
+import { NEW_BEGINNER_GUIDES_ARTICLES } from './articles/beginnerGuidesNewArticles';
 import { FABRIC_WEIGHT_ARTICLES } from './articles/fabricWeightArticles';
 import { SEWING_CARE_ARTICLES } from './articles/sewingCareArticles';
 import { FABRIC_TYPE_ARTICLES } from './articles/fabricTypeArticles';
@@ -2100,6 +2106,12 @@ const BASE_ARTICLES: Article[] = [
 ];
 
 export const ARTICLES: Article[] = [
+  ...NEW_FABRIC_TYPES_PART1,
+  ...NEW_FABRIC_TYPES_PART2,
+  ...NEW_COMPARISONS_PART1,
+  ...NEW_COMPARISONS_PART2,
+  ...NEW_FABRIC_CARE_ARTICLES,
+  ...NEW_BEGINNER_GUIDES_ARTICLES,
   ...BASE_ARTICLES,
   ...FABRIC_WEIGHT_ARTICLES,
   ...SEWING_CARE_ARTICLES,

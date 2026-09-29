@@ -31,6 +31,7 @@ import { CorrectionsPolicyView } from './components/CorrectionsPolicyView';
 import { AdvertisingPolicyView } from './components/AdvertisingPolicyView';
 import { SitemapView } from './components/SitemapView';
 import { CookieConsentBanner } from './components/CookieConsentBanner';
+import { NotFoundView } from './components/NotFoundView';
 
 // Tools Components
 import { ToolsLandingView } from './components/tools/ToolsLandingView';
@@ -76,26 +77,91 @@ export default function App() {
     }
   }, [savedItems]);
 
-  // Handle URL Hash navigation
+  // Handle URL Hash navigation and direct URL paths
   const parseHash = () => {
-    const hash = window.location.hash.replace(/^#\/?/, '');
-    if (!hash) {
+    let raw = window.location.hash.replace(/^#\/?/, '');
+    if (!raw && window.location.pathname && window.location.pathname !== '/') {
+      raw = window.location.pathname.replace(/^\//, '');
+    }
+    if (!raw) {
       setCurrentView('home');
       setCurrentSlug('');
       return;
     }
 
-    const parts = hash.split('/');
+    const parts = raw.split('/');
     const view = parts[0];
     const slug = parts[1] || '';
 
-    // Handle aliases like #articles, #articles/slug, #guide/slug
-    if (view === 'articles') {
+    // Handle article routes: /articles or /articles/slug or /article/slug
+    if (view === 'articles' || view === 'article') {
       if (slug) {
-        setCurrentView('article');
-        setCurrentSlug(slug);
+        const articleMatch = ARTICLES.find(a => a.slug === slug);
+        if (articleMatch) {
+          setCurrentView('article');
+          setCurrentSlug(slug);
+        } else {
+          setCurrentView('404');
+          setCurrentSlug(slug);
+        }
       } else {
         setCurrentView('blog');
+        setCurrentSlug('');
+      }
+      return;
+    }
+
+    // Fabric detail routes: /fabric/slug
+    if (view === 'fabric') {
+      const normalizedSlug = slug === 'banarasi' ? 'banarsi' : slug;
+      if (normalizedSlug) {
+        const fabricMatch = FABRICS.find(f => f.slug === normalizedSlug);
+        if (fabricMatch) {
+          setCurrentView('fabric');
+          setCurrentSlug(fabricMatch.slug);
+        } else {
+          setCurrentView('404');
+          setCurrentSlug(slug);
+        }
+      } else {
+        setCurrentView('fabrics');
+        setCurrentSlug('');
+      }
+      return;
+    }
+
+    // Comparison detail routes: /comparison/slug (supports bidirectional links e.g. polyester-vs-cotton or cotton-vs-polyester)
+    if (view === 'comparison') {
+      if (slug) {
+        const reversedSlug = slug.includes('-vs-') ? slug.split('-vs-').reverse().join('-vs-') : '';
+        const compMatch = FABRIC_COMPARISONS.find(c => c.slug === slug || (reversedSlug && c.slug === reversedSlug));
+        if (compMatch) {
+          setCurrentView('comparison');
+          setCurrentSlug(compMatch.slug);
+        } else {
+          setCurrentView('404');
+          setCurrentSlug(slug);
+        }
+      } else {
+        setCurrentView('comparisons');
+        setCurrentSlug('');
+      }
+      return;
+    }
+
+    // Tools detail routes: /tools/slug
+    if (view === 'tools') {
+      if (slug) {
+        const toolMatch = FABRIC_TOOLS.find(t => t.slug === slug);
+        if (toolMatch) {
+          setCurrentView('tools');
+          setCurrentSlug(slug);
+        } else {
+          setCurrentView('404');
+          setCurrentSlug(slug);
+        }
+      } else {
+        setCurrentView('tools');
         setCurrentSlug('');
       }
       return;
@@ -163,8 +229,8 @@ export default function App() {
       setCurrentView(view);
       setCurrentSlug(slug);
     } else {
-      setCurrentView('home');
-      setCurrentSlug('');
+      setCurrentView('404');
+      setCurrentSlug(raw);
     }
   };
 
@@ -180,8 +246,8 @@ export default function App() {
 
     if (currentView === 'home') {
       updateDocumentSEO({
-        title: 'Fabric & Textile Guide – Types, Comparisons & Care | Elite Fabrics',
-        description: 'Learn about fabric and textiles in simple English. Explore fabric types, comparisons, care guides, Pakistani fabrics, textile history and beginner-friendly resources.',
+        title: 'Fabric Types Guide & Textile Library | Elite Fabrics',
+        description: 'Explore our fabric types guide, textile guide, and fabric information library. Master material comparisons, weave structures, and garment care instructions.',
         canonicalUrl: `${baseUrl}/`,
         schema: [
           {
@@ -189,8 +255,13 @@ export default function App() {
             '@id': `${baseUrl}/#website`,
             'name': 'Elite Fabrics',
             'url': `${baseUrl}/`,
-            'description': 'Learn about fabric and textiles in simple English. Explore fabric types, comparisons, care guides, Pakistani fabrics, textile history and beginner-friendly resources.',
+            'description': 'Explore our fabric types guide, textile guide, and fabric information library. Master material comparisons, weave structures, and garment care instructions.',
             'publisher': { '@id': `${baseUrl}/#organization` },
+            'potentialAction': {
+              '@type': 'SearchAction',
+              'target': `${baseUrl}/#blog?q={search_term_string}`,
+              'query-input': 'required name=search_term_string'
+            },
             'inLanguage': 'en-US'
           },
           {
@@ -212,9 +283,20 @@ export default function App() {
             '@type': 'TechArticle',
             'headline': `${f.name} Fabric Guide: Characteristics, Uses & Care`,
             'description': f.whatIsIt || f.description || `Comprehensive guide to ${f.name} fabric.`,
-            'author': { '@type': 'Organization', 'name': 'Elite Fabrics Team' },
+            'author': { '@type': 'Organization', 'name': 'Elite Fabrics Editorial Team' },
             'publisher': { '@type': 'Organization', 'name': 'Elite Fabrics', 'url': `${baseUrl}/` },
             'mainEntityOfPage': pageUrl
+          },
+          {
+            '@type': 'DefinedTerm',
+            '@id': `${pageUrl}#term`,
+            'name': `${f.name} Fabric`,
+            'description': f.whatIsIt || f.description || `Technical and structural guide to ${f.name} fabric.`,
+            'inDefinedTermSet': {
+              '@type': 'DefinedTermSet',
+              'name': 'Elite Fabrics Textile Library',
+              'url': `${baseUrl}/fabrics`
+            }
           },
           {
             '@type': 'BreadcrumbList',
@@ -242,10 +324,8 @@ export default function App() {
         }
 
         updateDocumentSEO({
-          title: `${f.name} Fabric Guide: Properties, Uses & Care | Elite Fabrics`,
-          description: f.whatIsIt 
-            ? `${f.whatIsIt.slice(0, 150)}...` 
-            : `Comprehensive guide to ${f.name} fabric (${f.fiberComposition}). Learn about its texture, breathability, and care.`,
+          title: `${f.name} Fabric Guide | Elite Fabrics`,
+          description: `Comprehensive ${f.name.toLowerCase()} fabric guide. Learn about ${f.name.toLowerCase()} fiber properties, breathability, durability, sewing uses, and garment care instructions.`,
           canonicalUrl: pageUrl,
           ogType: 'article',
           schema: schemas
@@ -599,10 +679,17 @@ export default function App() {
           ]
         });
       }
+    } else if (currentView === '404') {
+      updateDocumentSEO({
+        title: 'Page Not Found (404) | Elite Fabrics',
+        description: 'The fabric guide or resource you requested could not be found. Explore our Fabric Library, textile calculators, or blog guides.',
+        canonicalUrl: `${baseUrl}/`,
+        noindex: true
+      });
     } else {
       updateDocumentSEO({
-        title: 'Fabric & Textile Guide – Types, Comparisons & Care | Elite Fabrics',
-        description: 'Learn about fabric and textiles in simple English. Explore fabric types, comparisons, care guides, Pakistani fabrics, textile history and beginner-friendly resources.',
+        title: 'Fabric Types Guide & Textile Library | Elite Fabrics',
+        description: 'Explore our fabric types guide, textile guide, and fabric information library. Master material comparisons, weave structures, and garment care instructions.',
         canonicalUrl: `${baseUrl}/`
       });
     }
@@ -621,12 +708,15 @@ export default function App() {
   }, []);
 
   const navigateTo = (view: string, idOrSlug?: string) => {
-    setCurrentView(view);
+    const targetRoute = view === 'article' ? 'articles' : view;
+    const internalView = view === 'articles' && idOrSlug ? 'article' : (view === 'articles' && !idOrSlug ? 'blog' : view);
+
+    setCurrentView(internalView);
     setCurrentSlug(idOrSlug || '');
     if (idOrSlug) {
-      window.location.hash = `#${view}/${idOrSlug}`;
+      window.location.hash = `#${targetRoute}/${idOrSlug}`;
     } else {
-      window.location.hash = `#${view}`;
+      window.location.hash = `#${targetRoute}`;
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
@@ -862,6 +952,12 @@ export default function App() {
 
         {currentView === 'sitemap' && (
           <SitemapView 
+            onNavigate={navigateTo} 
+          />
+        )}
+
+        {currentView === '404' && (
+          <NotFoundView 
             onNavigate={navigateTo} 
           />
         )}

@@ -77,6 +77,9 @@ export const BlogView: React.FC<BlogViewProps> = ({ onNavigate }) => {
             <img
               src={featuredArticle.featuredImage}
               alt={featuredArticle.imageAlt}
+              width="800"
+              height="500"
+              decoding="async"
               className="w-full h-full object-cover"
               loading="eager"
             />
@@ -97,7 +100,7 @@ export const BlogView: React.FC<BlogViewProps> = ({ onNavigate }) => {
               </div>
 
               <h2 
-                onClick={() => onNavigate('article', featuredArticle.slug)}
+                onClick={() => onNavigate('articles', featuredArticle.slug)}
                 className="text-2xl sm:text-3xl font-serif-heading font-bold text-[#1C1C1C] hover:text-[#9E472A] cursor-pointer transition-colors leading-tight"
               >
                 {featuredArticle.title}
@@ -113,6 +116,10 @@ export const BlogView: React.FC<BlogViewProps> = ({ onNavigate }) => {
                 <img
                   src={featuredArticle.author.avatar}
                   alt={featuredArticle.author.name}
+                  width="32"
+                  height="32"
+                  loading="lazy"
+                  decoding="async"
                   className="w-8 h-8 rounded-full object-cover border border-[#DDD5C7]"
                 />
                 <div className="text-xs">
@@ -122,7 +129,7 @@ export const BlogView: React.FC<BlogViewProps> = ({ onNavigate }) => {
               </div>
 
               <button
-                onClick={() => onNavigate('article', featuredArticle.slug)}
+                onClick={() => onNavigate('articles', featuredArticle.slug)}
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#9E472A] hover:text-[#B55535] uppercase tracking-wider"
               >
                 Read Guide <ArrowRight className="w-3.5 h-3.5" />
@@ -173,12 +180,15 @@ export const BlogView: React.FC<BlogViewProps> = ({ onNavigate }) => {
           >
             <div>
               <div 
-                onClick={() => onNavigate('article', art.slug)}
+                onClick={() => onNavigate('articles', art.slug)}
                 className="aspect-16/10 relative overflow-hidden bg-[#EAE4D9] cursor-pointer"
               >
                 <img
                   src={art.featuredImage}
                   alt={art.imageAlt}
+                  width="400"
+                  height="250"
+                  decoding="async"
                   className="w-full h-full object-cover group-hover:scale-103 transition-transform duration-300"
                   loading="lazy"
                 />
@@ -195,7 +205,7 @@ export const BlogView: React.FC<BlogViewProps> = ({ onNavigate }) => {
                 </div>
 
                 <h3 
-                  onClick={() => onNavigate('article', art.slug)}
+                  onClick={() => onNavigate('articles', art.slug)}
                   className="font-serif-heading font-bold text-lg text-[#1C1C1C] group-hover:text-[#9E472A] cursor-pointer transition-colors leading-snug line-clamp-2"
                 >
                   {art.title}

@@ -1128,6 +1128,80 @@ export const FABRIC_COMPARISONS: FabricComparison[] = [
         answer: 'Velveteen is another cotton relative of velvet: it is a woven cotton fabric with a shorter, denser, duller cut weft pile that resembles suede or short-pile velvet, often used for children\'s dresses and trousers.'
       }
     ]
+  },
+  {
+    id: 'khaddar-vs-karandi',
+    slug: 'khaddar-vs-karandi',
+    title: 'Khaddar vs. Karandi: Pakistani Winter Fabric Comparison',
+    publishDate: '2026-09-29',
+    updatedDate: '2026-09-29',
+    author: 'Elite Fabrics Team',
+    fabricA: {
+      name: 'Khaddar',
+      slug: 'khaddar',
+      summary: 'Heavy, rustic handspun or mill-woven cotton fabric known for exceptional warmth and textured earthy surface.'
+    },
+    fabricB: {
+      name: 'Karandi',
+      slug: 'karandi',
+      summary: 'Luxurious winter blend combining raw silk and fine cotton with distinctive uneven slubs and formal drape.'
+    },
+    overview: 'Khaddar and Karandi are Pakistan\'s premier traditional winter fabrics. Khaddar is made from thick, coarse cotton yarns providing robust thermal insulation and rugged texture. Karandi incorporates raw silk or tussar silk into its cotton base, creating an elegant, lightly lustrous cloth ideal for formal winter shalwar kameez and festive kurtas.',
+    criteria: [
+      {
+        name: 'Fiber Composition & Weave',
+        fabricAValue: '100% thick carded cotton spun with uneven rustic yarns.',
+        fabricBValue: 'Cotton warp with raw silk (tussar) weft blend featuring natural slubs.',
+        analysis: 'Khaddar is a pure vegetable fiber textile, whereas Karandi is a cotton-silk hybrid that provides a subtle sheen alongside winter warmth.'
+      },
+      {
+        name: 'Warmth & Thermal Insulation',
+        fabricAValue: 'High thermal retention; dense cotton weave blocks cold drafts effectively.',
+        fabricBValue: 'Moderate to high warmth; raw silk fibers trap insulating body heat.',
+        analysis: 'Khaddar is warmer in freezing weather due to its heavier weight (180–260 GSM), while Karandi (140–200 GSM) offers refined warmth for transitional cool weather and heated indoor gatherings.'
+      },
+      {
+        name: 'Texture & Hand-Feel',
+        fabricAValue: 'Textured, coarse, and earthy with visible weaving grain.',
+        fabricBValue: 'Structured with characteristic silk slubs; crisp yet smooth hand.',
+        analysis: 'Khaddar embraces a rustic, tactile character reminiscent of handspun heritage, while Karandi feels noticeably more regal and smooth against the skin.'
+      },
+      {
+        name: 'Formality & Occasion',
+        fabricAValue: 'Casual everyday winter wear, outdoor shawls, and relaxed kurtas.',
+        fabricBValue: 'Semi-formal to formal festive wear, wedding events, and Eid collections.',
+        analysis: 'Karandi is traditionally chosen for formal embroidered suits, whereas Khaddar excels as durable daily winter apparel.'
+      },
+      {
+        name: 'Care & Maintenance',
+        fabricAValue: 'Easy home hand wash or gentle machine wash; iron damp on cotton setting.',
+        fabricBValue: 'Dry clean recommended or very gentle cold hand wash to protect raw silk yarns.',
+        analysis: 'Because Karandi contains delicate silk filaments, vigorous washing can disrupt the slub structure and dull its sheen.'
+      }
+    ],
+    verdictGuidance: 'Choose **Khaddar** for everyday winter warmth, comfortable daily shalwar kameez, outdoor wear, and traditional rustic aesthetic. Choose **Karandi** for formal evening gatherings, winter wedding guest wear, embroidered designer suits, and occasions where you want the refined luxury of silk combined with cotton body.',
+    idealUseCasesA: [
+      'Everyday winter shalwar kameez and kurtas',
+      'Warm winter shawls and waistcoats',
+      'Casual lounging and cool-weather workwear',
+      'Rustic traditional homewares'
+    ],
+    idealUseCasesB: [
+      'Formal festive winter suits and kurtas',
+      'Embroidered wedding guest apparel',
+      'Evening dinner gatherings and gala wear',
+      'Luxury ceremonial waistcoats'
+    ],
+    faqs: [
+      {
+        question: 'Does Khaddar shrink more than Karandi?',
+        answer: 'Yes, 100% cotton Khaddar shrinks around 5% to 8% on its first hot wash because of its thick, loosely spun cotton yarns. Always pre-wash Khaddar before tailoring. Karandi shrinks less (around 2% to 4%) due to its silk content, but should be dry-cleaned or washed in cold water.'
+      },
+      {
+        question: 'Is Karandi pure silk or cotton?',
+        answer: 'Traditional Karandi is a blend: cotton yarns are woven with raw silk (tussar silk) yarns. The raw silk produces the distinctive uneven slub texture and subtle sheen that makes Karandi a prized luxury fabric.'
+      }
+    ]
   }
 ];
 
