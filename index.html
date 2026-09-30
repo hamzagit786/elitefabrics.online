@@ -3,6 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript">
+      // GitHub Pages SPA redirect handler: restores the clean URL path before React mounts
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&');
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location));
+    </script>
     <title>Fabric Types Guide &amp; Textile Library | Elite Fabrics</title>
     <meta name="description" content="Explore our fabric types guide, textile guide, and fabric information library. Master material comparisons, weave structures, and garment care instructions." />
     <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1" />
@@ -67,7 +80,7 @@
           },
           "potentialAction": {
             "@type": "SearchAction",
-            "target": "https://elitefabrics.online/#blog?q={search_term_string}",
+            "target": "https://elitefabrics.online/articles?q={search_term_string}",
             "query-input": "required name=search_term_string"
           },
           "inLanguage": "en-US"
@@ -83,7 +96,7 @@
       ]
     }
     </script>
-    <script type="module" crossorigin src="/assets/index-BRy6gmWv.js"></script>
+    <script type="module" crossorigin src="/assets/index-ByhhWMfr.js"></script>
     <link rel="stylesheet" crossorigin href="/assets/index-CHKLCuqO.css">
   </head>
   <body class="bg-[#FAF8F5] text-[#1E1E1E] antialiased selection:bg-[#9E472A]/15 selection:text-[#9E472A]">
