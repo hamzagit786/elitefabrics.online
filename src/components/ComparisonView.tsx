@@ -31,19 +31,21 @@ export const ComparisonView: React.FC<ComparisonViewProps> = ({
     <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-10 space-y-12">
       {/* Breadcrumbs */}
       <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-xs text-[#6B655C]">
-        <button
-          onClick={() => onNavigate('home')}
+        <a
+          href="/"
+          onClick={(e) => { e.preventDefault(); onNavigate('home'); }}
           className="hover:text-[#1C1C1C] font-medium transition-colors"
         >
           Home
-        </button>
+        </a>
         <span>/</span>
-        <button
-          onClick={() => onNavigate('comparisons')}
+        <a
+          href="/comparisons"
+          onClick={(e) => { e.preventDefault(); onNavigate('comparisons'); }}
           className="hover:text-[#1C1C1C] font-medium transition-colors"
         >
           Comparisons
-        </button>
+        </a>
         <span>/</span>
         <span className="text-[#1C1C1C] font-medium truncate max-w-[200px] sm:max-w-xs">
           {currentComparison.fabricA.name} vs. {currentComparison.fabricB.name}
@@ -68,17 +70,18 @@ export const ComparisonView: React.FC<ComparisonViewProps> = ({
         {FABRIC_COMPARISONS.map((comp) => {
           const isActive = comp.id === currentComparison.id;
           return (
-            <button
+            <a
               key={comp.id}
-              onClick={() => onNavigate('comparison', comp.slug)}
-              className={`px-4 py-2 rounded-md text-xs font-medium whitespace-nowrap transition-colors ${
+              href={`/comparison/${comp.slug}`}
+              onClick={(e) => { e.preventDefault(); onNavigate('comparison', comp.slug); }}
+              className={`px-4 py-2 rounded-md text-xs font-medium whitespace-nowrap transition-colors block ${
                 isActive
                   ? 'bg-[#1C1C1C] text-white font-semibold'
                   : 'bg-white text-[#4A443B] hover:bg-[#FAF8F5] border border-[#DDD5C7]'
               }`}
             >
               {comp.fabricA.name} vs. {comp.fabricB.name}
-            </button>
+            </a>
           );
         })}
       </div>
@@ -288,20 +291,22 @@ export const ComparisonView: React.FC<ComparisonViewProps> = ({
                 <h3 className="font-serif-heading font-bold text-xl text-[#1C1C1C] flex items-center gap-2">
                   <BookOpen className="w-5 h-5 text-[#9E472A]" /> In-Depth Material Guides &amp; Science
                 </h3>
-                <button
-                  onClick={() => onNavigate('blog')}
+                <a
+                  href="/articles"
+                  onClick={(e) => { e.preventDefault(); onNavigate('blog'); }}
                   className="text-xs font-medium text-[#9E472A] hover:underline"
                 >
                   All Articles →
-                </button>
+                </a>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {compArticles.map(art => (
-                  <div
+                  <a
                     key={art.id}
-                    onClick={() => onNavigate('articles', art.slug)}
-                    className="p-4 bg-[#FAF8F5] border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl cursor-pointer transition-all hover:shadow-xs group flex flex-col justify-between"
+                    href={`/articles/${art.slug}`}
+                    onClick={(e) => { e.preventDefault(); onNavigate('articles', art.slug); }}
+                    className="p-4 bg-[#FAF8F5] border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl cursor-pointer transition-all hover:shadow-xs group flex flex-col justify-between block"
                   >
                     <div>
                       <span className="text-[10px] font-mono uppercase text-[#9E472A] font-semibold block mb-1">
@@ -317,7 +322,7 @@ export const ComparisonView: React.FC<ComparisonViewProps> = ({
                     <div className="pt-2 mt-3 border-t border-[#EAE3D6] text-right">
                       <span className="text-xs text-[#9E472A] font-semibold">Read Guide →</span>
                     </div>
-                  </div>
+                  </a>
                 ))}
               </div>
             </section>

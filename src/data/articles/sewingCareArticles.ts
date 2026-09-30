@@ -32,13 +32,13 @@ export const SEWING_CARE_ARTICLES: Article[] = [
       <section id="the-basics">
         <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">Why Fabric Width Changes Everything</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Fabric is sold by linear length (yards or meters), but bolts come in different widths. Standard quilting <a href="#fabric/cotton" class="text-[#9E472A] font-semibold underline">cotton</a> is typically <strong>44 to 45 inches wide</strong>, whereas apparel wools and knits are usually <strong>58 to 60 inches wide</strong>.
+          Fabric is sold by linear length (yards or meters), but bolts come in different widths. Standard quilting <a href="/fabric/cotton" class="text-[#9E472A] font-semibold underline">cotton</a> is typically <strong>44 to 45 inches wide</strong>, whereas apparel wools and knits are usually <strong>58 to 60 inches wide</strong>.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
           Because a 60-inch bolt offers roughly 33% more surface area per linear yard than a 45-inch bolt, you can often fit pattern pieces side by side and purchase significantly less total yardage.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Calculate your exact project dimensions instantly using our free <a href="#tools/fabric-yardage-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Yardage Calculator</a>.
+          Calculate your exact project dimensions instantly using our free <a href="/tools/fabric-yardage-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Yardage Calculator</a>.
         </p>
       </section>
 
@@ -93,14 +93,14 @@ export const SEWING_CARE_ARTICLES: Article[] = [
       <section id="shrinkage-buffer">
         <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">The Non-Negotiable Shrinkage Buffer</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Always add an extra <strong>10% to your yardage</strong> when working with natural fibers like pure cotton, <a href="#fabric/linen" class="text-[#9E472A] font-semibold underline">linen</a>, or rayon. A 3-yard cut of raw linen will frequently lose 4 to 6 inches after the first pre-wash and drying cycle.
+          Always add an extra <strong>10% to your yardage</strong> when working with natural fibers like pure cotton, <a href="/fabric/linen" class="text-[#9E472A] font-semibold underline">linen</a>, or rayon. A 3-yard cut of raw linen will frequently lose 4 to 6 inches after the first pre-wash and drying cycle.
         </p>
       </section>
 
       <section id="napped-fabrics">
         <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">Directional Prints, Stripes, and Velvet</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Fabrics with a one-way pile (such as <a href="#fabric/velvet" class="text-[#9E472A] font-semibold underline">velvet</a>, corduroy, and fleece) or directional prints require extra yardage (typically 15% to 20% more). Because the nap reflects light differently upside-down, all pattern pieces must be laid out facing the exact same direction rather than interlocking head-to-toe.
+          Fabrics with a one-way pile (such as <a href="/fabric/velvet" class="text-[#9E472A] font-semibold underline">velvet</a>, corduroy, and fleece) or directional prints require extra yardage (typically 15% to 20% more). Because the nap reflects light differently upside-down, all pattern pieces must be laid out facing the exact same direction rather than interlocking head-to-toe.
         </p>
       </section>
     `,
@@ -156,7 +156,7 @@ export const SEWING_CARE_ARTICLES: Article[] = [
           The other dimension depends on the bolt. If the bolt is 44 inches wide, 1 yard is 36" × 44". If the bolt is 60 inches wide, 1 yard is 36" × 60".
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Convert any length instantly with our <a href="#tools/fabric-measurement-converter" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Measurement Converter</a>.
+          Convert any length instantly with our <a href="/tools/fabric-measurement-converter" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Measurement Converter</a>.
         </p>
       </section>
 
@@ -276,7 +276,7 @@ export const SEWING_CARE_ARTICLES: Article[] = [
           When checking width for a sewing project, measure inside the selvages. A 45-inch bolt generally has only <strong>43 to 44 inches of usable width</strong>.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Need quick dimension calculations? Check our <a href="#tools/fabric-measurement-converter" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Measurement Converter</a>.
+          Need quick dimension calculations? Check our <a href="/tools/fabric-measurement-converter" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Measurement Converter</a>.
         </p>
       </section>
 
@@ -330,13 +330,13 @@ export const SEWING_CARE_ARTICLES: Article[] = [
       <section id="loom-tension">
         <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">1. Loom Tension Relaxation</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          During industrial manufacturing, <a href="#fabric/cotton" class="text-[#9E472A] font-semibold underline">cotton</a> yarns are pulled tight under heavy mechanical tension as looms weave thousands of threads per minute.
+          During industrial manufacturing, <a href="/fabric/cotton" class="text-[#9E472A] font-semibold underline">cotton</a> yarns are pulled tight under heavy mechanical tension as looms weave thousands of threads per minute.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
           When you submerge fabric into warm water, the stressed cotton fibers relax back to their coiled, natural equilibrium state. This is known in textile science as <strong>relaxation shrinkage</strong>.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Calculate the exact shrinkage rate of your fabric using our interactive <a href="#tools/fabric-shrinkage-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Shrinkage Calculator</a>.
+          Calculate the exact shrinkage rate of your fabric using our interactive <a href="/tools/fabric-shrinkage-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Shrinkage Calculator</a>.
         </p>
       </section>
 
@@ -422,31 +422,31 @@ export const SEWING_CARE_ARTICLES: Article[] = [
             </thead>
             <tbody class="divide-y divide-[#E6E0D7] text-[#4A453E]">
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]">100% <a href="#fabric/cotton" class="text-[#9E472A] underline">Cotton</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]">100% <a href="/fabric/cotton" class="text-[#9E472A] underline">Cotton</a></td>
                 <td class="p-3">3% to 5%</td>
                 <td class="p-3">+5% to 8%</td>
                 <td class="p-3">Hot water wash &amp; high dryer heat</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]">Pure <a href="#fabric/linen" class="text-[#9E472A] underline">Linen</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]">Pure <a href="/fabric/linen" class="text-[#9E472A] underline">Linen</a></td>
                 <td class="p-3">5% to 8%</td>
                 <td class="p-3">+10%</td>
                 <td class="p-3">High warp (lengthwise) contraction</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]"><a href="#fabric/rayon" class="text-[#9E472A] underline">Rayon</a> / Viscose</td>
+                <td class="p-3 font-medium text-[#1C1C1C]"><a href="/fabric/rayon" class="text-[#9E472A] underline">Rayon</a> / Viscose</td>
                 <td class="p-3">5% to 10%</td>
                 <td class="p-3">+10% to 12%</td>
                 <td class="p-3">High shrinkage even in lukewarm water</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]">Untreated <a href="#fabric/wool" class="text-[#9E472A] underline">Wool</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]">Untreated <a href="/fabric/wool" class="text-[#9E472A] underline">Wool</a></td>
                 <td class="p-3">10% to 25%+ (Felting)</td>
                 <td class="p-3">Dry Clean Only</td>
                 <td class="p-3">Irreversible fiber scale interlocking</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]"><a href="#fabric/polyester" class="text-[#9E472A] underline">Polyester</a> / Nylon</td>
+                <td class="p-3 font-medium text-[#1C1C1C]"><a href="/fabric/polyester" class="text-[#9E472A] underline">Polyester</a> / Nylon</td>
                 <td class="p-3">0% to 1.5%</td>
                 <td class="p-3">None required</td>
                 <td class="p-3">High heat iron melting (not shrinkage)</td>
@@ -462,7 +462,7 @@ export const SEWING_CARE_ARTICLES: Article[] = [
           Before cutting an expensive pattern, cut a 10" × 10" square swatch with pinking shears. Wash and dry it exactly as you plan to care for the finished garment. Measure again. If it now measures 9.5" × 9.7", you have 5% length shrinkage and 3% width shrinkage.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Enter your measurements into our free <a href="#tools/fabric-shrinkage-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Shrinkage Calculator</a> for precise results.
+          Enter your measurements into our free <a href="/tools/fabric-shrinkage-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Shrinkage Calculator</a> for precise results.
         </p>
       </section>
     `,
@@ -526,31 +526,31 @@ export const SEWING_CARE_ARTICLES: Article[] = [
             </thead>
             <tbody class="divide-y divide-[#E6E0D7] text-[#4A453E]">
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]"><a href="#fabric/cotton" class="text-[#9E472A] underline">Cotton</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]"><a href="/fabric/cotton" class="text-[#9E472A] underline">Cotton</a></td>
                 <td class="p-3">Cold to Warm (30–40°C)</td>
                 <td class="p-3">Normal / Regular</td>
                 <td class="p-3">Tumble dry low or line dry</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]"><a href="#fabric/linen" class="text-[#9E472A] underline">Linen</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]"><a href="/fabric/linen" class="text-[#9E472A] underline">Linen</a></td>
                 <td class="p-3">Cold to Warm (30°C)</td>
                 <td class="p-3">Gentle / Delicate</td>
                 <td class="p-3">Line dry; iron while damp</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]"><a href="#fabric/silk" class="text-[#9E472A] underline">Silk</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]"><a href="/fabric/silk" class="text-[#9E472A] underline">Silk</a></td>
                 <td class="p-3">Cool (Under 30°C)</td>
                 <td class="p-3">Hand wash or Delicate mesh bag</td>
                 <td class="p-3">Air dry flat away from direct sunlight</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]"><a href="#fabric/wool" class="text-[#9E472A] underline">Wool</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]"><a href="/fabric/wool" class="text-[#9E472A] underline">Wool</a></td>
                 <td class="p-3">Cold (Under 30°C)</td>
                 <td class="p-3">Wool / Handwash (Zero spin)</td>
                 <td class="p-3">Dry flat on a towel; never tumble</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]"><a href="#fabric/polyester" class="text-[#9E472A] underline">Polyester</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]"><a href="/fabric/polyester" class="text-[#9E472A] underline">Polyester</a></td>
                 <td class="p-3">Warm (40°C)</td>
                 <td class="p-3">Permanent Press / Normal</td>
                 <td class="p-3">Tumble dry low; dries quickly</td>

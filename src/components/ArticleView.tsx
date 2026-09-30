@@ -52,6 +52,24 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
     }
   };
 
+  const handleContentClick = (e: React.MouseEvent<HTMLDivElement>) => {
+    const anchor = (e.target as HTMLElement).closest('a');
+    if (!anchor) return;
+    const href = anchor.getAttribute('href');
+    if (!href) return;
+    // Let on-page jump anchors (e.g. #section-id) work natively
+    if (href.startsWith('#')) return;
+    // Internal links
+    if (href.startsWith('/') || href.startsWith('https://elitefabrics.online/')) {
+      e.preventDefault();
+      const cleanPath = href.replace(/^https?:\/\/elitefabrics\.online/, '').replace(/^\//, '');
+      const parts = cleanPath.split('/');
+      const view = parts[0];
+      const slug = parts[1] || '';
+      onNavigate(view, slug);
+    }
+  };
+
   const handleCopyPin = () => {
     if (!navigator.clipboard || !article.pinterest) return;
     const pinText = `${article.pinterest.title}\n\n${article.pinterest.description}\n\nLearn more: ${window.location.href}`;
@@ -95,19 +113,21 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
       {/* Top Breadcrumb & Utilities */}
       <div className="flex flex-wrap items-center justify-between gap-4 text-xs">
         <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-[#6B655C]">
-          <button
-            onClick={() => onNavigate('home')}
+          <a
+            href="/"
+            onClick={(e) => { e.preventDefault(); onNavigate('home'); }}
             className="hover:text-[#1C1C1C] font-medium transition-colors"
           >
             Home
-          </button>
+          </a>
           <span>/</span>
-          <button
-            onClick={() => onNavigate('blog')}
+          <a
+            href="/articles"
+            onClick={(e) => { e.preventDefault(); onNavigate('articles'); }}
             className="hover:text-[#1C1C1C] font-medium transition-colors"
           >
             Guides &amp; Articles
-          </button>
+          </a>
           <span>/</span>
           <span className="text-[#1C1C1C] font-medium truncate max-w-[180px] sm:max-w-xs">
             {article.title}
@@ -305,6 +325,7 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
         {/* Article Body Content */}
         <article className={`${article.tableOfContents ? 'lg:col-span-8' : 'lg:col-span-12'} order-1 lg:order-2 space-y-8 max-w-prose`}>
           <div 
+            onClick={handleContentClick}
             dangerouslySetInnerHTML={{ __html: article.contentHtml }}
             className="space-y-6 text-[#2B2723] text-base sm:text-[17px] leading-[1.8] font-normal"
           />
@@ -326,12 +347,16 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
               <p className="text-xs sm:text-sm text-[#5C5549] leading-relaxed">
                 {article.relatedTool.description}
               </p>
-              <button
-                onClick={() => onNavigate('tools', article.relatedTool!.path.replace('#tools/', '').replace('#', ''))}
+              <a
+                href={`/tools/${article.relatedTool.path.replace(/^#?\/?(tools\/)?/, '')}`}
+                onClick={(e) => {
+                  e.preventDefault();
+                  onNavigate('tools', article.relatedTool!.path.replace(/^#?\/?(tools\/)?/, ''));
+                }}
                 className="inline-flex items-center gap-2 px-4 py-2 bg-[#9E472A] hover:bg-[#833B22] text-white rounded-md text-xs font-semibold transition-colors"
               >
                 Launch {article.relatedTool.name} <ArrowRight className="w-3.5 h-3.5" />
-              </button>
+              </a>
             </div>
           ) : (
             <div className="mt-10 p-6 bg-[#FAF8F5] border border-[#E6E0D7] rounded-xl flex flex-col sm:flex-row sm:items-center justify-between gap-4">
@@ -346,12 +371,13 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
                   Use our free calculators for yardage, GSM conversion, drape weight, and wash shrinkage.
                 </p>
               </div>
-              <button
-                onClick={() => onNavigate('tools')}
+              <a
+                href="/tools"
+                onClick={(e) => { e.preventDefault(); onNavigate('tools'); }}
                 className="shrink-0 px-4 py-2 bg-[#9E472A] hover:bg-[#833B22] text-white rounded-md text-xs font-semibold transition-colors"
               >
                 Browse All Tools →
-              </button>
+              </a>
             </div>
           )}
 
@@ -361,19 +387,21 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
               <h4 className="font-serif-heading font-bold text-xl text-[#1C1C1C] flex items-center gap-2">
                 <Layers className="w-5 h-5 text-[#9E472A]" /> Related Fabric Profiles
               </h4>
-              <button
-                onClick={() => onNavigate('fabrics')}
+              <a
+                href="/fabrics"
+                onClick={(e) => { e.preventDefault(); onNavigate('fabrics'); }}
                 className="text-xs font-medium text-[#9E472A] hover:underline"
               >
                 View Fabric Library ({FABRICS.length}) →
-              </button>
+              </a>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
               {matchedFabrics.map((fab) => (
-                <div
+                <a
                   key={fab.id}
-                  onClick={() => onNavigate('fabric', fab.slug)}
-                  className="p-4 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl cursor-pointer transition-all hover:shadow-xs group space-y-2"
+                  href={`/fabric/${fab.slug}`}
+                  onClick={(e) => { e.preventDefault(); onNavigate('fabric', fab.slug); }}
+                  className="block p-4 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl cursor-pointer transition-all hover:shadow-xs group space-y-2"
                 >
                   <div className="flex items-center justify-between">
                     <h5 className="font-serif-heading font-bold text-base text-[#1C1C1C] group-hover:text-[#9E472A] transition-colors">
@@ -390,7 +418,7 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
                     <span>Weight: <strong>{fab.weightGsm.split('(')[0]}</strong></span>
                     <span className="text-[#9E472A] font-semibold group-hover:underline">Explore Profile →</span>
                   </div>
-                </div>
+                </a>
               ))}
             </div>
           </section>
@@ -411,19 +439,21 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
                   <h4 className="font-serif-heading font-bold text-lg text-[#1C1C1C] flex items-center gap-2">
                     <span>Side-by-Side Material Comparisons</span>
                   </h4>
-                  <button
-                    onClick={() => onNavigate('comparisons')}
+                  <a
+                    href="/comparisons"
+                    onClick={(e) => { e.preventDefault(); onNavigate('comparisons'); }}
                     className="text-xs font-medium text-[#9E472A] hover:underline"
                   >
                     All Comparisons →
-                  </button>
+                  </a>
                 </div>
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                   {relComparisons.map(comp => (
-                    <div
+                    <a
                       key={comp.id}
-                      onClick={() => onNavigate('comparison', comp.slug)}
-                      className="p-3.5 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-lg cursor-pointer transition-all hover:shadow-xs group"
+                      href={`/comparison/${comp.slug}`}
+                      onClick={(e) => { e.preventDefault(); onNavigate('comparison', comp.slug); }}
+                      className="block p-3.5 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-lg cursor-pointer transition-all hover:shadow-xs group"
                     >
                       <span className="text-[10px] font-mono uppercase text-[#9E472A] font-semibold block mb-0.5">
                         Technical Comparison
@@ -434,7 +464,7 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
                       <p className="text-xs text-[#6B655C] mt-1 line-clamp-1">
                         {comp.overview}
                       </p>
-                    </div>
+                    </a>
                   ))}
                 </div>
               </section>
@@ -549,20 +579,22 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
             <h3 className="font-serif-heading font-bold text-2xl text-[#1C1C1C]">
               Related Textile Inquiries
             </h3>
-            <button
-              onClick={() => onNavigate('blog')}
+            <a
+              href="/articles"
+              onClick={(e) => { e.preventDefault(); onNavigate('articles'); }}
               className="text-xs font-semibold text-[#9E472A] hover:underline"
             >
               Explore All Articles →
-            </button>
+            </a>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {relatedArticles.map((rel) => (
-              <div
+              <a
                 key={rel.id}
-                onClick={() => onNavigate('articles', rel.slug)}
-                className="group cursor-pointer bg-white border border-[#E8E2D9] rounded-lg overflow-hidden hover:border-[#9E472A] hover:shadow-xs transition-all flex flex-col justify-between"
+                href={`/articles/${rel.slug}`}
+                onClick={(e) => { e.preventDefault(); onNavigate('articles', rel.slug); }}
+                className="group block bg-white border border-[#E8E2D9] rounded-lg overflow-hidden hover:border-[#9E472A] hover:shadow-xs transition-all flex flex-col justify-between"
               >
                 <div>
                   <div className="aspect-16/10 overflow-hidden bg-[#F2EDE4]">
@@ -592,7 +624,7 @@ export const ArticleView: React.FC<ArticleViewProps> = ({
                     Read <ArrowRight className="w-3 h-3" />
                   </span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </section>

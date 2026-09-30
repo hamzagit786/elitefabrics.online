@@ -37,13 +37,13 @@ export const HOME_TEXTILE_ARTICLES: Article[] = [
           Choosing window drapery fabric requires balancing natural daylight diffusion, privacy, and thermal room insulation:
         </p>
         <ul class="list-disc pl-5 space-y-2 text-[#3A3A3A] mb-4">
-          <li><strong>Sheer Voile &amp; <a href="#fabric/chiffon" class="text-[#9E472A] underline">Chiffon</a> (50–90 GSM):</strong> Diffuses harsh direct sunlight while maintaining an airy outdoor view. Excellent for daytime privacy in living rooms.</li>
-          <li><strong>Pure <a href="#fabric/linen" class="text-[#9E472A] underline">Linen</a> (180–260 GSM):</strong> The quintessential luxury designer choice. Features organic slub textures, breathable sun-filtering qualities, and graceful puddling on the floor.</li>
-          <li><strong>Cotton <a href="#fabric/twill" class="text-[#9E472A] underline">Twill</a> &amp; Canvas (220–320 GSM):</strong> Crisp, opaque, and structural. Excellent for bedrooms and spaces needing complete privacy. Compare twills in our <a href="#articles/twill-fabric-guide" class="text-[#9E472A] underline">Twill Fabric Guide</a>.</li>
-          <li><strong><a href="#fabric/velvet" class="text-[#9E472A] underline">Velvet</a> (350–500+ GSM):</strong> Luxuriously heavy with plush pile. Provides substantial winter thermal draft protection and absorbs ambient room echoes.</li>
+          <li><strong>Sheer Voile &amp; <a href="/fabric/chiffon" class="text-[#9E472A] underline">Chiffon</a> (50–90 GSM):</strong> Diffuses harsh direct sunlight while maintaining an airy outdoor view. Excellent for daytime privacy in living rooms.</li>
+          <li><strong>Pure <a href="/fabric/linen" class="text-[#9E472A] underline">Linen</a> (180–260 GSM):</strong> The quintessential luxury designer choice. Features organic slub textures, breathable sun-filtering qualities, and graceful puddling on the floor.</li>
+          <li><strong>Cotton <a href="/fabric/twill" class="text-[#9E472A] underline">Twill</a> &amp; Canvas (220–320 GSM):</strong> Crisp, opaque, and structural. Excellent for bedrooms and spaces needing complete privacy. Compare twills in our <a href="/articles/twill-fabric-guide" class="text-[#9E472A] underline">Twill Fabric Guide</a>.</li>
+          <li><strong><a href="/fabric/velvet" class="text-[#9E472A] underline">Velvet</a> (350–500+ GSM):</strong> Luxuriously heavy with plush pile. Provides substantial winter thermal draft protection and absorbs ambient room echoes.</li>
         </ul>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Calculate your exact cut lengths and panel counts with our dedicated <a href="#tools/curtain-fabric-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Curtain Fabric Calculator</a>.
+          Calculate your exact cut lengths and panel counts with our dedicated <a href="/tools/curtain-fabric-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Curtain Fabric Calculator</a>.
         </p>
       </section>
 
@@ -187,7 +187,7 @@ export const HOME_TEXTILE_ARTICLES: Article[] = [
           </table>
         </div>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Calculate fabric needed for chairs, sofas, and sectionals with our <a href="#tools/upholstery-fabric-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Upholstery Fabric Calculator</a>.
+          Calculate fabric needed for chairs, sofas, and sectionals with our <a href="/tools/upholstery-fabric-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Upholstery Fabric Calculator</a>.
         </p>
       </section>
 
@@ -195,9 +195,9 @@ export const HOME_TEXTILE_ARTICLES: Article[] = [
         <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">2. Best Upholstery Textiles: Performance vs Natural</h2>
         <ul class="list-disc pl-5 space-y-2 text-[#3A3A3A] mb-4">
           <li><strong>Performance Polyester &amp; Polypropylene (Crypton, Sunbrella):</strong> Engineered synthetic fibers that repel spilled red wine, coffee, and pet stains without liquid absorption. Ratings frequently exceed 50,000+ double rubs.</li>
-          <li><strong>Heavy Cotton <a href="#fabric/canvas" class="text-[#9E472A] underline">Duck Canvas</a> (350–500 GSM):</strong> Highly durable, natural, breathable, and easily washable when made into removable slipcovers. Read our <a href="#articles/canvas-fabric-guide" class="text-[#9E472A] underline">Canvas Fabric Guide</a>.</li>
-          <li><strong>Upholstery <a href="#fabric/velvet" class="text-[#9E472A] underline">Velvet</a>:</strong> Remarkably resilient because pile loops have no loose surface threads for pet claws to catch and snag.</li>
-          <li><strong>Heavy <a href="#fabric/linen" class="text-[#9E472A] underline">Linen</a>:</strong> Gorgeous earthy texture, but prone to creasing and soil absorption; best blended with synthetic fibers for everyday furniture.</li>
+          <li><strong>Heavy Cotton <a href="/fabric/canvas" class="text-[#9E472A] underline">Duck Canvas</a> (350–500 GSM):</strong> Highly durable, natural, breathable, and easily washable when made into removable slipcovers. Read our <a href="/articles/canvas-fabric-guide" class="text-[#9E472A] underline">Canvas Fabric Guide</a>.</li>
+          <li><strong>Upholstery <a href="/fabric/velvet" class="text-[#9E472A] underline">Velvet</a>:</strong> Remarkably resilient because pile loops have no loose surface threads for pet claws to catch and snag.</li>
+          <li><strong>Heavy <a href="/fabric/linen" class="text-[#9E472A] underline">Linen</a>:</strong> Gorgeous earthy texture, but prone to creasing and soil absorption; best blended with synthetic fibers for everyday furniture.</li>
         </ul>
       </section>
 
@@ -317,7 +317,7 @@ export const HOME_TEXTILE_ARTICLES: Article[] = [
           <li><strong>Weft (Picks or Filling):</strong> The horizontal, crosswise threads woven over and under the warp by a traveling shuttle, rapier, or high-velocity air jet.</li>
         </ul>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Examine how warp and weft yarns interact across diagonal weaves in our <a href="#articles/twill-fabric-guide" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Twill Fabric Guide</a>.
+          Examine how warp and weft yarns interact across diagonal weaves in our <a href="/articles/twill-fabric-guide" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Twill Fabric Guide</a>.
         </p>
       </section>
 
@@ -338,7 +338,7 @@ export const HOME_TEXTILE_ARTICLES: Article[] = [
           During weaving, the warp threads endure continuous cyclic tension, abrasive friction from the heddles, and the rapid beating of the reed. To withstand this stress without snapping, warp yarns are spun with higher twist multipliers and treated with starch sizing.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Consequently, the lengthwise warp has almost zero stretch and contracts significantly more during laundry relaxation. Compare yarn specifications with our <a href="#tools/yarn-count-converter" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Yarn Count Converter</a>.
+          Consequently, the lengthwise warp has almost zero stretch and contracts significantly more during laundry relaxation. Compare yarn specifications with our <a href="/tools/yarn-count-converter" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Yarn Count Converter</a>.
         </p>
       </section>
 
@@ -443,7 +443,7 @@ export const HOME_TEXTILE_ARTICLES: Article[] = [
           <strong>Thread count (TC)</strong> is simply the number of vertical warp threads plus horizontal weft threads woven into one square inch of fabric. If a square inch contains 150 warp threads and 150 weft threads, the thread count is <strong>300 TC</strong>.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Convert yarn numbers and thickness with our <a href="#tools/yarn-count-converter" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Yarn Count Converter</a>.
+          Convert yarn numbers and thickness with our <a href="/tools/yarn-count-converter" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Yarn Count Converter</a>.
         </p>
       </section>
 
@@ -477,7 +477,7 @@ export const HOME_TEXTILE_ARTICLES: Article[] = [
           For true single-ply bedding:
         </p>
         <ul class="list-disc pl-5 space-y-2 text-[#3A3A3A] mb-4">
-          <li><strong>250 to 300 TC Percale:</strong> Maximum airflow, crisp and lightweight. The gold standard for warm summer nights. Check our <a href="#articles/cotton-gsm-guide" class="text-[#9E472A] underline">Cotton GSM Guide</a>.</li>
+          <li><strong>250 to 300 TC Percale:</strong> Maximum airflow, crisp and lightweight. The gold standard for warm summer nights. Check our <a href="/articles/cotton-gsm-guide" class="text-[#9E472A] underline">Cotton GSM Guide</a>.</li>
           <li><strong>350 to 450 TC Sateen:</strong> Silky, elegant, and cozy for all seasons.</li>
         </ul>
       </section>
@@ -546,13 +546,13 @@ export const HOME_TEXTILE_ARTICLES: Article[] = [
       <section id="why-blend">
         <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">1. Why Do Mills Blend Fibers?</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          No individual textile fiber is completely flawless. <a href="#fabric/cotton" class="text-[#9E472A] font-semibold underline">Cotton</a> is exceptionally soft and breathable, but it wrinkles and shrinks easily. <a href="#fabric/polyester" class="text-[#9E472A] font-semibold underline">Polyester</a> is practically indestructible and sheds wrinkles instantly, but it feels clammy and traps body odor.
+          No individual textile fiber is completely flawless. <a href="/fabric/cotton" class="text-[#9E472A] font-semibold underline">Cotton</a> is exceptionally soft and breathable, but it wrinkles and shrinks easily. <a href="/fabric/polyester" class="text-[#9E472A] font-semibold underline">Polyester</a> is practically indestructible and sheds wrinkles instantly, but it feels clammy and traps body odor.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
           By spinning two or more distinct fibers together into an intimate blend, mills engineer fabrics that deliver the best qualities of each fiber while canceling out their respective weaknesses.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Learn how fabric weights compare across blends with our <a href="#tools/fabric-gsm-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric GSM Calculator</a>.
+          Learn how fabric weights compare across blends with our <a href="/tools/fabric-gsm-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric GSM Calculator</a>.
         </p>
       </section>
 
@@ -574,17 +574,17 @@ export const HOME_TEXTILE_ARTICLES: Article[] = [
                 <td class="p-3">Hospital scrubs, school uniforms, everyday work shirting</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]">98% Cotton / 2% <a href="#fabric/spandex" class="text-[#9E472A] underline">Spandex</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]">98% Cotton / 2% <a href="/fabric/spandex" class="text-[#9E472A] underline">Spandex</a></td>
                 <td class="p-3">Classic denim appearance with mechanical stretch and knee bounce-back recovery.</td>
                 <td class="p-3">Comfort-stretch jeans, fitted chinos</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]">55% <a href="#fabric/linen" class="text-[#9E472A] underline">Linen</a> / 45% Cotton</td>
+                <td class="p-3 font-medium text-[#1C1C1C]">55% <a href="/fabric/linen" class="text-[#9E472A] underline">Linen</a> / 45% Cotton</td>
                 <td class="p-3">Retains linen's rustic slub texture but wrinkles far less harshly and costs less.</td>
                 <td class="p-3">Summer dresses, casual blazers, table runners</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]">70% <a href="#fabric/wool" class="text-[#9E472A] underline">Wool</a> / 30% <a href="#fabric/silk" class="text-[#9E472A] underline">Silk</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]">70% <a href="/fabric/wool" class="text-[#9E472A] underline">Wool</a> / 30% <a href="/fabric/silk" class="text-[#9E472A] underline">Silk</a></td>
                 <td class="p-3">Wool warmth and structure enhanced by silk’s luminous luster and luxurious drape.</td>
                 <td class="p-3">High-end bespoke suits, winter scarves, formal overcoats</td>
               </tr>
@@ -604,7 +604,7 @@ export const HOME_TEXTILE_ARTICLES: Article[] = [
           Understanding individual fiber strengths helps predict blend performance:
         </p>
         <ul class="list-disc pl-5 space-y-2 text-[#3A3A3A] mb-4">
-          <li><strong>Cotton:</strong> Highly absorbent, breathable, soft, hypoallergenic; prone to shrinking and wrinkling. See our <a href="#articles/cotton-gsm-guide" class="text-[#9E472A] underline">Cotton GSM Guide</a>.</li>
+          <li><strong>Cotton:</strong> Highly absorbent, breathable, soft, hypoallergenic; prone to shrinking and wrinkling. See our <a href="/articles/cotton-gsm-guide" class="text-[#9E472A] underline">Cotton GSM Guide</a>.</li>
           <li><strong>Polyester:</strong> Exceptional tensile strength, colorfast, dries quickly, resists wrinkles; prone to static cling and odor retention.</li>
           <li><strong>Spandex (Elastane):</strong> Stretches up to 500% of its length and snaps back completely. Adding just 2% transforms rigid pants into flexible comfort wear.</li>
           <li><strong>Rayon / Viscose / Modal:</strong> Semi-synthetic regenerated cellulose with fluid drape and silk-like coolness; weakens when wet.</li>

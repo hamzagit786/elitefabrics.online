@@ -226,7 +226,7 @@ export const NEW_BEGINNER_GUIDES_ARTICLES: Article[] = [
           GSM measures <strong>fabric area density</strong>. It tells you how much raw fiber mass is packed into a given square area of cloth.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Because fabric bolts come in varied widths (44 inches, 54 inches, or 60 inches), measuring weight per linear yard can be misleading. GSM is the universal international standard because it measures density per square meter, independent of roll width. Try our free <a href="#tools/gsm-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">GSM Calculator</a> to calculate any fabric sample in seconds.
+          Because fabric bolts come in varied widths (44 inches, 54 inches, or 60 inches), measuring weight per linear yard can be misleading. GSM is the universal international standard because it measures density per square meter, independent of roll width. Try our free <a href="/tools/gsm-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">GSM Calculator</a> to calculate any fabric sample in seconds.
         </p>
       </section>
 

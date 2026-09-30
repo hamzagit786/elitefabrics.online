@@ -235,21 +235,23 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenSearch }) 
                 Authoritative, plain-English guides to fabric weights, weave structures, sewing grainlines, and care.
               </p>
             </div>
-            <button
-              onClick={() => onNavigate('blog')}
+            <a
+              href="/articles"
+              onClick={(e) => { e.preventDefault(); onNavigate('blog'); }}
               className="inline-flex items-center gap-1 px-3.5 py-2 bg-[#FAF8F5] hover:bg-[#F2EDE4] text-[#1C1C1C] border border-[#D5CDC0] rounded-md text-xs font-semibold uppercase tracking-wider transition-colors shrink-0"
             >
               <span>Explore All Guides</span>
               <ArrowRight className="w-3.5 h-3.5 text-[#9E472A]" />
-            </button>
+            </a>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
             {latestArticles.map((article) => (
-              <div
+              <a
                 key={article.id}
-                onClick={() => onNavigate('article', article.slug)}
-                className="cursor-pointer bg-white border border-[#E8E2D9] hover:border-[#9E472A] rounded-xl overflow-hidden p-4 transition-all flex flex-col justify-between shadow-2xs group"
+                href={`/articles/${article.slug}`}
+                onClick={(e) => { e.preventDefault(); onNavigate('article', article.slug); }}
+                className="cursor-pointer bg-white border border-[#E8E2D9] hover:border-[#9E472A] rounded-xl overflow-hidden p-4 transition-all flex flex-col justify-between shadow-2xs group block"
               >
                 <div className="space-y-3">
                   <div className="aspect-16/10 overflow-hidden rounded-lg bg-[#FAF8F5]">
@@ -284,7 +286,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenSearch }) 
                     Read <ArrowRight className="w-3 h-3" />
                   </span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </section>
@@ -303,20 +305,22 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenSearch }) 
                 The most referenced educational guides on fabric identification, weight calculations, comparisons, and care.
               </p>
             </div>
-            <button
-              onClick={() => onNavigate('blog')}
+            <a
+              href="/articles"
+              onClick={(e) => { e.preventDefault(); onNavigate('blog'); }}
               className="text-xs font-semibold uppercase tracking-wider text-[#9E472A] hover:underline shrink-0"
             >
               All 69 Guides &rarr;
-            </button>
+            </a>
           </div>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
             {popularGuides.map((guide) => (
-              <div
+              <a
                 key={guide.id}
-                onClick={() => onNavigate('article', guide.slug)}
-                className="cursor-pointer bg-white border border-[#E8E2D9] rounded-xl p-5 hover:border-[#9E472A] transition-colors flex flex-col justify-between shadow-2xs group"
+                href={`/articles/${guide.slug}`}
+                onClick={(e) => { e.preventDefault(); onNavigate('article', guide.slug); }}
+                className="cursor-pointer bg-white border border-[#E8E2D9] rounded-xl p-5 hover:border-[#9E472A] transition-colors flex flex-col justify-between shadow-2xs group block"
               >
                 <div className="space-y-2">
                   <div className="flex items-center justify-between text-[11px] text-[#787167] font-mono">
@@ -338,7 +342,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenSearch }) 
                     Read Guide <ArrowRight className="w-3 h-3" />
                   </span>
                 </div>
-              </div>
+              </a>
             ))}
           </div>
         </section>
@@ -359,9 +363,10 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenSearch }) 
 
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5 pt-2">
             {/* Cluster 1: Fabric Types */}
-            <div 
-              onClick={() => onNavigate('fabrics')}
-              className="bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl p-5 cursor-pointer transition-all shadow-2xs group flex flex-col justify-between"
+            <a 
+              href="/fabrics"
+              onClick={(e) => { e.preventDefault(); onNavigate('fabrics'); }}
+              className="bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl p-5 cursor-pointer transition-all shadow-2xs group flex flex-col justify-between block"
             >
               <div className="space-y-2.5">
                 <div className="w-9 h-9 rounded-lg bg-[#FAF5F2] border border-[#ECD9D0] flex items-center justify-center text-[#9E472A]">
@@ -378,12 +383,13 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenSearch }) 
                 <span>18+ Profiles</span>
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
               </div>
-            </div>
+            </a>
 
             {/* Cluster 2: Fabric Comparisons */}
-            <div 
-              onClick={() => onNavigate('comparisons')}
-              className="bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl p-5 cursor-pointer transition-all shadow-2xs group flex flex-col justify-between"
+            <a 
+              href="/comparisons"
+              onClick={(e) => { e.preventDefault(); onNavigate('comparisons'); }}
+              className="bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl p-5 cursor-pointer transition-all shadow-2xs group flex flex-col justify-between block"
             >
               <div className="space-y-2.5">
                 <div className="w-9 h-9 rounded-lg bg-[#FAF5F2] border border-[#ECD9D0] flex items-center justify-center text-[#9E472A]">
@@ -400,12 +406,13 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenSearch }) 
                 <span>12+ Comparisons</span>
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
               </div>
-            </div>
+            </a>
 
             {/* Cluster 3: Fabric Care */}
-            <div 
-              onClick={() => onNavigate('care')}
-              className="bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl p-5 cursor-pointer transition-all shadow-2xs group flex flex-col justify-between"
+            <a 
+              href="/care"
+              onClick={(e) => { e.preventDefault(); onNavigate('care'); }}
+              className="bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl p-5 cursor-pointer transition-all shadow-2xs group flex flex-col justify-between block"
             >
               <div className="space-y-2.5">
                 <div className="w-9 h-9 rounded-lg bg-[#FAF5F2] border border-[#ECD9D0] flex items-center justify-center text-[#9E472A]">
@@ -422,12 +429,13 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenSearch }) 
                 <span>Care Hub &amp; Guides</span>
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
               </div>
-            </div>
+            </a>
 
             {/* Cluster 4: Beginner Guides */}
-            <div 
-              onClick={() => onNavigate('beginner')}
-              className="bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl p-5 cursor-pointer transition-all shadow-2xs group flex flex-col justify-between"
+            <a 
+              href="/beginner"
+              onClick={(e) => { e.preventDefault(); onNavigate('beginner'); }}
+              className="bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl p-5 cursor-pointer transition-all shadow-2xs group flex flex-col justify-between block"
             >
               <div className="space-y-2.5">
                 <div className="w-9 h-9 rounded-lg bg-[#FAF5F2] border border-[#ECD9D0] flex items-center justify-center text-[#9E472A]">
@@ -444,7 +452,7 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenSearch }) 
                 <span>Pillar Foundation</span>
                 <ArrowRight className="w-3.5 h-3.5 group-hover:translate-x-0.5 transition-transform" />
               </div>
-            </div>
+            </a>
           </div>
         </section>
 

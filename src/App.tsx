@@ -77,15 +77,22 @@ export default function App() {
     }
   }, [savedItems]);
 
-  // Handle URL Hash navigation and direct URL paths
-  const parseHash = () => {
+  // Handle clean HTML5 URL routing and upgrade legacy hash navigation
+  const parseRoute = () => {
+    let hadHash = false;
     let raw = window.location.hash.replace(/^#\/?/, '');
-    if (!raw && window.location.pathname && window.location.pathname !== '/') {
+    if (raw) {
+      hadHash = true;
+    } else if (window.location.pathname && window.location.pathname !== '/') {
       raw = window.location.pathname.replace(/^\//, '');
     }
+
     if (!raw) {
       setCurrentView('home');
       setCurrentSlug('');
+      if (hadHash) {
+        window.history.replaceState(null, '', '/');
+      }
       return;
     }
 
@@ -100,6 +107,9 @@ export default function App() {
         if (articleMatch) {
           setCurrentView('article');
           setCurrentSlug(slug);
+          if (hadHash || view === 'article') {
+            window.history.replaceState(null, '', `/articles/${slug}`);
+          }
         } else {
           setCurrentView('404');
           setCurrentSlug(slug);
@@ -107,6 +117,9 @@ export default function App() {
       } else {
         setCurrentView('blog');
         setCurrentSlug('');
+        if (hadHash || view === 'article') {
+          window.history.replaceState(null, '', '/articles');
+        }
       }
       return;
     }
@@ -119,6 +132,9 @@ export default function App() {
         if (fabricMatch) {
           setCurrentView('fabric');
           setCurrentSlug(fabricMatch.slug);
+          if (hadHash || slug !== fabricMatch.slug) {
+            window.history.replaceState(null, '', `/fabric/${fabricMatch.slug}`);
+          }
         } else {
           setCurrentView('404');
           setCurrentSlug(slug);
@@ -126,6 +142,9 @@ export default function App() {
       } else {
         setCurrentView('fabrics');
         setCurrentSlug('');
+        if (hadHash) {
+          window.history.replaceState(null, '', '/fabrics');
+        }
       }
       return;
     }
@@ -138,6 +157,9 @@ export default function App() {
         if (compMatch) {
           setCurrentView('comparison');
           setCurrentSlug(compMatch.slug);
+          if (hadHash || slug !== compMatch.slug) {
+            window.history.replaceState(null, '', `/comparison/${compMatch.slug}`);
+          }
         } else {
           setCurrentView('404');
           setCurrentSlug(slug);
@@ -145,6 +167,9 @@ export default function App() {
       } else {
         setCurrentView('comparisons');
         setCurrentSlug('');
+        if (hadHash) {
+          window.history.replaceState(null, '', '/comparisons');
+        }
       }
       return;
     }
@@ -156,6 +181,9 @@ export default function App() {
         if (toolMatch) {
           setCurrentView('tools');
           setCurrentSlug(slug);
+          if (hadHash) {
+            window.history.replaceState(null, '', `/tools/${slug}`);
+          }
         } else {
           setCurrentView('404');
           setCurrentSlug(slug);
@@ -163,6 +191,9 @@ export default function App() {
       } else {
         setCurrentView('tools');
         setCurrentSlug('');
+        if (hadHash) {
+          window.history.replaceState(null, '', '/tools');
+        }
       }
       return;
     }
@@ -173,22 +204,26 @@ export default function App() {
         if (isArticle) {
           setCurrentView('article');
           setCurrentSlug(slug);
+          window.history.replaceState(null, '', `/articles/${slug}`);
         } else {
           setCurrentView('beginner');
           setCurrentSlug(slug);
+          window.history.replaceState(null, '', `/beginner`);
         }
       } else {
         setCurrentView('blog');
         setCurrentSlug('');
+        window.history.replaceState(null, '', '/articles');
       }
       return;
     }
 
-    // Direct tool routing aliases like #fabric-gsm-calculator or #tools/fabric-gsm-calculator
+    // Direct tool routing aliases like /fabric-gsm-calculator
     const directToolMatch = FABRIC_TOOLS.find(t => t.slug === view);
     if (directToolMatch) {
       setCurrentView('tools');
       setCurrentSlug(directToolMatch.slug);
+      window.history.replaceState(null, '', `/tools/${directToolMatch.slug}`);
       return;
     }
 
@@ -226,8 +261,12 @@ export default function App() {
     ];
 
     if (validViews.includes(view)) {
-      setCurrentView(view);
+      const canonicalView = (view === 'blog' || view === 'articles') ? 'articles' : view;
+      setCurrentView(view === 'articles' ? 'blog' : view);
       setCurrentSlug(slug);
+      if (hadHash) {
+        window.history.replaceState(null, '', slug ? `/${canonicalView}/${slug}` : `/${canonicalView}`);
+      }
     } else {
       setCurrentView('404');
       setCurrentSlug(raw);
@@ -235,9 +274,13 @@ export default function App() {
   };
 
   useEffect(() => {
-    parseHash();
-    window.addEventListener('hashchange', parseHash);
-    return () => window.removeEventListener('hashchange', parseHash);
+    parseRoute();
+    window.addEventListener('popstate', parseRoute);
+    window.addEventListener('hashchange', parseRoute);
+    return () => {
+      window.removeEventListener('popstate', parseRoute);
+      window.removeEventListener('hashchange', parseRoute);
+    };
   }, []);
 
   // Update Document Meta Tags, Canonical Links, and Structured Data (JSON-LD)
@@ -259,7 +302,7 @@ export default function App() {
             'publisher': { '@id': `${baseUrl}/#organization` },
             'potentialAction': {
               '@type': 'SearchAction',
-              'target': `${baseUrl}/#blog?q={search_term_string}`,
+              'target': `${baseUrl}/articles?q={search_term_string}`,
               'query-input': 'required name=search_term_string'
             },
             'inLanguage': 'en-US'
@@ -708,15 +751,24 @@ export default function App() {
   }, []);
 
   const navigateTo = (view: string, idOrSlug?: string) => {
-    const targetRoute = view === 'article' ? 'articles' : view;
-    const internalView = view === 'articles' && idOrSlug ? 'article' : (view === 'articles' && !idOrSlug ? 'blog' : view);
+    let targetRoute = view;
+    if (view === 'article' || view === 'blog') {
+      targetRoute = 'articles';
+    }
+
+    const internalView = view === 'articles' && idOrSlug 
+      ? 'article' 
+      : (view === 'articles' && !idOrSlug ? 'blog' : (view === 'blog' ? 'blog' : view));
 
     setCurrentView(internalView);
     setCurrentSlug(idOrSlug || '');
-    if (idOrSlug) {
-      window.location.hash = `#${targetRoute}/${idOrSlug}`;
-    } else {
-      window.location.hash = `#${targetRoute}`;
+
+    const newPath = targetRoute === 'home'
+      ? '/'
+      : (idOrSlug ? `/${targetRoute}/${idOrSlug}` : `/${targetRoute}`);
+
+    if (window.location.pathname !== newPath || window.location.hash) {
+      window.history.pushState(null, '', newPath);
     }
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };

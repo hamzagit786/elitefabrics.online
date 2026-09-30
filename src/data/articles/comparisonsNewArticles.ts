@@ -304,7 +304,7 @@ export const NEW_COMPARISONS_PART1: Article[] = [
       <section id="care-washing">
         <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">Care and Laundering Comparison</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Polyester satin is forgiving—toss it in the washer on gentle and it dries within 30 minutes without losing shape. Pure silk requires deliberate TLC: cool water (under 30°C), a specialized silk detergent without enzymes, and zero direct sunlight or tumble heat. For complete steps, see our <a href="#articles/how-to-wash-silk-safely" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Safe Silk Washing Guide</a>.
+          Polyester satin is forgiving—toss it in the washer on gentle and it dries within 30 minutes without losing shape. Pure silk requires deliberate TLC: cool water (under 30°C), a specialized silk detergent without enzymes, and zero direct sunlight or tumble heat. For complete steps, see our <a href="/articles/how-to-wash-silk-safely" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Safe Silk Washing Guide</a>.
         </p>
       </section>
 
@@ -569,7 +569,7 @@ export const NEW_COMPARISONS_PART1: Article[] = [
           In Pakistan and across South Asia, lawn is not merely a fabric—it is a cultural fashion season:
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          When summer temperatures soar past 45°C (113°F), standard cotton feels too dense. Textile mills in Karachi, Faisalabad, and Lahore produce exquisitely printed and embroidered 3-piece lawn suits paired with chiffon or silk dupattas. Learn more in our dedicated guide on <a href="#articles/the-art-of-pakistani-lawn" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">The Art of Pakistani Lawn</a>.
+          When summer temperatures soar past 45°C (113°F), standard cotton feels too dense. Textile mills in Karachi, Faisalabad, and Lahore produce exquisitely printed and embroidered 3-piece lawn suits paired with chiffon or silk dupattas. Learn more in our dedicated guide on <a href="/articles/the-art-of-pakistani-lawn" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">The Art of Pakistani Lawn</a>.
         </p>
       </section>
 

@@ -11,24 +11,26 @@ export const ToolBreadcrumbs: React.FC<ToolBreadcrumbsProps> = ({ toolTitle, onN
     <nav aria-label="Breadcrumbs" className="text-xs text-[#70695F] mb-6">
       <ol className="flex items-center flex-wrap gap-1.5">
         <li>
-          <button
-            onClick={() => onNavigate('home')}
+          <a
+            href="/"
+            onClick={(e) => { e.preventDefault(); onNavigate('home'); }}
             className="hover:text-[#9E472A] transition-colors"
           >
             Home
-          </button>
+          </a>
         </li>
         <li className="flex items-center text-[#B0A79B]">
           <ChevronRight className="w-3.5 h-3.5" />
         </li>
         <li>
-          <button
-            onClick={() => onNavigate('tools')}
+          <a
+            href="/tools"
+            onClick={(e) => { e.preventDefault(); onNavigate('tools'); }}
             className={`hover:text-[#9E472A] transition-colors ${!toolTitle ? 'font-semibold text-[#1C1C1C]' : ''}`}
             aria-current={!toolTitle ? 'page' : undefined}
           >
             Tools
-          </button>
+          </a>
         </li>
         {toolTitle && (
           <>

@@ -29,74 +29,130 @@ export const SitemapView: React.FC<SitemapViewProps> = ({ onNavigate }) => {
           </h2>
           <ul className="space-y-2 text-xs text-[#4A453E]">
             <li>
-              <button onClick={() => onNavigate('home')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/" 
+                onClick={(e) => { e.preventDefault(); onNavigate('home'); }} 
+                className="hover:text-[#9E472A] transition-colors"
+              >
                 • Home
-              </button>
+              </a>
             </li>
             <li>
-              <button onClick={() => onNavigate('about')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/about" 
+                onClick={(e) => { e.preventDefault(); onNavigate('about'); }} 
+                className="hover:text-[#9E472A] transition-colors"
+              >
                 • About Us
-              </button>
+              </a>
             </li>
             <li>
-              <button onClick={() => onNavigate('contact')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/contact" 
+                onClick={(e) => { e.preventDefault(); onNavigate('contact'); }} 
+                className="hover:text-[#9E472A] transition-colors"
+              >
                 • Contact Us (WhatsApp)
-              </button>
+              </a>
             </li>
             <li>
-              <button onClick={() => onNavigate('blog')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/articles" 
+                onClick={(e) => { e.preventDefault(); onNavigate('blog'); }} 
+                className="hover:text-[#9E472A] transition-colors"
+              >
                 • Blog / Articles
-              </button>
+              </a>
             </li>
             <li>
-              <button onClick={() => onNavigate('fabrics')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/fabrics" 
+                onClick={(e) => { e.preventDefault(); onNavigate('fabrics'); }} 
+                className="hover:text-[#9E472A] transition-colors"
+              >
                 • Fabric Types Library
-              </button>
+              </a>
             </li>
             <li>
-              <button onClick={() => onNavigate('comparisons')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/comparisons" 
+                onClick={(e) => { e.preventDefault(); onNavigate('comparisons'); }} 
+                className="hover:text-[#9E472A] transition-colors"
+              >
                 • Fabric Comparisons
-              </button>
+              </a>
             </li>
             <li>
-              <button onClick={() => onNavigate('beginner')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/beginner" 
+                onClick={(e) => { e.preventDefault(); onNavigate('beginner'); }} 
+                className="hover:text-[#9E472A] transition-colors"
+              >
                 • Beginner Guide
-              </button>
+              </a>
             </li>
             <li>
-              <button onClick={() => onNavigate('pakistani')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/pakistani" 
+                onClick={(e) => { e.preventDefault(); onNavigate('pakistani'); }} 
+                className="hover:text-[#9E472A] transition-colors"
+              >
                 • Pakistani Fabrics
-              </button>
+              </a>
             </li>
             <li>
-              <button onClick={() => onNavigate('industry')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/industry" 
+                onClick={(e) => { e.preventDefault(); onNavigate('industry'); }} 
+                className="hover:text-[#9E472A] transition-colors"
+              >
                 • Global Textile Industry
-              </button>
+              </a>
             </li>
             <li>
-              <button onClick={() => onNavigate('sustainable')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/sustainable" 
+                onClick={(e) => { e.preventDefault(); onNavigate('sustainable'); }} 
+                className="hover:text-[#9E472A] transition-colors"
+              >
                 • Sustainable Fabrics
-              </button>
+              </a>
             </li>
             <li>
-              <button onClick={() => onNavigate('timeline')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/timeline" 
+                onClick={(e) => { e.preventDefault(); onNavigate('timeline'); }} 
+                className="hover:text-[#9E472A] transition-colors"
+              >
                 • Fabric History Timeline
-              </button>
+              </a>
             </li>
             <li>
-              <button onClick={() => onNavigate('care')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/care" 
+                onClick={(e) => { e.preventDefault(); onNavigate('care'); }} 
+                className="hover:text-[#9E472A] transition-colors"
+              >
                 • Fabric Care &amp; Laundry
-              </button>
+              </a>
             </li>
             <li>
-              <button onClick={() => onNavigate('glossary')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/glossary" 
+                onClick={(e) => { e.preventDefault(); onNavigate('glossary'); }} 
+                className="hover:text-[#9E472A] transition-colors"
+              >
                 • Fabric Glossary (A–Z)
-              </button>
+              </a>
             </li>
             <li>
-              <button onClick={() => onNavigate('tools')} className="hover:text-[#9E472A] transition-colors font-semibold text-[#9E472A]">
+              <a 
+                href="/tools" 
+                onClick={(e) => { e.preventDefault(); onNavigate('tools'); }} 
+                className="hover:text-[#9E472A] transition-colors font-semibold text-[#9E472A]"
+              >
                 • Fabric Tools &amp; Calculators
-              </button>
+              </a>
             </li>
           </ul>
         </div>
@@ -108,18 +164,23 @@ export const SitemapView: React.FC<SitemapViewProps> = ({ onNavigate }) => {
           </h2>
           <ul className="space-y-2 text-xs text-[#4A453E]">
             <li>
-              <button onClick={() => onNavigate('tools')} className="hover:text-[#9E472A] transition-colors font-medium">
+              <a 
+                href="/tools" 
+                onClick={(e) => { e.preventDefault(); onNavigate('tools'); }} 
+                className="hover:text-[#9E472A] transition-colors font-medium block"
+              >
                 • All Calculators Landing (/tools)
-              </button>
+              </a>
             </li>
             {FABRIC_TOOLS.map((tool) => (
               <li key={tool.id}>
-                <button
-                  onClick={() => onNavigate('tools', tool.slug)}
-                  className="hover:text-[#9E472A] transition-colors text-left"
+                <a
+                  href={`/tools/${tool.slug}`}
+                  onClick={(e) => { e.preventDefault(); onNavigate('tools', tool.slug); }}
+                  className="hover:text-[#9E472A] transition-colors text-left block"
                 >
                   • {tool.title}
-                </button>
+                </a>
               </li>
             ))}
           </ul>
@@ -132,46 +193,74 @@ export const SitemapView: React.FC<SitemapViewProps> = ({ onNavigate }) => {
           </h2>
           <ul className="space-y-2 text-xs text-[#4A453E]">
             <li>
-              <button onClick={() => onNavigate('privacy-policy')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/privacy-policy" 
+                onClick={(e) => { e.preventDefault(); onNavigate('privacy-policy'); }} 
+                className="hover:text-[#9E472A] transition-colors block"
+              >
                 • Privacy Policy
-              </button>
+              </a>
             </li>
             <li>
-              <button onClick={() => onNavigate('terms')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/terms" 
+                onClick={(e) => { e.preventDefault(); onNavigate('terms'); }} 
+                className="hover:text-[#9E472A] transition-colors block"
+              >
                 • Terms &amp; Conditions
-              </button>
+              </a>
             </li>
             <li>
-              <button onClick={() => onNavigate('disclaimer')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/disclaimer" 
+                onClick={(e) => { e.preventDefault(); onNavigate('disclaimer'); }} 
+                className="hover:text-[#9E472A] transition-colors block"
+              >
                 • Website Disclaimer
-              </button>
+              </a>
             </li>
             <li>
-              <button onClick={() => onNavigate('cookie-policy')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/cookie-policy" 
+                onClick={(e) => { e.preventDefault(); onNavigate('cookie-policy'); }} 
+                className="hover:text-[#9E472A] transition-colors block"
+              >
                 • Cookie Policy
-              </button>
+              </a>
             </li>
             <li>
-              <button onClick={() => onNavigate('editorial-policy')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/editorial-policy" 
+                onClick={(e) => { e.preventDefault(); onNavigate('editorial-policy'); }} 
+                className="hover:text-[#9E472A] transition-colors block"
+              >
                 • Editorial Policy
-              </button>
+              </a>
             </li>
             <li>
-              <button onClick={() => onNavigate('corrections-policy')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/corrections-policy" 
+                onClick={(e) => { e.preventDefault(); onNavigate('corrections-policy'); }} 
+                className="hover:text-[#9E472A] transition-colors block"
+              >
                 • Corrections Policy
-              </button>
+              </a>
             </li>
             <li>
-              <button onClick={() => onNavigate('advertising-policy')} className="hover:text-[#9E472A] transition-colors">
+              <a 
+                href="/advertising-policy" 
+                onClick={(e) => { e.preventDefault(); onNavigate('advertising-policy'); }} 
+                className="hover:text-[#9E472A] transition-colors block"
+              >
                 • Advertising Policy
-              </button>
+              </a>
             </li>
             <li>
               <a 
                 href="/sitemap.xml" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="hover:text-[#9E472A] transition-colors"
+                className="hover:text-[#9E472A] transition-colors block"
               >
                 • sitemap.xml
               </a>
@@ -181,7 +270,7 @@ export const SitemapView: React.FC<SitemapViewProps> = ({ onNavigate }) => {
                 href="/robots.txt" 
                 target="_blank" 
                 rel="noopener noreferrer" 
-                className="hover:text-[#9E472A] transition-colors"
+                className="hover:text-[#9E472A] transition-colors block"
               >
                 • robots.txt
               </a>
@@ -197,12 +286,13 @@ export const SitemapView: React.FC<SitemapViewProps> = ({ onNavigate }) => {
           <ul className="space-y-2 text-xs text-[#4A453E]">
             {FABRIC_COMPARISONS.map((comp) => (
               <li key={comp.id}>
-                <button
-                  onClick={() => onNavigate('comparison', comp.slug)}
-                  className="hover:text-[#9E472A] transition-colors text-left"
+                <a
+                  href={`/comparison/${comp.slug}`}
+                  onClick={(e) => { e.preventDefault(); onNavigate('comparison', comp.slug); }}
+                  className="hover:text-[#9E472A] transition-colors text-left block"
                 >
                   • {comp.fabricA.name} vs. {comp.fabricB.name}
-                </button>
+                </a>
               </li>
             ))}
           </ul>
@@ -215,14 +305,15 @@ export const SitemapView: React.FC<SitemapViewProps> = ({ onNavigate }) => {
           </h2>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-3 text-xs text-[#4A453E]">
             {ARTICLES.map((article) => (
-              <button
+              <a
                 key={article.id}
-                onClick={() => onNavigate('article', article.slug)}
-                className="hover:text-[#9E472A] transition-colors text-left p-2 rounded hover:bg-[#FAF8F5] border border-transparent hover:border-[#E8E2D9]"
+                href={`/articles/${article.slug}`}
+                onClick={(e) => { e.preventDefault(); onNavigate('article', article.slug); }}
+                className="hover:text-[#9E472A] transition-colors text-left p-2 rounded hover:bg-[#FAF8F5] border border-transparent hover:border-[#E8E2D9] block"
               >
                 <span className="font-medium text-[#1C1C1C] block line-clamp-1">• {article.title}</span>
                 <span className="text-[10px] text-[#8C8478]">{article.category} · {article.readTime}</span>
-              </button>
+              </a>
             ))}
           </div>
         </div>
@@ -234,13 +325,14 @@ export const SitemapView: React.FC<SitemapViewProps> = ({ onNavigate }) => {
           </h2>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 text-xs text-[#4A453E]">
             {FABRICS.map((fab) => (
-              <button
+              <a
                 key={fab.id}
-                onClick={() => onNavigate('fabric', fab.slug)}
-                className="hover:text-[#9E472A] transition-colors text-left truncate"
+                href={`/fabric/${fab.slug}`}
+                onClick={(e) => { e.preventDefault(); onNavigate('fabric', fab.slug); }}
+                className="hover:text-[#9E472A] transition-colors text-left truncate block"
               >
                 • {fab.name}
-              </button>
+              </a>
             ))}
           </div>
         </div>

@@ -84,19 +84,21 @@ export const FabricDetailView: React.FC<FabricDetailViewProps> = ({
       {/* Top Breadcrumb & Actions */}
       <div className="flex flex-wrap items-center justify-between gap-4 text-xs">
         <nav aria-label="Breadcrumb" className="flex items-center gap-1.5 text-[#6B655C]">
-          <button
-            onClick={() => onNavigate('home')}
+          <a
+            href="/"
+            onClick={(e) => { e.preventDefault(); onNavigate('home'); }}
             className="hover:text-[#1C1C1C] font-medium transition-colors"
           >
             Home
-          </button>
+          </a>
           <span>/</span>
-          <button
-            onClick={() => onNavigate('fabrics')}
+          <a
+            href="/fabrics"
+            onClick={(e) => { e.preventDefault(); onNavigate('fabrics'); }}
             className="hover:text-[#1C1C1C] font-medium transition-colors"
           >
             Fabrics
-          </button>
+          </a>
           <span>/</span>
           <span className="text-[#1C1C1C] font-medium truncate max-w-[180px] sm:max-w-xs">
             {fabric.name} Fabric
@@ -552,20 +554,22 @@ export const FabricDetailView: React.FC<FabricDetailViewProps> = ({
                 <h2 className="text-xl font-serif-heading font-bold text-[#1C1C1C] flex items-center gap-2">
                   <Scale className="w-5 h-5 text-[#9E472A]" /> Head-to-Head Comparisons
                 </h2>
-                <button
-                  onClick={() => onNavigate('comparisons')}
+                <a
+                  href="/comparisons"
+                  onClick={(e) => { e.preventDefault(); onNavigate('comparisons'); }}
                   className="text-xs font-medium text-[#9E472A] hover:underline"
                 >
                   All Comparisons →
-                </button>
+                </a>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
                 {relatedComparisons.map(comp => (
-                  <div
+                  <a
                     key={comp.id}
-                    onClick={() => onNavigate('comparison', comp.slug)}
-                    className="p-4 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-lg cursor-pointer transition-all hover:shadow-xs group"
+                    href={`/comparison/${comp.slug}`}
+                    onClick={(e) => { e.preventDefault(); onNavigate('comparison', comp.slug); }}
+                    className="p-4 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-lg cursor-pointer transition-all hover:shadow-xs group block"
                   >
                     <span className="text-[11px] font-mono uppercase text-[#9E472A] font-semibold block mb-1">
                       Side-by-Side Analysis
@@ -576,7 +580,7 @@ export const FabricDetailView: React.FC<FabricDetailViewProps> = ({
                     <p className="text-xs text-[#6B655C] mt-1.5 line-clamp-2">
                       {comp.overview}
                     </p>
-                  </div>
+                  </a>
                 ))}
               </div>
             </section>
@@ -603,20 +607,22 @@ export const FabricDetailView: React.FC<FabricDetailViewProps> = ({
                 <h2 className="text-xl font-serif-heading font-bold text-[#1C1C1C] flex items-center gap-2">
                   <BookOpen className="w-5 h-5 text-[#9E472A]" /> In-Depth {fabric.name} Guides &amp; Tutorials
                 </h2>
-                <button
-                  onClick={() => onNavigate('blog')}
+                <a
+                  href="/articles"
+                  onClick={(e) => { e.preventDefault(); onNavigate('blog'); }}
                   className="text-xs font-medium text-[#9E472A] hover:underline"
                 >
                   All Articles →
-                </button>
+                </a>
               </div>
 
               <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
                 {relatedArticles.map(art => (
-                  <div
+                  <a
                     key={art.id}
-                    onClick={() => onNavigate('articles', art.slug)}
-                    className="p-4 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-lg cursor-pointer transition-all hover:shadow-xs group flex flex-col justify-between"
+                    href={`/articles/${art.slug}`}
+                    onClick={(e) => { e.preventDefault(); onNavigate('articles', art.slug); }}
+                    className="p-4 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-lg cursor-pointer transition-all hover:shadow-xs group flex flex-col justify-between block"
                   >
                     <div>
                       <span className="text-[10px] font-mono uppercase text-[#9E472A] font-semibold block mb-1">
@@ -632,7 +638,7 @@ export const FabricDetailView: React.FC<FabricDetailViewProps> = ({
                     <div className="pt-2 mt-3 border-t border-[#F2ECE3] text-right">
                       <span className="text-xs text-[#9E472A] font-semibold">Read Guide →</span>
                     </div>
-                  </div>
+                  </a>
                 ))}
               </div>
             </section>
@@ -648,61 +654,68 @@ export const FabricDetailView: React.FC<FabricDetailViewProps> = ({
             Deepen your textile expertise with our non-commercial research guides and historical archives:
           </p>
           <div className="flex flex-wrap gap-2 pt-1">
-            <button
-              onClick={() => onNavigate('care')}
+            <a
+              href="/care"
+              onClick={(e) => { e.preventDefault(); onNavigate('care'); }}
               className="px-3 py-1.5 bg-white border border-[#D9D1C5] rounded text-xs font-medium text-[#1C1C1C] hover:text-[#9E472A] hover:border-[#9E472A] transition-colors"
             >
               Fabric Care &amp; Washing Directory →
-            </button>
-            <button
-              onClick={() => onNavigate('glossary')}
+            </a>
+            <a
+              href="/glossary"
+              onClick={(e) => { e.preventDefault(); onNavigate('glossary'); }}
               className="px-3 py-1.5 bg-white border border-[#D9D1C5] rounded text-xs font-medium text-[#1C1C1C] hover:text-[#9E472A] hover:border-[#9E472A] transition-colors"
             >
               A-Z Textile Terminology Glossary →
-            </button>
-            <button
-              onClick={() => onNavigate('timeline')}
+            </a>
+            <a
+              href="/timeline"
+              onClick={(e) => { e.preventDefault(); onNavigate('timeline'); }}
               className="px-3 py-1.5 bg-white border border-[#D9D1C5] rounded text-xs font-medium text-[#1C1C1C] hover:text-[#9E472A] hover:border-[#9E472A] transition-colors"
             >
               30,000 BCE to Present Timeline →
-            </button>
-            <button
-              onClick={() => onNavigate('industry')}
+            </a>
+            <a
+              href="/industry"
+              onClick={(e) => { e.preventDefault(); onNavigate('industry'); }}
               className="px-3 py-1.5 bg-white border border-[#D9D1C5] rounded text-xs font-medium text-[#1C1C1C] hover:text-[#9E472A] hover:border-[#9E472A] transition-colors"
             >
               Global Textile Industry Hubs →
-            </button>
+            </a>
           </div>
         </section>
 
         {/* Fabric Type Cluster Next / Previous Pagination */}
         <section className="pt-6 border-t border-[#E8E2D8] flex flex-col sm:flex-row items-center justify-between gap-4">
-          <button
-            onClick={() => onNavigate('fabric', prevFabric.slug)}
-            className="w-full sm:w-auto p-4 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl text-left transition-all hover:shadow-xs group"
+          <a
+            href={`/fabric/${prevFabric.slug}`}
+            onClick={(e) => { e.preventDefault(); onNavigate('fabric', prevFabric.slug); }}
+            className="w-full sm:w-auto p-4 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl text-left transition-all hover:shadow-xs group block"
           >
             <span className="text-[10px] font-mono uppercase text-[#8C8478] block">← Previous Fabric Type</span>
             <span className="text-sm font-serif-heading font-bold text-[#1C1C1C] group-hover:text-[#9E472A] transition-colors">
               {prevFabric.name} Fabric
             </span>
-          </button>
+          </a>
 
-          <button
-            onClick={() => onNavigate('fabrics')}
+          <a
+            href="/fabrics"
+            onClick={(e) => { e.preventDefault(); onNavigate('fabrics'); }}
             className="text-xs font-semibold uppercase tracking-wider text-[#9E472A] hover:underline"
           >
             Browse All 38 Fabrics
-          </button>
+          </a>
 
-          <button
-            onClick={() => onNavigate('fabric', nextFabric.slug)}
-            className="w-full sm:w-auto p-4 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl text-right transition-all hover:shadow-xs group"
+          <a
+            href={`/fabric/${nextFabric.slug}`}
+            onClick={(e) => { e.preventDefault(); onNavigate('fabric', nextFabric.slug); }}
+            className="w-full sm:w-auto p-4 bg-white border border-[#E6E0D7] hover:border-[#9E472A] rounded-xl text-right transition-all hover:shadow-xs group block"
           >
             <span className="text-[10px] font-mono uppercase text-[#8C8478] block">Next Fabric Type →</span>
             <span className="text-sm font-serif-heading font-bold text-[#1C1C1C] group-hover:text-[#9E472A] transition-colors">
               {nextFabric.name} Fabric
             </span>
-          </button>
+          </a>
         </section>
 
       </div>

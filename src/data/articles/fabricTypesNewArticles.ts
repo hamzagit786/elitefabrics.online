@@ -90,7 +90,7 @@ export const NEW_FABRIC_TYPES_PART1: Article[] = [
       <section id="common-types">
         <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">Popular Types of Cotton Fabric</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Because cotton is versatile, weavers spin it into dozens of unique textures and weights. Explore our detailed <a href="#fabric/cotton" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Cotton Fabric Profile</a> or check out these popular styles:
+          Because cotton is versatile, weavers spin it into dozens of unique textures and weights. Explore our detailed <a href="/fabric/cotton" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Cotton Fabric Profile</a> or check out these popular styles:
         </p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-6">
           <div class="p-4 bg-white border border-[#E6E0D7] rounded-lg">
@@ -123,7 +123,7 @@ export const NEW_FABRIC_TYPES_PART1: Article[] = [
       <section id="table-weights">
         <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">Cotton Fabric Weight & GSM Comparison Table</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Different garments require different weights. You can also calculate exact requirements on our <a href="#tools/gsm-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">GSM Weight Calculator</a>.
+          Different garments require different weights. You can also calculate exact requirements on our <a href="/tools/gsm-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">GSM Weight Calculator</a>.
         </p>
         <div class="overflow-x-auto my-6 border border-[#E6E0D7] rounded-lg">
           <table class="w-full text-left text-sm border-collapse">
@@ -226,7 +226,7 @@ export const NEW_FABRIC_TYPES_PART1: Article[] = [
         </p>
         <ol class="list-decimal pl-6 space-y-2 text-[#3A3A3A] mb-4">
           <li><strong>Wash in cold or warm water:</strong> Keep temperatures at 30°C to 40°C (85°F–105°F) for everyday clothing to preserve colors.</li>
-          <li><strong>Pre-wash before cutting:</strong> If you sew, always pre-wash yardage so natural shrinkage happens before assembly. Check our <a href="#articles/the-science-of-fabric-shrinkage" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Shrinkage Guide</a> for detailed tips.</li>
+          <li><strong>Pre-wash before cutting:</strong> If you sew, always pre-wash yardage so natural shrinkage happens before assembly. Check our <a href="/articles/the-science-of-fabric-shrinkage" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Shrinkage Guide</a> for detailed tips.</li>
           <li><strong>Line dry or use low heat:</strong> High tumble dryer heat is the main cause of cotton shrinkage. Shake damp garments and dry on a line or low tumble setting.</li>
           <li><strong>Iron while slightly damp:</strong> Cotton irons best with a medium-high iron and moderate steam when fibers are lightly moist.</li>
         </ol>
@@ -353,7 +353,7 @@ export const NEW_FABRIC_TYPES_PART1: Article[] = [
           First, flax fibers possess exceptionally high <strong>thermal conductivity</strong>—higher than cotton, silk, or wool. Linen conducts body heat away from your skin rapidly, creating an instant cool-to-the-touch sensation.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Second, linen can absorb up to 20% of its dry weight in moisture before even feeling damp to the touch. Because the weave is open and flax fibers are hollow, moisture wicks to the surface and evaporates into the air swiftly, generating a continuous natural cooling breeze against your skin. For a detailed comparison, explore our guide on <a href="#articles/cotton-vs-linen" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Cotton vs Linen</a>.
+          Second, linen can absorb up to 20% of its dry weight in moisture before even feeling damp to the touch. Because the weave is open and flax fibers are hollow, moisture wicks to the surface and evaporates into the air swiftly, generating a continuous natural cooling breeze against your skin. For a detailed comparison, explore our guide on <a href="/articles/cotton-vs-linen" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Cotton vs Linen</a>.
         </p>
       </section>
 

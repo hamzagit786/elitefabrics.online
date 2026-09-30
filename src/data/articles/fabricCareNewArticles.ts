@@ -111,7 +111,7 @@ export const NEW_FABRIC_CARE_ARTICLES: Article[] = [
           Why does cotton shrink in the dryer? During manufacturing, cotton yarns are pulled under massive mechanical tension. In the tumbler, moisture plus high thermal heat releases this tension, snapping fibers back to their shorter natural state.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          To completely prevent shrinkage, remove cotton clothes while slightly damp (about 85% dry) and let them finish on a drying rack or hanger. Read our in-depth research on <a href="#articles/why-cotton-shrinks" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Why Cotton Shrinks</a>.
+          To completely prevent shrinkage, remove cotton clothes while slightly damp (about 85% dry) and let them finish on a drying rack or hanger. Read our in-depth research on <a href="/articles/why-cotton-shrinks" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Why Cotton Shrinks</a>.
         </p>
       </section>
 

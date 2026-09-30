@@ -49,7 +49,7 @@ export const NEW_COMPARISONS_PART2: Article[] = [
           Khaddar (or khadi) is deeply rooted in South Asian textile heritage:
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Woven on traditional pit looms using thick, coarse cotton yarns, Khaddar has a dense, sturdy texture with tiny organic irregularities. Because thick cotton fibers trap body heat while remaining breathable, winter Khaddar acts as a natural windbreaker that keeps you warm without triggering sweat. Explore our detailed <a href="#fabric/khaddar" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Khaddar Fabric Profile</a>.
+          Woven on traditional pit looms using thick, coarse cotton yarns, Khaddar has a dense, sturdy texture with tiny organic irregularities. Because thick cotton fibers trap body heat while remaining breathable, winter Khaddar acts as a natural windbreaker that keeps you warm without triggering sweat. Explore our detailed <a href="/fabric/khaddar" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Khaddar Fabric Profile</a>.
         </p>
       </section>
 
@@ -59,7 +59,7 @@ export const NEW_COMPARISONS_PART2: Article[] = [
           Karandi is one of the most distinctive luxury textiles of Pakistan:
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Weavers interlace fine cotton warp threads with coarse raw silk or wild tussar silk weft threads. The unrefined silk slubs produce raised, irregular horizontal ridges that catch light with an organic, understated glow. It holds embroidery stitches crisply and provides a regal, structured silhouette. Check out our <a href="#fabric/karandi" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Karandi Fabric Profile</a>.
+          Weavers interlace fine cotton warp threads with coarse raw silk or wild tussar silk weft threads. The unrefined silk slubs produce raised, irregular horizontal ridges that catch light with an organic, understated glow. It holds embroidery stitches crisply and provides a regal, structured silhouette. Check out our <a href="/fabric/karandi" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Karandi Fabric Profile</a>.
         </p>
       </section>
 

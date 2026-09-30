@@ -542,7 +542,7 @@ export const NEW_FABRIC_TYPES_PART2: Article[] = [
       <section id="denim-weights">
         <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">Denim Weight Categories (Light, Mid, Heavyweight)</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Unlike most fabrics measured in GSM, commercial denim is traditionally categorized by weight in <strong>ounces per square yard</strong> (oz/yd²). You can convert between units instantly on our <a href="#articles/denim-gsm-chart" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Denim GSM Chart</a>.
+          Unlike most fabrics measured in GSM, commercial denim is traditionally categorized by weight in <strong>ounces per square yard</strong> (oz/yd²). You can convert between units instantly on our <a href="/articles/denim-gsm-chart" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Denim GSM Chart</a>.
         </p>
       </section>
 

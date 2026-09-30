@@ -1,867 +1,556 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
-    <loc>https://elitefabrics.online/</loc>
+    <loc>https://elitefabrics.online/articles/what-is-cotton-fabric</loc>
     <image:image>
-      <image:loc>https://elitefabrics.online/favicon.svg</image:loc>
-      <image:title>Elite Fabrics – Independent Fabric &amp; Textile Information</image:title>
-      <image:caption>Elite Fabrics educational textile emblem and encyclopedia logo.</image:caption>
+      <image:loc>https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>What Is Cotton Fabric? The Complete Everyday Guide</image:title>
+      <image:caption>Natural raw cotton bolls and textured white cotton weave fabric on a wooden table</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/what-is-linen-fabric</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>What Is Linen Fabric? The Ancient Natural Fiber Guide</image:title>
+      <image:caption>Natural oatmeal linen fabric draped softly with characteristic organic slub weave textures</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/what-is-wool-fabric</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1574786198875-49f5d09fe2d5?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>What Is Wool Fabric? The Natural Thermal Fiber Guide</image:title>
+      <image:caption>Cozy knitted and woven pure wool textiles folded in warm heather tones</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/what-is-rayon-fabric</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>What Is Rayon Fabric? The Semi-Synthetic Textile Guide</image:title>
+      <image:caption>Silky flowing draped rayon fabric with elegant fluid folds catching soft studio light</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/what-is-viscose-fabric</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>What Is Viscose Fabric? The Silk Alternative Explained</image:title>
+      <image:caption>Rich emerald green draped viscose fabric with soft folds and subtle luster</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/what-is-organza-fabric</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>What Is Organza Fabric? The Sheer Structured Textile</image:title>
+      <image:caption>Crisp iridescent bridal organza fabric with translucent layered architectural folds</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/what-is-chiffon-fabric</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>What Is Chiffon Fabric? The Lightweight Flowing Textile</image:title>
+      <image:caption>Soft flowing pastel blush pink chiffon fabric floating in gentle ripples</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/what-is-velvet-fabric</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>What Is Velvet Fabric? The Luxurious Pile Weave Guide</image:title>
+      <image:caption>Plush midnight navy blue velvet fabric with deep shadows and soft luminous highlights</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/what-is-denim-fabric</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>What Is Denim Fabric? The Rugged Twill Textile Guide</image:title>
+      <image:caption>Close-up of indigo blue denim fabric twill weave showing diagonal ribs and authentic texture</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/what-is-muslin-fabric</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>What Is Muslin Fabric? The Versatile Plain Weave Guide</image:title>
+      <image:caption>Natural unbleached cotton muslin cloth folded neatly showing pure organic weave texture</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/cotton-vs-linen</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>Cotton vs Linen: Which Natural Fabric Is Right for You?</image:title>
+      <image:caption>Cotton boll next to folded textured natural flax linen fabric sample</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/silk-vs-satin</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>Silk vs Satin: Differences Between Fiber and Weave</image:title>
+      <image:caption>Lustrous champagne silk fabric and glistening poly satin draped side by side</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/rayon-vs-viscose</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>Rayon vs Viscose: Are They the Same Fabric?</image:title>
+      <image:caption>Soft draping viscose and rayon fabrics folded in subtle gradient colors</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/lawn-vs-cotton</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>Lawn vs Cotton: Understanding the Summer Weave Difference</image:title>
+      <image:caption>Delicate printed Pakistani cotton lawn fabric alongside heavier standard cotton weave</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/khaddar-vs-karandi</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1574786198875-49f5d09fe2d5?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>Khaddar vs Karandi: The Winter Fabric Showdown</image:title>
+      <image:caption>Rich textured handwoven Khaddar fabric beside lustrous raw-silk Karandi winter suit cloth</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/denim-vs-chambray</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>Denim vs Chambray: Spotting the Weave Differences</image:title>
+      <image:caption>Folded blue denim jeans next to a soft, lightweight blue chambray button-up shirt</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/velvet-vs-velour</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>Velvet vs Velour: Pile Weave vs Knitted Stretch</image:title>
+      <image:caption>Rich formal black velvet fabric folded next to stretchy ruby red casual knit velour</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/organza-vs-chiffon</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>Organza vs Chiffon: Comparing Sheer Evening Fabrics</image:title>
+      <image:caption>Layered white crisp organza and delicate soft flowing chiffon fabrics side by side</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/how-to-wash-cotton-fabric</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>How to Wash Cotton Fabric: The Complete Laundry Guide</image:title>
+      <image:caption>Fresh clean white and pastel cotton laundry folded neatly on a wooden shelf</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/how-to-wash-silk-safely</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>How to Wash Silk Safely at Home: Complete Care Guide</image:title>
+      <image:caption>Silky smooth champagne colored silk pillowcase folded next to gentle laundry soap basin</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/how-to-remove-common-fabric-stains</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>How to Remove Common Fabric Stains: The Emergency Guide</image:title>
+      <image:caption>Clean white cotton shirt being treated gently for spot removal with clean cloth and basin</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/how-to-prevent-fabric-shrinking</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>How to Prevent Fabric Shrinking: The Science and Care Guide</image:title>
+      <image:caption>Measuring tape resting on clean natural woven fabric showing dimensional stability</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/how-to-iron-different-fabrics</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>How to Iron Different Fabrics: Master Heat &amp; Steam Guide</image:title>
+      <image:caption>Steam iron pressing cleanly on crisp natural fabric on an ironing board</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/how-to-store-seasonal-clothes</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>How to Store Seasonal Clothes: Protect Wool &amp; Cottons</image:title>
+      <image:caption>Folded wool and cotton seasonal sweaters stored neatly with natural cedar blocks in canvas bins</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/fabric-types-guide-for-beginners</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>Fabric Types Guide for Beginners: The Master Foundation</image:title>
+      <image:caption>Variety of colorful fabric swatches and rolls displaying natural and synthetic textures</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/understanding-fabric-gsm</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>Understanding Fabric GSM: What the Numbers Mean</image:title>
+      <image:caption>Textile weight sample disc cutter and digital scale showing grams per square meter testing</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/woven-vs-knit-fabric</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>Woven vs Knit Fabric: How to Tell Them Apart</image:title>
+      <image:caption>Crisp woven cotton plaid shirt fabric next to stretchy rib knit sweater sample</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/how-to-read-clothing-labels</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>How to Read Clothing Labels: Care Symbols &amp; Fiber Truths</image:title>
+      <image:caption>White textile garment care tag showing international laundry symbols and fiber percentages</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/fabric-weaves-explained</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>Fabric Weaves Explained: Plain, Twill, Satin &amp; Jacquard</image:title>
+      <image:caption>Close-up macro of interlacing warp and weft textile weave patterns on a wooden loom</image:caption>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://elitefabrics.online/articles/natural-vs-synthetic-fabrics</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1200&q=80</image:loc>
+      <image:title>Natural vs Synthetic Fabrics: The Environmental &amp; Skin Guide</image:title>
+      <image:caption>Raw organic cotton boll next to synthetic brightly colored polyester yarn spools</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/fabric-weight-demystified-gsm-ounces-guide</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Fabric Weight Demystified: The Complete Guide to GSM and Ounces</image:title>
-      <image:caption>Fabric area density—measured internationally in grams per square meter (GSM) and in US trade as ounces per square yard (oz/yd²)—is the foundational metric that dictates drape, opacity, thermal performance, and garment construction.</image:caption>
+      <image:caption>Stacked rolls and bolts of natural woven textiles showcasing different fabric weights and densities</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/fibers-vs-weaves-vs-knits-three-levels</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1520006403909-838d6b92c22e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1520006403909-838d6b92c22e?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Fibers vs. Weaves vs. Knits: The Three Levels of Every Fabric</image:title>
-      <image:caption>Every textile exists in a structural hierarchy: microscopic fibers are drawn and spun into yarns, which are then interlaced as wovens or interlooped as knits to form the final fabric.</image:caption>
+      <image:caption>Spun yarn skeins and knitted fabric loops displaying the structural hierarchy of fibers, yarns, and stitches</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/the-science-of-fabric-shrinkage</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>The Science of Fabric Shrinkage: Why Clothes Shrink and How to Prevent It</image:title>
-      <image:caption>Dimensional stability is governed by moisture, heat, mechanical agitation, and the release of mechanical tension built into yarns and fabric structures during manufacture.</image:caption>
+      <image:caption>Freshly laundered natural cotton and linen garments hanging to air-dry on a clothesline in sunlight</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/trending-fabrics-2026</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Trending Fabrics in 2026: What People Are Wearing and Loving This Year</image:title>
-      <image:caption>Popular clothing fabrics for 2026 prioritize breathable comfort, natural touch, and long-lasting quality.</image:caption>
+      <image:caption>A modern rack of clothes made from soft cotton, linen, and sustainable fabrics</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/how-to-start-learning-fabrics-beginner</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>How to Learn About Fabrics: The Complete Beginner’s Guide</image:title>
-      <image:caption>Learning about fabrics starts with three simple steps: understanding the fiber, how it is made, and how it feels.</image:caption>
+      <image:caption>Measuring tape, sewing scissors, and fabric swatches on a clean wooden work table</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/the-art-of-pakistani-lawn</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1597983073493-88cd35cf93b0?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1597983073493-88cd35cf93b0?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>The Complete Guide to Pakistani Lawn: Why It Keeps You Cool in Summer</image:title>
-      <image:caption>Pakistani lawn combines fine combed cotton with bright prints, designed specifically for hot summer weather.</image:caption>
+      <image:caption>Colorful printed Pakistani lawn dresses hanging neatly in bright daylight</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/the-living-legacy-of-sindhi-ajrak</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>The Living Craft of Sindhi Ajrak: 4,500 Years of Block Printing</image:title>
-      <image:caption>Authentic Ajrak is stamped by hand using carved acacia wood blocks and traditional natural dyes.</image:caption>
+      <image:caption>Artisanal hand-carved wooden block stamping geometric patterns with natural dye on cloth</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/sustainable-fabrics-lifecycle-guide</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1534349762230-e0cadf78f5da?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Sustainable Fabrics Made Simple: Which Clothes Are Truly Eco-Friendly?</image:title>
-      <image:caption>True fabric sustainability is about natural renewable crops, clean processing, and garments that last for years.</image:caption>
+      <image:caption>Natural raw plant fibers, flax, and fresh green leaves representing eco-friendly textiles</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/the-ultimate-fabric-care-manual</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>How to Care for Your Clothes: The Everyday Fabric Care Guide</image:title>
-      <image:caption>Proper laundry care keeps your favorite clothes looking new, vibrant, and soft for years.</image:caption>
+      <image:caption>Neat stack of freshly washed, clean folded cotton and linen clothes</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/what-is-gsm-in-fabric</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>What Is GSM in Fabric? Grams Per Square Meter Explained Simply</image:title>
-      <image:caption>Fabric weight measured in grams per square meter (GSM) indicates fabric thickness and density.</image:caption>
+      <image:caption>Stacked fabric bolts in clean neutral tones showing different fabric thicknesses and weights</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/cotton-gsm-guide</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Cotton GSM Guide: From Voile to Heavy Canvas Weights</image:title>
-      <image:caption>Cotton fabrics range from airy 65 GSM lawns to heavy 450 GSM workwear canvas.</image:caption>
+      <image:caption>Folded natural unbleached cotton textiles showcasing weave textures and weights</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/denim-gsm-chart</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Denim GSM Chart: Converting Ounces to GSM for Jeans &amp; Jackets</image:title>
-      <image:caption>Denim weight determines durability, break-in time, and warmth in finished jeans.</image:caption>
+      <image:caption>Stacked blue indigo denim jeans showing twill texture and heavy fabric weight</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/fabric-weight-chart</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Fabric Weight Chart: Master Guide for All Major Textiles</image:title>
-      <image:caption>Comparing fabric weight across fiber categories allows sewists to make accurate material choices.</image:caption>
+      <image:caption>Multiple layered textile swatches displaying different weights, textures, and fibers</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/lightweight-vs-heavyweight-fabrics</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1607344645866-009c320c5ab8?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1607344645866-009c320c5ab8?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Lightweight vs Heavyweight Fabrics: GSM Comparison, Drape &amp; Uses</image:title>
-      <image:caption>Fabric weight dictates silhouette: lightweight fabrics billow with gentle drape, while heavyweight fabrics hold rigid geometric form.</image:caption>
+      <image:caption>Folded bolts of lightweight linen and heavy canvas fabrics displaying contrasting textures and thicknesses</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/how-much-fabric-do-i-need</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>How Much Fabric Do I Need? Yardage Estimates for Common Projects</image:title>
-      <image:caption>Accurate yardage estimation prevents wasteful fabric surplus and mid-project fabric shortages.</image:caption>
+      <image:caption>Measuring tape lying over rolled linen fabric ready for cutting</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/fabric-yardage-explained</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Fabric Yardage Explained: Yards, Bolts, and Fractions Simplified</image:title>
-      <image:caption>Fabric yardage is measured along the selvage edge regardless of how wide the bolt is.</image:caption>
+      <image:caption>Cutting table in a fabric shop showing wooden yardstick and bolt cardboard core</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/how-to-measure-fabric</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>How to Measure Fabric Accurately: Length, Width, and Grainline</image:title>
-      <image:caption>Measuring fabric on a flat table ensures grainline alignment and pattern precision.</image:caption>
+      <image:caption>Hands measuring patterned fabric with a tailor’s tape measure on a wooden workspace</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/why-cotton-shrinks</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Why Cotton Shrinks: The Science of Fiber Relaxation in Laundry</image:title>
-      <image:caption>Moisture, heat, and mechanical agitation release loom tension, causing natural cotton fibers to contract.</image:caption>
+      <image:caption>Modern washing machine laundry drum with clean white cotton towels inside</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/fabric-shrinkage-guide</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Fabric Shrinkage Guide: Expected Shrinkage Rates for Every Fiber</image:title>
-      <image:caption>Different textile fibers experience varying degrees of dimensional relaxation in warm water.</image:caption>
+      <image:caption>Clothes hanging on an indoor wooden drying rack to prevent laundry shrinkage</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/washing-different-fabrics</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Washing Different Fabrics: Temperature, Detergent, and Cycle Guide</image:title>
-      <image:caption>Sorting textiles by fiber fragility and color prevents fiber abrasion, bleeding, and shrinkage.</image:caption>
+      <image:caption>Neatly folded stacks of clean natural laundry on a laundry shelf</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/fabric-width-explained</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Fabric Width Explained: 44-Inch vs 60-Inch Bolts and Cutting Layouts</image:title>
-      <image:caption>A 60-inch fabric bolt provides 33% more surface area per linear yard than a 45-inch bolt, dramatically reducing required yardage.</image:caption>
+      <image:caption>Two fabric bolts rolled out on a sewing cutting cutting mat showing comparative 45 inch and 60 inch widths</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/seam-allowance-basics</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Seam Allowance Basics: Standard Measurements, Sewing Guidelines &amp; Grading</image:title>
-      <image:caption>Accurate seam allowances ensure that pattern pieces fit together with mathematical precision and structural seam strength.</image:caption>
+      <image:caption>Close-up of a sewing machine needle stitching along a marked 5/8-inch seam allowance guide plate on neutral linen</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/how-to-prevent-shrinkage</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1545173168-9f1947eebb7f?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>How to Prevent Fabric Shrinkage: Pre-Washing, Water Temps &amp; Drying Rules</image:title>
-      <image:caption>Gentle water temperatures and air drying eliminate the thermal shock that causes natural cellulose and protein fibers to contract.</image:caption>
+      <image:caption>Clean cotton and linen fabrics hanging on a modern indoor wooden drying rack with morning light</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/drying-fabric-safely</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1517677208171-0bc6725a3e60?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Drying Fabric Safely: Air Drying vs Tumble Drying for Cotton, Wool &amp; Silk</image:title>
-      <image:caption>Air drying prevents fiber friction, protects delicate elastane stretch, and eliminates dryer lint loss.</image:caption>
+      <image:caption>White and natural linen shirts drying naturally on a wooden drying rack by a bright window</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/canvas-fabric-guide</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1513519245088-0e12902e5a38?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Canvas Fabric Guide: Duck Canvas, Weights, and Sewing Tips</image:title>
-      <image:caption>Heavy plain-weave cotton duck canvas provides unmatched abrasion resistance.</image:caption>
+      <image:caption>Tightly woven heavy beige cotton duck canvas texture close-up</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/muslin-fabric-guide</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1489987707025-afc232f7ea0f?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Muslin Fabric Guide: Mockups, Bleached vs Unbleached, and History</image:title>
-      <image:caption>Plain unbleached cotton muslin allows sewists and designers to test garment drape and fit before cutting expensive fashion fabric.</image:caption>
+      <image:caption>Natural cream unbleached cotton muslin fabric draped on a dressmakers mannequin</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/poplin-fabric-guide</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Poplin Fabric Guide: Weave Structure, Shirts, and Sewing Advice</image:title>
-      <image:caption>Poplin features tightly packed warp yarns over thicker weft yarns, creating crisp, lustrous stability.</image:caption>
+      <image:caption>Crisp light blue woven cotton poplin shirt fabric with fine texture</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/twill-fabric-guide</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Twill Fabric Guide: Diagonal Weaves, Chino, and Durability</image:title>
-      <image:caption>The distinctive diagonal ridge (wale) in twill distributes abrasive stress across yarns.</image:caption>
+      <image:caption>Detailed macro shot of diagonal twill ridges on khaki cotton fabric</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/jersey-fabric-guide</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Jersey Fabric Guide: Single vs Double Knit, Stretch, and Sewing</image:title>
-      <image:caption>Continuous yarn loops give jersey knit natural four-way elasticity and body-hugging comfort.</image:caption>
+      <image:caption>Soft heather gray cotton jersey knit fabric draped in gentle folds</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/curtain-fabric-guide</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Curtain Fabric Guide: Sheers, Linens, Velvet Drapes, and Fullness</image:title>
-      <image:caption>Curtain fabric weight and fullness ratio determine light filtration, room acoustic dampening, and elegant billow.</image:caption>
+      <image:caption>Floor-to-ceiling neutral linen curtains hanging in front of a sunlit living room window</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/upholstery-fabric-guide</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Upholstery Fabric Guide: Rub Counts, Performance Fabrics, and Furniture</image:title>
-      <image:caption>Upholstery textiles require dense fiber structures and high abrasion resistance to withstand daily seating friction.</image:caption>
+      <image:caption>Modern green upholstered armchair with durable textured woven fabric</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/warp-vs-weft</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Warp vs Weft: Grainlines, Loom Physics, and Cutting Clothes</image:title>
-      <image:caption>The interlacing of vertical warp threads and horizontal weft threads at 90-degree angles forms the structural foundation of woven cloth.</image:caption>
+      <image:caption>Close-up of wooden handloom showing vertical warp threads and shuttle passing horizontal weft</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/thread-count-explained</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Thread Count Explained: The Truth About Bed Sheet Quality</image:title>
-      <image:caption>A genuine single-ply 300–400 thread count woven from extra-long staple cotton outlasts and out-breathes inflated multi-ply sheets.</image:caption>
+      <image:caption>Crisp white luxury hotel bed sheet corner turned down over mattress</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/fabric-blend-guide</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1601924994987-69e26d50dc26?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Fabric Blend Guide: Why Fibers Are Mixed (Cotton-Poly, Wool-Silk)</image:title>
-      <image:caption>Blending fibers combines the breathability of natural cellulose with the strength and wrinkle resistance of synthetics.</image:caption>
+      <image:caption>Microscopic and macro views of mixed yarn spools showing blended fiber strands</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/cushion-fabric-guide</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Cushion Fabric Guide: Best Materials for Outdoor, Patio, and Living Room Pillows</image:title>
-      <image:caption>Cushion fabrics must balance tactile skin comfort with high abrasion resistance (Martindale rub count) and zipper seam strength.</image:caption>
+      <image:caption>Assortment of textured indoor and outdoor throw pillows in linen, cotton canvas, and velvet arranged on a sofa</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/bedding-fabric-guide</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1522771739844-6a9f6d5f14af?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Bedding Fabric Guide: Percale vs Sateen, Linen, Thread Counts &amp; Weaves</image:title>
-      <image:caption>The weave structure of bedsheets—one-over-one-under percale versus four-over-one sateen—determines airflow and sleeping temperature.</image:caption>
+      <image:caption>Layered white crisp percale and draped natural linen bedsheets neatly arranged in a sunlit bedroom</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/yarn-count-explained</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Yarn Count Explained: Ne, Nm, Tex, and Denier for Textile Students</image:title>
-      <image:caption>Yarn count expresses the numerical relationship between length and weight, defining whether a thread is hair-fine or cord-thick.</image:caption>
+      <image:caption>Multiple colorful spools and cones of spinning yarn displaying different thread counts and plies</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/weaving-vs-knitting</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1579298245158-33e8f568f7d3?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1579298245158-33e8f568f7d3?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Weaving vs Knitting: Key Differences in Structure, Stretch, and Sewing</image:title>
-      <image:caption>Wovens interlace two perpendicular sets of yarns at 90° angles; knits intermesh a single continuous yarn into flexible, elastic loops.</image:caption>
+      <image:caption>Microscopic side-by-side comparison of woven criss-cross grid fabric next to interlocking knit loops</image:caption>
     </image:image>
   </url>
   <url>
     <loc>https://elitefabrics.online/articles/fabric-finishes-explained</loc>
     <image:image>
-      <image:loc>https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
+      <image:loc>https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&fit=crop&w=1200&q=80</image:loc>
       <image:title>Fabric Finishes Explained: Mercerization, Sanforization, Calendering &amp; Water Repellency</image:title>
-      <image:caption>Textile finishing bridges the gap between rough, stiff greige goods fresh off the loom and soft, dimensionally stable retail fabrics.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/cotton</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Cotton Fabric Guide</image:title>
-      <image:caption>Natural cotton bolls harvested from the plant, showcasing the soft natural fibers used to make everyday clothes.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/linen</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1607344645866-009c320c5ab8?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Linen Fabric Guide</image:title>
-      <image:caption>Close-up of woven flax linen, showing its natural slub texture and open weave designed for summer airflow.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/silk</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1579541814924-49fef17c5be5?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Silk Fabric Guide</image:title>
-      <image:caption>Rich mulberry silk showing its natural shimmering luster and fluid drape.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/wool</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1520006403909-838d6b92c22e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Wool Fabric Guide</image:title>
-      <image:caption>Soft natural wool fibers spun into cozy yarns designed for natural winter insulation.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/hemp</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Hemp Fabric Guide</image:title>
-      <image:caption>Sustainable woven hemp textile showcasing natural durability and eco-friendly plant texture.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/jute</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1596205777891-9cb68b8e0a29?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Jute Fabric Guide</image:title>
-      <image:caption>Traditional golden jute fiber woven into rustic, eco-friendly burlap fabric.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/polyester</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1579783902614-a3fb3927b675?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Polyester Fabric Guide</image:title>
-      <image:caption>Spools of synthetic polyester textile thread known for high strength and vibrant color retention.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/nylon</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1558769132-cb1aea458c5e?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Nylon Fabric Guide</image:title>
-      <image:caption>High-strength nylon fabric engineered for water resistance, lightweight agility, and tear resistance.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/acrylic</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1608248597359-009c5d013098?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Acrylic Fabric Guide</image:title>
-      <image:caption>Fuzzy knit acrylic fibers offering soft, lightweight winter warmth as an affordable alternative to wool.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/spandex</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Spandex / Elastane (Lycra) Fabric Guide</image:title>
-      <image:caption>High-stretch elastane knit fabric providing full range of motion for activewear and comfortable jeans.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/rayon</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Rayon Fabric Guide</image:title>
-      <image:caption>Lightweight printed rayon fabric displaying its characteristic fluid drape and vibrant color retention.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/viscose</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Viscose Fabric Guide</image:title>
-      <image:caption>Soft, fluid viscose textile folds showing the fabric&apos;s signature gentle sheen and relaxed drape.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/modal</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Modal Fabric Guide</image:title>
-      <image:caption>Ultra-soft modal fabric known for its cloud-like softness, wash durability, and moisture comfort.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/lyocell</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1523381210434-271e8be1f52b?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Lyocell (TENCEL™) Fabric Guide</image:title>
-      <image:caption>Sustainable Lyocell (TENCEL) fabric showcasing its silky smooth drape and eco-friendly plant origin.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/denim</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Denim Fabric Guide</image:title>
-      <image:caption>Classic indigo-dyed cotton denim showcasing the signature diagonal twill weave that makes blue jeans so durable.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/velvet</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Velvet Fabric Guide</image:title>
-      <image:caption>Rich plush velvet fabric catching the light with luminous depth and soft hand-feel.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/chiffon</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Chiffon Fabric Guide</image:title>
-      <image:caption>Translucent, airy chiffon fabric demonstrating its delicate lightness and floating drape.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/georgette</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1520975916090-3105956dac38?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Georgette Fabric Guide</image:title>
-      <image:caption>Textured georgette fabric showcasing its pebbled surface and fluid drape ideal for festive wear.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/satin</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1517841905240-472988babdf9?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Satin Fabric Guide</image:title>
-      <image:caption>Liquid-gloss satin weave displaying high-shine light reflection and fluid, dramatic drape.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/corduroy</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Corduroy Fabric Guide</image:title>
-      <image:caption>Textured corduroy fabric showing the characteristic raised velvety ridges (wales) that deliver warmth and durability.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/flannel</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1578932750294-f5075e85f44a?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Flannel Fabric Guide</image:title>
-      <image:caption>Classic brushed cotton flannel featuring a warm surface nap that traps body heat on cold days.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/tweed</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1593032465175-481ac7f401a0?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Tweed Fabric Guide</image:title>
-      <image:caption>Authentic woven woolen tweed displaying multi-tone color flecks and wind-resistant structure.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/jacquard</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1606760227091-3dd870d97f1d?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Jacquard Fabric Guide</image:title>
-      <image:caption>Intricate jacquard weave showcasing raised textural motifs engineered directly into the fabric structure.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/lawn</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Lawn (Pakistani Summer Lawn) Fabric Guide</image:title>
-      <image:caption>Authentic printed Pakistani summer lawn cotton showcasing vibrant print detail and ultra-lightweight weave.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/khaddar</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1506152983158-b4a74a01c721?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Khaddar (Kamalia Khaddar) Fabric Guide</image:title>
-      <image:caption>Authentic textured cotton khaddar showing its rich yarn grain and durable weave popular for Pakistani winter kurtas.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/khadi</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1584100936595-c0654b55a2e2?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Khadi Fabric Guide</image:title>
-      <image:caption>Authentic handspun and handwoven Khadi displaying its distinctive organic yarn variations and breathable handloom structure.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/cambric</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1563245372-f21724e3856d?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Cambric Fabric Guide</image:title>
-      <image:caption>Smooth, crisp cotton cambric weave providing opacity, breathability, and neat tailoring.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/karandi</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1618221195710-dd6b41faaea6?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Karandi Fabric Guide</image:title>
-      <image:caption>Authentic Pakistani Karandi fabric blending cotton with raw silk for winter warmth and regal texture.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/ajrak</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1607604276583-eef5d076aa5f?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Ajrak (Sindhi Ajrak) Fabric Guide</image:title>
-      <image:caption>Authentic Sindhi Ajrak showing traditional geometric block print motifs dyed in ancient indigo and crimson.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/banarsi</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1583391733956-3750e0ff4e8b?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Banarsi (Brocade &amp; Jamdani) Fabric Guide</image:title>
-      <image:caption>Regal Banarsi silk brocade showcasing intricate gold zari motifs crafted for South Asian bridal occasions.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/fleece</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1544816155-12df9643f363?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Fleece (Polar Fleece) Fabric Guide</image:title>
-      <image:caption>Soft brushed polar fleece fabric engineered for lightweight thermal insulation.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/twill</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1542272604-780c96856592?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Twill Fabric Guide</image:title>
-      <image:caption>Characteristic diagonal ridges of a sturdy twill weave offering exceptional durability.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/canvas</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Canvas (Duck Cloth) Fabric Guide</image:title>
-      <image:caption>Tough plain-weave cotton canvas built for long-lasting utility gear and workwear.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/muslin</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Muslin Fabric Guide</image:title>
-      <image:caption>Pure unbleached cotton muslin woven with a breathable open plain weave.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/organza</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Organza Fabric Guide</image:title>
-      <image:caption>Sheer and crisp organza textile holding architectural structure for formal dressmaking.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/crepe</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Crepe Fabric Guide</image:title>
-      <image:caption>Granular textured crepe fabric displaying fluid drape and wrinkle-resistant bounce.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/poplin</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1598300042247-d088f8ab3a91?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Poplin Fabric Guide</image:title>
-      <image:caption>Crisp and smooth plain-weave cotton poplin engineered for classic dress shirts.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/fabric/jersey</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&amp;fit=crop&amp;w=1200&amp;q=80</image:loc>
-      <image:title>Jersey Fabric Guide</image:title>
-      <image:caption>Single-knit cotton jersey showing soft drape, stretch recovery, and t-shirt construction texture.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/what-is-cotton-fabric</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>What Is Cotton Fabric? The Complete Everyday Guide</image:title>
-      <image:caption>Raw cotton bolls next to a freshly woven plain-weave cotton textile, showing natural plant fiber textures.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/what-is-linen-fabric</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>What Is Linen Fabric? The Ancient Natural Fiber Guide</image:title>
-      <image:caption>A close look at textured natural flax linen cloth showcasing its signature relaxed weave and organic slub fibers.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/what-is-wool-fabric</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1574786198875-49f5d09fe2d5?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>What Is Wool Fabric? The Natural Thermal Fiber Guide</image:title>
-      <image:caption>Pure wool textiles demonstrating natural crimp, fiber elasticity, and rich heathered texture.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/what-is-rayon-fabric</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>What Is Rayon Fabric? The Semi-Synthetic Textile Guide</image:title>
-      <image:caption>Regenerated cellulose rayon fabric displaying its signature fluid drape and silk-like surface sheen.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/what-is-viscose-fabric</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>What Is Viscose Fabric? The Silk Alternative Explained</image:title>
-      <image:caption>A close look at flowing emerald green viscose fabric showing smooth surface sheen and fluid drape.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/what-is-organza-fabric</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>What Is Organza Fabric? The Sheer Structured Textile</image:title>
-      <image:caption>Translucent, structured organza fabric showcasing its crisp handfeel and sculptural drape in couture fashion.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/what-is-chiffon-fabric</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>What Is Chiffon Fabric? The Lightweight Flowing Textile</image:title>
-      <image:caption>Gossamer blush pink chiffon cloth floating softly, displaying its sheer transparency and gentle crepe texture.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/what-is-velvet-fabric</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>What Is Velvet Fabric? The Luxurious Pile Weave Guide</image:title>
-      <image:caption>Rich midnight navy blue velvet demonstrating plush pile depth, light absorption, and luminous highlights.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/what-is-denim-fabric</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>What Is Denim Fabric? The Rugged Twill Textile Guide</image:title>
-      <image:caption>Macro photograph of authentic 3x1 twill indigo denim fabric showing distinct diagonal ribs and white weft accents.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/what-is-muslin-fabric</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>What Is Muslin Fabric? The Versatile Plain Weave Guide</image:title>
-      <image:caption>Natural unbleached cotton muslin displaying organic cotton flecks and balanced plain-weave structure.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/cotton-vs-linen</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1594938298603-c8148c4dae35?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>Cotton vs Linen: Which Natural Fabric Is Right for You?</image:title>
-      <image:caption>Side-by-side comparison of fluffy raw cotton fiber and crisp, slub-textured woven natural flax linen cloth.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/silk-vs-satin</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>Silk vs Satin: Differences Between Fiber and Weave</image:title>
-      <image:caption>Comparison of natural mulberry silk charmeuse and high-gloss polyester satin, illustrating distinct fiber luster and weave structures.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/rayon-vs-viscose</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1579783900882-c0d3dad7b119?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>Rayon vs Viscose: Are They the Same Fabric?</image:title>
-      <image:caption>Regenerated cellulose textiles showing fluid, liquid-like drape and identical micro-ribbed surface structures.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/lawn-vs-cotton</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>Lawn vs Cotton: Understanding the Summer Weave Difference</image:title>
-      <image:caption>A close comparison of sheer, silky cotton lawn cloth alongside standard medium-weight plain cotton fabric.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/khaddar-vs-karandi</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1574786198875-49f5d09fe2d5?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>Khaddar vs Karandi: The Winter Fabric Showdown</image:title>
-      <image:caption>Textural comparison of rugged, breathable pure cotton Khaddar alongside refined, silk-slubbed Karandi cloth.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/denim-vs-chambray</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1542272604-787c3835535d?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>Denim vs Chambray: Spotting the Weave Differences</image:title>
-      <image:caption>Macro comparison of heavy twill-ribbed denim fabric alongside light, flat plain-weave chambray cloth.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/velvet-vs-velour</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>Velvet vs Velour: Pile Weave vs Knitted Stretch</image:title>
-      <image:caption>Macro comparison of structured woven velvet cloth alongside highly flexible, stretchy knitted plush velour.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/organza-vs-chiffon</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1518895949257-7621c3c786d7?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>Organza vs Chiffon: Comparing Sheer Evening Fabrics</image:title>
-      <image:caption>Sculptured, structured sheer organza juxtaposed against whisper-light, softly rippling translucent chiffon.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/how-to-wash-cotton-fabric</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>How to Wash Cotton Fabric: The Complete Laundry Guide</image:title>
-      <image:caption>Crisp, beautifully laundered cotton garments folded carefully to maintain natural cellulose fiber softness.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/how-to-wash-silk-safely</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1528459801416-a9e53bbf4e17?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>How to Wash Silk Safely at Home: Complete Care Guide</image:title>
-      <image:caption>Gentle, pH-neutral hand washing of natural silk safeguards delicate protein fibers and preserves natural luster.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/how-to-remove-common-fabric-stains</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>How to Remove Common Fabric Stains: The Emergency Guide</image:title>
-      <image:caption>Prompt, scientific spot removal preserves fabric dye stability and prevents permanent fiber discoloration.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/how-to-prevent-fabric-shrinking</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>How to Prevent Fabric Shrinking: The Science and Care Guide</image:title>
-      <image:caption>Preventing dimensional shrinkage requires controlling water temperature, mechanical agitation, and tumble dryer heat.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/how-to-iron-different-fabrics</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>How to Iron Different Fabrics: Master Heat &amp; Steam Guide</image:title>
-      <image:caption>Matching iron soleplate temperatures and steam moisture to fiber heat tolerance prevents scorch marks and fabric shine.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/how-to-store-seasonal-clothes</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>How to Store Seasonal Clothes: Protect Wool &amp; Cottons</image:title>
-      <image:caption>Clean seasonal garments organized neatly in breathable canvas bags with natural cedar blocks to prevent moth damage.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/fabric-types-guide-for-beginners</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>Fabric Types Guide for Beginners: The Master Foundation</image:title>
-      <image:caption>A curated swatch library illustrating natural, regenerated, and synthetic textiles for everyday fashion and home sewing.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/understanding-fabric-gsm</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>Understanding Fabric GSM: What the Numbers Mean</image:title>
-      <image:caption>Laboratory testing of fabric area density using a circular GSM cutter and high-precision digital scale.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/woven-vs-knit-fabric</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>Woven vs Knit Fabric: How to Tell Them Apart</image:title>
-      <image:caption>Macro comparison of rigid perpendicular woven grid structure alongside flexible interlocking knit yarn loops.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/how-to-read-clothing-labels</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1582735689369-4fe89db7114c?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>How to Read Clothing Labels: Care Symbols &amp; Fiber Truths</image:title>
-      <image:caption>A close look at an international garment care label displaying standardized washing symbols and certified fiber contents.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/fabric-weaves-explained</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>Fabric Weaves Explained: Plain, Twill, Satin &amp; Jacquard</image:title>
-      <image:caption>Macro textile view demonstrating the geometrical interlacing of warp and weft yarns on a handloom.</image:caption>
-    </image:image>
-  </url>
-  <url>
-    <loc>https://elitefabrics.online/#articles/natural-vs-synthetic-fabrics</loc>
-    <image:image>
-      <image:loc>https://images.unsplash.com/photo-1596755094514-f87e34085b2c?auto=format&fit=crop&w=1200&q=80</image:loc>
-      <image:title>Natural vs Synthetic Fabrics: The Environmental &amp; Skin Guide</image:title>
-      <image:caption>Contrasting renewable plant-based agricultural fibers with petroleum-synthesized continuous filament yarns.</image:caption>
+      <image:caption>Industrial textile finishing roller machine with polished stainless steel cylinders processing raw cloth</image:caption>
     </image:image>
   </url>
 </urlset>

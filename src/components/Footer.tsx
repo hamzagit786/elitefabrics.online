@@ -20,93 +20,103 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
         <nav aria-label="Footer Navigation">
           <ul className="flex flex-wrap items-center justify-center gap-x-6 gap-y-2 text-xs text-[#CCC4B6]">
             <li>
-              <button 
-                onClick={() => onNavigate('about')} 
+              <a 
+                href="/about"
+                onClick={(e) => { e.preventDefault(); onNavigate('about'); }} 
                 className="hover:text-white transition-colors"
               >
                 About
-              </button>
+              </a>
             </li>
             <li className="text-[#555048]" aria-hidden="true">|</li>
             <li>
-              <button 
-                onClick={() => onNavigate('contact')} 
+              <a 
+                href="/contact"
+                onClick={(e) => { e.preventDefault(); onNavigate('contact'); }} 
                 className="hover:text-white transition-colors"
               >
                 Contact
-              </button>
+              </a>
             </li>
             <li className="text-[#555048]" aria-hidden="true">|</li>
             <li>
-              <button 
-                onClick={() => onNavigate('privacy-policy')} 
+              <a 
+                href="/privacy-policy"
+                onClick={(e) => { e.preventDefault(); onNavigate('privacy-policy'); }} 
                 className="hover:text-white transition-colors"
               >
                 Privacy
-              </button>
+              </a>
             </li>
             <li className="text-[#555048]" aria-hidden="true">|</li>
             <li>
-              <button 
-                onClick={() => onNavigate('terms')} 
+              <a 
+                href="/terms"
+                onClick={(e) => { e.preventDefault(); onNavigate('terms'); }} 
                 className="hover:text-white transition-colors"
               >
                 Terms
-              </button>
+              </a>
             </li>
             <li className="text-[#555048]" aria-hidden="true">|</li>
             <li>
-              <button 
-                onClick={() => onNavigate('tools', 'fabric-finder-quiz')} 
+              <a 
+                href="/tools/fabric-finder-quiz"
+                onClick={(e) => { e.preventDefault(); onNavigate('tools', 'fabric-finder-quiz'); }} 
                 className="hover:text-white transition-colors"
               >
                 Fabric Finder
-              </button>
+              </a>
             </li>
             <li className="text-[#555048]" aria-hidden="true">|</li>
             <li>
-              <button 
-                onClick={() => onNavigate('tools', 'fabric-care-symbol-guide')} 
+              <a 
+                href="/tools/fabric-care-symbol-guide"
+                onClick={(e) => { e.preventDefault(); onNavigate('tools', 'fabric-care-symbol-guide'); }} 
                 className="hover:text-white transition-colors"
               >
                 Care Symbols
-              </button>
+              </a>
             </li>
             <li className="text-[#555048]" aria-hidden="true">|</li>
             <li>
-              <button 
-                onClick={() => onNavigate('tools')} 
+              <a 
+                href="/tools"
+                onClick={(e) => { e.preventDefault(); onNavigate('tools'); }} 
                 className="hover:text-white transition-colors"
               >
                 Tools
-              </button>
+              </a>
             </li>
             <li className="text-[#555048]" aria-hidden="true">|</li>
             <li>
-              <button 
-                onClick={() => onNavigate('editorial-policy')} 
+              <a 
+                href="/editorial-policy"
+                onClick={(e) => { e.preventDefault(); onNavigate('editorial-policy'); }} 
                 className="hover:text-white transition-colors"
               >
                 Editorial Policy
-              </button>
+              </a>
             </li>
             <li className="text-[#555048]" aria-hidden="true">|</li>
             <li>
-              <button 
-                onClick={() => onNavigate('disclaimer')} 
+              <a 
+                href="/disclaimer"
+                onClick={(e) => { e.preventDefault(); onNavigate('disclaimer'); }} 
                 className="hover:text-white transition-colors"
               >
                 Disclaimer
-              </button>
+              </a>
             </li>
             <li className="text-[#555048]" aria-hidden="true">|</li>
             <li>
-              <button 
-                onClick={() => onNavigate('sitemap')} 
+              <a 
+                href="/sitemap"
+                onClick={(e) => { e.preventDefault(); onNavigate('sitemap'); }} 
                 className="hover:text-white transition-colors"
               >
                 Sitemap
-              </button>
+              </a>
             </li>
           </ul>
         </nav>

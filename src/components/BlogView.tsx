@@ -99,12 +99,13 @@ export const BlogView: React.FC<BlogViewProps> = ({ onNavigate }) => {
                 </span>
               </div>
 
-              <h2 
-                onClick={() => onNavigate('articles', featuredArticle.slug)}
-                className="text-2xl sm:text-3xl font-serif-heading font-bold text-[#1C1C1C] hover:text-[#9E472A] cursor-pointer transition-colors leading-tight"
+              <a 
+                href={`/articles/${featuredArticle.slug}`}
+                onClick={(e) => { e.preventDefault(); onNavigate('articles', featuredArticle.slug); }}
+                className="block text-2xl sm:text-3xl font-serif-heading font-bold text-[#1C1C1C] hover:text-[#9E472A] cursor-pointer transition-colors leading-tight"
               >
-                {featuredArticle.title}
-              </h2>
+                <h2>{featuredArticle.title}</h2>
+              </a>
 
               <p className="text-xs sm:text-sm text-[#5E574D] leading-relaxed line-clamp-3">
                 {featuredArticle.excerpt}
@@ -128,12 +129,13 @@ export const BlogView: React.FC<BlogViewProps> = ({ onNavigate }) => {
                 </div>
               </div>
 
-              <button
-                onClick={() => onNavigate('articles', featuredArticle.slug)}
+              <a
+                href={`/articles/${featuredArticle.slug}`}
+                onClick={(e) => { e.preventDefault(); onNavigate('articles', featuredArticle.slug); }}
                 className="inline-flex items-center gap-1.5 text-xs font-semibold text-[#9E472A] hover:text-[#B55535] uppercase tracking-wider"
               >
                 Read Guide <ArrowRight className="w-3.5 h-3.5" />
-              </button>
+              </a>
             </div>
           </div>
         </section>
@@ -179,9 +181,10 @@ export const BlogView: React.FC<BlogViewProps> = ({ onNavigate }) => {
             className="bg-white border border-[#E6E0D7] rounded-xl overflow-hidden flex flex-col justify-between hover:border-[#9E472A]/50 hover:shadow-xs transition-all group"
           >
             <div>
-              <div 
-                onClick={() => onNavigate('articles', art.slug)}
-                className="aspect-16/10 relative overflow-hidden bg-[#EAE4D9] cursor-pointer"
+              <a 
+                href={`/articles/${art.slug}`}
+                onClick={(e) => { e.preventDefault(); onNavigate('articles', art.slug); }}
+                className="aspect-16/10 relative overflow-hidden bg-[#EAE4D9] cursor-pointer block"
               >
                 <img
                   src={art.featuredImage}
@@ -195,7 +198,7 @@ export const BlogView: React.FC<BlogViewProps> = ({ onNavigate }) => {
                 <span className="absolute top-3 left-3 px-2 py-0.5 bg-white/90 backdrop-blur-xs text-[#1C1C1C] text-[10px] font-semibold rounded-xs uppercase tracking-wider">
                   {art.category}
                 </span>
-              </div>
+              </a>
 
               <div className="p-5 space-y-2.5">
                 <div className="flex items-center gap-2 text-[11px] text-[#8C8478] font-mono">
@@ -204,12 +207,13 @@ export const BlogView: React.FC<BlogViewProps> = ({ onNavigate }) => {
                   <span>{art.readTime}</span>
                 </div>
 
-                <h3 
-                  onClick={() => onNavigate('articles', art.slug)}
-                  className="font-serif-heading font-bold text-lg text-[#1C1C1C] group-hover:text-[#9E472A] cursor-pointer transition-colors leading-snug line-clamp-2"
+                <a
+                  href={`/articles/${art.slug}`}
+                  onClick={(e) => { e.preventDefault(); onNavigate('articles', art.slug); }}
+                  className="block font-serif-heading font-bold text-lg text-[#1C1C1C] group-hover:text-[#9E472A] cursor-pointer transition-colors leading-snug line-clamp-2"
                 >
-                  {art.title}
-                </h3>
+                  <h3>{art.title}</h3>
+                </a>
 
                 <p className="text-xs text-[#5E574D] leading-relaxed line-clamp-3">
                   {art.excerpt}
@@ -226,12 +230,13 @@ export const BlogView: React.FC<BlogViewProps> = ({ onNavigate }) => {
                 ))}
               </div>
 
-              <button
-                onClick={() => onNavigate('article', art.slug)}
+              <a
+                href={`/articles/${art.slug}`}
+                onClick={(e) => { e.preventDefault(); onNavigate('article', art.slug); }}
                 className="inline-flex items-center gap-1 text-xs font-semibold text-[#9E472A] hover:text-[#B55535]"
               >
                 Read <ArrowRight className="w-3.5 h-3.5" />
-              </button>
+              </a>
             </div>
           </article>
         ))}

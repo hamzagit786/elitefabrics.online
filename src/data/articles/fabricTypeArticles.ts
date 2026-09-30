@@ -52,13 +52,13 @@ export const FABRIC_TYPE_ARTICLES: Article[] = [
       <section id="what-is-canvas">
         <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">1. What Is Canvas Fabric?</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          <a href="#fabric/canvas" class="text-[#9E472A] font-semibold underline">Canvas</a> is an extremely durable, heavyweight plain-weave textile traditionally woven from sturdy <a href="#fabric/cotton" class="text-[#9E472A] font-semibold underline">cotton</a> or <a href="#fabric/hemp" class="text-[#9E472A] font-semibold underline">hemp</a> yarns.
+          <a href="/fabric/canvas" class="text-[#9E472A] font-semibold underline">Canvas</a> is an extremely durable, heavyweight plain-weave textile traditionally woven from sturdy <a href="/fabric/cotton" class="text-[#9E472A] font-semibold underline">cotton</a> or <a href="/fabric/hemp" class="text-[#9E472A] font-semibold underline">hemp</a> yarns.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
           Unlike fine apparel fabrics, canvas utilizes thick, plied yarns packed closely together under high loom tension. This tight construction creates a rugged physical barrier that resists punctures, wind penetration, and heavy abrasive rubbing.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          When estimating fabric quantities for heavy furniture slipcovers or floor cushions, calculate your yardage with our <a href="#tools/upholstery-fabric-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Upholstery Fabric Calculator</a>.
+          When estimating fabric quantities for heavy furniture slipcovers or floor cushions, calculate your yardage with our <a href="/tools/upholstery-fabric-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Upholstery Fabric Calculator</a>.
         </p>
       </section>
 
@@ -82,7 +82,7 @@ export const FABRIC_TYPE_ARTICLES: Article[] = [
         </p>
         <ul class="list-disc pl-5 space-y-2 text-[#3A3A3A] mb-4">
           <li><strong>Single-Fill Canvas:</strong> Woven with single warp yarns and single weft yarns. It is slightly softer, less expensive, and commonly used for artist painting surfaces and light craft projects.</li>
-          <li><strong>Double-Fill Canvas (Army Duck):</strong> Woven with two-ply yarns in both warp and weft directions. This creates an airtight, smooth, water-repellent surface favored by the military for field equipment. Learn more on warp and weft yarn geometry in our <a href="#articles/warp-vs-weft" class="text-[#9E472A] underline">Warp vs Weft Guide</a>.</li>
+          <li><strong>Double-Fill Canvas (Army Duck):</strong> Woven with two-ply yarns in both warp and weft directions. This creates an airtight, smooth, water-repellent surface favored by the military for field equipment. Learn more on warp and weft yarn geometry in our <a href="/articles/warp-vs-weft" class="text-[#9E472A] underline">Warp vs Weft Guide</a>.</li>
         </ul>
       </section>
 
@@ -93,8 +93,8 @@ export const FABRIC_TYPE_ARTICLES: Article[] = [
         </p>
         <ul class="list-disc pl-5 space-y-2 text-[#3A3A3A] mb-4">
           <li><strong>Heavy Utility Bags:</strong> Tote bags, backpack bases, and duffels that stand upright on their own.</li>
-          <li><strong>Workwear Outerwear:</strong> Chore coats, carpenter overalls, and work vests that endure constant scrapes. Compare canvas to denim in our <a href="#articles/denim-gsm-chart" class="text-[#9E472A] underline">Denim GSM Chart</a>.</li>
-          <li><strong>Home Decor &amp; Upholstery:</strong> Heavy sofa slipcovers, boxed floor cushions, and patio furniture. Check our <a href="#articles/upholstery-fabric-guide" class="text-[#9E472A] underline">Upholstery Fabric Guide</a>.</li>
+          <li><strong>Workwear Outerwear:</strong> Chore coats, carpenter overalls, and work vests that endure constant scrapes. Compare canvas to denim in our <a href="/articles/denim-gsm-chart" class="text-[#9E472A] underline">Denim GSM Chart</a>.</li>
+          <li><strong>Home Decor &amp; Upholstery:</strong> Heavy sofa slipcovers, boxed floor cushions, and patio furniture. Check our <a href="/articles/upholstery-fabric-guide" class="text-[#9E472A] underline">Upholstery Fabric Guide</a>.</li>
         </ul>
       </section>
 
@@ -173,13 +173,13 @@ export const FABRIC_TYPE_ARTICLES: Article[] = [
       <section id="what-is-muslin">
         <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">1. What Is Muslin Fabric?</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          <a href="#fabric/muslin" class="text-[#9E472A] font-semibold underline">Muslin</a> is a plain-weave cotton textile produced in a wide variety of weights, from sheer airy gauze to coarse unbleached sheeting.
+          <a href="/fabric/muslin" class="text-[#9E472A] font-semibold underline">Muslin</a> is a plain-weave cotton textile produced in a wide variety of weights, from sheer airy gauze to coarse unbleached sheeting.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
           In contemporary fashion design and home sewing, the term "a muslin" (or <em>toile</em> in French couture) refers to a test garment sewn from inexpensive unbleached cotton to verify pattern fit, darts, and proportions before cutting into expensive silk, wool, or linen.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Calculate the exact yardage required for your pattern mockups with our <a href="#tools/fabric-yardage-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Yardage Calculator</a>.
+          Calculate the exact yardage required for your pattern mockups with our <a href="/tools/fabric-yardage-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Yardage Calculator</a>.
         </p>
       </section>
 
@@ -190,7 +190,7 @@ export const FABRIC_TYPE_ARTICLES: Article[] = [
         </p>
         <ul class="list-disc pl-5 space-y-2 text-[#3A3A3A] mb-4">
           <li><strong>Pin &amp; Draw Directly:</strong> You can use marking pens to draw new bust darts, raise waistlines, or slash and spread tight shoulder seams directly on the fitting body.</li>
-          <li><strong>Match Weights:</strong> Choose a muslin weight that mimics your final fashion textile. Use lightweight gauze muslin when testing chiffon patterns, and coarse medium muslin when testing trousers. Check typical weights in our <a href="#articles/cotton-gsm-guide" class="text-[#9E472A] underline">Cotton GSM Guide</a>.</li>
+          <li><strong>Match Weights:</strong> Choose a muslin weight that mimics your final fashion textile. Use lightweight gauze muslin when testing chiffon patterns, and coarse medium muslin when testing trousers. Check typical weights in our <a href="/articles/cotton-gsm-guide" class="text-[#9E472A] underline">Cotton GSM Guide</a>.</li>
         </ul>
       </section>
 
@@ -259,13 +259,13 @@ export const FABRIC_TYPE_ARTICLES: Article[] = [
       <section id="what-is-poplin">
         <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">1. What Is Poplin Fabric?</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          <a href="#fabric/poplin" class="text-[#9E472A] font-semibold underline">Poplin</a> is a strong, plain-weave cotton fabric characterized by very fine crosswise ribs.
+          <a href="/fabric/poplin" class="text-[#9E472A] font-semibold underline">Poplin</a> is a strong, plain-weave cotton fabric characterized by very fine crosswise ribs.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
           These subtle ribs are formed because the lengthwise warp yarns are twice as dense and fine as the horizontal weft yarns. This construction creates a crisp, smooth surface that feels cool against the skin and resists wrinkling better than standard plain weaves.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Poplin typically registers between 110 and 140 GSM. Check weight comparisons in our <a href="#tools/gsm-to-oz-converter" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">GSM to Oz Converter</a>.
+          Poplin typically registers between 110 and 140 GSM. Check weight comparisons in our <a href="/tools/gsm-to-oz-converter" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">GSM to Oz Converter</a>.
         </p>
       </section>
 
@@ -283,7 +283,7 @@ export const FABRIC_TYPE_ARTICLES: Article[] = [
       <section id="poplin-gsm-and-feel">
         <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">3. Typical GSM and Fabric Hand</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Most 100% cotton poplin sits comfortably between <strong>115 and 135 GSM</strong> (3.4 to 4.0 oz/yd²). This weight makes poplin virtually opaque in darker shades and medium pastel colors, while remaining light enough to breathe during hot humid summer days. Compare it with other cotton weights in our <a href="#articles/cotton-gsm-guide" class="text-[#9E472A] underline">Cotton GSM Guide</a>.
+          Most 100% cotton poplin sits comfortably between <strong>115 and 135 GSM</strong> (3.4 to 4.0 oz/yd²). This weight makes poplin virtually opaque in darker shades and medium pastel colors, while remaining light enough to breathe during hot humid summer days. Compare it with other cotton weights in our <a href="/articles/cotton-gsm-guide" class="text-[#9E472A] underline">Cotton GSM Guide</a>.
         </p>
       </section>
 
@@ -373,13 +373,13 @@ export const FABRIC_TYPE_ARTICLES: Article[] = [
       <section id="diagonal-architecture">
         <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">1. The Diagonal Wale Architecture</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          <a href="#fabric/twill" class="text-[#9E472A] font-semibold underline">Twill</a> is one of the three fundamental weave structures in textile engineering (alongside plain weave and satin). It is easily recognized by its distinctive diagonal parallel lines, known as <strong>wales</strong>.
+          <a href="/fabric/twill" class="text-[#9E472A] font-semibold underline">Twill</a> is one of the three fundamental weave structures in textile engineering (alongside plain weave and satin). It is easily recognized by its distinctive diagonal parallel lines, known as <strong>wales</strong>.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
           In a twill weave, each horizontal weft yarn floats over one or more warp yarns and under two or more (for example, a 2/1 or 3/1 twill). Each successive row is stepped or staggered by one thread, creating the signature diagonal slant across the face of the fabric.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Learn how yarns interlace across the loom in our companion guide <a href="#articles/warp-vs-weft" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Warp vs Weft</a>.
+          Learn how yarns interlace across the loom in our companion guide <a href="/articles/warp-vs-weft" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Warp vs Weft</a>.
         </p>
       </section>
 
@@ -398,7 +398,7 @@ export const FABRIC_TYPE_ARTICLES: Article[] = [
       <section id="famous-twills">
         <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">3. Famous Twill Fabrics: Chino, Denim, Gabardine</h2>
         <ul class="list-disc pl-5 space-y-2 text-[#3A3A3A] mb-4">
-          <li><strong><a href="#fabric/denim" class="text-[#9E472A] underline">Denim</a>:</strong> A 3/1 warp-faced twill where indigo-dyed warp yarns sit on the outside, and unbleached white weft yarns remain on the inside. Read our <a href="#articles/denim-gsm-chart" class="text-[#9E472A] underline">Denim GSM Chart</a>.</li>
+          <li><strong><a href="/fabric/denim" class="text-[#9E472A] underline">Denim</a>:</strong> A 3/1 warp-faced twill where indigo-dyed warp yarns sit on the outside, and unbleached white weft yarns remain on the inside. Read our <a href="/articles/denim-gsm-chart" class="text-[#9E472A] underline">Denim GSM Chart</a>.</li>
           <li><strong>Cotton Chino:</strong> A smooth, durable medium-weight twill (200–260 GSM) developed originally for British and US military uniforms in the late 19th century.</li>
           <li><strong>Gabardine:</strong> A steep, tightly woven twill invented by Thomas Burberry in 1879, renowned for weather-resistant trench coats and formal trousers.</li>
           <li><strong>Herringbone (Broken Twill):</strong> Reverses the diagonal direction at regular intervals, creating an attractive V-shaped zigzag pattern.</li>
@@ -477,13 +477,13 @@ export const FABRIC_TYPE_ARTICLES: Article[] = [
       <section id="knit-vs-woven">
         <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">1. Why Jersey Stretches: Loops vs Straight Threads</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Unlike woven textiles where threads cross at rigid 90-degree angles, <a href="#fabric/jersey" class="text-[#9E472A] font-semibold underline">jersey fabric</a> is knitted from a continuous series of interlocking loops.
+          Unlike woven textiles where threads cross at rigid 90-degree angles, <a href="/fabric/jersey" class="text-[#9E472A] font-semibold underline">jersey fabric</a> is knitted from a continuous series of interlocking loops.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          When tension is applied, those curved yarn loops expand and flatten out, giving 100% <a href="#fabric/cotton" class="text-[#9E472A] font-semibold underline">cotton</a> jersey 20% to 35% natural mechanical stretch even without adding any synthetic elastane or Lycra.
+          When tension is applied, those curved yarn loops expand and flatten out, giving 100% <a href="/fabric/cotton" class="text-[#9E472A] font-semibold underline">cotton</a> jersey 20% to 35% natural mechanical stretch even without adding any synthetic elastane or Lycra.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Calculate the weight of your t-shirt knits using our automated <a href="#tools/fabric-gsm-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric GSM Calculator</a>.
+          Calculate the weight of your t-shirt knits using our automated <a href="/tools/fabric-gsm-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric GSM Calculator</a>.
         </p>
       </section>
 
@@ -501,9 +501,9 @@ export const FABRIC_TYPE_ARTICLES: Article[] = [
           The base fiber alters the drape and longevity of jersey:
         </p>
         <ul class="list-disc pl-5 space-y-2 text-[#3A3A3A] mb-4">
-          <li><strong>100% Cotton Jersey:</strong> Breathable, structured, and absorbent. Ideal for casual, boxy t-shirts. Check our <a href="#articles/cotton-gsm-guide" class="text-[#9E472A] underline">Cotton GSM Guide</a>.</li>
+          <li><strong>100% Cotton Jersey:</strong> Breathable, structured, and absorbent. Ideal for casual, boxy t-shirts. Check our <a href="/articles/cotton-gsm-guide" class="text-[#9E472A] underline">Cotton GSM Guide</a>.</li>
           <li><strong>Modal / Rayon Jersey:</strong> Exceptionally silky with liquid drape. Clings to curves and resists pilling, making it the favorite for feminine dresses and luxury sleepwear.</li>
-          <li><strong>Cotton-Spandex (95/5):</strong> Adds 5% elastane for complete recovery. Does not stretch out at the elbows or knees during movement. See our <a href="#articles/fabric-blend-guide" class="text-[#9E472A] underline">Fabric Blend Guide</a>.</li>
+          <li><strong>Cotton-Spandex (95/5):</strong> Adds 5% elastane for complete recovery. Does not stretch out at the elbows or knees during movement. See our <a href="/articles/fabric-blend-guide" class="text-[#9E472A] underline">Fabric Blend Guide</a>.</li>
         </ul>
       </section>
 

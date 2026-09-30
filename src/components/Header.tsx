@@ -37,15 +37,22 @@ export const Header: React.FC<HeaderProps> = ({
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
+  const getViewHref = (view: string) => {
+    if (view === 'home') return '/';
+    if (view === 'blog' || view === 'articles') return '/articles';
+    return `/${view}`;
+  };
+
   return (
     <header className="sticky top-0 z-40 bg-[#FAF8F5]/95 backdrop-blur-md border-b border-[#E6E0D7]">
       {/* Masthead Banner */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 sm:py-5">
         <div className="flex items-center justify-between">
           {/* Logo */}
-          <div 
-            onClick={() => handleNavClick('home')}
-            className="cursor-pointer group"
+          <a 
+            href="/"
+            onClick={(e) => { e.preventDefault(); handleNavClick('home'); }}
+            className="cursor-pointer group block"
           >
             <span className="block text-2xl sm:text-3xl font-serif-heading font-bold tracking-tight text-[#1A1A1A] group-hover:text-[#9E472A] transition-colors">
               ELITE FABRICS
@@ -53,7 +60,7 @@ export const Header: React.FC<HeaderProps> = ({
             <p className="text-[11px] tracking-wider text-[#6B655C] uppercase mt-0.5 font-medium">
               Fabric &amp; Textile Information
             </p>
-          </div>
+          </a>
 
           {/* Actions */}
           <div className="flex items-center gap-2 sm:gap-3">
@@ -99,16 +106,17 @@ export const Header: React.FC<HeaderProps> = ({
               const isActive = currentView === link.view;
               return (
                 <li key={link.view} className="whitespace-nowrap">
-                  <button
-                    onClick={() => handleNavClick(link.view)}
-                    className={`px-3 py-1.5 rounded transition-colors text-xs font-medium ${
+                  <a
+                    href={getViewHref(link.view)}
+                    onClick={(e) => { e.preventDefault(); handleNavClick(link.view); }}
+                    className={`inline-block px-3 py-1.5 rounded transition-colors text-xs font-medium ${
                       isActive
                         ? 'bg-[#1C1C1C] text-white'
                         : 'text-[#4A453E] hover:text-[#1C1C1C] hover:bg-[#EFE9DF]'
                     }`}
                   >
                     {link.label}
-                  </button>
+                  </a>
                 </li>
               );
             })}
@@ -123,17 +131,18 @@ export const Header: React.FC<HeaderProps> = ({
             {navLinks.map((link) => {
               const isActive = currentView === link.view;
               return (
-                <button
+                <a
                   key={link.view}
-                  onClick={() => handleNavClick(link.view)}
-                  className={`text-left px-3 py-2 rounded text-xs font-medium ${
+                  href={getViewHref(link.view)}
+                  onClick={(e) => { e.preventDefault(); handleNavClick(link.view); }}
+                  className={`text-left px-3 py-2 rounded text-xs font-medium block ${
                     isActive
                       ? 'bg-[#1C1C1C] text-white font-semibold'
                       : 'text-[#4A453E] bg-[#F2EDE4] hover:bg-[#E8E1D5]'
                   }`}
                 >
                   {link.label}
-                </button>
+                </a>
               );
             })}
           </div>

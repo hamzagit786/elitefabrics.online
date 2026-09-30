@@ -53,7 +53,7 @@ const BASE_ARTICLES: Article[] = [
           In physical terms, if you cut a square of fabric measuring exactly one meter wide by one meter long (1 m × 1 m) and weigh it on a calibrated scale, its mass in grams is its GSM. A fine cotton lawn might register at 75 GSM, whereas a heavyweight winter overcoat fabric might register at 520 GSM.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          GSM serves as a primary metric because it provides an objective, roll-width-independent benchmark. Whether a textile roll was woven on a 44-inch handloom or a 64-inch modern industrial loom, its GSM remains consistent per square meter of surface area. You can compare how individual textiles align across our complete <a href="#fabrics" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Library</a>.
+          GSM serves as a primary metric because it provides an objective, roll-width-independent benchmark. Whether a textile roll was woven on a 44-inch handloom or a 64-inch modern industrial loom, its GSM remains consistent per square meter of surface area. You can compare how individual textiles align across our complete <a href="/fabrics" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Library</a>.
         </p>
       </section>
 
@@ -204,35 +204,35 @@ const BASE_ARTICLES: Article[] = [
                 <td class="p-3.5 font-bold text-[#9E472A]">Very Lightweight / Sheer</td>
                 <td class="p-3.5 font-mono font-semibold">30 – 100 GSM</td>
                 <td class="p-3.5 font-mono">0.9 – 2.9 oz</td>
-                <td class="p-3.5">Silk Chiffon (35–45), Organza (40–60), Cotton Voile (65–80), <a href="#fabric/lawn" class="text-[#9E472A] underline font-medium">Pakistani Lawn</a> (70–85)</td>
+                <td class="p-3.5">Silk Chiffon (35–45), Organza (40–60), Cotton Voile (65–80), <a href="/fabric/lawn" class="text-[#9E472A] underline font-medium">Pakistani Lawn</a> (70–85)</td>
                 <td class="p-3.5">Scarves, bridal veils, sheer overlays, high-summer tunics, garment linings</td>
               </tr>
               <tr class="hover:bg-[#FAF8F5]">
                 <td class="p-3.5 font-bold text-[#1C1C1C]">Lightweight</td>
                 <td class="p-3.5 font-mono font-semibold">100 – 150 GSM</td>
                 <td class="p-3.5 font-mono">2.9 – 4.4 oz</td>
-                <td class="p-3.5"><a href="#fabric/poplin" class="text-[#9E472A] underline font-medium">Cotton Poplin</a> (110–135), Rayon Challis (115–140), Shirting Linen (120–145), Modal Jersey (130–150)</td>
+                <td class="p-3.5"><a href="/fabric/poplin" class="text-[#9E472A] underline font-medium">Cotton Poplin</a> (110–135), Rayon Challis (115–140), Shirting Linen (120–145), Modal Jersey (130–150)</td>
                 <td class="p-3.5">Dress shirts, summer dresses, light blouses, camisoles</td>
               </tr>
               <tr class="hover:bg-[#FAF8F5]">
                 <td class="p-3.5 font-bold text-[#1C1C1C]">Medium Weight</td>
                 <td class="p-3.5 font-mono font-semibold">150 – 250 GSM</td>
                 <td class="p-3.5 font-mono">4.4 – 7.4 oz</td>
-                <td class="p-3.5">Mid-weight <a href="#fabric/linen" class="text-[#9E472A] underline font-medium">Linen</a> (170–210), Everyday Cotton T-shirt (160–190), Cotton Twill Chino (200–240), Chambray (160–190)</td>
+                <td class="p-3.5">Mid-weight <a href="/fabric/linen" class="text-[#9E472A] underline font-medium">Linen</a> (170–210), Everyday Cotton T-shirt (160–190), Cotton Twill Chino (200–240), Chambray (160–190)</td>
                 <td class="p-3.5">Tailored trousers, skirts, everyday t-shirts, unlined blazers, bed linens</td>
               </tr>
               <tr class="hover:bg-[#FAF8F5]">
                 <td class="p-3.5 font-bold text-[#1C1C1C]">Medium-Heavy</td>
                 <td class="p-3.5 font-mono font-semibold">250 – 350 GSM</td>
                 <td class="p-3.5 font-mono">7.4 – 10.3 oz</td>
-                <td class="p-3.5">Winter <a href="#fabric/khaddar" class="text-[#9E472A] underline font-medium">Khaddar</a> (260–320), Heavy Fleece Sweatshirts (280–340), Light Denim (270–320), Cotton Duck (300–350)</td>
+                <td class="p-3.5">Winter <a href="/fabric/khaddar" class="text-[#9E472A] underline font-medium">Khaddar</a> (260–320), Heavy Fleece Sweatshirts (280–340), Light Denim (270–320), Cotton Duck (300–350)</td>
                 <td class="p-3.5">Hoodies, casual chore jackets, winter tunics, light drapery</td>
               </tr>
               <tr class="hover:bg-[#FAF8F5]">
                 <td class="p-3.5 font-bold text-[#1C1C1C]">Heavyweight / Utility</td>
                 <td class="p-3.5 font-mono font-semibold">350 – 600+ GSM</td>
                 <td class="p-3.5 font-mono">10.3 – 17.7+ oz</td>
-                <td class="p-3.5">Standard 5-Pocket <a href="#fabric/denim" class="text-[#9E472A] underline font-medium">Denim</a> (370–440 / 11–13 oz), Raw Selvedge Denim (475–550 / 14–16 oz), Wool Melton (450–600)</td>
+                <td class="p-3.5">Standard 5-Pocket <a href="/fabric/denim" class="text-[#9E472A] underline font-medium">Denim</a> (370–440 / 11–13 oz), Raw Selvedge Denim (475–550 / 14–16 oz), Wool Melton (450–600)</td>
                 <td class="p-3.5">Rigid work jeans, peacoats, winter overcoats, utility bags, upholstery</td>
               </tr>
             </tbody>
@@ -252,7 +252,7 @@ const BASE_ARTICLES: Article[] = [
           <div class="p-5 bg-white border border-[#E6E0D7] rounded-xl space-y-2">
             <h4 class="font-bold text-[#9E472A] text-sm uppercase tracking-wide">High GSM vs. High Grade</h4>
             <p class="text-xs sm:text-sm text-[#443E36] leading-relaxed">
-              A promotional tote bag made from 260 GSM coarse, open-end carded cotton uses short-staple fibers, feels abrasive, and frays readily under abrasion. In contrast, an authentic 75 GSM <a href="#fabric/lawn" class="text-[#9E472A] font-semibold underline">Pakistani Lawn</a> spun from fine 80s or 100s combed long-staple cotton requires precision spinning, provides exceptional breathability and skin comfort, and commands a higher market value despite having less than one-third the mass.
+              A promotional tote bag made from 260 GSM coarse, open-end carded cotton uses short-staple fibers, feels abrasive, and frays readily under abrasion. In contrast, an authentic 75 GSM <a href="/fabric/lawn" class="text-[#9E472A] font-semibold underline">Pakistani Lawn</a> spun from fine 80s or 100s combed long-staple cotton requires precision spinning, provides exceptional breathability and skin comfort, and commands a higher market value despite having less than one-third the mass.
             </p>
           </div>
           <div class="p-5 bg-white border border-[#E6E0D7] rounded-xl space-y-2">
@@ -284,12 +284,12 @@ const BASE_ARTICLES: Article[] = [
             </thead>
             <tbody class="divide-y divide-[#EBE5DB] text-[#332E27]">
               <tr class="hover:bg-[#FAF8F5]">
-                <td class="p-3 font-semibold"><a href="#fabric/cotton" class="text-[#9E472A] underline">Cotton</a></td>
+                <td class="p-3 font-semibold"><a href="/fabric/cotton" class="text-[#9E472A] underline">Cotton</a></td>
                 <td class="p-3 font-mono">1.52 – 1.54</td>
                 <td class="p-3">Dense, ribbon-like collapsed tubes that pack tightly in spun yarns.</td>
               </tr>
               <tr class="hover:bg-[#FAF8F5]">
-                <td class="p-3 font-semibold"><a href="#fabric/linen" class="text-[#9E472A] underline">Linen (Flax)</a></td>
+                <td class="p-3 font-semibold"><a href="/fabric/linen" class="text-[#9E472A] underline">Linen (Flax)</a></td>
                 <td class="p-3 font-mono">1.50</td>
                 <td class="p-3">High-density bast fiber with natural nodes and polygonal cross-sections.</td>
               </tr>
@@ -299,12 +299,12 @@ const BASE_ARTICLES: Article[] = [
                 <td class="p-3">Moderate-density synthetic polymer; uniform filament or staple forms.</td>
               </tr>
               <tr class="hover:bg-[#FAF8F5]">
-                <td class="p-3 font-semibold"><a href="#fabric/wool" class="text-[#9E472A] underline">Wool</a></td>
+                <td class="p-3 font-semibold"><a href="/fabric/wool" class="text-[#9E472A] underline">Wool</a></td>
                 <td class="p-3 font-mono">1.31</td>
                 <td class="p-3">Lower density with natural 3D crimp that creates voluminous insulating air pockets.</td>
               </tr>
               <tr class="hover:bg-[#FAF8F5]">
-                <td class="p-3 font-semibold"><a href="#fabric/silk" class="text-[#9E472A] underline">Silk</a></td>
+                <td class="p-3 font-semibold"><a href="/fabric/silk" class="text-[#9E472A] underline">Silk</a></td>
                 <td class="p-3 font-mono">1.25 – 1.30</td>
                 <td class="p-3">Triangular cross-section filament; smooth hand and fluid drape.</td>
               </tr>
@@ -318,7 +318,7 @@ const BASE_ARTICLES: Article[] = [
         </div>
 
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Because wool has a lower specific gravity (1.31) than cotton (1.54), it requires a greater physical volume of wool fiber to reach 200 grams of mass. Combined with the natural crimp of animal fleece, wool yarns enclose greater air volume, delivering superior thermal insulation per unit of fabric mass. For detailed comparisons, explore our guide on <a href="#comparison/cotton-vs-linen" class="text-[#9E472A] font-semibold underline">Cotton vs. Linen</a> and our structural breakdown of <a href="#comparison/woven-vs-knitted" class="text-[#9E472A] font-semibold underline">Woven vs. Knitted Fabrics</a>.
+          Because wool has a lower specific gravity (1.31) than cotton (1.54), it requires a greater physical volume of wool fiber to reach 200 grams of mass. Combined with the natural crimp of animal fleece, wool yarns enclose greater air volume, delivering superior thermal insulation per unit of fabric mass. For detailed comparisons, explore our guide on <a href="/comparison/cotton-vs-linen" class="text-[#9E472A] font-semibold underline">Cotton vs. Linen</a> and our structural breakdown of <a href="/comparison/woven-vs-knitted" class="text-[#9E472A] font-semibold underline">Woven vs. Knitted Fabrics</a>.
         </p>
       </section>
 
@@ -377,7 +377,7 @@ const BASE_ARTICLES: Article[] = [
         </div>
 
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          For specialized laundering and garment preservation techniques across different fabric weights, refer to our <a href="#care" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Care Manual</a> or review testing fundamentals in our <a href="#beginner" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Beginner Guide</a>.
+          For specialized laundering and garment preservation techniques across different fabric weights, refer to our <a href="/care" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Care Manual</a> or review testing fundamentals in our <a href="/beginner" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Beginner Guide</a>.
         </p>
       </section>
     `,
@@ -483,7 +483,7 @@ const BASE_ARTICLES: Article[] = [
         </div>
 
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Explore our complete catalog of materials in the <a href="#fabrics" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Library</a>, or review testing fundamentals in our <a href="#beginner" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Beginner Guide</a>.
+          Explore our complete catalog of materials in the <a href="/fabrics" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Library</a>, or review testing fundamentals in our <a href="/beginner" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Beginner Guide</a>.
         </p>
       </section>
 
@@ -503,8 +503,8 @@ const BASE_ARTICLES: Article[] = [
               Harvested directly from living nature without chemical polymer syntheses. They divide into two chemical subclasses:
             </p>
             <ul class="list-disc pl-5 text-xs sm:text-sm text-[#4A443B] space-y-1">
-              <li><strong>Cellulosic (Plant) Fibers:</strong> Seed hairs like <a href="#fabric/cotton" class="text-[#9E472A] underline font-medium">Cotton</a>, bast stem fibers like <a href="#fabric/linen" class="text-[#9E472A] underline font-medium">Linen (Flax)</a>, hemp, and jute. Highly absorbent, breathable, heat tolerant, but prone to wrinkling.</li>
-              <li><strong>Protein (Animal) Fibers:</strong> Mammalian fleece like <a href="#fabric/wool" class="text-[#9E472A] underline font-medium">Wool</a> (keratin), cashmere, and alpaca, or insect secretions like <a href="#fabric/silk" class="text-[#9E472A] underline font-medium">Silk</a> (fibroin filaments). Naturally flame resistant, highly insulating, and sensitive to alkaline detergents.</li>
+              <li><strong>Cellulosic (Plant) Fibers:</strong> Seed hairs like <a href="/fabric/cotton" class="text-[#9E472A] underline font-medium">Cotton</a>, bast stem fibers like <a href="/fabric/linen" class="text-[#9E472A] underline font-medium">Linen (Flax)</a>, hemp, and jute. Highly absorbent, breathable, heat tolerant, but prone to wrinkling.</li>
+              <li><strong>Protein (Animal) Fibers:</strong> Mammalian fleece like <a href="/fabric/wool" class="text-[#9E472A] underline font-medium">Wool</a> (keratin), cashmere, and alpaca, or insect secretions like <a href="/fabric/silk" class="text-[#9E472A] underline font-medium">Silk</a> (fibroin filaments). Naturally flame resistant, highly insulating, and sensitive to alkaline detergents.</li>
             </ul>
           </div>
 
@@ -514,8 +514,8 @@ const BASE_ARTICLES: Article[] = [
               Created by taking natural cellulose (typically harvested from sustainable wood pulp, bamboo, or cotton linters), dissolving it in chemical solvents, and extruding the regenerated liquid through spinnerets into solid filaments.
             </p>
             <ul class="list-disc pl-5 text-xs sm:text-sm text-[#4A443B] space-y-1">
-              <li><strong>First-Generation Rayon:</strong> <a href="#fabric/viscose" class="text-[#9E472A] underline font-medium">Viscose</a>, soft with a fluid drape, though weakened when soaked in water.</li>
-              <li><strong>Modern High-Performance Rayons:</strong> Modal (high wet strength) and <a href="#fabric/lyocell" class="text-[#9E472A] underline font-medium">Lyocell (TENCEL™)</a>, produced via closed-loop non-toxic solvent spinning with low environmental impact.</li>
+              <li><strong>First-Generation Rayon:</strong> <a href="/fabric/viscose" class="text-[#9E472A] underline font-medium">Viscose</a>, soft with a fluid drape, though weakened when soaked in water.</li>
+              <li><strong>Modern High-Performance Rayons:</strong> Modal (high wet strength) and <a href="/fabric/lyocell" class="text-[#9E472A] underline font-medium">Lyocell (TENCEL™)</a>, produced via closed-loop non-toxic solvent spinning with low environmental impact.</li>
             </ul>
           </div>
 
@@ -525,8 +525,8 @@ const BASE_ARTICLES: Article[] = [
               Engineered entirely in chemical laboratories from petroleum byproducts through synthetic polymerization.
             </p>
             <ul class="list-disc pl-5 text-xs sm:text-sm text-[#4A443B] space-y-1">
-              <li><strong><a href="#fabric/polyester" class="text-[#9E472A] underline font-medium">Polyester</a>:</strong> Extremely durable, wrinkle-resistant, quick-drying, hydrophobic (repels moisture), and heat-sensitive.</li>
-              <li><strong><a href="#fabric/nylon" class="text-[#9E472A] underline font-medium">Nylon (Polyamide)</a>:</strong> Exceptional tensile strength, abrasion resistance, and elastic recovery.</li>
+              <li><strong><a href="/fabric/polyester" class="text-[#9E472A] underline font-medium">Polyester</a>:</strong> Extremely durable, wrinkle-resistant, quick-drying, hydrophobic (repels moisture), and heat-sensitive.</li>
+              <li><strong><a href="/fabric/nylon" class="text-[#9E472A] underline font-medium">Nylon (Polyamide)</a>:</strong> Exceptional tensile strength, abrasion resistance, and elastic recovery.</li>
               <li><strong>Spandex (Elastane):</strong> Polyurethane segmented copolymer with extreme elastic elongation (can stretch up to 500% without breaking).</li>
             </ul>
           </div>
@@ -566,7 +566,7 @@ const BASE_ARTICLES: Article[] = [
         </p>
         <ul class="list-disc pl-6 space-y-2 text-[#3A3A3A] mb-4">
           <li><strong>Yarn Twist:</strong> Low-twist yarns produce soft, fluffy, insulating fabrics (like flannel or sweat fleece). High-twist yarns produce crisp, firm, wrinkle-resistant fabrics (like crepe or gabardine).</li>
-          <li><strong>Yarn Count (Thickness):</strong> Fine yarns create lightweight luxury fabrics like 80s-count <a href="#fabric/lawn" class="text-[#9E472A] underline font-medium">Pakistani Lawn</a>; thick yarns create rugged canvas or workwear denim.</li>
+          <li><strong>Yarn Count (Thickness):</strong> Fine yarns create lightweight luxury fabrics like 80s-count <a href="/fabric/lawn" class="text-[#9E472A] underline font-medium">Pakistani Lawn</a>; thick yarns create rugged canvas or workwear denim.</li>
           <li><strong>Plying:</strong> Twisting two or more single yarns together (2-ply or 3-ply) increases tensile strength and prevents seam twisting.</li>
         </ul>
       </section>
@@ -591,7 +591,7 @@ const BASE_ARTICLES: Article[] = [
               The oldest, simplest, and most balanced weave structure. The weft yarn goes over one warp yarn and under the next in a consistent 1-over, 1-under pattern.
             </p>
             <p class="text-xs sm:text-sm text-[#61584C] leading-relaxed">
-              <strong>Characteristics:</strong> Maximum number of yarn interlacings per square centimeter, firm structure, identical appearance on both sides, minimal drape, and high durability. Examples include <a href="#fabric/poplin" class="text-[#9E472A] underline font-medium">Cotton Poplin</a>, fine cotton lawn, linen shirting, organza, and canvas.
+              <strong>Characteristics:</strong> Maximum number of yarn interlacings per square centimeter, firm structure, identical appearance on both sides, minimal drape, and high durability. Examples include <a href="/fabric/poplin" class="text-[#9E472A] underline font-medium">Cotton Poplin</a>, fine cotton lawn, linen shirting, organza, and canvas.
             </p>
           </div>
 
@@ -601,7 +601,7 @@ const BASE_ARTICLES: Article[] = [
               Characterized by distinct diagonal parallel lines (called wales). The weft yarn passes over two or more warp yarns before going under one, with the interlacing points shifting one step on successive rows (e.g., 2/1 or 3/1 twill).
             </p>
             <p class="text-xs sm:text-sm text-[#61584C] leading-relaxed">
-              <strong>Characteristics:</strong> Fewer interlacings than plain weave allow yarns to pack closer together, making twills heavier, softer to drape, and more resistant to tearing. Twill masks stains and resists surface friction well. Prominent examples include <a href="#fabric/denim" class="text-[#9E472A] underline font-medium">Denim</a>, chino twill, gabardine, and herringbone tweed.
+              <strong>Characteristics:</strong> Fewer interlacings than plain weave allow yarns to pack closer together, making twills heavier, softer to drape, and more resistant to tearing. Twill masks stains and resists surface friction well. Prominent examples include <a href="/fabric/denim" class="text-[#9E472A] underline font-medium">Denim</a>, chino twill, gabardine, and herringbone tweed.
             </p>
           </div>
 
@@ -611,7 +611,7 @@ const BASE_ARTICLES: Article[] = [
               Designed for maximum surface smoothness and light reflection. Yarns float across four, seven, or more perpendicular threads before catching at widely separated, non-adjacent intervals.
             </p>
             <p class="text-xs sm:text-sm text-[#61584C] leading-relaxed">
-              <strong>Characteristics:</strong> Highly lustrous face with a dull back, fluid drape, and silky hand feel. However, because the long floats are exposed on the surface, satin weaves are more vulnerable to snagging and abrasion. Examples include silk charmeuse, polyester bridal <a href="#fabric/satin" class="text-[#9E472A] underline font-medium">Satin</a>, and cotton sateen.
+              <strong>Characteristics:</strong> Highly lustrous face with a dull back, fluid drape, and silky hand feel. However, because the long floats are exposed on the surface, satin weaves are more vulnerable to snagging and abrasion. Examples include silk charmeuse, polyester bridal <a href="/fabric/satin" class="text-[#9E472A] underline font-medium">Satin</a>, and cotton sateen.
             </p>
           </div>
         </div>
@@ -658,7 +658,7 @@ const BASE_ARTICLES: Article[] = [
         </div>
 
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          For a comprehensive head-to-head comparison between these two structural worlds, read our dedicated study on <a href="#comparison/woven-vs-knitted" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Woven vs. Knitted Fabrics</a>.
+          For a comprehensive head-to-head comparison between these two structural worlds, read our dedicated study on <a href="/comparison/woven-vs-knitted" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Woven vs. Knitted Fabrics</a>.
         </p>
       </section>
 
@@ -783,7 +783,7 @@ const BASE_ARTICLES: Article[] = [
               <span class="w-2.5 h-2.5 rounded-full bg-[#9E472A]"></span> Laundry & Garment Care
             </h4>
             <p class="leading-relaxed">
-              Knits can stretch or distort if hung on wire hangers while wet; they dry best flat. Woven fabrics hold their outline well but often require pressing or steaming to remove creases. Consult our <a href="#care" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Care Manual</a> for specific fiber guidelines.
+              Knits can stretch or distort if hung on wire hangers while wet; they dry best flat. Woven fabrics hold their outline well but often require pressing or steaming to remove creases. Consult our <a href="/care" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Care Manual</a> for specific fiber guidelines.
             </p>
           </div>
         </div>
@@ -808,7 +808,7 @@ const BASE_ARTICLES: Article[] = [
 
           <div class="p-3.5 bg-[#FAF8F5] border border-[#E6E0D7] rounded-lg">
             <strong class="text-[#1C1C1C] block mb-1">3. "Satin" is a weave structure, not a fiber.</strong>
-            <span>Satin is not an alternative to silk. Rather, you can have <strong>silk satin</strong> (silk fiber in a satin weave) or <strong>polyester satin</strong> (polyester fiber in a satin weave). The weave creates the glossy sheen; the fiber dictates breathability and price. Read our breakdown on <a href="#comparison/silk-vs-satin" class="text-[#9E472A] font-semibold underline">Silk vs. Satin</a>.</span>
+            <span>Satin is not an alternative to silk. Rather, you can have <strong>silk satin</strong> (silk fiber in a satin weave) or <strong>polyester satin</strong> (polyester fiber in a satin weave). The weave creates the glossy sheen; the fiber dictates breathability and price. Read our breakdown on <a href="/comparison/silk-vs-satin" class="text-[#9E472A] font-semibold underline">Silk vs. Satin</a>.</span>
           </div>
 
           <div class="p-3.5 bg-[#FAF8F5] border border-[#E6E0D7] rounded-lg">
@@ -835,7 +835,7 @@ const BASE_ARTICLES: Article[] = [
             <p><strong>1. Fiber Content (e.g., 98% Cotton, 2% Elastane):</strong> Informs you of raw polymer traits, breathability, moisture absorption, and thermal limits.</p>
             <p><strong>2. Yarn Sizing / Count (e.g., 60s combed single yarn):</strong> Indicates how fine, soft, and uniform the spun threads are.</p>
             <p><strong>3. Construction Type (e.g., 3/1 Right-Hand Twill Weave vs. Single Jersey Knit):</strong> Indicates mechanical stretch, drape, stability, and tear strength.</p>
-            <p><strong>4. Weight (e.g., 180 GSM / 5.3 oz/yd²):</strong> Indicates physical thickness, visual opacity, and seasonal suitability. For details, see our <a href="#article/fabric-weight-demystified-gsm-ounces-guide" class="text-[#9E472A] font-semibold underline">Fabric Weight (GSM) Guide</a>.</p>
+            <p><strong>4. Weight (e.g., 180 GSM / 5.3 oz/yd²):</strong> Indicates physical thickness, visual opacity, and seasonal suitability. For details, see our <a href="/articles/fabric-weight-demystified-gsm-ounces-guide" class="text-[#9E472A] font-semibold underline">Fabric Weight (GSM) Guide</a>.</p>
             <p><strong>5. Finishing (e.g., Mercerized, Brushed, Sanforized):</strong> Indicates surface treatments that add luster, soften the hand, or prevent wash shrinkage.</p>
           </div>
         </div>
@@ -853,7 +853,7 @@ const BASE_ARTICLES: Article[] = [
           <li><strong>Fabric</strong> is the <em>finished dish</em> on your table.</li>
         </ul>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          By keeping these levels distinct in your mind, you can decipher any apparel label, choose the right fabric for any sewing project, and appreciate the remarkable engineering woven and knitted into everyday garments. Explore definitions in our <a href="#glossary" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Textile Glossary</a> or browse our complete <a href="#fabrics" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Library</a>.
+          By keeping these levels distinct in your mind, you can decipher any apparel label, choose the right fabric for any sewing project, and appreciate the remarkable engineering woven and knitted into everyday garments. Explore definitions in our <a href="/glossary" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Textile Glossary</a> or browse our complete <a href="/fabrics" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Library</a>.
         </p>
       </section>
     `,
@@ -950,7 +950,7 @@ const BASE_ARTICLES: Article[] = [
           A common mistake is assuming that shrinkage means the individual fibers themselves are shriveling up like cooked bacon. In reality, shrinkage is predominantly a <strong>structural readjustment</strong>: mechanical tensions intentionally pulled into yarns and fabric structures during factory weaving and knitting are relieved when exposed to water, heat, and movement.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          To learn the core structural foundations of textiles, explore our guide on <a href="#article/fibers-vs-weaves-vs-knits-three-levels" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fibers vs. Weaves vs. Knits</a>, or review overall care principles in our <a href="#care" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Care Manual</a>.
+          To learn the core structural foundations of textiles, explore our guide on <a href="/articles/fibers-vs-weaves-vs-knits-three-levels" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fibers vs. Weaves vs. Knits</a>, or review overall care principles in our <a href="/care" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Care Manual</a>.
         </p>
       </section>
 
@@ -976,7 +976,7 @@ const BASE_ARTICLES: Article[] = [
             <span class="text-xs font-mono font-bold text-[#9E472A] uppercase tracking-wider">Mechanism B</span>
             <h3 class="font-serif-heading font-bold text-base text-[#1C1C1C] mt-1 mb-2">2. Swelling Shrinkage (Cross-Sectional Fiber Expansion)</h3>
             <p class="text-xs sm:text-sm text-[#4A443B] leading-relaxed mb-2">
-              Hydrophilic (water-absorbing) fibers like <a href="#fabric/cotton" class="text-[#9E472A] underline font-medium">Cotton</a>, <a href="#fabric/linen" class="text-[#9E472A] underline font-medium">Linen</a>, and <a href="#fabric/viscose" class="text-[#9E472A] underline font-medium">Viscose</a> absorb substantial quantities of moisture into their internal amorphous regions.
+              Hydrophilic (water-absorbing) fibers like <a href="/fabric/cotton" class="text-[#9E472A] underline font-medium">Cotton</a>, <a href="/fabric/linen" class="text-[#9E472A] underline font-medium">Linen</a>, and <a href="/fabric/viscose" class="text-[#9E472A] underline font-medium">Viscose</a> absorb substantial quantities of moisture into their internal amorphous regions.
             </p>
             <p class="text-xs sm:text-sm text-[#4A443B] leading-relaxed">
               As moisture enters, the fibers expand significantly in diameter (cross-sectional swelling), often expanding by 15% to 40% in thickness while changing very little in length. As the yarns swell thicker, the perpendicular crossing yarns are forced to bend in deeper curves (increased crimp) to travel over and under each other. This geometry draws the edges of the fabric inward, shortening overall garment dimensions.
@@ -987,7 +987,7 @@ const BASE_ARTICLES: Article[] = [
             <span class="text-xs font-mono font-bold text-[#9E472A] uppercase tracking-wider">Mechanism C</span>
             <h3 class="font-serif-heading font-bold text-base text-[#1C1C1C] mt-1 mb-2">3. Felting Shrinkage (Irreversible Mechanical Interlocking in Animal Hair)</h3>
             <p class="text-xs sm:text-sm text-[#4A443B] leading-relaxed mb-2">
-              Unique to animal fleece like <a href="#fabric/wool" class="text-[#9E472A] underline font-medium">Wool</a> and cashmere. Wool fibers possess an outer cuticle covered in microscopic overlapping directional scales (similar to pinecones or shingles on a roof).
+              Unique to animal fleece like <a href="/fabric/wool" class="text-[#9E472A] underline font-medium">Wool</a> and cashmere. Wool fibers possess an outer cuticle covered in microscopic overlapping directional scales (similar to pinecones or shingles on a roof).
             </p>
             <p class="text-xs sm:text-sm text-[#4A443B] leading-relaxed">
               When subjected to the combination of warm water, moisture, and mechanical agitation (such as the tumbling paddles of a washing machine), the scales open. The fibers slide past one another in the rootward direction but cannot slide back because the scale edges lock together like ratchets. This pulls the fabric into a dense, thick, irreversible felt.
@@ -1077,7 +1077,7 @@ const BASE_ARTICLES: Article[] = [
         </div>
 
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          To compare how different materials perform in real-world use, explore our detailed profiles in the <a href="#fabrics" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Library</a>.
+          To compare how different materials perform in real-world use, explore our detailed profiles in the <a href="/fabrics" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Library</a>.
         </p>
       </section>
 
@@ -1110,7 +1110,7 @@ const BASE_ARTICLES: Article[] = [
         </div>
 
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Read our in-depth structural study on <a href="#comparison/woven-vs-knitted" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Woven vs. Knitted Fabrics</a> to learn how stitch architectures govern everyday fabric behavior.
+          Read our in-depth structural study on <a href="/comparison/woven-vs-knitted" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Woven vs. Knitted Fabrics</a> to learn how stitch architectures govern everyday fabric behavior.
         </p>
       </section>
 
@@ -1138,7 +1138,7 @@ const BASE_ARTICLES: Article[] = [
           <div class="p-4 bg-[#FAF8F5] border border-[#E6E0D7] rounded-xl">
             <h3 class="font-bold text-[#1C1C1C] text-base mb-1">Thermal Heat Setting (For Synthetics)</h3>
             <p class="text-xs sm:text-sm text-[#4A443B] leading-relaxed">
-              Thermoplastic synthetic fibers like <a href="#fabric/polyester" class="text-[#9E472A] underline font-medium">Polyester</a>, <a href="#fabric/nylon" class="text-[#9E472A] underline font-medium">Nylon</a>, and acrylic are passed through heated tenter frames at temperatures between 180°C and 210°C. This locks the molecular chains into a permanent crystalline equilibrium. As long as subsequent domestic laundering temperatures remain well below this heat-set temperature, the synthetic fabric will not undergo thermal shrinkage.
+              Thermoplastic synthetic fibers like <a href="/fabric/polyester" class="text-[#9E472A] underline font-medium">Polyester</a>, <a href="/fabric/nylon" class="text-[#9E472A] underline font-medium">Nylon</a>, and acrylic are passed through heated tenter frames at temperatures between 180°C and 210°C. This locks the molecular chains into a permanent crystalline equilibrium. As long as subsequent domestic laundering temperatures remain well below this heat-set temperature, the synthetic fabric will not undergo thermal shrinkage.
             </p>
           </div>
 
@@ -1181,7 +1181,7 @@ const BASE_ARTICLES: Article[] = [
         </div>
 
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          For practical washing schedules by fabric type, refer to our comprehensive <a href="#care" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Care Manual</a>.
+          For practical washing schedules by fabric type, refer to our comprehensive <a href="/care" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Care Manual</a>.
         </p>
       </section>
 
@@ -1429,7 +1429,7 @@ const BASE_ARTICLES: Article[] = [
           <li><strong>Laundering Habits:</strong> The water temperature, mechanical agitation, and drying heat applied in your laundry room.</li>
         </ul>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          By understanding these interactions, you can select fabrics suited to your lifestyle, care for your wardrobe with scientific confidence, and keep your clothes fitting comfortably for years to come. Explore our <a href="#beginner" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Beginner Guide</a> and complete <a href="#fabrics" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Library</a> to continue learning.
+          By understanding these interactions, you can select fabrics suited to your lifestyle, care for your wardrobe with scientific confidence, and keep your clothes fitting comfortably for years to come. Explore our <a href="/beginner" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Beginner Guide</a> and complete <a href="/fabrics" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric Library</a> to continue learning.
         </p>
       </section>
     `,

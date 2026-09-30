@@ -40,7 +40,7 @@ export const FABRIC_WEIGHT_ARTICLES: Article[] = [
           Imagine cutting a swatch of fabric exactly 1 meter long by 1 meter wide (100 cm × 100 cm). If you place that square on a calibrated scale, its weight in grams is its GSM. A gossamer silk scarf might register at 40 GSM, while a rugged winter coat might weigh 450 GSM.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Because US commercial trade frequently designates weight in ounces per square yard (oz/yd²), converting between units is often necessary. You can convert between systems instantly with our free <a href="#tools/gsm-to-oz-converter" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">GSM to Oz Converter</a>.
+          Because US commercial trade frequently designates weight in ounces per square yard (oz/yd²), converting between units is often necessary. You can convert between systems instantly with our free <a href="/tools/gsm-to-oz-converter" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">GSM to Oz Converter</a>.
         </p>
       </section>
 
@@ -50,10 +50,10 @@ export const FABRIC_WEIGHT_ARTICLES: Article[] = [
           Apparel and home textiles fall into four practical weight brackets:
         </p>
         <ul class="list-disc pl-5 space-y-2 text-[#3A3A3A] mb-4">
-          <li><strong>Lightweight (Under 150 GSM):</strong> Chiffon (40–60 GSM), <a href="#fabric/lawn" class="text-[#9E472A] font-semibold underline">cotton lawn</a> (75–95 GSM), and lightweight shirting. These materials are airy, highly breathable, and occasionally semi-sheer.</li>
-          <li><strong>Medium Weight (150–250 GSM):</strong> Standard t-shirt jersey (160–200 GSM), everyday <a href="#fabric/linen" class="text-[#9E472A] font-semibold underline">linen</a> (180–220 GSM), and casual dress fabrics. This is the most versatile category for year-round tops and dresses.</li>
+          <li><strong>Lightweight (Under 150 GSM):</strong> Chiffon (40–60 GSM), <a href="/fabric/lawn" class="text-[#9E472A] font-semibold underline">cotton lawn</a> (75–95 GSM), and lightweight shirting. These materials are airy, highly breathable, and occasionally semi-sheer.</li>
+          <li><strong>Medium Weight (150–250 GSM):</strong> Standard t-shirt jersey (160–200 GSM), everyday <a href="/fabric/linen" class="text-[#9E472A] font-semibold underline">linen</a> (180–220 GSM), and casual dress fabrics. This is the most versatile category for year-round tops and dresses.</li>
           <li><strong>Medium-Heavy (250–350 GSM):</strong> Chino twill (220–260 GSM), lightweight denim (8–10 oz), and sweatshirt fleece. Opaque, structured, and warm.</li>
-          <li><strong>Heavyweight (350+ GSM):</strong> Heavy raw <a href="#fabric/denim" class="text-[#9E472A] font-semibold underline">denim</a> (12–16 oz), duck canvas, and tailored wool overcoating.</li>
+          <li><strong>Heavyweight (350+ GSM):</strong> Heavy raw <a href="/fabric/denim" class="text-[#9E472A] font-semibold underline">denim</a> (12–16 oz), duck canvas, and tailored wool overcoating.</li>
         </ul>
       </section>
 
@@ -72,7 +72,7 @@ export const FABRIC_WEIGHT_ARTICLES: Article[] = [
           <p class="text-xs text-[#7A7265] italic">Example: If your 10 cm square weighs 1.85 grams, the fabric is <strong>185 GSM</strong>.</p>
         </div>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          For odd-shaped remnants or imperial yard cuts, use our automated <a href="#tools/fabric-gsm-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric GSM Calculator</a>.
+          For odd-shaped remnants or imperial yard cuts, use our automated <a href="/tools/fabric-gsm-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric GSM Calculator</a>.
         </p>
       </section>
 
@@ -92,10 +92,10 @@ export const FABRIC_WEIGHT_ARTICLES: Article[] = [
           Matching the right GSM to your garment silhouette prevents expensive sewing mistakes:
         </p>
         <ul class="list-disc pl-5 space-y-2 text-[#3A3A3A] mb-4">
-          <li><strong>Summer Tops &amp; Blouses:</strong> 80–130 GSM (<a href="#articles/poplin-fabric-guide" class="text-[#9E472A] underline">Poplin</a>, lawn, voile).</li>
+          <li><strong>Summer Tops &amp; Blouses:</strong> 80–130 GSM (<a href="/articles/poplin-fabric-guide" class="text-[#9E472A] underline">Poplin</a>, lawn, voile).</li>
           <li><strong>Everyday T-Shirts:</strong> 160–180 GSM (standard cotton jersey knit).</li>
-          <li><strong>Trousers, Chinos &amp; Skirts:</strong> 200–280 GSM (<a href="#articles/twill-fabric-guide" class="text-[#9E472A] underline">cotton twill</a>, linen blends).</li>
-          <li><strong>Outerwear, Duffels &amp; Workwear:</strong> 350–500 GSM (<a href="#articles/canvas-fabric-guide" class="text-[#9E472A] underline">duck canvas</a>, heavy twill).</li>
+          <li><strong>Trousers, Chinos &amp; Skirts:</strong> 200–280 GSM (<a href="/articles/twill-fabric-guide" class="text-[#9E472A] underline">cotton twill</a>, linen blends).</li>
+          <li><strong>Outerwear, Duffels &amp; Workwear:</strong> 350–500 GSM (<a href="/articles/canvas-fabric-guide" class="text-[#9E472A] underline">duck canvas</a>, heavy twill).</li>
         </ul>
       </section>
 
@@ -178,10 +178,10 @@ export const FABRIC_WEIGHT_ARTICLES: Article[] = [
       <section id="overview">
         <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">1. Why Cotton Fabric Weights Vary</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          <a href="#fabric/cotton" class="text-[#9E472A] font-semibold underline">Cotton</a> is the most versatile natural cellulose fiber in the textile world. Because cotton can be spun into gossamer fine single threads (like an 80s yarn count) or thick multi-ply cords, cotton textiles span an incredible range from 60 GSM to well over 450 GSM.
+          <a href="/fabric/cotton" class="text-[#9E472A] font-semibold underline">Cotton</a> is the most versatile natural cellulose fiber in the textile world. Because cotton can be spun into gossamer fine single threads (like an 80s yarn count) or thick multi-ply cords, cotton textiles span an incredible range from 60 GSM to well over 450 GSM.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Understanding the GSM of cotton fabrics ensures you never accidentally purchase a see-through dress fabric when you wanted an opaque summer skirt, or a stiff board-like fabric when you wanted a fluid blouse. Calculate fabric weight for any cotton project with our <a href="#tools/fabric-gsm-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric GSM Calculator</a>.
+          Understanding the GSM of cotton fabrics ensures you never accidentally purchase a see-through dress fabric when you wanted an opaque summer skirt, or a stiff board-like fabric when you wanted a fluid blouse. Calculate fabric weight for any cotton project with our <a href="/tools/fabric-gsm-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric GSM Calculator</a>.
         </p>
       </section>
 
@@ -205,13 +205,13 @@ export const FABRIC_WEIGHT_ARTICLES: Article[] = [
                 <td class="p-3">Sheer blouses, scarves, lightweight curtains</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]">Cotton <a href="#fabric/lawn" class="text-[#9E472A] underline">Lawn</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]">Cotton <a href="/fabric/lawn" class="text-[#9E472A] underline">Lawn</a></td>
                 <td class="p-3">75–95 GSM</td>
                 <td class="p-3">2.2–2.8 oz</td>
                 <td class="p-3">Summer dresses, handkerchiefs, pocket linings</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]">Cotton <a href="#fabric/poplin" class="text-[#9E472A] underline">Poplin</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]">Cotton <a href="/fabric/poplin" class="text-[#9E472A] underline">Poplin</a></td>
                 <td class="p-3">110–140 GSM</td>
                 <td class="p-3">3.2–4.1 oz</td>
                 <td class="p-3">Button-down shirts, pajamas, skirts</td>
@@ -235,7 +235,7 @@ export const FABRIC_WEIGHT_ARTICLES: Article[] = [
                 <td class="p-3">Trousers, jackets, unstructured caps</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]">Duck <a href="#fabric/canvas" class="text-[#9E472A] underline">Canvas</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]">Duck <a href="/fabric/canvas" class="text-[#9E472A] underline">Canvas</a></td>
                 <td class="p-3">300–450 GSM</td>
                 <td class="p-3">8.8–13.3 oz</td>
                 <td class="p-3">Tote bags, slipcovers, work jackets</td>
@@ -252,9 +252,9 @@ export const FABRIC_WEIGHT_ARTICLES: Article[] = [
         </p>
         <ul class="list-disc pl-5 space-y-2 text-[#3A3A3A] mb-4">
           <li><strong>Under 100 GSM (Voile &amp; Lawn):</strong> Characterized by soft gathers, delicate billowing, and minimal structural hold. They require French seams or narrow rolled hems to prevent fraying.</li>
-          <li><strong>110 to 150 GSM (<a href="#articles/poplin-fabric-guide" class="text-[#9E472A] underline">Poplin</a> &amp; Broadcloth):</strong> Crisp and smooth with enough body to support buttonholes, collar stands, and shirt cuffs without excessive drooping.</li>
-          <li><strong>180 to 260 GSM (Twill &amp; Chino):</strong> Opaque, abrasion-resistant, and structural. The diagonal weave distributes tension, making it the premier choice for tailored casual pants. Explore weave mechanics in our <a href="#articles/warp-vs-weft" class="text-[#9E472A] underline">Warp vs Weft guide</a>.</li>
-          <li><strong>300+ GSM (<a href="#articles/canvas-fabric-guide" class="text-[#9E472A] underline">Duck Canvas</a>):</strong> Extremely rigid and heavy. Holds boxy shapes without interfacing and withstands intense daily friction.</li>
+          <li><strong>110 to 150 GSM (<a href="/articles/poplin-fabric-guide" class="text-[#9E472A] underline">Poplin</a> &amp; Broadcloth):</strong> Crisp and smooth with enough body to support buttonholes, collar stands, and shirt cuffs without excessive drooping.</li>
+          <li><strong>180 to 260 GSM (Twill &amp; Chino):</strong> Opaque, abrasion-resistant, and structural. The diagonal weave distributes tension, making it the premier choice for tailored casual pants. Explore weave mechanics in our <a href="/articles/warp-vs-weft" class="text-[#9E472A] underline">Warp vs Weft guide</a>.</li>
+          <li><strong>300+ GSM (<a href="/articles/canvas-fabric-guide" class="text-[#9E472A] underline">Duck Canvas</a>):</strong> Extremely rigid and heavy. Holds boxy shapes without interfacing and withstands intense daily friction.</li>
         </ul>
       </section>
 
@@ -358,10 +358,10 @@ export const FABRIC_WEIGHT_ARTICLES: Article[] = [
       <section id="why-ounces">
         <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">1. Why Denim Is Measured in Ounces</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          In textile retail, almost every fabric is measured in GSM—except <a href="#fabric/denim" class="text-[#9E472A] font-semibold underline">denim</a>. In the United States and globally, jeans manufacturers describe fabric by ounces per square yard (oz/yd²).
+          In textile retail, almost every fabric is measured in GSM—except <a href="/fabric/denim" class="text-[#9E472A] font-semibold underline">denim</a>. In the United States and globally, jeans manufacturers describe fabric by ounces per square yard (oz/yd²).
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          When you see "12 oz denim," it means one square yard of that twill fabric weighs 12 avoirdupois ounces. To convert that to metric GSM, multiply by 33.906. You can do this live with our <a href="#tools/gsm-to-oz-converter" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">GSM to Oz Converter</a>.
+          When you see "12 oz denim," it means one square yard of that twill fabric weighs 12 avoirdupois ounces. To convert that to metric GSM, multiply by 33.906. You can do this live with our <a href="/tools/gsm-to-oz-converter" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">GSM to Oz Converter</a>.
         </p>
       </section>
 
@@ -419,7 +419,7 @@ export const FABRIC_WEIGHT_ARTICLES: Article[] = [
           For year-round comfort, <strong>12 oz denim (approx. 407 GSM)</strong> is the undisputed sweet spot. It breathes well in moderate warmth yet shields against cold wind in autumn and winter.
         </p>
         <ul class="list-disc pl-5 space-y-2 text-[#3A3A3A] mb-4">
-          <li><strong>Lightweight (&lt; 10 oz):</strong> Soft and flexible out of the package. Common for summer garments and jeggings blended with synthetic elastane. Check our <a href="#articles/fabric-blend-guide" class="text-[#9E472A] underline">Fabric Blend Guide</a> for stretch denim details.</li>
+          <li><strong>Lightweight (&lt; 10 oz):</strong> Soft and flexible out of the package. Common for summer garments and jeggings blended with synthetic elastane. Check our <a href="/articles/fabric-blend-guide" class="text-[#9E472A] underline">Fabric Blend Guide</a> for stretch denim details.</li>
           <li><strong>Mid-Weight (11–13 oz):</strong> The historical baseline of American denim. Balances drape, longevity, and comfortable movement after 2 or 3 washes.</li>
           <li><strong>Heavyweight (14+ oz):</strong> Extremely stiff initially. Woven on vintage shuttle looms, it creates high-contrast fade whiskers behind the knees and along honeycombs as raw indigo wears away.</li>
         </ul>
@@ -433,7 +433,7 @@ export const FABRIC_WEIGHT_ARTICLES: Article[] = [
         <ul class="list-disc pl-5 space-y-2 text-[#3A3A3A] mb-4">
           <li>If you live in a hot or humid climate, choose <strong>9 to 10.5 oz denim</strong> to avoid overheating.</li>
           <li>For an all-season everyday jean, choose <strong>12 oz</strong>.</li>
-          <li>If you work outdoors in construction, trade, or ranching, choose <strong>14 oz or 15 oz</strong> for superior tear resistance. Read more on durable diagonal weaves in our <a href="#articles/twill-fabric-guide" class="text-[#9E472A] underline">Twill Fabric Guide</a>.</li>
+          <li>If you work outdoors in construction, trade, or ranching, choose <strong>14 oz or 15 oz</strong> for superior tear resistance. Read more on durable diagonal weaves in our <a href="/articles/twill-fabric-guide" class="text-[#9E472A] underline">Twill Fabric Guide</a>.</li>
         </ul>
       </section>
 
@@ -502,7 +502,7 @@ export const FABRIC_WEIGHT_ARTICLES: Article[] = [
           When sourcing fabric online or evaluating commercial garments, having a reliable weight benchmark across fiber categories prevents costly sewing and purchasing mistakes.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Convert any custom dimension into accurate GSM and linear yardage with our free <a href="#tools/fabric-gsm-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric GSM Calculator</a>.
+          Convert any custom dimension into accurate GSM and linear yardage with our free <a href="/tools/fabric-gsm-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric GSM Calculator</a>.
         </p>
       </section>
 
@@ -521,63 +521,63 @@ export const FABRIC_WEIGHT_ARTICLES: Article[] = [
             </thead>
             <tbody class="divide-y divide-[#E6E0D7] text-[#4A453E]">
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]">Silk <a href="#fabric/chiffon" class="text-[#9E472A] underline">Chiffon</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]">Silk <a href="/fabric/chiffon" class="text-[#9E472A] underline">Chiffon</a></td>
                 <td class="p-3">Silk / Synthetic</td>
                 <td class="p-3">30–50 GSM</td>
                 <td class="p-3">0.9–1.5 oz</td>
                 <td class="p-3">Gossamer / Sheer</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]">Cotton <a href="#fabric/lawn" class="text-[#9E472A] underline">Lawn</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]">Cotton <a href="/fabric/lawn" class="text-[#9E472A] underline">Lawn</a></td>
                 <td class="p-3">Cotton</td>
                 <td class="p-3">75–95 GSM</td>
                 <td class="p-3">2.2–2.8 oz</td>
                 <td class="p-3">Lightweight</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]">Cotton <a href="#fabric/poplin" class="text-[#9E472A] underline">Poplin</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]">Cotton <a href="/fabric/poplin" class="text-[#9E472A] underline">Poplin</a></td>
                 <td class="p-3">Cotton</td>
                 <td class="p-3">110–140 GSM</td>
                 <td class="p-3">3.2–4.1 oz</td>
                 <td class="p-3">Light-Medium</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]">T-Shirt <a href="#fabric/jersey" class="text-[#9E472A] underline">Jersey</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]">T-Shirt <a href="/fabric/jersey" class="text-[#9E472A] underline">Jersey</a></td>
                 <td class="p-3">Cotton / Blend</td>
                 <td class="p-3">160–200 GSM</td>
                 <td class="p-3">4.7–5.9 oz</td>
                 <td class="p-3">Medium Weight</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]">Dress <a href="#fabric/linen" class="text-[#9E472A] underline">Linen</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]">Dress <a href="/fabric/linen" class="text-[#9E472A] underline">Linen</a></td>
                 <td class="p-3">Bast (Flax)</td>
                 <td class="p-3">180–220 GSM</td>
                 <td class="p-3">5.3–6.5 oz</td>
                 <td class="p-3">Medium Weight</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]">Chino <a href="#fabric/twill" class="text-[#9E472A] underline">Twill</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]">Chino <a href="/fabric/twill" class="text-[#9E472A] underline">Twill</a></td>
                 <td class="p-3">Cotton</td>
                 <td class="p-3">220–260 GSM</td>
                 <td class="p-3">6.5–7.7 oz</td>
                 <td class="p-3">Medium-Heavy</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]">Standard <a href="#fabric/denim" class="text-[#9E472A] underline">Denim</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]">Standard <a href="/fabric/denim" class="text-[#9E472A] underline">Denim</a></td>
                 <td class="p-3">Cotton Twill</td>
                 <td class="p-3">407 GSM (12 oz)</td>
                 <td class="p-3">12.0 oz</td>
                 <td class="p-3">Heavyweight</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]">Duck <a href="#fabric/canvas" class="text-[#9E472A] underline">Canvas</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]">Duck <a href="/fabric/canvas" class="text-[#9E472A] underline">Canvas</a></td>
                 <td class="p-3">Cotton / Linen</td>
                 <td class="p-3">350–500 GSM</td>
                 <td class="p-3">10.3–14.7 oz</td>
                 <td class="p-3">Heavy Industrial</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]">Drapery <a href="#fabric/velvet" class="text-[#9E472A] underline">Velvet</a></td>
+                <td class="p-3 font-medium text-[#1C1C1C]">Drapery <a href="/fabric/velvet" class="text-[#9E472A] underline">Velvet</a></td>
                 <td class="p-3">Cotton / Poly</td>
                 <td class="p-3">380–550 GSM</td>
                 <td class="p-3">11.2–16.2 oz</td>
