@@ -54,9 +54,238 @@ import { ARTICLES } from './data/articles';
 import { FABRIC_COMPARISONS } from './data/comparisons';
 import { updateDocumentSEO } from './utils/seo';
 
+interface ResolvedRoute {
+  view: string;
+  slug: string;
+  hadHash: boolean;
+  canonicalPath: string;
+}
+
+export function resolveRouteState(pathname: string, hash: string): ResolvedRoute {
+  let hadHash = false;
+  let raw = hash.replace(/^#\/?/, '');
+  if (raw) {
+    hadHash = true;
+  } else if (pathname && pathname !== '/') {
+    raw = pathname.replace(/^\//, '');
+  }
+
+  if (!raw) {
+    return { view: 'home', slug: '', hadHash, canonicalPath: '/' };
+  }
+
+  const parts = raw.split('/');
+  const view = parts[0];
+  const slug = parts[1] || '';
+
+  // Handle article routes: /articles or /articles/slug or /article/slug
+  if (view === 'articles' || view === 'article') {
+    if (slug) {
+      const articleMatch = ARTICLES.find(a => a.slug === slug);
+      if (articleMatch) {
+        return {
+          view: 'article',
+          slug,
+          hadHash: hadHash || view === 'article',
+          canonicalPath: `/articles/${slug}`
+        };
+      }
+      return {
+        view: '404',
+        slug,
+        hadHash,
+        canonicalPath: `/articles/${slug}`
+      };
+    }
+    return {
+      view: 'blog',
+      slug: '',
+      hadHash: hadHash || view === 'article',
+      canonicalPath: '/articles'
+    };
+  }
+
+  // Fabric detail routes: /fabric/slug or /fabric-types/slug or /fabrics/slug
+  if (view === 'fabric' || view === 'fabric-types' || view === 'fabrics') {
+    const normalizedSlug = slug === 'banarasi' ? 'banarsi' : slug;
+    if (normalizedSlug) {
+      const fabricMatch = FABRICS.find(f => f.slug === normalizedSlug);
+      if (fabricMatch) {
+        return {
+          view: 'fabric',
+          slug: fabricMatch.slug,
+          hadHash: hadHash || view !== 'fabric' || slug !== fabricMatch.slug,
+          canonicalPath: `/fabric/${fabricMatch.slug}`
+        };
+      }
+      return {
+        view: '404',
+        slug,
+        hadHash,
+        canonicalPath: `/fabric/${slug}`
+      };
+    }
+    return {
+      view: 'fabrics',
+      slug: '',
+      hadHash: hadHash || view !== 'fabrics',
+      canonicalPath: '/fabrics'
+    };
+  }
+
+  // Comparison detail routes: /comparison/slug or /comparisons/slug
+  if (view === 'comparison' || view === 'comparisons') {
+    if (slug) {
+      const reversedSlug = slug.includes('-vs-') ? slug.split('-vs-').reverse().join('-vs-') : '';
+      const compMatch = FABRIC_COMPARISONS.find(c => c.slug === slug || (reversedSlug && c.slug === reversedSlug));
+      if (compMatch) {
+        return {
+          view: 'comparison',
+          slug: compMatch.slug,
+          hadHash: hadHash || view !== 'comparison' || slug !== compMatch.slug,
+          canonicalPath: `/comparison/${compMatch.slug}`
+        };
+      }
+      return {
+        view: '404',
+        slug,
+        hadHash,
+        canonicalPath: `/comparison/${slug}`
+      };
+    }
+    return {
+      view: 'comparisons',
+      slug: '',
+      hadHash: hadHash || view !== 'comparisons',
+      canonicalPath: '/comparisons'
+    };
+  }
+
+  // Tools detail routes: /tools/slug or /tools
+  if (view === 'tools') {
+    if (slug) {
+      const toolMatch = FABRIC_TOOLS.find(t => t.slug === slug);
+      if (toolMatch) {
+        return {
+          view: 'tools',
+          slug,
+          hadHash,
+          canonicalPath: `/tools/${slug}`
+        };
+      }
+      return {
+        view: '404',
+        slug,
+        hadHash,
+        canonicalPath: `/tools/${slug}`
+      };
+    }
+    return {
+      view: 'tools',
+      slug: '',
+      hadHash,
+      canonicalPath: '/tools'
+    };
+  }
+
+  // Guide aliases
+  if (view === 'guide' || view === 'guides') {
+    if (slug) {
+      const isArticle = ARTICLES.some(a => a.slug === slug);
+      if (isArticle) {
+        return {
+          view: 'article',
+          slug,
+          hadHash: true,
+          canonicalPath: `/articles/${slug}`
+        };
+      }
+      return {
+        view: 'beginner',
+        slug,
+        hadHash: true,
+        canonicalPath: '/beginner'
+      };
+    }
+    return {
+      view: 'blog',
+      slug: '',
+      hadHash: true,
+      canonicalPath: '/articles'
+    };
+  }
+
+  // Direct tool routing aliases like /fabric-gsm-calculator
+  const directToolMatch = FABRIC_TOOLS.find(t => t.slug === view);
+  if (directToolMatch) {
+    return {
+      view: 'tools',
+      slug: directToolMatch.slug,
+      hadHash: true,
+      canonicalPath: `/tools/${directToolMatch.slug}`
+    };
+  }
+
+  const validViews = [
+    'home',
+    'about',
+    'contact',
+    'blog',
+    'articles',
+    'fabrics',
+    'fabric',
+    'article',
+    'comparisons',
+    'comparison',
+    'beginner',
+    'guides',
+    'timeline',
+    'pakistani',
+    'industry',
+    'textile-industry',
+    'sustainable',
+    'glossary',
+    'resources',
+    'trending',
+    'care',
+    'tools',
+    'privacy-policy',
+    'terms',
+    'disclaimer',
+    'cookie-policy',
+    'editorial-policy',
+    'corrections-policy',
+    'advertising-policy',
+    'sitemap'
+  ];
+
+  if (validViews.includes(view)) {
+    const canonicalView = (view === 'blog' || view === 'articles') ? 'articles' : view;
+    return {
+      view: (view === 'articles' || view === 'blog') ? 'blog' : view,
+      slug,
+      hadHash,
+      canonicalPath: slug ? `/${canonicalView}/${slug}` : `/${canonicalView}`
+    };
+  }
+
+  return {
+    view: '404',
+    slug: raw,
+    hadHash,
+    canonicalPath: `/${raw}`
+  };
+}
+
 export default function App() {
-  const [currentView, setCurrentView] = useState<string>('home');
-  const [currentSlug, setCurrentSlug] = useState<string>('');
+  const [currentView, setCurrentView] = useState<string>(() => {
+    if (typeof window === 'undefined') return 'home';
+    return resolveRouteState(window.location.pathname, window.location.hash).view;
+  });
+  const [currentSlug, setCurrentSlug] = useState<string>(() => {
+    if (typeof window === 'undefined') return '';
+    return resolveRouteState(window.location.pathname, window.location.hash).slug;
+  });
   const [isSearchOpen, setIsSearchOpen] = useState(false);
   const [isSavedDrawerOpen, setIsSavedDrawerOpen] = useState(false);
   const [savedItems, setSavedItems] = useState<SavedItem[]>(() => {
@@ -79,197 +308,12 @@ export default function App() {
 
   // Handle clean HTML5 URL routing and upgrade legacy hash navigation
   const parseRoute = () => {
-    let hadHash = false;
-    let raw = window.location.hash.replace(/^#\/?/, '');
-    if (raw) {
-      hadHash = true;
-    } else if (window.location.pathname && window.location.pathname !== '/') {
-      raw = window.location.pathname.replace(/^\//, '');
-    }
-
-    if (!raw) {
-      setCurrentView('home');
-      setCurrentSlug('');
-      if (hadHash) {
-        window.history.replaceState(null, '', '/');
-      }
-      return;
-    }
-
-    const parts = raw.split('/');
-    const view = parts[0];
-    const slug = parts[1] || '';
-
-    // Handle article routes: /articles or /articles/slug or /article/slug
-    if (view === 'articles' || view === 'article') {
-      if (slug) {
-        const articleMatch = ARTICLES.find(a => a.slug === slug);
-        if (articleMatch) {
-          setCurrentView('article');
-          setCurrentSlug(slug);
-          if (hadHash || view === 'article') {
-            window.history.replaceState(null, '', `/articles/${slug}`);
-          }
-        } else {
-          setCurrentView('404');
-          setCurrentSlug(slug);
-        }
-      } else {
-        setCurrentView('blog');
-        setCurrentSlug('');
-        if (hadHash || view === 'article') {
-          window.history.replaceState(null, '', '/articles');
-        }
-      }
-      return;
-    }
-
-    // Fabric detail routes: /fabric/slug
-    if (view === 'fabric') {
-      const normalizedSlug = slug === 'banarasi' ? 'banarsi' : slug;
-      if (normalizedSlug) {
-        const fabricMatch = FABRICS.find(f => f.slug === normalizedSlug);
-        if (fabricMatch) {
-          setCurrentView('fabric');
-          setCurrentSlug(fabricMatch.slug);
-          if (hadHash || slug !== fabricMatch.slug) {
-            window.history.replaceState(null, '', `/fabric/${fabricMatch.slug}`);
-          }
-        } else {
-          setCurrentView('404');
-          setCurrentSlug(slug);
-        }
-      } else {
-        setCurrentView('fabrics');
-        setCurrentSlug('');
-        if (hadHash) {
-          window.history.replaceState(null, '', '/fabrics');
-        }
-      }
-      return;
-    }
-
-    // Comparison detail routes: /comparison/slug (supports bidirectional links e.g. polyester-vs-cotton or cotton-vs-polyester)
-    if (view === 'comparison') {
-      if (slug) {
-        const reversedSlug = slug.includes('-vs-') ? slug.split('-vs-').reverse().join('-vs-') : '';
-        const compMatch = FABRIC_COMPARISONS.find(c => c.slug === slug || (reversedSlug && c.slug === reversedSlug));
-        if (compMatch) {
-          setCurrentView('comparison');
-          setCurrentSlug(compMatch.slug);
-          if (hadHash || slug !== compMatch.slug) {
-            window.history.replaceState(null, '', `/comparison/${compMatch.slug}`);
-          }
-        } else {
-          setCurrentView('404');
-          setCurrentSlug(slug);
-        }
-      } else {
-        setCurrentView('comparisons');
-        setCurrentSlug('');
-        if (hadHash) {
-          window.history.replaceState(null, '', '/comparisons');
-        }
-      }
-      return;
-    }
-
-    // Tools detail routes: /tools/slug
-    if (view === 'tools') {
-      if (slug) {
-        const toolMatch = FABRIC_TOOLS.find(t => t.slug === slug);
-        if (toolMatch) {
-          setCurrentView('tools');
-          setCurrentSlug(slug);
-          if (hadHash) {
-            window.history.replaceState(null, '', `/tools/${slug}`);
-          }
-        } else {
-          setCurrentView('404');
-          setCurrentSlug(slug);
-        }
-      } else {
-        setCurrentView('tools');
-        setCurrentSlug('');
-        if (hadHash) {
-          window.history.replaceState(null, '', '/tools');
-        }
-      }
-      return;
-    }
-
-    if (view === 'guide' || view === 'guides') {
-      if (slug) {
-        const isArticle = ARTICLES.some(a => a.slug === slug);
-        if (isArticle) {
-          setCurrentView('article');
-          setCurrentSlug(slug);
-          window.history.replaceState(null, '', `/articles/${slug}`);
-        } else {
-          setCurrentView('beginner');
-          setCurrentSlug(slug);
-          window.history.replaceState(null, '', `/beginner`);
-        }
-      } else {
-        setCurrentView('blog');
-        setCurrentSlug('');
-        window.history.replaceState(null, '', '/articles');
-      }
-      return;
-    }
-
-    // Direct tool routing aliases like /fabric-gsm-calculator
-    const directToolMatch = FABRIC_TOOLS.find(t => t.slug === view);
-    if (directToolMatch) {
-      setCurrentView('tools');
-      setCurrentSlug(directToolMatch.slug);
-      window.history.replaceState(null, '', `/tools/${directToolMatch.slug}`);
-      return;
-    }
-
-    const validViews = [
-      'home',
-      'about',
-      'contact',
-      'blog',
-      'articles',
-      'fabrics',
-      'fabric',
-      'article',
-      'comparisons',
-      'comparison',
-      'beginner',
-      'guides',
-      'timeline',
-      'pakistani',
-      'industry',
-      'textile-industry',
-      'sustainable',
-      'glossary',
-      'resources',
-      'trending',
-      'care',
-      'tools',
-      'privacy-policy',
-      'terms',
-      'disclaimer',
-      'cookie-policy',
-      'editorial-policy',
-      'corrections-policy',
-      'advertising-policy',
-      'sitemap'
-    ];
-
-    if (validViews.includes(view)) {
-      const canonicalView = (view === 'blog' || view === 'articles') ? 'articles' : view;
-      setCurrentView(view === 'articles' ? 'blog' : view);
-      setCurrentSlug(slug);
-      if (hadHash) {
-        window.history.replaceState(null, '', slug ? `/${canonicalView}/${slug}` : `/${canonicalView}`);
-      }
-    } else {
-      setCurrentView('404');
-      setCurrentSlug(raw);
+    if (typeof window === 'undefined') return;
+    const resolved = resolveRouteState(window.location.pathname, window.location.hash);
+    setCurrentView(resolved.view);
+    setCurrentSlug(resolved.slug);
+    if (resolved.hadHash) {
+      window.history.replaceState(null, '', resolved.canonicalPath);
     }
   };
 
@@ -914,7 +958,7 @@ export default function App() {
           />
         )}
 
-        {currentView === 'blog' && (
+        {(currentView === 'blog' || currentView === 'articles') && (
           <BlogView 
             onNavigate={navigateTo} 
           />
