@@ -667,4 +667,101 @@ function generateStaticRoutes() {
   console.log(`Successfully generated static HTML for ${count} routes in dist/!`);
 }
 
+// Generate clean, canonical XML sitemap
+function generateSitemapXml() {
+  const today = '2026-10-01';
+
+  interface SitemapEntry {
+    loc: string;
+    lastmod: string;
+  }
+
+  const sitemapEntries: SitemapEntry[] = [];
+  const addedUrls = new Set<string>();
+
+  const addUrl = (url: string, lastmod: string) => {
+    if (!addedUrls.has(url)) {
+      addedUrls.add(url);
+      sitemapEntries.push({ loc: url, lastmod });
+    }
+  };
+
+  // 1. Core Hub & Content Pages (24 pages)
+  const corePaths = [
+    '', // Homepage
+    'articles',
+    'fabrics',
+    'comparisons',
+    'tools',
+    'beginner',
+    'care',
+    'pakistani',
+    'sustainable',
+    'industry',
+    'timeline',
+    'glossary',
+    'trending',
+    'about',
+    'contact',
+    'editorial-policy',
+    'resources',
+    'privacy-policy',
+    'terms',
+    'disclaimer',
+    'cookie-policy',
+    'corrections-policy',
+    'advertising-policy',
+    'sitemap'
+  ];
+
+  for (const p of corePaths) {
+    const url = p ? `${baseUrl}/${p}` : `${baseUrl}/`;
+    addUrl(url, today);
+  }
+
+  // 2. All 38 Fabric Profiles (canonical /fabric/:slug)
+  for (const f of FABRICS) {
+    addUrl(`${baseUrl}/fabric/${f.slug}`, today);
+  }
+
+  // 3. All 20 Comparison Pages (canonical /comparison/:slug)
+  for (const c of FABRIC_COMPARISONS) {
+    const modDate = c.updatedDate || c.publishDate || today;
+    addUrl(`${baseUrl}/comparison/${c.slug}`, modDate);
+  }
+
+  // 4. All 12 Tool Pages (canonical /tools/:slug)
+  for (const t of FABRIC_TOOLS) {
+    addUrl(`${baseUrl}/tools/${t.slug}`, today);
+  }
+
+  // 5. All 69 Article Guides (canonical /articles/:slug)
+  for (const a of ARTICLES) {
+    const modDate = a.updatedDate || a.publishDate || today;
+    addUrl(`${baseUrl}/articles/${a.slug}`, modDate);
+  }
+
+  let xml = '<?xml version="1.0" encoding="UTF-8"?>\n';
+  xml += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n';
+
+  for (const entry of sitemapEntries) {
+    xml += '  <url>\n';
+    xml += `    <loc>${entry.loc}</loc>\n`;
+    xml += `    <lastmod>${entry.lastmod}</lastmod>\n`;
+    xml += '  </url>\n';
+  }
+
+  xml += '</urlset>\n';
+
+  // Write to public/sitemap.xml and dist/sitemap.xml
+  const publicSitemap = path.join(rootDir, 'public', 'sitemap.xml');
+  const distSitemap = path.join(distDir, 'sitemap.xml');
+
+  fs.writeFileSync(publicSitemap, xml, 'utf8');
+  fs.writeFileSync(distSitemap, xml, 'utf8');
+
+  console.log(`Successfully generated sitemap.xml with ${sitemapEntries.length} canonical URLs!`);
+}
+
 generateStaticRoutes();
+generateSitemapXml();
