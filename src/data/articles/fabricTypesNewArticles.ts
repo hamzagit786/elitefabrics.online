@@ -123,7 +123,7 @@ export const NEW_FABRIC_TYPES_PART1: Article[] = [
       <section id="table-weights">
         <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">Cotton Fabric Weight & GSM Comparison Table</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Different garments require different weights. You can also calculate exact requirements on our <a href="/tools/gsm-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">GSM Weight Calculator</a>.
+          Different garments require different weights. You can also calculate exact requirements on our <a href="/tools/fabric-gsm-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">GSM Weight Calculator</a>.
         </p>
         <div class="overflow-x-auto my-6 border border-[#E6E0D7] rounded-lg">
           <table class="w-full text-left text-sm border-collapse">

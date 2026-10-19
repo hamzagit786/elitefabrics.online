@@ -90,6 +90,37 @@ export function resolveRouteState(pathname: string, hash: string): ResolvedRoute
           canonicalPath: `/articles/${slug}`
         };
       }
+      // Cross-category fallback: check comparisons (e.g. /articles/cotton-vs-polyester)
+      const reversedSlug = slug.includes('-vs-') ? slug.split('-vs-').reverse().join('-vs-') : '';
+      const compMatch = FABRIC_COMPARISONS.find(c => c.slug === slug || (reversedSlug && c.slug === reversedSlug));
+      if (compMatch) {
+        return {
+          view: 'comparison',
+          slug: compMatch.slug,
+          hadHash: true,
+          canonicalPath: `/comparison/${compMatch.slug}`
+        };
+      }
+      // Cross-category fallback: check fabrics
+      const fabricMatch = FABRICS.find(f => f.slug === slug);
+      if (fabricMatch) {
+        return {
+          view: 'fabric',
+          slug: fabricMatch.slug,
+          hadHash: true,
+          canonicalPath: `/fabric/${fabricMatch.slug}`
+        };
+      }
+      // Cross-category fallback: check tools
+      const toolMatch = FABRIC_TOOLS.find(t => t.slug === slug);
+      if (toolMatch) {
+        return {
+          view: 'tools',
+          slug: toolMatch.slug,
+          hadHash: true,
+          canonicalPath: `/tools/${toolMatch.slug}`
+        };
+      }
       return {
         view: '404',
         slug,
@@ -116,6 +147,16 @@ export function resolveRouteState(pathname: string, hash: string): ResolvedRoute
           slug: fabricMatch.slug,
           hadHash: hadHash || view !== 'fabric' || slug !== fabricMatch.slug,
           canonicalPath: `/fabric/${fabricMatch.slug}`
+        };
+      }
+      // Cross-category fallback: check articles
+      const articleMatch = ARTICLES.find(a => a.slug === normalizedSlug);
+      if (articleMatch) {
+        return {
+          view: 'article',
+          slug: articleMatch.slug,
+          hadHash: true,
+          canonicalPath: `/articles/${articleMatch.slug}`
         };
       }
       return {
@@ -146,6 +187,16 @@ export function resolveRouteState(pathname: string, hash: string): ResolvedRoute
           canonicalPath: `/comparison/${compMatch.slug}`
         };
       }
+      // Cross-category fallback: check articles
+      const articleMatch = ARTICLES.find(a => a.slug === slug);
+      if (articleMatch) {
+        return {
+          view: 'article',
+          slug: articleMatch.slug,
+          hadHash: true,
+          canonicalPath: `/articles/${articleMatch.slug}`
+        };
+      }
       return {
         view: '404',
         slug,
@@ -161,16 +212,27 @@ export function resolveRouteState(pathname: string, hash: string): ResolvedRoute
     };
   }
 
-  // Tools detail routes: /tools/slug or /tools
-  if (view === 'tools') {
+  // Tools detail routes: /tools/slug or /tool/slug or /tools
+  if (view === 'tools' || view === 'tool') {
     if (slug) {
-      const toolMatch = FABRIC_TOOLS.find(t => t.slug === slug);
+      const normalizedSlug = slug === 'gsm-calculator' ? 'fabric-gsm-calculator' : slug;
+      const toolMatch = FABRIC_TOOLS.find(t => t.slug === normalizedSlug);
       if (toolMatch) {
         return {
           view: 'tools',
-          slug,
-          hadHash,
-          canonicalPath: `/tools/${slug}`
+          slug: toolMatch.slug,
+          hadHash: hadHash || view === 'tool' || slug !== toolMatch.slug,
+          canonicalPath: `/tools/${toolMatch.slug}`
+        };
+      }
+      // Cross-category fallback: check articles
+      const articleMatch = ARTICLES.find(a => a.slug === slug);
+      if (articleMatch) {
+        return {
+          view: 'article',
+          slug: articleMatch.slug,
+          hadHash: true,
+          canonicalPath: `/articles/${articleMatch.slug}`
         };
       }
       return {
@@ -183,7 +245,7 @@ export function resolveRouteState(pathname: string, hash: string): ResolvedRoute
     return {
       view: 'tools',
       slug: '',
-      hadHash,
+      hadHash: hadHash || view === 'tool',
       canonicalPath: '/tools'
     };
   }
@@ -215,8 +277,9 @@ export function resolveRouteState(pathname: string, hash: string): ResolvedRoute
     };
   }
 
-  // Direct tool routing aliases like /fabric-gsm-calculator
-  const directToolMatch = FABRIC_TOOLS.find(t => t.slug === view);
+  // Direct tool routing aliases like /fabric-gsm-calculator or /gsm-calculator
+  const normalizedDirectSlug = view === 'gsm-calculator' ? 'fabric-gsm-calculator' : view;
+  const directToolMatch = FABRIC_TOOLS.find(t => t.slug === normalizedDirectSlug);
   if (directToolMatch) {
     return {
       view: 'tools',
