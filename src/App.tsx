@@ -29,6 +29,7 @@ import { CookiePolicyView } from './components/CookiePolicyView';
 import { EditorialPolicyView } from './components/EditorialPolicyView';
 import { CorrectionsPolicyView } from './components/CorrectionsPolicyView';
 import { AdvertisingPolicyView } from './components/AdvertisingPolicyView';
+import { PartnershipsView } from './components/PartnershipsView';
 import { SitemapView } from './components/SitemapView';
 import { CookieConsentBanner } from './components/CookieConsentBanner';
 import { NotFoundView } from './components/NotFoundView';
@@ -319,6 +320,8 @@ export function resolveRouteState(pathname: string, hash: string): ResolvedRoute
     'editorial-policy',
     'corrections-policy',
     'advertising-policy',
+    'partnerships',
+    'advertise',
     'sitemap'
   ];
 
@@ -728,6 +731,12 @@ export default function App() {
         description: 'Clear guidelines regarding advertising standards, sponsor independence, and our non-commercial educational integrity.',
         canonicalUrl: `${baseUrl}/advertising-policy`
       });
+    } else if (currentView === 'partnerships' || currentView === 'advertise') {
+      updateDocumentSEO({
+        title: 'Partnerships & Media Kit | Elite Fabrics Textile Collaborations',
+        description: 'Partner with Elite Fabrics: explore our verified baseline audience, media kit, underwritten educational series, and transparent sponsorship opportunities.',
+        canonicalUrl: `${baseUrl}/partnerships`
+      });
     } else if (currentView === 'tools') {
       if (currentSlug) {
         const tool = FABRIC_TOOLS.find(t => t.slug === currentSlug);
@@ -1065,6 +1074,12 @@ export default function App() {
 
         {currentView === 'advertising-policy' && (
           <AdvertisingPolicyView 
+            onNavigate={navigateTo} 
+          />
+        )}
+
+        {(currentView === 'partnerships' || currentView === 'advertise') && (
+          <PartnershipsView 
             onNavigate={navigateTo} 
           />
         )}

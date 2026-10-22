@@ -512,6 +512,37 @@ const routes: RouteDefinition[] = [
     canonicalUrl: `${baseUrl}/advertising-policy`
   },
   {
+    route: 'partnerships',
+    title: 'Partnerships & Media Kit | Elite Fabrics Textile Collaborations',
+    description: 'Partner with Elite Fabrics: explore our verified baseline audience, media kit, underwritten educational series, and transparent sponsorship opportunities.',
+    h1: 'Brand Partnerships & Media Kit',
+    canonicalUrl: `${baseUrl}/partnerships`,
+    schema: [
+      {
+        '@type': 'WebPage',
+        'name': 'Partnerships & Media Kit | Elite Fabrics',
+        'description': 'Partner with Elite Fabrics: explore our verified baseline audience, media kit, underwritten educational series, and transparent sponsorship opportunities.',
+        'url': `${baseUrl}/partnerships`,
+        'publisher': { '@type': 'Organization', 'name': 'Elite Fabrics', 'url': `${baseUrl}/` }
+      },
+      {
+        '@type': 'BreadcrumbList',
+        'itemListElement': [
+          { '@type': 'ListItem', 'position': 1, 'name': 'Home', 'item': `${baseUrl}/` },
+          { '@type': 'ListItem', 'position': 2, 'name': 'Partnerships', 'item': `${baseUrl}/partnerships` }
+        ]
+      }
+    ],
+    contentSummary: 'Elite Fabrics offers brand collaborations, educational underwriting, and tool sponsorships with full FTC compliance, rel="sponsored" attributes, and editorial independence.'
+  },
+  {
+    route: 'advertise',
+    title: 'Partnerships & Media Kit | Elite Fabrics Textile Collaborations',
+    description: 'Partner with Elite Fabrics: explore our verified baseline audience, media kit, underwritten educational series, and transparent sponsorship opportunities.',
+    h1: 'Brand Partnerships & Media Kit',
+    canonicalUrl: `${baseUrl}/partnerships`
+  },
+  {
     route: 'sitemap',
     title: 'HTML Sitemap | Complete Directory of Elite Fabrics',
     description: 'Complete navigational index of all fabric entries, comparisons, guides, and policies on Elite Fabrics.',

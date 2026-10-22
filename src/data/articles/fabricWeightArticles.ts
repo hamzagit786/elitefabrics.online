@@ -162,7 +162,7 @@ export const FABRIC_WEIGHT_ARTICLES: Article[] = [
     },
     relatedTool: {
       name: 'Fabric GSM Calculator',
-      path: '#tools/fabric-gsm-calculator',
+      path: '/tools/fabric-gsm-calculator',
       description: 'Calculate the exact GSM or ounces of any cotton fabric swatch using weight and dimensions.'
     },
     relatedFabrics: ['cotton', 'poplin', 'canvas', 'lawn'],
@@ -343,7 +343,7 @@ export const FABRIC_WEIGHT_ARTICLES: Article[] = [
     },
     relatedTool: {
       name: 'GSM to Oz Converter',
-      path: '#tools/gsm-to-oz-converter',
+      path: '/tools/gsm-to-oz-converter',
       description: 'Quickly convert between denim ounces per square yard and metric GSM numbers.'
     },
     relatedFabrics: ['denim', 'cotton', 'twill', 'canvas'],

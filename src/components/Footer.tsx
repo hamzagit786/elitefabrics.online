@@ -101,6 +101,26 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate }) => {
             <li className="text-[#555048]" aria-hidden="true">|</li>
             <li>
               <a 
+                href="/advertising-policy"
+                onClick={(e) => { e.preventDefault(); onNavigate('advertising-policy'); }} 
+                className="hover:text-white transition-colors"
+              >
+                Ad Policy
+              </a>
+            </li>
+            <li className="text-[#555048]" aria-hidden="true">|</li>
+            <li>
+              <a 
+                href="/partnerships"
+                onClick={(e) => { e.preventDefault(); onNavigate('partnerships'); }} 
+                className="hover:text-white transition-colors text-[#EADBCA]"
+              >
+                Partnerships
+              </a>
+            </li>
+            <li className="text-[#555048]" aria-hidden="true">|</li>
+            <li>
+              <a 
                 href="/disclaimer"
                 onClick={(e) => { e.preventDefault(); onNavigate('disclaimer'); }} 
                 className="hover:text-white transition-colors"

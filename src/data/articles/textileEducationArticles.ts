@@ -36,7 +36,7 @@ export const TEXTILE_EDUCATION_ARTICLES: Article[] = [
     },
     relatedTool: {
       name: 'Yarn Count Converter',
-      path: '#tools/yarn-count-converter',
+      path: '/tools/yarn-count-converter',
       description: 'Convert any yarn thickness instantly across English Cotton Count (Ne), Metric (Nm), Tex, and Denier.'
     },
     relatedFabrics: ['cotton', 'silk', 'wool', 'lawn'],
