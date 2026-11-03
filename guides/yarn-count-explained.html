@@ -96,8 +96,8 @@
       ]
     }
     </script>
-    <script type="module" crossorigin src="/assets/index-Dk6YwHq9.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DxECs_t_.css">
+    <script type="module" crossorigin src="/assets/index-DHfk426b.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-BcSWEWDX.css">
       <meta property="og:image" content="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80" />
       <meta name="twitter:image" content="https://images.unsplash.com/photo-1584917865442-de89df76afd3?auto=format&fit=crop&w=1200&q=80" />
   
@@ -163,6 +163,14 @@
           "acceptedAnswer": {
             "@type": "Answer",
             "text": "Both are direct systems measuring weight per length. Tex uses 1,000 meters as its base length, while Denier uses 9,000 meters. Therefore, 1 Tex always equals exactly 9 Denier (Denier = Tex × 9)."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "What does 80/2 mean on a luxury dress shirt label?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "80/2 denotes two 80s Ne single cotton yarns plied together. The resulting thread has an effective thickness of 40s Ne (80 ÷ 2 = 40), combining exceptional smoothness, fine luster, and long-lasting durability."
           }
         }
       ]
@@ -281,7 +289,7 @@
       <section id="conversion-formulas-table">
         <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">4. Mathematical Conversion Formulas & Constants</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Converting between systems requires applying universal conversion constants:
+          Converting between direct and indirect systems is a standard competency required in textile engineering, yarn procurement, and fabric mill planning. The conversion table below summarizes the governing constants:
         </p>
         <div class="overflow-x-auto my-6 border border-[#E6E0D7] rounded-lg">
           <table class="w-full text-left text-xs sm:text-sm border-collapse">
@@ -291,6 +299,7 @@
                 <th class="p-3 border-b border-[#E6E0D7]">From Tex</th>
                 <th class="p-3 border-b border-[#E6E0D7]">From Cotton (Ne)</th>
                 <th class="p-3 border-b border-[#E6E0D7]">From Denier (D)</th>
+                <th class="p-3 border-b border-[#E6E0D7]">From Metric (Nm)</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-[#E6E0D7] text-[#3E3A33] font-mono text-xs">
@@ -299,59 +308,124 @@
                 <td class="p-3 text-[#7A7265]">—</td>
                 <td class="p-3 text-[#9E472A]">590.54 ÷ Ne</td>
                 <td class="p-3 text-[#9E472A]">Denier ÷ 9</td>
+                <td class="p-3 text-[#9E472A]">1,000 ÷ Nm</td>
               </tr>
               <tr>
                 <td class="p-3 font-semibold text-[#1C1C1C]">Denier =</td>
                 <td class="p-3 text-[#9E472A]">Tex × 9</td>
                 <td class="p-3 text-[#9E472A]">5314.9 ÷ Ne</td>
                 <td class="p-3 text-[#7A7265]">—</td>
+                <td class="p-3 text-[#9E472A]">9,000 ÷ Nm</td>
               </tr>
               <tr>
                 <td class="p-3 font-semibold text-[#1C1C1C]">Cotton (Ne) =</td>
                 <td class="p-3 text-[#9E472A]">590.54 ÷ Tex</td>
                 <td class="p-3 text-[#7A7265]">—</td>
                 <td class="p-3 text-[#9E472A]">5314.9 ÷ Denier</td>
+                <td class="p-3 text-[#9E472A]">Nm ÷ 1.693</td>
               </tr>
               <tr>
                 <td class="p-3 font-semibold text-[#1C1C1C]">Metric (Nm) =</td>
                 <td class="p-3 text-[#9E472A]">1,000 ÷ Tex</td>
                 <td class="p-3 text-[#9E472A]">Ne × 1.693</td>
                 <td class="p-3 text-[#9E472A]">9,000 ÷ Denier</td>
+                <td class="p-3 text-[#7A7265]">—</td>
               </tr>
             </tbody>
           </table>
         </div>
+
+        <div class="space-y-4 my-6">
+          <div class="p-4 bg-[#FAF8F5] border border-[#E6E0D7] rounded-lg text-xs sm:text-sm text-[#3E3A34] space-y-2">
+            <h4 class="font-bold text-[#1C1C1C]">Worked Example 1: Converting 40s Cotton (Ne) to Tex</h4>
+            <p>
+              Suppose a shirting specification requires <strong>40s Ne</strong> ring-spun combed cotton. You need to order European dye lots quoted in Tex:
+            </p>
+            <div class="p-2.5 bg-white border border-[#E0D8CB] rounded font-mono text-xs">
+              Tex = 590.54 ÷ Ne = 590.54 ÷ 40 = <strong>14.76 Tex</strong>
+            </div>
+            <p class="text-xs text-[#6B6357]">
+              This indicates that 1,000 meters of this 40s yarn weighs approximately 14.76 grams.
+            </p>
+          </div>
+
+          <div class="p-4 bg-[#FAF8F5] border border-[#E6E0D7] rounded-lg text-xs sm:text-sm text-[#3E3A34] space-y-2">
+            <h4 class="font-bold text-[#1C1C1C]">Worked Example 2: Converting 150 Denier Polyester to Cotton Ne</h4>
+            <p>
+              An activewear mill uses <strong>150 Denier</strong> continuous filament polyester and needs to compare its thickness against spun cotton:
+            </p>
+            <div class="p-2.5 bg-white border border-[#E0D8CB] rounded font-mono text-xs">
+              Ne = 5314.9 ÷ Denier = 5314.9 ÷ 150 = <strong>35.43 Ne</strong>
+            </div>
+            <p class="text-xs text-[#6B6357]">
+              A 150D synthetic filament has an equivalent yarn cross-section to approximately a 35s cotton singles yarn.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section id="understanding-ply-notation">
-        <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">5. Understanding Ply Notation: What Does 60/2 Mean?</h2>
+        <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">5. Understanding Ply Notation & Resultant Counts</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Most yarns used in luxury shirting, bedsheets, and sewing threads are not single strands. They are <strong>plied</strong> (two or more individual strands twisted together for strength and balance):
+          Most commercial fabrics—particularly luxury men's shirting, heavy denim, and high-tenacity sewing threads—utilize <strong>plied (folded) yarns</strong>. Plying twists two or more individual strands together, balancing torque, increasing tensile strength, and smoothing out single-yarn unevenness.
         </p>
-        <ul class="list-disc pl-6 space-y-2 text-[#3A3A3A] mb-4">
-          <li><strong>English Notation (60/2 or 60s/2):</strong> The first number is the single yarn count (60 Ne), and the second number is the ply count (2-ply). To find the resultant (effective) thickness, divide the count by the ply: 60 ÷ 2 = <strong>30 Ne equivalent</strong>.</li>
-          <li><strong>European Metric Notation (2/60 Nm):</strong> Continental mills reverse the order: ply first, count second. Two strands of Nm 60 twisted together equals an effective resultant count of <strong>Nm 30</strong>.</li>
-        </ul>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+          <div class="p-4 bg-white border border-[#E6E0D7] rounded-lg space-y-2">
+            <h3 class="font-bold text-base text-[#1C1C1C]">Equal Ply (e.g. 60/2 Ne)</h3>
+            <p class="text-xs sm:text-sm text-[#4A453E] leading-relaxed">
+              In an indirect system like Cotton Ne, when two identical 60s singles are plied, the yarn doubles in weight. Consequently, its effective (resultant) count is cut in half:
+            </p>
+            <code class="block p-2 bg-[#FAF8F5] rounded font-mono text-xs text-[#1C1C1C]">
+              Ne(resultant) = Single Count ÷ Plies = 60 ÷ 2 = 30 Ne
+            </code>
+            <p class="text-xs text-[#6B6357]">
+              A 60/2 cotton shirt provides the smoothness of 60s fine fibers with the structural heft and opacity of a 30s single yarn.
+            </p>
+          </div>
+
+          <div class="p-4 bg-white border border-[#E6E0D7] rounded-lg space-y-2">
+            <h3 class="font-bold text-base text-[#1C1C1C]">Unequal Ply Formula</h3>
+            <p class="text-xs sm:text-sm text-[#4A453E] leading-relaxed">
+              When twisting different yarn counts together (for novelty slub or textured fabrics), use the harmonic sum formula:
+            </p>
+            <code class="block p-2 bg-[#FAF8F5] rounded font-mono text-xs text-[#1C1C1C]">
+              1 / Ne(resultant) = (1 / Ne₁) + (1 / Ne₂)
+            </code>
+            <p class="text-xs text-[#6B6357]">
+              For direct systems (Tex or Denier), simply add the numbers directly: <code>Tex(resultant) = Tex₁ + Tex₂</code>.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section id="real-world-examples">
-        <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">6. Real-World Trade Examples (From Lawn to Denim)</h2>
+        <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">6. Real-World Trade Examples & Laboratory Testing</h2>
+        <p class="text-[#3A3A3A] leading-relaxed mb-4">
+          To illustrate how yarn numbering corresponds to physical fabrics on the market:
+        </p>
         <div class="grid grid-cols-1 md:grid-cols-3 gap-4 my-6 text-xs">
           <div class="p-4 bg-[#FAF8F5] border border-[#E6E0D7] rounded-xl space-y-1.5">
             <span class="font-bold text-[#1C1C1C] block text-sm">Pakistani Luxury Lawn</span>
-            <span class="font-mono text-[#9E472A]">80s Ne / Tex 7.4</span>
-            <p class="text-[#5C5549]">Spun from extra-long staple combed cotton. Gossamer, silky, and featherlight.</p>
+            <span class="font-mono text-[#9E472A] font-semibold">80s Ne / Tex 7.4</span>
+            <p class="text-[#5C5549] leading-relaxed">Spun from extra-long staple combed cotton. Gossamer, silky, and featherlight with high breathability.</p>
           </div>
           <div class="p-4 bg-[#FAF8F5] border border-[#E6E0D7] rounded-xl space-y-1.5">
             <span class="font-bold text-[#1C1C1C] block text-sm">Classic T-Shirt Jersey</span>
-            <span class="font-mono text-[#9E472A]">30s Ne / Tex 19.7</span>
-            <p class="text-[#5C5549]">Standard single-knit apparel ring-spun yarn. Soft, balanced, and opaque.</p>
+            <span class="font-mono text-[#9E472A] font-semibold">30s Ne / Tex 19.7</span>
+            <p class="text-[#5C5549] leading-relaxed">Standard single-knit ring-spun apparel yarn. Balanced, comfortable, and completely opaque.</p>
           </div>
           <div class="p-4 bg-[#FAF8F5] border border-[#E6E0D7] rounded-xl space-y-1.5">
             <span class="font-bold text-[#1C1C1C] block text-sm">Raw Heavyweight Denim</span>
-            <span class="font-mono text-[#9E472A]">7s Ne / Tex 84.4</span>
-            <p class="text-[#5C5549]">Thick slub warp yarn dyed in indigo. Rugged, durable, and heavy.</p>
+            <span class="font-mono text-[#9E472A] font-semibold">7s Ne / Tex 84.4</span>
+            <p class="text-[#5C5549] leading-relaxed">Thick open-end or ring-spun slub warp dyed in genuine indigo. Rugged, abrasion-resistant, and stiff.</p>
           </div>
+        </div>
+
+        <div class="p-4 bg-white border border-[#E6E0D7] rounded-lg text-xs sm:text-sm text-[#4A453E] space-y-2 mt-4">
+          <h4 class="font-bold text-[#1C1C1C]">ASTM D1907 / ISO 2060 Laboratory Skein Protocol:</h4>
+          <p>
+            When a textile laboratory verifies commercial yarn tickets, testing is conducted using a motor-driven <strong>wrap reel</strong>. A standard test skein (120 yards for indirect systems, or 100 meters for metric Tex) is wound under controlled tension, conditioned in standard atmosphere (20°C ± 2°C, 65% ± 4% relative humidity), and weighed on an analytical balance to determine linear density accurately.
+          </p>
         </div>
       </section>
     </div>
@@ -370,15 +444,26 @@
                   <p class="text-[#555048] leading-relaxed">Both are direct systems measuring weight per length. Tex uses 1,000 meters as its base length, while Denier uses 9,000 meters. Therefore, 1 Tex always equals exactly 9 Denier (Denier = Tex × 9).</p>
                 </div>
               
+                <div class="bg-white p-5 rounded-lg border border-[#E6E1DA]">
+                  <h3 class="font-bold text-[#1C1C1C] text-lg mb-2">What does 80/2 mean on a luxury dress shirt label?</h3>
+                  <p class="text-[#555048] leading-relaxed">80/2 denotes two 80s Ne single cotton yarns plied together. The resulting thread has an effective thickness of 40s Ne (80 ÷ 2 = 40), combining exceptional smoothness, fine luster, and long-lasting durability.</p>
+                </div>
+              
             </div>
           </section>
         
         <nav class="pt-8 mt-12 border-t border-[#E6E1DA] flex flex-wrap gap-4 text-sm text-[#9E472A]">
           <a href="/" class="hover:underline">Home</a>
-          <a href="/articles" class="hover:underline">Articles</a>
           <a href="/fabrics" class="hover:underline">Fabric Library</a>
           <a href="/comparisons" class="hover:underline">Comparisons</a>
-          <a href="/tools" class="hover:underline">Tools & Calculators</a>
+          <a href="/pakistani" class="hover:underline">Pakistani Fabrics</a>
+          <a href="/care" class="hover:underline">Textile Care</a>
+          <a href="/glossary" class="hover:underline">Glossary</a>
+          <a href="/tools" class="hover:underline">Tools &amp; Calculators</a>
+          <a href="/articles" class="hover:underline">Articles</a>
+          <a href="/about" class="hover:underline">About</a>
+          <a href="/contact" class="hover:underline">Contact</a>
+          <a href="/privacy-policy" class="hover:underline">Privacy Policy</a>
         </nav>
       </main>
     </div>
