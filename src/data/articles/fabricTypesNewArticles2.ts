@@ -8,10 +8,10 @@ export const NEW_FABRIC_TYPES_PART2: Article[] = [
     subtitle: 'Explore the crisp, translucent beauty of organza: how it holds dramatic silhouettes, silk vs synthetic types, bridal uses, and gentle care.',
     category: 'Fabric Types',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -163,10 +163,10 @@ export const NEW_FABRIC_TYPES_PART2: Article[] = [
     subtitle: 'Learn about gossamer chiffon: crepe-twist yarn physics, floating ethereal drape, types (silk, poly, rayon), and sewing secrets.',
     category: 'Fabric Types',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -313,10 +313,10 @@ export const NEW_FABRIC_TYPES_PART2: Article[] = [
     subtitle: 'Discover how cut pile weaves create the lush touch of velvet: nap direction, fiber blends (silk, cotton, poly), and pressing methods.',
     category: 'Fabric Types',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -481,10 +481,10 @@ export const NEW_FABRIC_TYPES_PART2: Article[] = [
     subtitle: 'From Nîmes workwear to everyday jeans: indigo warp physics, right-hand twill, raw vs washed, and care rules to prevent fading.',
     category: 'Fabric Types',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -634,10 +634,10 @@ export const NEW_FABRIC_TYPES_PART2: Article[] = [
     subtitle: 'From historic Dhaka gossamer to fashion mockups and culinary cheesecloth: grades, unbleached cotton traits, and sewing uses.',
     category: 'Fabric Types',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',

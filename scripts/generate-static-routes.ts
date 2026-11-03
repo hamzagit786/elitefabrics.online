@@ -1097,10 +1097,16 @@ function generateStaticRoutes() {
         ` : ''}
         <nav class="pt-8 mt-12 border-t border-[#E6E1DA] flex flex-wrap gap-4 text-sm text-[#9E472A]">
           <a href="/" class="hover:underline">Home</a>
-          <a href="/articles" class="hover:underline">Articles</a>
           <a href="/fabrics" class="hover:underline">Fabric Library</a>
           <a href="/comparisons" class="hover:underline">Comparisons</a>
-          <a href="/tools" class="hover:underline">Tools & Calculators</a>
+          <a href="/pakistani" class="hover:underline">Pakistani Fabrics</a>
+          <a href="/care" class="hover:underline">Textile Care</a>
+          <a href="/glossary" class="hover:underline">Glossary</a>
+          <a href="/tools" class="hover:underline">Tools &amp; Calculators</a>
+          <a href="/articles" class="hover:underline">Articles</a>
+          <a href="/about" class="hover:underline">About</a>
+          <a href="/contact" class="hover:underline">Contact</a>
+          <a href="/privacy-policy" class="hover:underline">Privacy Policy</a>
         </nav>
       </main>
     `;
@@ -1175,6 +1181,7 @@ function generateSitemapXml() {
     'cookie-policy',
     'corrections-policy',
     'advertising-policy',
+    'partnerships',
     'sitemap'
   ];
 

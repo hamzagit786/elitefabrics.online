@@ -8,10 +8,10 @@ export const NEW_COMPARISONS_PART1: Article[] = [
     subtitle: 'An in-depth head-to-head comparison of cotton and linen: breathability, durability, wrinkle resistance, cost, and everyday care.',
     category: 'Fabric Comparisons',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -182,10 +182,10 @@ export const NEW_COMPARISONS_PART1: Article[] = [
     subtitle: 'Clarify the biggest myth in textiles: why silk is a natural protein fiber while satin is a weaving structure made from various fibers.',
     category: 'Fabric Comparisons',
     author: {
-      name: 'Dr. Marcus Vance',
-      role: 'Senior Textile Chemist',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Science & Fiber Analysis',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
-      credentials: 'Ph.D. in Polymer & Fiber Science from NC State'
+      credentials: 'Literature review of ASTM and AATCC standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -348,10 +348,10 @@ export const NEW_COMPARISONS_PART1: Article[] = [
     subtitle: 'Demystifying the confusing terminology: how viscose relates to rayon, chemical differences, drape, and laundry behavior.',
     category: 'Fabric Comparisons',
     author: {
-      name: 'Dr. Marcus Vance',
-      role: 'Senior Textile Chemist',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Science & Fiber Analysis',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
-      credentials: 'Ph.D. in Polymer & Fiber Science from NC State'
+      credentials: 'Literature review of ASTM and AATCC standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -517,10 +517,10 @@ export const NEW_COMPARISONS_PART1: Article[] = [
     subtitle: 'Learn how lightweight lawn relates to everyday cotton: thread counts, high-twist combed yarns, summer breathability, and drape.',
     category: 'Fabric Comparisons',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',

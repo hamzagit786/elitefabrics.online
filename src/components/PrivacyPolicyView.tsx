@@ -84,49 +84,105 @@ export const PrivacyPolicyView: React.FC<PolicyViewProps> = ({ onNavigate }) => 
         </section>
 
         {/* 3. Advertising & Google AdSense Disclosure */}
-        <section className="space-y-3 border-t border-[#F0EAE0] pt-6 bg-[#FAF8F5] border border-[#E6DFC8] p-6 rounded-xl">
+        <section className="space-y-4 border-t border-[#F0EAE0] pt-6 bg-[#FAF8F5] border border-[#E6DFC8] p-6 rounded-xl">
           <div className="flex items-center gap-2">
             <Lock className="w-5 h-5 text-[#9E472A]" />
             <h2 className="text-xl sm:text-2xl font-serif-heading font-bold text-[#1C1C1C]">
-              3. Advertising & Google AdSense Disclosure
+              3. Advertising &amp; Google AdSense Disclosure
             </h2>
           </div>
           <p>
-            To help support the ongoing research and publication of free textile guides, Elite Fabrics may display advertisements served by third-party advertising networks, including <strong>Google AdSense</strong>.
+            To help support the ongoing research, hosting, and publication of free textile education guides and interactive calculators, Elite Fabrics displays advertisements served by third-party advertising networks, including <strong>Google AdSense</strong>.
           </p>
-          <div className="space-y-2 text-xs sm:text-sm text-[#4A453E] border-l-2 border-[#9E472A] pl-4">
+          <div className="space-y-3 text-xs sm:text-sm text-[#4A453E] border-l-2 border-[#9E472A] pl-4">
             <p>
-              <strong>Important Disclosure Regarding Third-Party Advertisers:</strong>
+              <strong>Important Disclosure Regarding Third-Party Advertising &amp; the Google DoubleClick DART Cookie:</strong>
             </p>
             <p>
               • Third-party vendors, including Google, use cookies to serve ads based on a user's prior visits to this website or other websites across the Internet.
             </p>
             <p>
-              • Google's use of advertising cookies enables it and its partners to serve ads to our users based on their visits to <em>elitefabrics.online</em> and/or other sites on the Internet.
+              • Google's use of the DoubleClick DART cookie enables it and its partners to serve ads to our visitors based on their visit to <em>elitefabrics.online</em> and other sites across the web.
             </p>
             <p>
-              • Users may opt out of personalized advertising by visiting{' '}
+              • Users may opt out of the use of the DART cookie for interest-based advertising by visiting the{' '}
               <a 
-                href="https://www.google.com/settings/ads" 
+                href="https://policies.google.com/technologies/ads" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-[#9E472A] underline font-semibold"
               >
-                Google Ads Settings (https://www.google.com/settings/ads)
+                Google Ad and Content Network Privacy Policy
               </a>.
             </p>
             <p>
-              • Alternatively, you can opt out of a third-party vendor's use of cookies for personalized advertising by visiting{' '}
+              • You may also configure or opt out of personalized Google advertising at any time by visiting{' '}
               <a 
-                href="https://www.aboutads.info/choices/" 
+                href="https://adssettings.google.com/" 
                 target="_blank" 
                 rel="noopener noreferrer" 
                 className="text-[#9E472A] underline font-semibold"
               >
-                www.aboutads.info
+                Google Ads Settings (https://adssettings.google.com/)
+              </a>.
+            </p>
+            <p>
+              • Furthermore, visitors can opt out of a wide array of third-party vendors' cookies for personalized advertising by visiting the{' '}
+              <a 
+                href="https://optout.aboutads.info/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-[#9E472A] underline font-semibold"
+              >
+                Digital Advertising Alliance Consumer Choice Tool (aboutads.info)
+              </a>{' '}
+              or the{' '}
+              <a 
+                href="https://optout.networkadvertising.org/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="text-[#9E472A] underline font-semibold"
+              >
+                Network Advertising Initiative (NAI) Opt-Out Page
               </a>.
             </p>
           </div>
+        </section>
+
+        {/* 3b. CCPA / CPRA & GDPR Rights */}
+        <section className="space-y-3 border-t border-[#F0EAE0] pt-6">
+          <h2 className="text-xl sm:text-2xl font-serif-heading font-bold text-[#1C1C1C]">
+            3b. GDPR &amp; CCPA/CPRA Privacy Rights
+          </h2>
+          <p>
+            We are committed to full compliance with global privacy standards, including the European Union General Data Protection Regulation (GDPR), the UK GDPR, and the California Consumer Privacy Act (CCPA/CPRA).
+          </p>
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 text-xs sm:text-sm text-[#4A453E] pt-2">
+            <div className="p-4 bg-white border border-[#E6E0D7] rounded-lg space-y-2">
+              <strong className="text-[#1C1C1C] block text-sm">GDPR Data Protection Rights:</strong>
+              <p>Under European data protection laws, visitors have:</p>
+              <ul className="list-disc pl-4 space-y-1 text-xs">
+                <li><strong>The right to access:</strong> Request copies of any personal data we hold.</li>
+                <li><strong>The right to rectification:</strong> Request correction of inaccurate information.</li>
+                <li><strong>The right to erasure:</strong> Request deletion of personal data under certain conditions.</li>
+                <li><strong>The right to restrict or object to processing:</strong> Limit how we process your data.</li>
+                <li><strong>The right to data portability:</strong> Request transfer of data to another organization.</li>
+              </ul>
+            </div>
+            <div className="p-4 bg-white border border-[#E6E0D7] rounded-lg space-y-2">
+              <strong className="text-[#1C1C1C] block text-sm">CCPA/CPRA California Consumer Rights:</strong>
+              <p>Under California privacy regulations, California consumers have:</p>
+              <ul className="list-disc pl-4 space-y-1 text-xs">
+                <li><strong>Right to Know:</strong> Know what personal information is collected, used, shared, or sold.</li>
+                <li><strong>Right to Delete:</strong> Request deletion of personal information collected from you.</li>
+                <li><strong>Right to Opt-Out of Sale/Sharing:</strong> We do NOT sell or share personal data for monetary consideration.</li>
+                <li><strong>Right to Non-Discrimination:</strong> Equal service and pricing regardless of privacy rights exercised.</li>
+              </ul>
+            </div>
+          </div>
+          <p className="text-xs text-[#6B6355]">
+            If you make a request regarding any of these rights, we have one month to respond to you. Please contact our data privacy officer at <a href="mailto:contact@elitefabrics.online" className="text-[#9E472A] underline font-semibold">contact@elitefabrics.online</a> or <a href="mailto:hsiddique0321@gmail.com" className="text-[#9E472A] underline font-semibold">hsiddique0321@gmail.com</a>.
+          </p>
         </section>
 
         {/* 4. How We Use Your Information */}
@@ -199,6 +255,7 @@ export const PrivacyPolicyView: React.FC<PolicyViewProps> = ({ onNavigate }) => 
           </p>
           <div className="text-xs font-mono space-y-1 text-[#6B6355]">
             <p>Website: <a href="https://elitefabrics.online" className="text-[#9E472A]">https://elitefabrics.online/</a></p>
+            <p>Primary Contact: <a href="mailto:hsiddique0321@gmail.com" className="text-[#9E472A] underline">hsiddique0321@gmail.com</a></p>
             <p>Privacy Email: <a href="mailto:contact@elitefabrics.online" className="text-[#9E472A] underline">contact@elitefabrics.online</a></p>
             <p>Editorial Desk: <a href="mailto:editorial@elitefabrics.online" className="text-[#9E472A] underline">editorial@elitefabrics.online</a></p>
             <p>Direct Inquiries: <a href="https://wa.me/923192229067" target="_blank" rel="noopener noreferrer" className="text-[#9E472A] underline">WhatsApp Support Desk</a></p>

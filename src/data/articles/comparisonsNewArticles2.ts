@@ -8,15 +8,15 @@ export const NEW_COMPARISONS_PART2: Article[] = [
     subtitle: 'Compare Pakistan’s two premier winter textiles: handspun cotton heft vs textured raw silk slubs, warmth, drape, and care.',
     category: 'Fabric Comparisons',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'South Asian Textile Heritage & Research',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Lok Virsa heritage archives and Pakistan textile research'
     },
     publishDate: '2026-09-29',
-    updatedDate: '2026-09-29',
-    readTime: '9 min read',
-    excerpt: 'Khaddar vs Karandi is the premier South Asian winter wardrobe comparison. Discover differences in warmth, raw silk blends, textured weaves, and formal styling.',
+    updatedDate: '2026-10-02',
+    readTime: '10 min read',
+    excerpt: 'Khaddar vs Karandi is Pakistan’s defining winter wardrobe comparison. Discover differences in fiber science, raw silk slubs, thermal insulation, tailoring care, and occasion suitability.',
     seoTitle: 'Khaddar vs Karandi: Winter Warmth, Differences & Care',
     metaDescription: 'Khaddar vs Karandi: compare the warmth, textures, and fiber contents of Pakistan’s favorite winter fabrics. Discover when to wear rugged Khaddar vs regal Karandi.',
     featuredImage: 'https://images.unsplash.com/photo-1574786198875-49f5d09fe2d5?auto=format&fit=crop&w=1200&q=80',
@@ -26,139 +26,200 @@ export const NEW_COMPARISONS_PART2: Article[] = [
       { id: 'quick-answer', title: 'Khaddar vs Karandi: Quick Answer & Verdict', level: 2 },
       { id: 'what-is-khaddar', title: 'What Is Khaddar? The Handspun Cotton Champion', level: 2 },
       { id: 'what-is-karandi', title: 'What Is Karandi? The Textured Raw Silk Hybrid', level: 2 },
-      { id: 'table-comparison', title: 'Khaddar vs Karandi Comparison Table', level: 2 },
-      { id: 'warmth-drape', title: 'Warmth, Weight, and Drape Comparison', level: 2 },
+      { id: 'table-comparison', title: 'Khaddar vs Karandi Technical Comparison Table', level: 2 },
+      { id: 'thermal-dynamics', title: 'Thermal Dynamics: Why Both Trap Heat Differently', level: 2 },
       { id: 'styling-occasions', title: 'Everyday Comfort vs. Festive Elegance', level: 2 },
-      { id: 'care-longevity', title: 'Washing, Shrinkage, and Maintenance', level: 2 },
-      { id: 'conclusion', title: 'Conclusion: The Final Verdict on Khaddar vs Karandi', level: 2 }
+      { id: 'tailoring-care', title: 'Pre-Wash Shrinkage, Tailoring & Long-Term Care', level: 2 },
+      { id: 'conclusion', title: 'Conclusion: Choosing Between Khaddar and Karandi', level: 2 }
     ],
     contentHtml: `
       <section id="quick-answer">
         <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">Khaddar vs Karandi: Quick Answer & Verdict</h2>
-        <p class="text-[#3A3A3A] leading-relaxed mb-4 text-lg bg-[#FAF8F5] p-5 rounded-lg border-l-4 border-[#9E472A]">
-          In the winter rivalry of <strong>khaddar vs karandi</strong>, the core distinction lies in fiber composition and occasion. <strong>Khaddar</strong> is a heavy, rugged, 100% cotton handwoven fabric celebrated for cozy earthy warmth and casual daily wear. <strong>Karandi</strong> is a luxurious blend of combed cotton and raw wild silk (matka/tussar), known for prominent slub texture, subtle royal sheen, and formal festive elegance.
+        <p class="text-[#3A3A3A] leading-relaxed mb-4 text-base sm:text-lg bg-[#FAF8F5] p-5 rounded-lg border-l-4 border-[#9E472A]">
+          In the classic winter rivalry of <strong>Khaddar vs Karandi</strong>, the core distinction lies in fiber architecture and social occasion:
+          <br /><br />
+          <strong>Khaddar</strong> is a heavy, dense, 100% natural cotton handwoven textile (often 220–280 GSM) celebrated for rugged wind protection, earthy warmth, and casual daily resilience.
+          <br /><br />
+          <strong>Karandi</strong> is a sophisticated hybrid cloth combining a combed cotton warp with unrefined raw silk (matka or tussar silk) weft threads (180–240 GSM), creating distinctive horizontal slubs, a soft natural luster, and a regal, structured drape tailored for formal winter gatherings.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Both textiles are beloved across Pakistan and northern South Asia during crisp autumn and winter months, but Khaddar keeps you insulated for everyday comfort, while Karandi is the fabric of choice for winter weddings and evening banquets.
+          Both textiles represent centuries of weaving mastery in the Indus basin, especially in Punjab and Khyber Pakhtunkhwa. Understanding their mechanical differences helps you invest in the right fabric for your climate and wardrobe.
         </p>
       </section>
 
       <section id="what-is-khaddar">
         <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">What Is Khaddar? The Handspun Cotton Champion</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Khaddar (or khadi) is deeply rooted in South Asian textile heritage:
+          Khaddar (etymologically linked to <em>Khadi</em>) holds a revered place in South Asian textile history. Woven on traditional pit looms (<em>khaddi</em>) using thick, low-twist cotton yarns, Khaddar possesses an earthy, granular surface with natural yarn thickness variations.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Woven on traditional pit looms using thick, coarse cotton yarns, Khaddar has a dense, sturdy texture with tiny organic irregularities. Because thick cotton fibers trap body heat while remaining breathable, winter Khaddar acts as a natural windbreaker that keeps you warm without triggering sweat. Explore our detailed <a href="/fabric/khaddar" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Khaddar Fabric Profile</a>.
+          The secret to winter Khaddar lies in its yarn count. While summer lawn uses gossamer 60s or 80s Ne threads, winter Khaddar uses coarse 10s to 16s Ne yarns. These thick yarns are packed tightly on the loom (often 48 to 64 picks per inch), creating thousands of micro-air chambers within the weave that trap body warmth while allowing moisture vapor to escape. Explore our deep dive in the <a href="/fabric/khaddar" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Khaddar Fabric Profile</a>.
         </p>
       </section>
 
       <section id="what-is-karandi">
         <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">What Is Karandi? The Textured Raw Silk Hybrid</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Karandi is one of the most distinctive luxury textiles of Pakistan:
+          Karandi is arguably Pakistan’s most celebrated luxury winter suiting cloth, historically centered in traditional weaving hubs like Haripur, Swat, and Kamalia.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Weavers interlace fine cotton warp threads with coarse raw silk or wild tussar silk weft threads. The unrefined silk slubs produce raised, irregular horizontal ridges that catch light with an organic, understated glow. It holds embroidery stitches crisply and provides a regal, structured silhouette. Check out our <a href="/fabric/karandi" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Karandi Fabric Profile</a>.
+          Unlike uniform factory textiles, authentic Karandi uses a compound weaving structure:
+        </p>
+        <ul class="list-disc pl-6 space-y-2 text-[#3A3A3A] mb-4 text-sm sm:text-base">
+          <li><strong>The Warp (Lengthwise):</strong> Strong, smooth combed cotton yarns provide dimensional stability and vertical strength.</li>
+          <li><strong>The Weft (Crosswise):</strong> Coarse, hand-reeled wild raw silk (tussar, muga, or matka) containing natural sericin protein slubs.</li>
+        </ul>
+        <p class="text-[#3A3A3A] leading-relaxed mb-4">
+          As the shuttle flies across the loom, the irregular silk slubs generate horizontal ridges across the fabric surface. These slubs refract ambient lighting with a subtle, non-synthetic sheen, giving Karandi its distinguished presence at formal dinners and wedding receptions. Learn more in our <a href="/fabric/karandi" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Karandi Fabric Profile</a>.
         </p>
       </section>
 
       <section id="table-comparison">
-        <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">Khaddar vs Karandi Comparison Table</h2>
+        <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">Khaddar vs Karandi Technical Comparison Table</h2>
         <div class="overflow-x-auto my-6 border border-[#E6E0D7] rounded-lg">
-          <table class="w-full text-left text-sm border-collapse">
+          <table class="w-full text-left text-xs sm:text-sm border-collapse">
             <thead>
               <tr class="bg-[#F3EFEA] text-[#1E1E1E]">
-                <th class="p-3 border-b border-[#E6E0D7] font-semibold">Feature</th>
+                <th class="p-3 border-b border-[#E6E0D7] font-semibold">Technical Parameter</th>
                 <th class="p-3 border-b border-[#E6E0D7] font-semibold">Khaddar Fabric</th>
                 <th class="p-3 border-b border-[#E6E0D7] font-semibold">Karandi Fabric</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-[#E6E0D7]">
               <tr class="hover:bg-[#FAF8F5]">
-                <td class="p-3 font-medium text-[#1E1E1E]">Fiber Content</td>
-                <td class="p-3 text-[#4A4A4A]">100% Coarse Cotton (sometimes wool blend)</td>
-                <td class="p-3 text-[#4A4A4A]">Combed Cotton warp + Raw Silk / Tussar weft</td>
+                <td class="p-3 font-medium text-[#1E1E1E]">Fiber Composition</td>
+                <td class="p-3 text-[#4A4A4A]">100% Coarse Cotton (rarely wool-cotton blends)</td>
+                <td class="p-3 text-[#4A4A4A]">Combed Cotton Warp + Raw Silk / Tussar Weft</td>
               </tr>
               <tr class="hover:bg-[#FAF8F5]">
-                <td class="p-3 font-medium text-[#1E1E1E]">Surface Texture</td>
-                <td class="p-3 text-[#4A4A4A]">Matte, rugged, granular, earthy</td>
-                <td class="p-3 text-[#4A4A4A]">Pronounced slubs, soft sheen, textured ribs</td>
+                <td class="p-3 font-medium text-[#1E1E1E]">Weave Structure</td>
+                <td class="p-3 text-[#4A4A4A]">Plain 1/1 balanced or heavy twill pit-loom weave</td>
+                <td class="p-3 text-[#4A4A4A]">Plain weave with prominent crosswise silk slubs</td>
               </tr>
               <tr class="hover:bg-[#FAF8F5]">
-                <td class="p-3 font-medium text-[#1E1E1E]">Weight & Body</td>
-                <td class="p-3 text-[#4A4A4A]">Substantial & dense (200 – 280 GSM)</td>
-                <td class="p-3 text-[#4A4A4A]">Medium to heavy (180 – 240 GSM)</td>
+                <td class="p-3 font-medium text-[#1E1E1E]">Areal Weight (GSM)</td>
+                <td class="p-3 text-[#4A4A4A] font-mono text-[#9E472A] font-semibold">220 – 280 GSM (Heavy)</td>
+                <td class="p-3 text-[#4A4A4A] font-mono text-[#9E472A] font-semibold">180 – 240 GSM (Medium-Heavy)</td>
               </tr>
               <tr class="hover:bg-[#FAF8F5]">
-                <td class="p-3 font-medium text-[#1E1E1E]">Formality Level</td>
-                <td class="p-3 text-[#4A4A4A]">Casual daily wear, workwear, lounging</td>
-                <td class="p-3 text-[#4A4A4A]">Formal, semi-formal, wedding festivities</td>
+                <td class="p-3 font-medium text-[#1E1E1E]">Thermal Profile</td>
+                <td class="p-3 text-[#4A4A4A]">Insulative wind barrier; ideal for 8°C to 18°C</td>
+                <td class="p-3 text-[#4A4A4A]">Protein thermo-regulation; ideal for 12°C to 22°C</td>
               </tr>
               <tr class="hover:bg-[#FAF8F5]">
-                <td class="p-3 font-medium text-[#1E1E1E]">Price Point</td>
-                <td class="p-3 text-[#4A4A4A]">Moderate ($)</td>
-                <td class="p-3 text-[#4A4A4A]">Premium ($$$ due to silk content)</td>
+                <td class="p-3 font-medium text-[#1E1E1E]">Surface Finish</td>
+                <td class="p-3 text-[#4A4A4A]">Completely matte, earthy, organic hand</td>
+                <td class="p-3 text-[#4A4A4A]">Subtle slub luster, dimensional cross-grain</td>
+              </tr>
+              <tr class="hover:bg-[#FAF8F5]">
+                <td class="p-3 font-medium text-[#1E1E1E]">Embroidery Compatibility</td>
+                <td class="p-3 text-[#4A4A4A]">Excellent for bold woolen or cotton floss threadwork</td>
+                <td class="p-3 text-[#4A4A4A]">Superb for fine tilla, zari, and silk needlework</td>
+              </tr>
+              <tr class="hover:bg-[#FAF8F5]">
+                <td class="p-3 font-medium text-[#1E1E1E]">Laundering Method</td>
+                <td class="p-3 text-[#4A4A4A]">Cold water machine or hand wash (soak before tailoring)</td>
+                <td class="p-3 text-[#4A4A4A]">Strictly Professional Dry Cleaning recommended</td>
               </tr>
             </tbody>
           </table>
         </div>
       </section>
 
-      <section id="warmth-drape">
-        <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">Warmth, Weight, and Drape Comparison</h2>
+      <section id="thermal-dynamics">
+        <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">Thermal Dynamics: Why Both Trap Heat Differently</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          In terms of pure warmth, heavy winter Khaddar holds the edge during cold January winds because its thick, handspun cotton weave creates a dense thermal barrier.
+          Although both are praised as winter staples, their thermal mechanics rely on fundamentally different fiber physics:
         </p>
-        <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Karandi offers excellent thermal comfort too—thanks to natural silk protein insulation—while offering a crisper, more tailored drape that does not look bulky or heavy under structured outerwear.
-        </p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 my-4">
+          <div class="p-4 bg-white border border-[#E6E0D7] rounded-lg space-y-2">
+            <h3 class="font-bold text-base text-[#1C1C1C]">Khaddar: Convective Windbreak</h3>
+            <p class="text-xs sm:text-sm text-[#4A453E] leading-relaxed">
+              Cotton is a cellulose lumen fiber (a hollow tube). In winter Khaddar, thick yarns close the interstitial spaces of the weave. This prevents convective heat loss from brisk outdoor breezes while absorbing perspiration without feeling clammy.
+            </p>
+          </div>
+          <div class="p-4 bg-white border border-[#E6E0D7] rounded-lg space-y-2">
+            <h3 class="font-bold text-base text-[#1C1C1C]">Karandi: Protein Core Heat Retention</h3>
+            <p class="text-xs sm:text-sm text-[#4A453E] leading-relaxed">
+              Silk is a natural protein polymer (fibroin coated with residual sericin). Protein fibers naturally exhibit low thermal conductivity. Karandi keeps the wearer cozy during indoor evening galas without requiring heavy bulk or excess weight.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section id="styling-occasions">
         <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">Everyday Comfort vs. Festive Elegance</h2>
-        <ul class="list-disc pl-6 space-y-2 text-[#3A3A3A] mb-4">
-          <li><strong>Wear Khaddar For:</strong> Daily office wear, relaxing weekend kurtas, cozy daytime strolls, and simple block-printed winter shawls.</li>
-          <li><strong>Wear Karandi For:</strong> Winter evening receptions, Eid celebrations, heavily embroidered formal kurtas, and luxury festive waistcoats.</li>
+        <p class="text-[#3A3A3A] leading-relaxed mb-4">
+          When choosing an outfit for the winter season:
+        </p>
+        <ul class="list-disc pl-6 space-y-3 text-[#3A3A3A] mb-4 text-sm sm:text-base">
+          <li>
+            <strong>Choose Khaddar For:</strong> Daily office wear, college kurtas, relaxed weekend gatherings, home loungewear, and morning walks. Paired with a warm pashmina or woolen shawl, Khaddar creates an authentic, understated South Asian aesthetic.
+          </li>
+          <li>
+            <strong>Choose Karandi For:</strong> Winter weddings, mehndi nights, formal dinners, Eid festivities, and high-level corporate events. Karandi kurta-shalwar sets paired with a bespoke raw silk waistcoat (<em>waskat</em>) or Prince coat make a commanding formal statement.
+          </li>
         </ul>
       </section>
 
-      <section id="care-longevity">
-        <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">Washing, Shrinkage, and Maintenance</h2>
+      <section id="tailoring-care">
+        <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">Pre-Wash Shrinkage, Tailoring & Long-Term Care</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Khaddar can shrink up to 5% on its first wash because of unmercerized cotton yarns. Always soak raw Khaddar in cold water for two hours before taking it to the tailor.
+          Failing to respect the shrinkage behavior of these natural fibers will ruin an expensive tailored suit:
         </p>
-        <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Because Karandi contains delicate raw silk threads, dry cleaning is strongly recommended to protect its signature texture and prevent shrinkage.
-        </p>
+        <div class="space-y-4 text-xs sm:text-sm text-[#4A453E]">
+          <div class="p-4 bg-[#FAF8F5] border border-[#E6E0D7] rounded-lg">
+            <h4 class="font-bold text-[#1C1C1C] text-sm mb-1">Khaddar Preparation (The Pre-Shrink Soak)</h4>
+            <p class="mb-2">
+              Unmercerized cotton Khaddar shrinks between <strong>5% and 8%</strong> during its initial wash. Before handing unstitched fabric to your master tailor:
+            </p>
+            <ol class="list-decimal pl-5 space-y-1">
+              <li>Submerge the fabric yardage in a basin of clean cold water for 2 to 3 hours.</li>
+              <li>Do NOT wring aggressively. Squeeze out excess water gently.</li>
+              <li>Line dry in the shade to prevent ultraviolet fiber degradation.</li>
+              <li>Iron while slightly damp before taking it to the tailor.</li>
+            </ol>
+          </div>
+
+          <div class="p-4 bg-[#FAF8F5] border border-[#E6E0D7] rounded-lg">
+            <h4 class="font-bold text-[#1C1C1C] text-sm mb-1">Karandi Care (Preserving the Silk Slubs)</h4>
+            <p>
+              Because Karandi integrates wild raw silk, vigorous home washing will strip the natural sericin coating, dull the slub luster, and cause puckering along the seams. <strong>Dry cleaning is strongly advised</strong>. If spot cleaning at home, use cold water and an enzyme-free pH-neutral silk detergent, never tumble dry, and press with a medium steam iron on the reverse side.
+            </p>
+          </div>
+        </div>
       </section>
 
       <section id="conclusion">
-        <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">Conclusion: The Final Verdict on Khaddar vs Karandi</h2>
+        <h2 class="text-2xl font-serif-heading font-bold text-[#1E1E1E] mt-8 mb-4">Conclusion: Choosing Between Khaddar and Karandi</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Choosing between <strong>khaddar vs karandi</strong> comes down to your personal wardrobe priorities. For honest, everyday comfort and rugged warmth, classic cotton Khaddar remains undefeated. But for festive evenings and refined winter style, the shimmering slubs of Karandi bring timeless royal sophistication.
+          In the final analysis, <strong>Khaddar and Karandi are not mutually exclusive—they serve complementary roles in a refined winter wardrobe</strong>.
+        </p>
+        <p class="text-[#3A3A3A] leading-relaxed mb-4">
+          Invest in two or three suits of pure cotton Khaddar for honest, durable, everyday warmth throughout chilly December and January days. Keep a classic unbleached or jewel-toned Karandi ensemble in your wardrobe for formal winter gatherings where subtle raw-silk grandeur is desired.
         </p>
       </section>
     `,
     tags: ['Khaddar', 'Karandi', 'Fabric Comparisons', 'Pakistani Fabrics', 'Winter Wear'],
     sources: [
       { title: 'Traditional Textiles of the Indus Valley: Khadi, Karandi, and Ajrak', institutionOrAuthor: 'Lok Virsa Heritage Institute', year: '2024' },
-      { title: 'The Mechanical Properties of Raw Silk and Cotton Blended Yarns', institutionOrAuthor: 'Pakistan Textile Journal', year: '2025' }
+      { title: 'The Mechanical Properties of Raw Silk and Cotton Blended Yarns', institutionOrAuthor: 'Pakistan Textile Journal', year: '2025' },
+      { title: 'Textile Fiber and Structure Analysis', institutionOrAuthor: 'The Textile Institute (Manchester)', year: '2022' }
     ],
     relatedSlugs: ['what-is-cotton-fabric', 'how-to-prevent-fabric-shrinking', 'the-art-of-pakistani-lawn'],
     relatedFabrics: ['khaddar', 'karandi', 'cotton'],
     faqs: [
       {
         question: 'Does Khaddar fabric shrink when washed?',
-        answer: 'Yes, untreated 100% cotton Khaddar typically shrinks 4% to 7% on its initial wash. Always pre-soak and air dry before tailoring.'
+        answer: 'Yes, untreated 100% cotton Khaddar typically shrinks 5% to 8% on its initial wash. Always pre-soak in cold water and air dry before tailoring.'
       },
       {
         question: 'Can you wash Karandi fabric at home?',
-        answer: 'Dry cleaning is recommended for Karandi due to its raw silk content. If you must wash at home, use cold water and mild silk detergent, and never wring or tumble dry.'
+        answer: 'Professional dry cleaning is strongly recommended for Karandi due to its raw silk content. Machine washing will distort the delicate silk slubs and degrade the fabric hand.'
       },
       {
         question: 'Is Karandi warmer than Khaddar?',
-        answer: 'Heavy winter Khaddar is slightly warmer against cold winds due to its thickness, but Karandi provides excellent natural protein insulation with a more formal, lightweight feel.'
+        answer: 'Heavy winter Khaddar (240–280 GSM) provides slightly better resistance against cold exterior winds due to its thickness, while Karandi (180–240 GSM) offers superb natural protein thermal regulation with a lighter, more regal hand.'
       },
       {
         question: 'What is the raw material in Karandi slubs?',
@@ -173,10 +234,10 @@ export const NEW_COMPARISONS_PART2: Article[] = [
     subtitle: 'Learn how twill diagonal ribs distinguish denim from plain-weave chambray: weights, drape, breathability, and styling tips.',
     category: 'Fabric Comparisons',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -331,10 +392,10 @@ export const NEW_COMPARISONS_PART2: Article[] = [
     subtitle: 'Learn how woven luxury velvet differs from casual stretch velour: knit physics, drape, tracksuits vs eveningwear, and care.',
     category: 'Fabric Comparisons',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -486,10 +547,10 @@ export const NEW_COMPARISONS_PART2: Article[] = [
     subtitle: 'Understand the difference between structured crisp organza and fluid flowing chiffon: drape, weight, bridal silhouettes, and sewing tips.',
     category: 'Fabric Comparisons',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',

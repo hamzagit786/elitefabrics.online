@@ -165,6 +165,16 @@ export const ContactView: React.FC<ContactViewProps> = ({ onNavigate }) => {
               </div>
 
               <div className="flex items-start gap-3">
+                <Mail className="w-4 h-4 text-[#9E472A] shrink-0 mt-0.5" />
+                <div>
+                  <strong className="block text-[#1C1C1C]">Direct Point of Contact:</strong>
+                  <a href="mailto:hsiddique0321@gmail.com" className="text-[#9E472A] hover:underline font-mono">
+                    hsiddique0321@gmail.com
+                  </a>
+                </div>
+              </div>
+
+              <div className="flex items-start gap-3">
                 <ShieldCheck className="w-4 h-4 text-[#9E472A] shrink-0 mt-0.5" />
                 <div>
                   <strong className="block text-[#1C1C1C]">General &amp; Legal:</strong>

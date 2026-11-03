@@ -21,14 +21,14 @@ export const Header: React.FC<HeaderProps> = ({
   const navLinks = [
     { label: 'Home', view: 'home' },
     { label: 'Fabric Types', view: 'fabrics' },
-    { label: 'Guides', view: 'beginner' },
     { label: 'Comparisons', view: 'comparisons' },
-    { label: 'History', view: 'timeline' },
     { label: 'Pakistani Fabrics', view: 'pakistani' },
-    { label: 'Global Industry', view: 'industry' },
-    { label: 'Sustainable', view: 'sustainable' },
+    { label: 'Textile Care', view: 'care' },
+    { label: 'Glossary', view: 'glossary' },
     { label: 'Tools', view: 'tools' },
-    { label: 'Blog', view: 'blog' },
+    { label: 'Articles', view: 'articles' },
+    { label: 'About', view: 'about' },
+    { label: 'Contact', view: 'contact' },
   ];
 
   const handleNavClick = (view: string) => {
@@ -101,7 +101,7 @@ export const Header: React.FC<HeaderProps> = ({
       {/* Desktop Navigation */}
       <nav className="hidden md:block border-t border-[#EBE5DC]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <ul className="flex items-center space-x-1 py-2 text-xs font-medium">
+          <ul className="flex items-center space-x-1 py-2 text-xs font-medium overflow-x-auto scrollbar-none">
             {navLinks.map((link) => {
               const isActive = currentView === link.view;
               return (

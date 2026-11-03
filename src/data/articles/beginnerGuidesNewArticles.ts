@@ -8,10 +8,10 @@ export const NEW_BEGINNER_GUIDES_ARTICLES: Article[] = [
     subtitle: 'Learn how to identify natural vs synthetic fibers, plain vs twill weaves, and choose the perfect textile for any project.',
     category: 'Beginner Guides',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -186,10 +186,10 @@ export const NEW_BEGINNER_GUIDES_ARTICLES: Article[] = [
     subtitle: 'Everything about Grams per Square Meter: conversion to ounces per square yard, matching GSM to garments, and debunking the weight myth.',
     category: 'Beginner Guides',
     author: {
-      name: 'Dr. Marcus Vance',
-      role: 'Senior Textile Chemist',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Science & Fiber Analysis',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
-      credentials: 'Ph.D. in Polymer & Fiber Science from NC State'
+      credentials: 'Literature review of ASTM and AATCC standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -349,10 +349,10 @@ export const NEW_BEGINNER_GUIDES_ARTICLES: Article[] = [
     subtitle: 'Learn the difference between interlaced warp-weft threads and interlocking yarn loops: stretch, drape, sewing, and care.',
     category: 'Beginner Guides',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -515,10 +515,10 @@ export const NEW_BEGINNER_GUIDES_ARTICLES: Article[] = [
     subtitle: 'Decode washtub, iron, triangle, and circle symbols, detect marketing hype, and spot synthetic blend percentages.',
     category: 'Beginner Guides',
     author: {
-      name: 'Dr. Marcus Vance',
-      role: 'Senior Textile Chemist',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Science & Fiber Analysis',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
-      credentials: 'Ph.D. in Polymer & Fiber Science from NC State'
+      credentials: 'Literature review of ASTM and AATCC standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -671,10 +671,10 @@ export const NEW_BEGINNER_GUIDES_ARTICLES: Article[] = [
     subtitle: 'A visual guide to loom mechanics: how warp and weft interlacing patterns create different strengths, sheens, and textures.',
     category: 'Beginner Guides',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -822,10 +822,10 @@ export const NEW_BEGINNER_GUIDES_ARTICLES: Article[] = [
     subtitle: 'Compare breathability, microplastics, durability, skin allergies, and lifecycle impact between earth-grown and man-made textiles.',
     category: 'Beginner Guides',
     author: {
-      name: 'Dr. Marcus Vance',
-      role: 'Senior Textile Chemist',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Science & Fiber Analysis',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
-      credentials: 'Ph.D. in Polymer & Fiber Science from NC State'
+      credentials: 'Literature review of ASTM and AATCC standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',

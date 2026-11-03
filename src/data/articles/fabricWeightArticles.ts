@@ -178,67 +178,97 @@ export const FABRIC_WEIGHT_ARTICLES: Article[] = [
       <section id="overview">
         <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">1. Why Cotton Fabric Weights Vary</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          <a href="/fabric/cotton" class="text-[#9E472A] font-semibold underline">Cotton</a> is the most versatile natural cellulose fiber in the textile world. Because cotton can be spun into gossamer fine single threads (like an 80s yarn count) or thick multi-ply cords, cotton textiles span an incredible range from 60 GSM to well over 450 GSM.
+          <a href="/fabric/cotton" class="text-[#9E472A] font-semibold underline">Cotton</a> is the world's most versatile natural cellulose fiber. Because raw cotton fibers can be combed and spun into gossamer-fine single threads (such as an ultra-fine 80s Ne count) or plied into coarse, cord-like yarns (such as a 10s Ne count), cotton textiles span a wide density spectrum—from ethereal 60 GSM voiles to rigid 450+ GSM industrial canvas.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Understanding the GSM of cotton fabrics ensures you never accidentally purchase a see-through dress fabric when you wanted an opaque summer skirt, or a stiff board-like fabric when you wanted a fluid blouse. Calculate fabric weight for any cotton project with our <a href="/tools/fabric-gsm-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric GSM Calculator</a>.
+          In textile engineering, fabric weight is quantified as <strong>areal density</strong>: mass per unit area. Under the metric system (ASTM D3776 / ISO 3801), this is expressed as <strong>Grams per Square Meter (g/m² or GSM)</strong>. In US commercial commerce, it is frequently specified as <strong>Ounces per Square Yard (oz/yd² or OSY)</strong>.
+        </p>
+        <p class="text-[#3A3A3A] leading-relaxed mb-4">
+          Understanding cotton GSM is essential for sewists, fashion designers, and consumers. Knowing the exact GSM prevents expensive drafting mistakes—such as using a transparent 75 GSM lawn for an unlined pencil skirt, or a board-stiff 300 GSM duck canvas for a billowy summer blouse. You can convert any swatch measurement instantly with our free <a href="/tools/fabric-gsm-calculator" class="text-[#9E472A] font-semibold underline hover:text-[#7A3620]">Fabric GSM Calculator</a>.
         </p>
       </section>
 
       <section id="gsm-chart">
-        <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">2. Comprehensive Cotton GSM Chart</h2>
+        <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">2. Comprehensive Cotton GSM & Weave Chart</h2>
+        <p class="text-[#3A3A3A] leading-relaxed mb-3">
+          The table below correlates standard cotton fabric families with their typical yarn counts, areal densities, imperial equivalents, and standard garment silhouettes:
+        </p>
         <div class="overflow-x-auto my-4 border border-[#E6E0D7] rounded-lg">
           <table class="w-full text-xs sm:text-sm text-left border-collapse">
             <thead class="bg-[#FAF8F5] border-b border-[#E6E0D7] text-[#1C1C1C]">
               <tr>
                 <th class="p-3 font-semibold">Cotton Fabric Type</th>
+                <th class="p-3 font-semibold">Weave Structure</th>
+                <th class="p-3 font-semibold">Typical Yarn Count</th>
                 <th class="p-3 font-semibold">Typical GSM</th>
                 <th class="p-3 font-semibold">Ounces (oz/yd²)</th>
-                <th class="p-3 font-semibold">Best Uses</th>
+                <th class="p-3 font-semibold">Recommended Garments</th>
               </tr>
             </thead>
             <tbody class="divide-y divide-[#E6E0D7] text-[#4A453E]">
               <tr>
                 <td class="p-3 font-medium text-[#1C1C1C]">Cotton Voile</td>
-                <td class="p-3">60–80 GSM</td>
+                <td class="p-3">Plain weave (open, high twist)</td>
+                <td class="p-3">60s–100s Ne singles</td>
+                <td class="p-3 font-mono text-[#9E472A] font-semibold">60–80 GSM</td>
                 <td class="p-3">1.8–2.4 oz</td>
-                <td class="p-3">Sheer blouses, scarves, lightweight curtains</td>
+                <td class="p-3">Sheer summer blouses, scarves, lightweight drapery</td>
               </tr>
               <tr>
                 <td class="p-3 font-medium text-[#1C1C1C]">Cotton <a href="/fabric/lawn" class="text-[#9E472A] underline">Lawn</a></td>
-                <td class="p-3">75–95 GSM</td>
-                <td class="p-3">2.2–2.8 oz</td>
-                <td class="p-3">Summer dresses, handkerchiefs, pocket linings</td>
+                <td class="p-3">Plain weave 1/1 (fine, combed)</td>
+                <td class="p-3">60s–80s Ne combed</td>
+                <td class="p-3 font-mono text-[#9E472A] font-semibold">70–95 GSM</td>
+                <td class="p-3">2.1–2.8 oz</td>
+                <td class="p-3">Summer dresses, luxury tunics, pocket linings, handkerchiefs</td>
               </tr>
               <tr>
-                <td class="p-3 font-medium text-[#1C1C1C]">Cotton <a href="/fabric/poplin" class="text-[#9E472A] underline">Poplin</a></td>
-                <td class="p-3">110–140 GSM</td>
+                <td class="p-3 font-medium text-[#1C1C1C]">Cotton <a href="/fabric/poplin" class="text-[#9E472A] underline">Poplin</a> / Broadcloth</td>
+                <td class="p-3">Plain weave with 2:1 rib effect</td>
+                <td class="p-3">40s–50s Ne warp, 30s weft</td>
+                <td class="p-3 font-mono text-[#9E472A] font-semibold">110–140 GSM</td>
                 <td class="p-3">3.2–4.1 oz</td>
-                <td class="p-3">Button-down shirts, pajamas, skirts</td>
+                <td class="p-3">Tailored dress shirts, shirtdresses, pajamas, structured skirts</td>
               </tr>
               <tr>
                 <td class="p-3 font-medium text-[#1C1C1C]">Quilting Cotton</td>
-                <td class="p-3">140–160 GSM</td>
-                <td class="p-3">4.1–4.7 oz</td>
-                <td class="p-3">Patchwork quilts, crafts, totes</td>
+                <td class="p-3">Plain balanced calico weave</td>
+                <td class="p-3">30s singles</td>
+                <td class="p-3 font-mono text-[#9E472A] font-semibold">140–165 GSM</td>
+                <td class="p-3">4.1–4.9 oz</td>
+                <td class="p-3">Patchwork quilts, craft aprons, structured tote linings</td>
+              </tr>
+              <tr>
+                <td class="p-3 font-medium text-[#1C1C1C]">Cotton Chambray</td>
+                <td class="p-3">Plain weave (colored warp, white weft)</td>
+                <td class="p-3">30s–40s Ne</td>
+                <td class="p-3 font-mono text-[#9E472A] font-semibold">130–160 GSM</td>
+                <td class="p-3">3.8–4.7 oz</td>
+                <td class="p-3">Casual work shirts, sundresses, lightweight trousers</td>
               </tr>
               <tr>
                 <td class="p-3 font-medium text-[#1C1C1C]">Cotton Flannel</td>
-                <td class="p-3">170–210 GSM</td>
+                <td class="p-3">Plain or 2/2 twill, napped surface</td>
+                <td class="p-3">16s–24s Ne soft twist</td>
+                <td class="p-3 font-mono text-[#9E472A] font-semibold">170–210 GSM</td>
                 <td class="p-3">5.0–6.2 oz</td>
-                <td class="p-3">Winter pajamas, baby blankets, cozy shirts</td>
+                <td class="p-3">Winter sleepwear, cozy overshirts, infant blankets</td>
               </tr>
               <tr>
                 <td class="p-3 font-medium text-[#1C1C1C]">Cotton Twill / Chino</td>
-                <td class="p-3">200–260 GSM</td>
-                <td class="p-3">5.9–7.7 oz</td>
-                <td class="p-3">Trousers, jackets, unstructured caps</td>
+                <td class="p-3">2/1 or 3/1 diagonal wale twill</td>
+                <td class="p-3">20s–30s ring-spun</td>
+                <td class="p-3 font-mono text-[#9E472A] font-semibold">200–280 GSM</td>
+                <td class="p-3">5.9–8.3 oz</td>
+                <td class="p-3">Chino trousers, trench coats, utility jackets, unstructured caps</td>
               </tr>
               <tr>
                 <td class="p-3 font-medium text-[#1C1C1C]">Duck <a href="/fabric/canvas" class="text-[#9E472A] underline">Canvas</a></td>
-                <td class="p-3">300–450 GSM</td>
-                <td class="p-3">8.8–13.3 oz</td>
-                <td class="p-3">Tote bags, slipcovers, work jackets</td>
+                <td class="p-3">Tight plied plain / basket weave</td>
+                <td class="p-3">10s/2 or 12s/2 heavy ply</td>
+                <td class="p-3 font-mono text-[#9E472A] font-semibold">300–450+ GSM</td>
+                <td class="p-3">8.8–13.3+ oz</td>
+                <td class="p-3">Heavy-duty tote bags, upholstery slipcovers, rugged work coats</td>
               </tr>
             </tbody>
           </table>
@@ -248,48 +278,107 @@ export const FABRIC_WEIGHT_ARTICLES: Article[] = [
       <section id="popular-types">
         <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">3. Key Cotton Fabric Types & Silhouette Guide</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Different weights of cotton produce distinct drape behaviors:
+          A fabric's areal density directly dictates its drape coefficient, opacity, and needle penetrability during stitching:
         </p>
-        <ul class="list-disc pl-5 space-y-2 text-[#3A3A3A] mb-4">
-          <li><strong>Under 100 GSM (Voile &amp; Lawn):</strong> Characterized by soft gathers, delicate billowing, and minimal structural hold. They require French seams or narrow rolled hems to prevent fraying.</li>
-          <li><strong>110 to 150 GSM (<a href="/articles/poplin-fabric-guide" class="text-[#9E472A] underline">Poplin</a> &amp; Broadcloth):</strong> Crisp and smooth with enough body to support buttonholes, collar stands, and shirt cuffs without excessive drooping.</li>
-          <li><strong>180 to 260 GSM (Twill &amp; Chino):</strong> Opaque, abrasion-resistant, and structural. The diagonal weave distributes tension, making it the premier choice for tailored casual pants. Explore weave mechanics in our <a href="/articles/warp-vs-weft" class="text-[#9E472A] underline">Warp vs Weft guide</a>.</li>
-          <li><strong>300+ GSM (<a href="/articles/canvas-fabric-guide" class="text-[#9E472A] underline">Duck Canvas</a>):</strong> Extremely rigid and heavy. Holds boxy shapes without interfacing and withstands intense daily friction.</li>
-        </ul>
+        <div class="space-y-4 my-4">
+          <div class="p-4 bg-white border border-[#E6E0D7] rounded-lg">
+            <h3 class="font-bold text-base text-[#1C1C1C] mb-1">Ultra-Lightweight Cotton: 60–95 GSM (Voile &amp; Lawn)</h3>
+            <p class="text-xs sm:text-sm text-[#4A453E] leading-relaxed mb-2">
+              Woven from fine combed yarns, these gossamer fabrics offer low bending rigidity. They gather softly, flutter in the wind, and have high air permeability. 
+            </p>
+            <p class="text-xs text-[#6B6357]">
+              <strong>Sewing Tip:</strong> Use a Microtex 60/8 or 70/10 needle and a shorter stitch length (1.8–2.0 mm). Always stitch with French seams or fine hand-rolled hems to prevent seam fraying.
+            </p>
+          </div>
+
+          <div class="p-4 bg-white border border-[#E6E0D7] rounded-lg">
+            <h3 class="font-bold text-base text-[#1C1C1C] mb-1">Light-to-Medium Cotton: 110–150 GSM (Poplin &amp; Broadcloth)</h3>
+            <p class="text-xs sm:text-sm text-[#4A453E] leading-relaxed mb-2">
+              Poplin features a distinct fine warp and slightly thicker weft, yielding a crisp hand with enough crosswise body to hold collar stands, cuffs, and button plackets without collapsing. It provides complete visual opacity in darker dyes and 90%+ opacity in white.
+            </p>
+            <p class="text-xs text-[#6B6357]">
+              <strong>Sewing Tip:</strong> Standard 75/11 or 80/12 universal needle with all-purpose polyester or cotton thread (Tex 24–30).
+            </p>
+          </div>
+
+          <div class="p-4 bg-white border border-[#E6E0D7] rounded-lg">
+            <h3 class="font-bold text-base text-[#1C1C1C] mb-1">Medium-to-Heavy Cotton: 200–280 GSM (Chino Twill &amp; Khaddar)</h3>
+            <p class="text-xs sm:text-sm text-[#4A453E] leading-relaxed mb-2">
+              The diagonal twill float structure shields the yarns from abrasive surface friction, making twill significantly more durable than plain weave at equivalent weights. It provides structural drape that falls smoothly over the body without clinging.
+            </p>
+            <p class="text-xs text-[#6B6357]">
+              <strong>Sewing Tip:</strong> Use Jeans/Denim needles (90/14 or 100/16) and topstitching thread for reinforced stress points like pocket mouths and belt loops.
+            </p>
+          </div>
+
+          <div class="p-4 bg-white border border-[#E6E0D7] rounded-lg">
+            <h3 class="font-bold text-base text-[#1C1C1C] mb-1">Heavyweight Cotton: 300–450+ GSM (Duck Canvas)</h3>
+            <p class="text-xs sm:text-sm text-[#4A453E] leading-relaxed mb-2">
+              Canvas achieves extreme mechanical strength through plied yarns and heavy yarn packing. It does not drape; it holds 3-dimensional architectural shapes independently, making it standard for luggage and shop aprons.
+            </p>
+            <p class="text-xs text-[#6B6357]">
+              <strong>Sewing Tip:</strong> Heavy jeans needle (100/16 or 110/18), walking foot or Teflon foot, and heavy-duty thread (Tex 40–60).
+            </p>
+          </div>
+        </div>
       </section>
 
       <section id="care-tips">
         <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">4. Washing & Shrinkage Effects on Cotton GSM</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          Cotton fibers absorb water greedily and swell in diameter when laundered. During washing and high-heat tumble drying, the longitudinal warp tension applied during loom weaving is released, causing the fabric to contract.
+          One of the most frequently overlooked principles in fabric science is that <strong>cotton GSM is not static</strong>. Natural cellulose fibers readily absorb water molecules, swelling laterally up to 15% in diameter when saturated.
         </p>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          This dimensional shrinkage causes the thread count and areal mass to concentrate. A 130 GSM cotton shirt fabric typically measures around 138 to 142 GSM after its initial wash. Always pre-wash cotton yardage before cutting pattern pieces to ensure proper finished garment sizing.
+          During commercial loom weaving, warp yarns are held under intense mechanical tension. When submerged in warm water and agitated during laundering, this tension relaxes—causing the warp yarns to crimp and pull the fabric tighter in length and width (residual shrinkage according to AATCC Test Method 135).
         </p>
+        <div class="p-4 bg-[#FAF8F5] border border-[#E6E0D7] rounded-lg my-4 space-y-2 text-xs sm:text-sm text-[#3E3A34]">
+          <h4 class="font-bold text-[#1C1C1C]">Shrinkage Densification Example:</h4>
+          <p>
+            Consider an unwashed cotton poplin fabric measuring 125 GSM off the bolt:
+          </p>
+          <ul class="list-disc pl-5 space-y-1">
+            <li>Laundering produces 5% lengthwise shrinkage and 3% crosswise shrinkage.</li>
+            <li>The original 1.0 m × 1.0 m (1.00 m²) swatch contracts to 0.95 m × 0.97 m = <strong>0.9215 m²</strong>.</li>
+            <li>Because the 125 grams of cotton mass remains constant while the area contracts, the post-wash GSM increases: <code>125 g ÷ 0.9215 m² = 135.6 GSM</code>.</li>
+          </ul>
+          <p class="text-xs text-[#7A7265] italic">Always pre-wash and dry cotton yardage before cutting pattern pieces to ensure your garment maintains its intended silhouette and fit.</p>
+        </div>
       </section>
 
       <section id="measuring-cotton">
-        <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">5. Measuring Cotton Density at Home</h2>
+        <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">5. Measuring Cotton Density at Home (ASTM D3776 Swatch Method)</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          If you have unlabelled cotton in your sewing stash:
+          Industrial testing laboratories use a precision rotary circular die punch (exact 100 cm² area, or 1/100th of a square meter) and a micro-balance. You can achieve comparable accuracy at home with standard tools:
         </p>
-        <ol class="list-decimal pl-5 space-y-2 text-[#3A3A3A] mb-4">
-          <li>Cut an accurate 10 cm × 10 cm square swatch from an inner section (avoid the denser selvage edge).</li>
-          <li>Place it on a scale accurate to 0.01 grams.</li>
-          <li>Multiply the grams by 100 to calculate GSM. (e.g. 1.45 g × 100 = 145 GSM, indicating standard quilting or shirting weight).</li>
+        <ol class="list-decimal pl-5 space-y-2 text-[#3A3A3A] mb-4 text-xs sm:text-sm">
+          <li><strong>Avoid the Selvage:</strong> Move at least 10 cm (4 inches) away from either woven selvage edge. Selvages contain higher warp densities and sizing chemicals that skew results.</li>
+          <li><strong>Cut an Exact Square:</strong> Using an acrylic quilting ruler and a rotary cutter, slice a precise <strong>10 cm × 10 cm</strong> square (100 cm² = 0.01 m²).</li>
+          <li><strong>Weigh in Grams:</strong> Place the swatch onto a digital scale calibrated to 0.01 grams. Ensure there are no loose fraying threads hanging off the edges.</li>
+          <li><strong>Calculate GSM:</strong> Multiply the measured weight by <strong>100</strong>. For example, if your swatch weighs 1.35 grams: <code>1.35 g × 100 = 135 GSM</code>.</li>
+          <li><strong>Convert to Imperial Ounces:</strong> Divide the GSM by <strong>33.906</strong>. (135 ÷ 33.906 = 3.98 oz/yd²).</li>
         </ol>
       </section>
 
       <section id="buying-tips">
-        <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">6. Online Shopping Advice for Cotton</h2>
+        <h2 class="text-xl font-serif-heading font-bold text-[#1C1C1C] mt-6 mb-3">6. Online Shopping Advice: Debunking the GSM Quality Myth</h2>
         <p class="text-[#3A3A3A] leading-relaxed mb-4">
-          When sourcing cotton textiles online, do not rely on product photographs alone—photographs cannot convey density. Look for the technical GSM or oz/yd² specification. If you are sewing a summer shirtdress, target 110–130 GSM; for utility jackets, target 300+ GSM.
+          A pervasive consumer misconception is that "higher GSM always equals better fabric." In textile science, <strong>GSM measures weight and density, not fiber quality</strong>.
         </p>
+        <p class="text-[#3A3A3A] leading-relaxed mb-4">
+          A luxury 80 GSM Swiss batiste woven from extra-long staple (ELS) combed Egyptian Giza cotton will outlast and outperform a coarse 250 GSM recycled cotton carded twill. When shopping online, evaluate three distinct factors:
+        </p>
+        <ul class="list-disc pl-5 space-y-2 text-[#3A3A3A] mb-4 text-xs sm:text-sm">
+          <li><strong>Fiber Staple Length:</strong> Long and extra-long staple cotton (Pima, Supima, Egyptian) produces smoother yarns with fewer fiber ends, resisting pilling regardless of whether the fabric is 80 GSM or 220 GSM.</li>
+          <li><strong>Yarn Type (Carded vs. Combed):</strong> Combed yarns have short, irregular fibers mechanically removed, resulting in a cleaner surface and higher tensile strength.</li>
+          <li><strong>Intended Garment Purpose:</strong> Match the GSM to the functional requirements of the pattern rather than chasing the highest number.</li>
+        </ul>
       </section>
     `,
     tags: ['Cotton', 'GSM', 'Poplin', 'Canvas', 'Lawn', 'Sewing'],
     sources: [
+      { title: 'Standard Test Method for Mass Per Unit Area (Weight) of Fabric', institutionOrAuthor: 'ASTM D3776 / D3776M-20', year: '2020' },
       { title: 'The Classification of Cotton', institutionOrAuthor: 'USDA Agricultural Marketing Service', year: '2021' },
+      { title: 'Dimensional Changes of Fabrics after Home Laundering', institutionOrAuthor: 'AATCC Test Method 135', year: '2023' },
       { title: 'Physical Testing of Textiles', institutionOrAuthor: 'The Textile Institute', year: '2018' }
     ],
     relatedSlugs: ['what-is-gsm-in-fabric', 'fabric-weight-chart', 'poplin-fabric-guide'],
@@ -305,6 +394,10 @@ export const FABRIC_WEIGHT_ARTICLES: Article[] = [
       {
         question: 'What is the best cotton weight for bed sheets?',
         answer: 'Quality bed sheets woven from percale typically range between 110 and 140 GSM (approx. 3.2 to 4.1 oz/yd²), providing cool breathability and long-term durability.'
+      },
+      {
+        question: 'How do I convert cotton ounces per square yard (oz/yd²) to GSM?',
+        answer: 'Multiply the ounces per square yard by 33.906. For example, a 6.5 oz/yd² cotton twill equals 6.5 × 33.906 = 220.4 GSM.'
       }
     ]
   },

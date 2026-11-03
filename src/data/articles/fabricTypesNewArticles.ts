@@ -8,10 +8,10 @@ export const NEW_FABRIC_TYPES_PART1: Article[] = [
     subtitle: 'Everything you need to know about cotton: how it grows, why it breathes so well, popular varieties, and simple care tips.',
     category: 'Fabric Types',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -282,10 +282,10 @@ export const NEW_FABRIC_TYPES_PART1: Article[] = [
     subtitle: 'Discover how flax stems transform into linen: unmatched summer cooling, distinctive textures, eco-friendly qualities, and washing tips.',
     category: 'Fabric Types',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -503,10 +503,10 @@ export const NEW_FABRIC_TYPES_PART1: Article[] = [
     subtitle: 'Learn how natural animal fleeces become wool fabric: crimp physics, moisture management, woolen vs worsted, and gentle care rules.',
     category: 'Fabric Types',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -690,10 +690,10 @@ export const NEW_FABRIC_TYPES_PART1: Article[] = [
     subtitle: 'Understand how wood pulp becomes silky, drapey cloth: history, types (viscose, modal, lyocell), breathability, and laundry precautions.',
     category: 'Fabric Types',
     author: {
-      name: 'Dr. Marcus Vance',
-      role: 'Senior Textile Chemist',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Science & Fiber Analysis',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
-      credentials: 'Ph.D. in Polymer & Fiber Science from NC State'
+      credentials: 'Literature review of ASTM and AATCC standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -858,10 +858,10 @@ export const NEW_FABRIC_TYPES_PART1: Article[] = [
     subtitle: 'Everything about viscose cloth: how the viscous cellulose solution works, breathability benefits, summer styling, and washing precautions.',
     category: 'Fabric Types',
     author: {
-      name: 'Dr. Marcus Vance',
-      role: 'Senior Textile Chemist',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Science & Fiber Analysis',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
-      credentials: 'Ph.D. in Polymer & Fiber Science from NC State'
+      credentials: 'Literature review of ASTM and AATCC standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',

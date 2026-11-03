@@ -37,15 +37,17 @@ interface SwatchPreset {
   length: number;
   width: number;
   unit: DimensionUnit;
+  description?: string;
 }
 
 const PRESETS: SwatchPreset[] = [
-  { label: '10 × 10 cm', length: 10, width: 10, unit: 'cm' },
-  { label: 'A4 Swatch (21 × 29.7 cm)', length: 29.7, width: 21, unit: 'cm' },
-  { label: '10 × 10 in', length: 10, width: 10, unit: 'inch' },
-  { label: '1 Yard × 44" Bolt', length: 36, width: 44, unit: 'inch' },
-  { label: '1 Yard × 60" Bolt', length: 36, width: 60, unit: 'inch' },
-  { label: '1 × 1 Meter', length: 1, width: 1, unit: 'meter' }
+  { label: '10 × 10 cm (0.01 m²)', length: 10, width: 10, unit: 'cm', description: 'Standard quick test swatch' },
+  { label: '100 cm² Standard Punch', length: 10, width: 10, unit: 'cm', description: 'Industry circular cutter equivalent' },
+  { label: 'A4 Swatch (21 × 29.7 cm)', length: 29.7, width: 21, unit: 'cm', description: 'Standard document paper size' },
+  { label: '10 × 10 in', length: 10, width: 10, unit: 'inch', description: 'Common US imperial test square' },
+  { label: '1 Yard × 44" Bolt', length: 36, width: 44, unit: 'inch', description: 'Full standard fabric yard' },
+  { label: '1 Yard × 60" Bolt', length: 36, width: 60, unit: 'inch', description: 'Full wide fabric yard' },
+  { label: '1 × 1 Meter', length: 1, width: 1, unit: 'meter', description: 'Exact 1.0 m² definition area' }
 ];
 
 export const FabricGsmCalculatorView: React.FC<FabricGsmCalculatorViewProps> = ({ onNavigate }) => {
@@ -63,10 +65,34 @@ export const FabricGsmCalculatorView: React.FC<FabricGsmCalculatorViewProps> = (
     const l = parseFloat(length);
     const wid = parseFloat(width);
 
-    if (isNaN(w) || isNaN(l) || isNaN(wid) || w <= 0 || l <= 0 || wid <= 0) {
+    if (isNaN(w) || isNaN(l) || isNaN(wid)) {
       return {
         isValid: false,
-        error: 'Enter positive numbers for sample weight, length, and width.',
+        error: 'Please enter valid numerical values for weight, length, and width.',
+        gsm: 0,
+        oz: 0,
+        areaM2: 0,
+        category: '',
+        examples: [] as string[]
+      };
+    }
+
+    if (w <= 0 || l <= 0 || wid <= 0) {
+      return {
+        isValid: false,
+        error: 'Sample weight and dimensions must all be greater than zero.',
+        gsm: 0,
+        oz: 0,
+        areaM2: 0,
+        category: '',
+        examples: [] as string[]
+      };
+    }
+
+    if (w > 50000 || l > 1000 || wid > 1000) {
+      return {
+        isValid: false,
+        error: 'Input values exceed realistic textile testing limits. Please check your measurements.',
         gsm: 0,
         oz: 0,
         areaM2: 0,
@@ -91,7 +117,7 @@ export const FabricGsmCalculatorView: React.FC<FabricGsmCalculatorViewProps> = (
     if (areaM2 <= 0) {
       return {
         isValid: false,
-        error: 'Calculated area must be greater than zero.',
+        error: 'Calculated surface area must be greater than zero.',
         gsm: 0,
         oz: 0,
         areaM2: 0,
@@ -168,19 +194,20 @@ export const FabricGsmCalculatorView: React.FC<FabricGsmCalculatorViewProps> = (
       {/* Trust Signals */}
       <ToolTrustSignals />
 
-      {/* THE CALCULATOR (At the very top, visible without scrolling) */}
+      {/* THE CALCULATOR */}
       <div className="bg-white border border-[#D9D1C5] rounded-lg shadow-xs overflow-hidden">
         <div className="p-4 sm:p-5 border-b border-[#E8E2D9] bg-[#FAF8F5] flex flex-wrap items-center justify-between gap-3">
           <span className="text-xs font-mono uppercase tracking-wider text-[#6B6357] font-semibold">
-            Input Parameters
+            Input Parameters &amp; Presets
           </span>
           <div className="flex items-center flex-wrap gap-1.5 text-xs">
-            <span className="text-xs text-[#7A7266]">Presets:</span>
+            <span className="text-xs text-[#7A7266]">Quick Presets:</span>
             {PRESETS.map((p, idx) => (
               <button
                 key={idx}
                 type="button"
                 onClick={() => handleApplyPreset(p)}
+                title={p.description}
                 className="px-2 py-1 bg-white hover:bg-[#F2EDE4] text-[#4A443B] border border-[#DDD5C7] rounded text-xs transition-colors"
               >
                 {p.label}
@@ -195,7 +222,7 @@ export const FabricGsmCalculatorView: React.FC<FabricGsmCalculatorViewProps> = (
             {/* Weight Input */}
             <div>
               <label htmlFor="gsm-weight" className="block text-xs font-bold uppercase tracking-wider text-[#3A352E] mb-1">
-                Sample Weight (Grams)
+                Sample Weight on Scale (Grams)
               </label>
               <div className="relative">
                 <input
@@ -209,11 +236,11 @@ export const FabricGsmCalculatorView: React.FC<FabricGsmCalculatorViewProps> = (
                   className="w-full min-h-[48px] px-3.5 py-3 bg-[#FAF8F5] border border-[#D0C7BA] rounded-md text-base font-medium text-[#1C1C1C] focus:bg-white focus:border-[#1C1C1C] focus:ring-1 focus:ring-[#1C1C1C] focus:outline-none transition-colors"
                 />
                 <span className="absolute right-3.5 top-3.5 text-xs font-mono text-[#7A7266]">
-                  grams
+                  grams (g)
                 </span>
               </div>
               <p className="text-xs text-[#7A7266] mt-1">
-                Weigh your cut swatch on a digital scale (kitchen or jewelry scale).
+                Weigh your cut swatch on a digital scale (0.01g or 0.1g resolution recommended).
               </p>
             </div>
 
@@ -239,7 +266,7 @@ export const FabricGsmCalculatorView: React.FC<FabricGsmCalculatorViewProps> = (
                   </span>
                 </div>
                 <p className="text-xs text-[#7A7266] mt-1">
-                  Dimension along the grain.
+                  Dimension along warp grain.
                 </p>
               </div>
 
@@ -263,7 +290,7 @@ export const FabricGsmCalculatorView: React.FC<FabricGsmCalculatorViewProps> = (
                   </span>
                 </div>
                 <p className="text-xs text-[#7A7266] mt-1">
-                  Dimension across the grain.
+                  Dimension across weft grain.
                 </p>
               </div>
             </div>
@@ -271,7 +298,7 @@ export const FabricGsmCalculatorView: React.FC<FabricGsmCalculatorViewProps> = (
             {/* Measurement Unit */}
             <div>
               <label className="block text-xs font-bold uppercase tracking-wider text-[#3A352E] mb-1.5">
-                Measurement Unit
+                Measurement Unit for Dimensions
               </label>
               <div className="grid grid-cols-3 gap-2">
                 {(['cm', 'inch', 'meter'] as DimensionUnit[]).map((u) => (
@@ -292,22 +319,35 @@ export const FabricGsmCalculatorView: React.FC<FabricGsmCalculatorViewProps> = (
                 ))}
               </div>
             </div>
+
+            {/* Clarification Callout: Sample Weight vs GSM */}
+            <div className="p-3.5 bg-[#FAF8F5] border border-[#E6E0D7] rounded-md text-xs text-[#4A443B] space-y-1">
+              <strong className="text-[#1C1C1C] block font-semibold">Sample Mass vs. GSM Areal Density:</strong>
+              <p>
+                Your sample weighs <strong>{weightGrams || '0'} grams</strong> on the scale. <strong>GSM (g/m²)</strong> is the standardized weight of a complete 1 meter × 1 meter piece of that exact material.
+              </p>
+            </div>
           </div>
 
-          {/* Results Card (6 cols) - Clean Utility Design */}
+          {/* Results Card (6 cols) */}
           <div className="lg:col-span-6 flex flex-col justify-between bg-[#FAF8F5] border border-[#D9D1C5] rounded-md p-5 sm:p-6">
             <div className="space-y-4">
-              <div className="pb-2 border-b border-[#E8E2D9]">
+              <div className="pb-2 border-b border-[#E8E2D9] flex items-center justify-between">
                 <span className="text-xs font-mono uppercase tracking-wider text-[#6B6357] font-semibold">
                   Calculation Result
                 </span>
+                {calculation.isValid && (
+                  <span className="text-xs px-2 py-0.5 bg-[#EFE9DF] text-[#4A453E] rounded font-mono">
+                    Area: {calculation.areaM2} m²
+                  </span>
+                )}
               </div>
 
               {calculation.isValid ? (
                 <>
                   {/* Large Bold Result */}
                   <div>
-                    <span className="text-xs text-[#6B6357] block">Fabric Weight</span>
+                    <span className="text-xs text-[#6B6357] block">Fabric Areal Weight</span>
                     <div className="text-4xl sm:text-5xl font-serif-heading font-bold text-[#1C1C1C] tracking-tight">
                       {calculation.gsm}{' '}
                       <span className="text-xl sm:text-2xl font-sans font-normal text-[#5C554B]">
@@ -327,29 +367,40 @@ export const FabricGsmCalculatorView: React.FC<FabricGsmCalculatorViewProps> = (
                       </div>
                     </div>
                     <span className="text-xs text-[#7A7266]">
-                      ounces per sq yd
+                      ounces per sq yard
                     </span>
                   </div>
 
-                  {/* Simple Explanation */}
-                  <div className="text-xs text-[#4A443B] space-y-1">
-                    <span className="font-semibold text-[#1C1C1C]">Classification: </span>
-                    <span className="font-medium">{calculation.category}</span>
-                    <p className="text-[#6B6357]">
+                  {/* Weight Category Gauge */}
+                  <div className="p-3 bg-white border border-[#E0D8CB] rounded-md space-y-2">
+                    <div className="flex items-center justify-between text-xs">
+                      <span className="font-semibold text-[#1C1C1C]">Weight Category:</span>
+                      <span className="px-2 py-0.5 bg-[#FAF4EB] border border-[#EADBCA] text-[#9E472A] font-semibold rounded text-xs">
+                        {calculation.category}
+                      </span>
+                    </div>
+                    {/* Visual bar */}
+                    <div className="w-full bg-[#EAE4D9] h-2 rounded-full overflow-hidden flex">
+                      <div className={`h-full ${calculation.gsm < 150 ? 'bg-[#9E472A]' : 'bg-[#D2C8B8]'} w-1/4 border-r border-white`} title="Lightweight (<150 GSM)" />
+                      <div className={`h-full ${calculation.gsm >= 150 && calculation.gsm <= 250 ? 'bg-[#9E472A]' : 'bg-[#D2C8B8]'} w-1/4 border-r border-white`} title="Medium (150-250 GSM)" />
+                      <div className={`h-full ${calculation.gsm > 250 && calculation.gsm <= 350 ? 'bg-[#9E472A]' : 'bg-[#D2C8B8]'} w-1/4 border-r border-white`} title="Medium-Heavy (250-350 GSM)" />
+                      <div className={`h-full ${calculation.gsm > 350 ? 'bg-[#9E472A]' : 'bg-[#D2C8B8]'} w-1/4`} title="Heavyweight (350+ GSM)" />
+                    </div>
+                    <p className="text-xs text-[#6B6357]">
                       Common examples: {calculation.examples.join(', ')}.
                     </p>
                   </div>
 
-                  {/* Formula Used */}
+                  {/* Step-by-Step Mathematical Proof */}
                   <div className="pt-2 border-t border-[#E8E2D9] text-xs font-mono text-[#5C554B] space-y-1">
-                    <div className="font-sans font-semibold text-[#1C1C1C]">Formula Used:</div>
-                    <div>GSM = Weight (g) ÷ Area (m²)</div>
-                    <div>1. Area = {calculation.areaM2} m²</div>
-                    <div>2. {weightGrams}g ÷ {calculation.areaM2} m² = <strong className="text-[#1C1C1C]">{calculation.gsm} GSM</strong></div>
+                    <div className="font-sans font-semibold text-[#1C1C1C]">Step-by-Step Math:</div>
+                    <div>1. Area = ({length} × {width} {unit}²) = <strong>{calculation.areaM2} m²</strong></div>
+                    <div>2. GSM = {weightGrams}g ÷ {calculation.areaM2} m² = <strong className="text-[#1C1C1C]">{calculation.gsm} GSM</strong></div>
+                    <div>3. oz/yd² = {calculation.gsm} ÷ 33.9057 = <strong>{calculation.oz} oz/yd²</strong></div>
                   </div>
                 </>
               ) : (
-                <div className="py-8 text-center text-xs text-[#7A7266]">
+                <div className="py-8 text-center text-xs text-[#A33]">
                   {calculation.error}
                 </div>
               )}

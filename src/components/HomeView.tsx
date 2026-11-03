@@ -70,15 +70,15 @@ export const HomeView: React.FC<HomeViewProps> = ({ onNavigate, onOpenSearch }) 
         <div className="max-w-4xl mx-auto text-center space-y-6">
           <div className="inline-flex items-center gap-2 px-3 py-1 bg-white border border-[#D9D1C5] rounded-full text-xs text-[#524B42]">
             <ShieldCheck className="w-3.5 h-3.5 text-[#9E472A]" />
-            <span>Independent Non-Commercial Textile Reference</span>
+            <span>Independent, Non-Commercial Textile Encyclopedia &amp; Utilities</span>
           </div>
 
           <h1 className="text-3xl sm:text-5xl md:text-6xl font-serif-heading font-bold text-[#191919] tracking-tight leading-tight">
-            Fabric Types Guide &amp; Textile Library
+            Textile Science, Fabric Guides &amp; Utility Calculators
           </h1>
 
           <p className="text-base sm:text-lg text-[#524B42] max-w-2xl mx-auto leading-relaxed">
-            Your complete educational textile guide and fabric information library. Discover interactive calculators, fiber science guides, and garment care instructions written in plain English.
+            Elite Fabrics is an open-access educational textile reference. Explore verified fiber profiles, mathematical fabric calculators, warp-to-weft mechanics, and South Asian weaving heritage—grounded in international ASTM &amp; ISO standards.
           </p>
 
           {/* Instant Search Bar Trigger */}

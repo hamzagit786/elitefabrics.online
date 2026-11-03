@@ -8,10 +8,10 @@ export const NEW_FABRIC_CARE_ARTICLES: Article[] = [
     subtitle: 'Step-by-step instructions to wash cotton shirts, towels, and sheets without shrinking, fading colors, or weakening fibers.',
     category: 'Fabric Care',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -162,10 +162,10 @@ export const NEW_FABRIC_CARE_ARTICLES: Article[] = [
     subtitle: 'Learn the exact pH-neutral hand washing method to clean mulberry silk pillowcases, blouses, and scarves without water spotting.',
     category: 'Fabric Care',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -304,10 +304,10 @@ export const NEW_FABRIC_CARE_ARTICLES: Article[] = [
     subtitle: 'Scientific spot-removal methods for coffee, red wine, oil, ink, and blood on cotton, linen, silk, and wool.',
     category: 'Fabric Care',
     author: {
-      name: 'Dr. Marcus Vance',
-      role: 'Senior Textile Chemist',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Science & Fiber Analysis',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
-      credentials: 'Ph.D. in Polymer & Fiber Science from NC State'
+      credentials: 'Literature review of ASTM and AATCC standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -471,10 +471,10 @@ export const NEW_FABRIC_CARE_ARTICLES: Article[] = [
     subtitle: 'Understand why natural fibers shrink during laundering, how relaxation vs felting works, and practical rules to preserve garment sizing.',
     category: 'Fabric Care',
     author: {
-      name: 'Dr. Marcus Vance',
-      role: 'Senior Textile Chemist',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Science & Fiber Analysis',
       avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=300&q=80',
-      credentials: 'Ph.D. in Polymer & Fiber Science from NC State'
+      credentials: 'Literature review of ASTM and AATCC standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -642,10 +642,10 @@ export const NEW_FABRIC_CARE_ARTICLES: Article[] = [
     subtitle: 'Learn the exact temperature settings, steam levels, and pressing tools to iron cotton, linen, silk, wool, and synthetics safely.',
     category: 'Fabric Care',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
@@ -819,10 +819,10 @@ export const NEW_FABRIC_CARE_ARTICLES: Article[] = [
     subtitle: 'Expert preservation methods to store winter wool coats, summer lawn suits, and cashmere: moth prevention, breathable bins, and cedar.',
     category: 'Fabric Care',
     author: {
-      name: 'Elena Rostova',
-      role: 'Master Weaver & Textile Educator',
+      name: 'Elite Fabrics Editorial Staff',
+      role: 'Textile Research & Weaving Education',
       avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=300&q=80',
-      credentials: '20+ years in natural fiber weaving and loom instruction'
+      credentials: 'Textile research based on ASTM and ISO standards'
     },
     publishDate: '2026-09-29',
     updatedDate: '2026-09-29',
